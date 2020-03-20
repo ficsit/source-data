@@ -3,19 +3,19 @@ name: ETL
 on: push
 
 jobs:
-  test-style:
+  notify:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl
-            --user "${{ secrets.GITHUB_AUTH }}"
-            --request POST
-            --header "Content-Type: application/json"
+          curl \
+            --user "${{ secrets.GITHUB_AUTH }}" \
+            --request POST \
+            --header "Content-Type: application/json" \
             --data '{
               "event_type": "source-data-updated",
               "client_payload": {
                 "ref": "${{ github.ref }}",
-                "sha": "${{ github.sha }}",
+                "sha": "${{ github.sha }}"
               }
-            }'
+            }' \
             https://api.github.com/repos/ficsit/data-engineering/dispatches
