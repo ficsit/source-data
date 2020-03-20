@@ -1,0 +1,15 @@
+name: ETL
+
+on: push
+
+jobs:
+  test-style:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl
+            --user "${{ secrets.GITHUB_AUTH }}"
+            --request POST
+            --header "Content-Type: application/json"
+            --data '{"event_type": "source-data-updated"}'
+            https://api.github.com/repos/ficsit/data-engineering/dispatches
