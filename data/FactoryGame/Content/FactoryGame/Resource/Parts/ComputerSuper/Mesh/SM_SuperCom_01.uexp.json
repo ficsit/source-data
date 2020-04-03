@@ -1,0 +1,387 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Resource/Parts/ComputerSuper/Mesh/SM_SuperCom_01.uasset",
+  "guid": {
+    "a": 3755974528,
+    "b": 1159884873,
+    "c": 2033086360,
+    "d": 2105680829
+  },
+  "exports": [
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "ConvexElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -45.04678,
+                          "y": -36.161697,
+                          "z": -0.0000016987324
+                        },
+                        "max": {
+                          "x": 42.591454,
+                          "y": 35.39214,
+                          "z": 113.52671
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 42.591454,
+                            "y": -36.161697,
+                            "z": -0.0000016987324
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.04678,
+                            "y": -36.161694,
+                            "z": -0.0000016987324
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 42.591454,
+                            "y": -36.161697,
+                            "z": 113.52671
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.04678,
+                            "y": -36.161694,
+                            "z": 113.52671
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 42.59145,
+                            "y": 35.39213,
+                            "z": 113.52671
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.046772,
+                            "y": 35.39214,
+                            "z": 113.52671
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 42.59145,
+                            "y": 35.39213,
+                            "z": -0.0000016987324
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.046772,
+                            "y": 35.39214,
+                            "z": -0.0000016987324
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SM_SuperCom_01",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 43.78012,
+                "y": 36.300194,
+                "z": 57.52269
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": -1.1989136,
+                "y": -0.0000038146973,
+                "z": 57.124615
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 75.13314
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 301.50763
+        },
+        "ShadowLODBias": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "lambert1"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/ComputerSuper/Material/ComputerSuper_Inst",
+                      "name": "ComputerSuper_Inst"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "lambert1"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "LastLOD"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/ComputerSuper/Material/SupCom_LL_Inst",
+                      "name": "SupCom_LL_Inst"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "LastLOD"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

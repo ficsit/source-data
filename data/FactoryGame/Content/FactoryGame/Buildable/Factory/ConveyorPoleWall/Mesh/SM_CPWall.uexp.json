@@ -1,0 +1,256 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/ConveyorPoleWall/Mesh/SM_CPWall.uasset",
+  "guid": {
+    "a": 1776066680,
+    "b": 1195443536,
+    "c": 3010633858,
+    "d": 795370142
+  },
+  "exports": [
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 141.49178,
+                        "y": 0.000061035156,
+                        "z": -35.794617
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 90,
+                        "roll": -90
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 76.85477
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 51.589233
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 282.98355
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SM_CPWall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 139.31435,
+                "y": 48.93232,
+                "z": 51.370564
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 151.41754,
+                "y": 0,
+                "z": -51.811497
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 148.82915
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 250.10522
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "CPWall"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Factory/ConveyorPoleWall/Material/MI_CPWall",
+                      "name": "MI_CPWall"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "CPWall"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

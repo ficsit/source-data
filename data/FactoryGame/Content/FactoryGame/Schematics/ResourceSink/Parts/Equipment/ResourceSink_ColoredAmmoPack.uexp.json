@@ -1,0 +1,197 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/ResourceSink/Parts/Equipment/ResourceSink_ColoredAmmoPack.uasset",
+  "guid": {
+    "a": 3669033104,
+    "b": 1233004557,
+    "c": 2614414219,
+    "d": 1490711207
+  },
+  "exports": [
+    {
+      "name": "ResourceSink_ColoredAmmoPack_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__ResourceSink_ColoredAmmoPack_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ResourceSink_ColoredAmmoPack_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 1
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/ResourceSinkCoupon/Desc_ResourceSinkCoupon",
+                      "name": "Desc_ResourceSinkCoupon_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDependsOnSchematic": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/Research/FlowerPetals_RS/Research_FlowerPetals",
+              "name": "Research_FlowerPetals_3_C"
+            }
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "4836867E462854057616749A9F4E85A0",
+            "source_string": "Color Ammo Pack"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/ResourceSinkShopCategories/SC_RSS_Equipment",
+              "name": "SC_RSS_Equipment_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Resource/Parts/ColorCartridge/UI/ColorCartridge",
+                  "name": "ColorCartridge"
+                }
+              }
+            }
+          }
+        },
+        "mSubCategories": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Walls",
+                "name": "SC_Walls_C"
+              }
+            }
+          ]
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_ResourceSink"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockGiveItem_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockGiveItem_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockGiveItem",
+        "name": "BP_UnlockGiveItem_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockGiveItem",
+        "name": "Default__BP_UnlockGiveItem_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__ResourceSink_ColoredAmmoPack_C"
+      },
+      "properties": {
+        "mItemsToGive": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/ColorCartridge/Desc_ColorCartridge",
+                      "name": "Desc_ColorCartridge_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

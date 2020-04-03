@@ -1,0 +1,255 @@
+{
+  "file_name": "Engine/Plugins/2D/Paper2D/Content/DummySprite.uasset",
+  "guid": {
+    "a": 3937087318,
+    "b": 1157997823,
+    "c": 1982172810,
+    "d": 2790567074
+  },
+  "exports": [
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.171875,
+                        "y": 0,
+                        "z": -2.734375
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 77.34375
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 10
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 82.03125
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAllDynamic"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldDynamic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DummySprite",
+      "class": {
+        "package": "/Script/Paper2D",
+        "name": "PaperSprite"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Paper2D",
+        "name": "Default__PaperSprite"
+      },
+      "outer": null,
+      "properties": {
+        "BakedRenderData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "Vector4",
+              "value": {
+                "x": 39.84375,
+                "y": 38.28125,
+                "z": 0.8984375,
+                "w": 0.1171875
+              }
+            },
+            {
+              "type": "Vector4",
+              "value": {
+                "x": -37.5,
+                "y": 38.28125,
+                "z": 0.125,
+                "w": 0.1171875
+              }
+            },
+            {
+              "type": "Vector4",
+              "value": {
+                "x": -37.5,
+                "y": -43.75,
+                "z": 0.125,
+                "w": 0.9375
+              }
+            },
+            {
+              "type": "Vector4",
+              "value": {
+                "x": 39.84375,
+                "y": -43.75,
+                "z": 0.8984375,
+                "w": 0.9375
+              }
+            },
+            {
+              "type": "Vector4",
+              "value": {
+                "x": 39.84375,
+                "y": 38.28125,
+                "z": 0.8984375,
+                "w": 0.1171875
+              }
+            },
+            {
+              "type": "Vector4",
+              "value": {
+                "x": -37.5,
+                "y": -43.75,
+                "z": 0.125,
+                "w": 0.9375
+              }
+            }
+          ]
+        },
+        "BodySetup": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BodySetup"
+            }
+          }
+        },
+        "PixelsPerUnrealUnit": {
+          "type": "FloatProperty",
+          "value": 1.28
+        },
+        "SourceDimension": {
+          "type": "Vector2D",
+          "value": {
+            "x": 128,
+            "y": 128
+          }
+        },
+        "SourceTexture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Paper2D/PlaceholderTextures/DummySpriteTexture",
+              "name": "DummySpriteTexture"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

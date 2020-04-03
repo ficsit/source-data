@@ -1,0 +1,728 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Coral/CoralPiece_03/Mesh/CoralPiece_03_02.uasset",
+  "guid": {
+    "a": 307895668,
+    "b": 1221543340,
+    "c": 95180967,
+    "d": 491908848
+  },
+  "exports": [
+    {
+      "name": "FGFoliageResourceUserData",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGFoliageResourceUserData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGFoliageResourceUserData"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "mFoliageIdentifiers": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Chainsawable"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_VehicleDestroyable"
+              }
+            }
+          ]
+        },
+        "mPickupEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/PickupTree",
+              "name": "PickupTree"
+            }
+          }
+        },
+        "mPickupEvent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Player/Audio/SB_CharacterEssentials/Play_P_ResourcePickup_Stony",
+              "name": "Play_P_ResourcePickup_Stony"
+            }
+          }
+        },
+        "mPickupItems": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/RawResources/Stone/Desc_Stone",
+                          "name": "Desc_Stone_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 15
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 5
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 1
+                }
+              }
+            },
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Mycelia",
+                          "name": "Desc_Mycelia_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 8
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 4
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 1
+                }
+              }
+            },
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/Silica/Desc_Silica",
+                          "name": "Desc_Silica_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 10
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 5
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 1
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CoralPiece_03_02",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AssetUserData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FGFoliageResourceUserData"
+              }
+            }
+          ]
+        },
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 65.220116,
+                "y": 89.234535,
+                "z": 185.16237
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 20.09045,
+                "y": 47.41523,
+                "z": 183.93901
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 203.19327
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 733.2631
+        },
+        "ShadowLODBias": {
+          "type": "ByteProperty",
+          "value": 4
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "CoralPiece_03"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/World/Environment/Coral/CoralPiece_03/Material/CoralPiece_03_Inst",
+                      "name": "CoralPiece_03_Inst"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "CoralPiece_03"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "ConvexElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -45.48141,
+                          "y": -42.715298,
+                          "z": -1.3233527
+                        },
+                        "max": {
+                          "x": 86.191376,
+                          "y": 136.74974,
+                          "z": 369.2014
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 86.191376,
+                            "y": 105.933655,
+                            "z": 77.933624
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 86.191376,
+                            "y": 80.94141,
+                            "z": 52.941383
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 86.191376,
+                            "y": 24.566368,
+                            "z": 52.941383
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 86.191376,
+                            "y": 24.566368,
+                            "z": 338.4336
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 86.191376,
+                            "y": 105.933655,
+                            "z": 338.43362
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.48141,
+                            "y": -13.018591,
+                            "z": 23.856415
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.48141,
+                            "y": 51.85642,
+                            "z": 23.856415
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.48141,
+                            "y": 79.518585,
+                            "z": 51.518578
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.48141,
+                            "y": 79.51858,
+                            "z": 310.01862
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.48141,
+                            "y": -5.481331,
+                            "z": 310.01862
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -45.48141,
+                            "y": -13.018595,
+                            "z": 302.48135
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 11.74976,
+                            "y": 136.74974,
+                            "z": 108.74973
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 55.375282,
+                            "y": 136.74974,
+                            "z": 108.74973
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 55.375294,
+                            "y": 136.74974,
+                            "z": 330.62534
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 11.749748,
+                            "y": 136.74974,
+                            "z": 330.62537
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 18.909712,
+                            "y": -42.715298,
+                            "z": 8.340297
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -15.78471,
+                            "y": -42.715298,
+                            "z": 8.340295
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -15.784708,
+                            "y": -42.715298,
+                            "z": 272.78467
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 18.909708,
+                            "y": -42.715298,
+                            "z": 272.78467
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 13.70134,
+                            "y": 98.17371,
+                            "z": 369.2014
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 55.423576,
+                            "y": 98.173706,
+                            "z": 369.2014
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 55.423576,
+                            "y": 53.701385,
+                            "z": 369.2014
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 13.701366,
+                            "y": 53.7014,
+                            "z": 369.2014
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -20.301641,
+                            "y": -33.051647,
+                            "z": -1.3233527
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 28.573362,
+                            "y": -33.05164,
+                            "z": -1.3233527
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.92665,
+                            "y": -29.698353,
+                            "z": -1.3233527
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.926647,
+                            "y": 26.676653,
+                            "z": -1.3233527
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -20.301636,
+                            "y": 26.676651,
+                            "z": -1.3233527
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -6.5625134,
+                            "y": 118.43748,
+                            "z": 348.93753
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 74.68749,
+                            "y": 117.437546,
+                            "z": 349.93744
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -22.874985,
+                            "y": -35.62502,
+                            "z": 1.2499962
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 85.374985,
+                            "y": 23.749977,
+                            "z": 339.24997
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseComplexAsSimple"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

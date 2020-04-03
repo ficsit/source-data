@@ -1,0 +1,264 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Tree/LatanPalm/LatanPalm_01.uasset",
+  "guid": {
+    "a": 2661612645,
+    "b": 1165895442,
+    "c": 1582417583,
+    "d": 1270596295
+  },
+  "exports": [
+    {
+      "name": "LatanPalm_01",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AssetUserData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "Latan_palm1",
+                "name": "FGFoliageResourceUserData"
+              }
+            }
+          ]
+        },
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 261.93488,
+                "y": 275.2566,
+                "z": 330.46695
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 13.982361,
+                "y": 18.527649,
+                "z": 281.1336
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 381.0252
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 282.0657
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "LatanPalm"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/World/Environment/Tree/LatanPalm/Material/MI_LatanPalm_Leaves",
+                      "name": "MI_LatanPalm_Leaves"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "LatanPalm"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.7655258,
+                        "y": -1.0259857,
+                        "z": 180.64435
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 369.3011
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 44.37546
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    }
+  ]
+}

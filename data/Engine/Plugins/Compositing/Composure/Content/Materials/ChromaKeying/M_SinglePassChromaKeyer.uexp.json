@@ -1,0 +1,1492 @@
+{
+  "file_name": "Engine/Plugins/Compositing/Composure/Content/Materials/ChromaKeying/M_SinglePassChromaKeyer.uasset",
+  "guid": {
+    "a": 3853942595,
+    "b": 1126486594,
+    "c": 3318241202,
+    "d": 3045188239
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/ChromaKeying/Bias",
+              "name": "Bias"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3107822805,
+            "b": 1323959506,
+            "c": 4060245639,
+            "d": 2530232981
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "DevignetteAmount"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionStaticBoolParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionStaticBoolParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionStaticBoolParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1896733186,
+            "b": 1193306648,
+            "c": 2431291272,
+            "d": 1351312626
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "bApplyDespill"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 4.078804
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 458435733,
+            "b": 1177297016,
+            "c": 14456756,
+            "d": 2769680437
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "ChromaContrast"
+        }
+      }
+    },
+    {
+      "name": "M_SinglePassChromaKeyer",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendableOutputAlpha": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "BlendablePriority": {
+          "type": "IntProperty",
+          "value": 99
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionStaticBoolParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionVectorParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureObjectParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_PostProcess"
+        },
+        "MaterialFunctionInfos": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+                      "name": "BreakOutFloat2Components"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 740154222,
+                    "b": 1080805884,
+                    "c": 490815905,
+                    "d": 2088899114
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/ChromaKeying/MF_KeyColorMask",
+                      "name": "MF_KeyColorMask"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 3595424026,
+                    "b": 1098138798,
+                    "c": 3098077585,
+                    "d": 2051077090
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/SplitComponents",
+                      "name": "SplitComponents"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2850353185,
+                    "b": 1175854281,
+                    "c": 2720681878,
+                    "d": 1915580978
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+                      "name": "MakeFloat3"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 3869791328,
+                    "b": 1315995094,
+                    "c": 3958658996,
+                    "d": 2749893187
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions01/Chromakeying/DespillByAvg",
+                      "name": "DespillByAvg"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 998752192,
+                    "b": 1221435337,
+                    "c": 351410062,
+                    "d": 4057996190
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/SmoothStep",
+                      "name": "SmoothStep"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2870111550,
+                    "b": 1188092151,
+                    "c": 2725360316,
+                    "d": 2076783322
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/Compositing/Radial",
+                      "name": "Radial"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 3975577932,
+                    "b": 1090122186,
+                    "c": 3024643459,
+                    "d": 2343211591
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/SmoothStep",
+                      "name": "SmoothStep"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2870111550,
+                    "b": 1188092151,
+                    "c": 2725360316,
+                    "d": 2076783322
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/ChromaKeying/Bias",
+                      "name": "Bias"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2041985155,
+                    "b": 1088243047,
+                    "c": 805064604,
+                    "d": 1424651292
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2564052099,
+            "b": 1246101453,
+            "c": 2205929374,
+            "d": 2188895976
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/Compositing/Radial",
+              "name": "Radial"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions01/Chromakeying/DespillByAvg",
+              "name": "DespillByAvg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 8
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 4018857049,
+            "b": 1328368430,
+            "c": 3310358972,
+            "d": 4273905414
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "PreBlurSamples"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.190385
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1994674819,
+            "b": 1288766616,
+            "c": 55443599,
+            "d": 2415793421
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "ChromaBound"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "TextureObject": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 63
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/SmoothStep",
+              "name": "SmoothStep"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 631642934,
+            "b": 1277337394,
+            "c": 1468432530,
+            "d": 3975477901
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "BlackClip"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.65
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 2891278399,
+            "b": 1315205479,
+            "c": 2902107280,
+            "d": 2001847362
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "DevignetteOuter"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3396903526,
+            "b": 1229532682,
+            "c": 2496959153,
+            "d": 1909160871
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "PreBlurKernalSize"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureObjectParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureObjectParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 4106605701,
+            "b": 1217402528,
+            "c": 1723678873,
+            "d": 13948377
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "LinearColorPlate"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.5
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3848683357,
+            "b": 1340546583,
+            "c": 2400894895,
+            "d": 3290482591
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "AlphaBias"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 2248154669,
+            "b": 1089360731,
+            "c": 2282545584,
+            "d": 277788844
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "PrevKeyerResult"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/EngineResources/WhiteSquareTexture",
+              "name": "WhiteSquareTexture"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1124548290,
+            "b": 1188139509,
+            "c": 3298352280,
+            "d": 156514130
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "LinearColorPlate"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/ChromaKeying/MF_KeyColorMask",
+              "name": "MF_KeyColorMask"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1721235147,
+            "b": 1145947199,
+            "c": 712673722,
+            "d": 2657436364
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "WhiteClip"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 740145397,
+            "b": 1298703458,
+            "c": 4118305944,
+            "d": 2026479305
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "LumaLogContrast"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.25
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1996193139,
+            "b": 1302661791,
+            "c": 331260821,
+            "d": 1266628653
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "DevignetteInner"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 3
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 446785655,
+            "b": 1135866645,
+            "c": 878383037,
+            "d": 4031586104
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "LumaLogBound"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionVectorParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionVectorParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionVectorParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassChromaKeyer"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 2539508123,
+            "b": 1166429263,
+            "c": 199658926,
+            "d": 1841603879
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassChromaKeyer"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "KeyColor"
+        }
+      }
+    }
+  ]
+}

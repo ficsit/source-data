@@ -1,0 +1,252 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/Rifle/Mesh/SpaceRifle_Magazine_static.uasset",
+  "guid": {
+    "a": 32433603,
+    "b": 1090027655,
+    "c": 603141817,
+    "d": 3894079672
+  },
+  "exports": [
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpaceRifle_Magazine_static",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 8.260141,
+                "y": 23.810167,
+                "z": 3.9938455
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 0.005473137,
+                "y": 0.04321289,
+                "z": 3.9899728
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 24.036406
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 149.22543
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "SpaceRifle"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Equipment/Rifle/Material/RifleMk1_Inst",
+                      "name": "RifleMk1_Inst"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "SpaceRifle"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.0047593117,
+                        "y": 0.03860092,
+                        "z": 3.4695418
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 38.786148
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 9.811261
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0.000020490566,
+                        "yaw": -8.567821,
+                        "roll": 89.99982
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

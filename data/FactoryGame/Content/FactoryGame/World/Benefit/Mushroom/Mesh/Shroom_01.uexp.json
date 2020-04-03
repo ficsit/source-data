@@ -1,0 +1,312 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Benefit/Mushroom/Mesh/Shroom_01.uasset",
+  "guid": {
+    "a": 1466952620,
+    "b": 1091068640,
+    "c": 3768921250,
+    "d": 3302258175
+  },
+  "exports": [
+    {
+      "name": "Shroom_01",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AssetUserData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FGFoliageResourceUserData"
+              }
+            }
+          ]
+        },
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 26.001526,
+                "y": 27.131897,
+                "z": 55.98992
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 0.4216919,
+                "y": 5.523239,
+                "z": 45.904613
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 58.852596
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 225.53415
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "DesertShroom"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/World/Benefit/Mushroom/Material/Shroom_01",
+                      "name": "Shroom_01"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "DesertShroom"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "FGFoliageResourceUserData",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGFoliageResourceUserData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGFoliageResourceUserData"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "mFoliageIdentifiers": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Pickupable"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Chainsawable"
+              }
+            }
+          ]
+        },
+        "mPickupEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/PickupFoliage",
+              "name": "PickupFoliage"
+            }
+          }
+        },
+        "mPickupEvent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Audio/Play_W_Pickup_Consumable_Shroom",
+              "name": "Play_W_Pickup_Consumable_Shroom"
+            }
+          }
+        },
+        "mPickupItems": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Mycelia",
+                          "name": "Desc_Mycelia_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 1
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 1
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    }
+  ]
+}

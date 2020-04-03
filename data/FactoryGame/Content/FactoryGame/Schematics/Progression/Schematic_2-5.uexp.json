@@ -1,0 +1,227 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Progression/Schematic_2-5.uasset",
+  "guid": {
+    "a": 3556292215,
+    "b": 1224306923,
+    "c": 3066940821,
+    "d": 3724763535
+  },
+  "exports": [
+    {
+      "name": "Schematic_2-5_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Schematic_2-5_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Schematic_2-5_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 400
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Cement/Desc_Cement",
+                      "name": "Desc_Cement_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 500
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Wire/Desc_Wire",
+                      "name": "Desc_Wire_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 200
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronRod/Desc_IronRod",
+                      "name": "Desc_IronRod_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 200
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronPlate/Desc_IronPlate",
+                      "name": "Desc_IronPlate_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "3B9AA5DD46AC952B7E1CE88113303D82",
+            "source_string": "Resource Sink Bonus Program"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Logistics",
+              "name": "SC_Logistics_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/TradingPost/UI/SchematicIcons/SchematicIcon_Equipment",
+                  "name": "SchematicIcon_Equipment"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 2
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_Milestone"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_2-5_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_ResourceSink",
+                "name": "Recipe_ResourceSink_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_ResourceSinkShop",
+                "name": "Recipe_ResourceSinkShop_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

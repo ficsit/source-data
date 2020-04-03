@@ -1,0 +1,412 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/Cup/Mesh/SK_Cup_Physics.uasset",
+  "guid": {
+    "a": 296806209,
+    "b": 1327266559,
+    "c": 3766767488,
+    "d": 2250863852
+  },
+  "exports": [
+    {
+      "name": "SK_Cup_Physics",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsAsset"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsAsset"
+      },
+      "outer": null,
+      "properties": {
+        "BoundsBodies": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            1
+          ]
+        },
+        "ConstraintSetup": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            }
+          ]
+        },
+        "SkeletalBodySetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            }
+          ]
+        },
+        "ThumbnailInfo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SK_Cup_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "coffee"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "handle"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "UserConstraint"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": -6.290129,
+                "z": 0.064172775
+              }
+            },
+            "PriAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 1.7881393e-7,
+                "y": 0,
+                "z": 0.9999998
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "AngularDrive": {
+                  "type": "AngularDriveConstraint",
+                  "value": {
+                    "AngularDriveMode": {
+                      "type": "ByteProperty",
+                      "value": "EAngularDriveMode::TwistAndSwing"
+                    },
+                    "SlerpDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 500
+                        }
+                      }
+                    },
+                    "SwingDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 500
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "TwistDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 500
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 60
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 60
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "LinearDrive": {
+                  "type": "LinearDriveConstraint",
+                  "value": {
+                    "XDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "YDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ZDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "LinearLimit": {
+                  "type": "LinearConstraint",
+                  "value": {
+                    "Limit": {
+                      "type": "FloatProperty",
+                      "value": 2
+                    },
+                    "XMotion": {
+                      "type": "ByteProperty",
+                      "value": "LCM_Limited"
+                    },
+                    "YMotion": {
+                      "type": "ByteProperty",
+                      "value": "LCM_Limited"
+                    },
+                    "ZMotion": {
+                      "type": "ByteProperty",
+                      "value": "LCM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    }
+                  }
+                }
+              }
+            },
+            "SecAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": -0.99999964,
+                "z": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SK_Cup_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphereElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphereElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.0000082751085,
+                        "y": -6.069722,
+                        "z": -2.8331833
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 3.6112587
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "handle"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Kinematic"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SK_Cup_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 0.5442865
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 5.143351
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 5.143351
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "coffee"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    }
+  ]
+}

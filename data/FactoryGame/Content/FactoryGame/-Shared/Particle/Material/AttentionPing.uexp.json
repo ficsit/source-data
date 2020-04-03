@@ -1,0 +1,125 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/-Shared/Particle/Material/AttentionPing.uasset",
+  "guid": {
+    "a": 3244228252,
+    "b": 1162833835,
+    "c": 3033946797,
+    "d": 3997848030
+  },
+  "exports": [
+    {
+      "name": "AttentionPing",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 1497106,
+            "b": 1199038034,
+            "c": 173483428,
+            "d": 3947658290
+          }
+        },
+        "bUsedWithMeshParticles": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithParticleSprites": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "AttentionPing"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "AttentionPing"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/-Shared/Particle/Texture/ping",
+              "name": "ping"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

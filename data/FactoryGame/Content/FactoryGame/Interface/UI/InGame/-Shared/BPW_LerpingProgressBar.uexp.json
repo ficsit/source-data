@@ -1,0 +1,1222 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/-Shared/BPW_LerpingProgressBar.uasset",
+  "guid": {
+    "a": 3281726800,
+    "b": 1195630313,
+    "c": 668885658,
+    "d": 4088701395
+  },
+  "exports": [
+    {
+      "name": "Default__BPW_LerpingProgressBar_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {
+                "DefaultValue": {
+                  "type": "FloatProperty",
+                  "value": 3.4028235e+38
+                },
+                "KeyHandlesToIndices": {
+                  "type": "KeyHandleMap",
+                  "value": null
+                },
+                "Keys": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "RichCurveKey",
+                      "value": {
+                        "interp_mode": 2,
+                        "tangent_mode": 2,
+                        "tangent_weight_mode": 0,
+                        "time": -0,
+                        "arrive_tangent": 0,
+                        "arrive_tangent_weight": 0,
+                        "leave_tangent": 0,
+                        "leave_tangent_weight": 0
+                      }
+                    },
+                    {
+                      "type": "RichCurveKey",
+                      "value": {
+                        "interp_mode": 0,
+                        "tangent_mode": 0,
+                        "tangent_weight_mode": 0,
+                        "time": 1.84388e-40,
+                        "arrive_tangent": 1,
+                        "arrive_tangent_weight": 1,
+                        "leave_tangent": 0,
+                        "leave_tangent_weight": 0
+                      }
+                    }
+                  ]
+                },
+                "PostInfinityExtrap": {
+                  "type": "ByteProperty",
+                  "value": "RCCE_Constant"
+                },
+                "PreInfinityExtrap": {
+                  "type": "ByteProperty",
+                  "value": "RCCE_Constant"
+                }
+              }
+            },
+            "ExternalCurve": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            }
+          }
+        },
+        "mLerpDuration": {
+          "type": "FloatProperty",
+          "value": 0.3
+        },
+        "mLerpTimerHandle": {
+          "type": "TimerHandle",
+          "value": {
+            "Handle": {
+              "type": "UInt64Property",
+              "value": 0
+            }
+          }
+        },
+        "mLerpUpdateTime": {
+          "type": "FloatProperty",
+          "value": 0.01
+        },
+        "mStyle": {
+          "type": "ProgressBarStyle",
+          "value": {
+            "BackgroundImage": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 32,
+                    "y": 32
+                  }
+                },
+                "ImageType": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushImageType::NoImage"
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    }
+                  }
+                },
+                "Mirroring": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushMirrorType::NoMirror"
+                },
+                "ResourceName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "Tiling": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushTileType::NoTile"
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "ColorUseRule": {
+                      "type": "ByteProperty",
+                      "value": "ESlateColorStylingMode::UseColor_Specified"
+                    },
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1
+                      }
+                    }
+                  }
+                },
+                "UVRegion": {
+                  "type": "Box2D",
+                  "value": {
+                    "is_valid": 0,
+                    "min": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "max": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  }
+                },
+                "bIsDynamicallyLoaded": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            "FillImage": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 32,
+                    "y": 32
+                  }
+                },
+                "ImageType": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushImageType::NoImage"
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    }
+                  }
+                },
+                "Mirroring": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushMirrorType::NoMirror"
+                },
+                "ResourceName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "Tiling": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushTileType::NoTile"
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "ColorUseRule": {
+                      "type": "ByteProperty",
+                      "value": "ESlateColorStylingMode::UseColor_Specified"
+                    },
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.132868,
+                        "g": 0.132868,
+                        "b": 0.135633,
+                        "a": 1
+                      }
+                    }
+                  }
+                },
+                "UVRegion": {
+                  "type": "Box2D",
+                  "value": {
+                    "is_valid": 0,
+                    "min": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "max": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  }
+                },
+                "bIsDynamicallyLoaded": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            "MarqueeImage": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 32,
+                    "y": 32
+                  }
+                },
+                "ImageType": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushImageType::NoImage"
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    }
+                  }
+                },
+                "Mirroring": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushMirrorType::NoMirror"
+                },
+                "ResourceName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "Tiling": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushTileType::NoTile"
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "ColorUseRule": {
+                      "type": "ByteProperty",
+                      "value": "ESlateColorStylingMode::UseColor_Specified"
+                    },
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1
+                      }
+                    }
+                  }
+                },
+                "UVRegion": {
+                  "type": "Box2D",
+                  "value": {
+                    "is_valid": 0,
+                    "min": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "max": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  }
+                },
+                "bIsDynamicallyLoaded": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mLastPercent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mCurve",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ForceProgressBarWrap",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mSetPercent"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Lerp_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select1_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_BPW_LerpingProgressBar",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "LerpBar",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BPW_LerpingProgressBar_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mProgressBar": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mProgressBar"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Add_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFloatCurveValue_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mStyle",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PreConstruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "PreConstruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mLerpT",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mProgressBar",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ProgressBar"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ProgressBar"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mProgressBar"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mSetPercent"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Divide_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mProgressBar",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ProgressBar"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ProgressBar"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mLerpTimerHandle",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BPW_LerpingProgressBar_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/-Shared/BPW_LerpingProgressBar.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Destruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Destruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_FloatFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mNewPercent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mProgressBar",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mForceProgressBarWrap",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Percent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mLerpUpdateTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mStartPercentage",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_LerpingProgressBar"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSetPercent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mLerpDuration",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mSetPercent"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_LerpingProgressBar_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mProgressBar"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

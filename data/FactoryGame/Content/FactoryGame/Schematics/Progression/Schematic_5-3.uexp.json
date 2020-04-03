@@ -1,0 +1,222 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Progression/Schematic_5-3.uasset",
+  "guid": {
+    "a": 2940500742,
+    "b": 1164210288,
+    "c": 1554489006,
+    "d": 1579283094
+  },
+  "exports": [
+    {
+      "name": "Schematic_5-3_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Schematic_5-3_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Schematic_5-3_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 200
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/SteelPlate/Desc_SteelPlate",
+                      "name": "Desc_SteelPlate_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 100
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/SteelPipe/Desc_SteelPipe",
+                      "name": "Desc_SteelPipe_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 500
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Cement/Desc_Cement",
+                      "name": "Desc_Cement_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "484BC5CE497683F511C5CC933D47FAA7",
+            "source_string": "Logistics Mk.3"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Logistics",
+              "name": "SC_Logistics_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/TradingPost/UI/SchematicIcons/SchematicIcon_Logistics",
+                  "name": "SchematicIcon_Logistics"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 4
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_Milestone"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_5-3_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_StorageContainerMk2",
+                "name": "Recipe_StorageContainerMk2_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk3",
+                "name": "Recipe_ConveyorBeltMk3_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorLiftMk3",
+                "name": "Recipe_ConveyorLiftMk3_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_PipeSupportStackable",
+                "name": "Recipe_PipeSupportStackable_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

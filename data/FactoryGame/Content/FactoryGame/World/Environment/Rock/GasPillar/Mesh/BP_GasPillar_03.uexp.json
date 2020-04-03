@@ -1,0 +1,639 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Rock/GasPillar/Mesh/BP_GasPillar_03.uasset",
+  "guid": {
+    "a": 2646028632,
+    "b": 1328349056,
+    "c": 1013309355,
+    "d": 4136718178
+  },
+  "exports": [
+    {
+      "name": "OverlapBox",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SphereComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_GasPillar_C",
+        "name": "OverlapBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_GasPillar_03_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Mesh"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Mesh",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_GasPillar_C",
+        "name": "Mesh"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_GasPillar_03_C"
+      },
+      "properties": {
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Rock/GasPillar/Mesh/GasPillar_03",
+              "name": "GasPillar_03"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__BP_GasPillar_03_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/World/Environment/Rock/GasPillar/Mesh/BP_GasPillar",
+        "name": "Default__BP_GasPillar_C"
+      },
+      "outer": null,
+      "properties": {
+        "PrimaryActorTick": {
+          "type": "ActorTickFunction",
+          "value": {
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RemoteRole": {
+          "type": "ByteProperty",
+          "value": "ROLE_SimulatedProxy"
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Mesh"
+            }
+          }
+        },
+        "mDotComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DotComponent"
+            }
+          }
+        },
+        "mMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Mesh"
+            }
+          }
+        },
+        "mOverlapCollision": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlapBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DotComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGDotComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_GasPillar_C",
+        "name": "DotComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_GasPillar_03_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlapBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "properties": {
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "DroppingGas_02",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "GasPuff_03",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_GasPillar_03_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/World/Environment/Rock/GasPillar/Mesh/BP_GasPillar",
+        "name": "BP_GasPillar_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GasPuff_03_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleSystemComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleSystemComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "properties": {
+        "CachedMaxDrawDistance": {
+          "type": "FloatProperty",
+          "value": 15000
+        },
+        "LDMaxDrawDistance": {
+          "type": "FloatProperty",
+          "value": 15000
+        },
+        "PrimaryComponentTick": {
+          "type": "ActorComponentTickFunction",
+          "value": {
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -80.08677,
+            "y": 33.070766,
+            "z": 763.1804
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 84.260506,
+            "yaw": 83.27857,
+            "roll": -87.81847
+          }
+        },
+        "Template": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Rock/GasPillar/Particle/GasPuff_01",
+              "name": "GasPuff_01"
+            }
+          }
+        },
+        "TranslucencySortPriority": {
+          "type": "IntProperty",
+          "value": 3
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3424369786,
+            "b": 1076560083,
+            "c": 4230696119,
+            "d": 4083460295
+          }
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "ParticleSystemComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DroppingGas_02_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DroppingGas_02"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "Mesh"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1194860977,
+            "b": 1125874881,
+            "c": 1375963272,
+            "d": 3459024454
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "ParticleSystemComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "GasPuff_03_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "GasPuff_03"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "Mesh"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 338456628,
+            "b": 1210466335,
+            "c": 1101763478,
+            "d": 626503047
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "DroppingGas_02_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleSystemComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleSystemComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_GasPillar_03_C"
+      },
+      "properties": {
+        "CachedMaxDrawDistance": {
+          "type": "FloatProperty",
+          "value": 15000
+        },
+        "LDMaxDrawDistance": {
+          "type": "FloatProperty",
+          "value": 15000
+        },
+        "PrimaryComponentTick": {
+          "type": "ActorComponentTickFunction",
+          "value": {
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -62.367996,
+            "y": 16.605091,
+            "z": 713.414
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        "Template": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Rock/GasPillar/Particle/DroppingGas_01",
+              "name": "DroppingGas_01"
+            }
+          }
+        },
+        "TranslucencySortPriority": {
+          "type": "IntProperty",
+          "value": 3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/ResourceSink/ResourceSink_StatueSilverPioneer.uasset",
+  "guid": {
+    "a": 2328072089,
+    "b": 1109002774,
+    "c": 1289458313,
+    "d": 753320411
+  },
+  "exports": [
+    {
+      "name": "Default__ResourceSink_StatueSilverPioneer_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ResourceSink_StatueSilverPioneer_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/ResourceSinkCoupon/Desc_ResourceSinkCoupon",
+                      "name": "Desc_ResourceSinkCoupon_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "36A85C9B498909932C5CFBB56B190AA7",
+            "source_string": "Pretty Good Pioneering"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/ResourceSinkShopCategories/SC_RSS_Statues",
+              "name": "SC_RSS_Statues_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Building/Decor/Statues/UI/Award_Statue_Character_Silver",
+                  "name": "Award_Statue_Character_Silver"
+                }
+              }
+            }
+          }
+        },
+        "mSubCategories": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Schematics/ResourceSinkShopCategories/SC_RSS_Pioneering",
+                "name": "SC_RSS_Pioneering_C"
+              }
+            }
+          ]
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_ResourceSink"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockGiveItem_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockGiveItem_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockGiveItem",
+        "name": "BP_UnlockGiveItem_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockGiveItem",
+        "name": "Default__BP_UnlockGiveItem_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__ResourceSink_StatueSilverPioneer_C"
+      },
+      "properties": {
+        "mItemsToGive": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 1
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Equipment/Decoration/Desc_CharacterClap_Statue",
+                      "name": "Desc_CharacterClap_Statue_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ResourceSink_StatueSilverPioneer_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    }
+  ]
+}

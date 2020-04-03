@@ -1,0 +1,5013 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Spitter/BT_Spitter.uasset",
+  "guid": {
+    "a": 1609777403,
+    "b": 1129589146,
+    "c": 1980125070,
+    "d": 1811006455
+  },
+  "exports": [
+    {
+      "name": "BTTask_Wait",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_Wait"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_Wait"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "RandomDeviation": {
+          "type": "FloatProperty",
+          "value": 4
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "WaitTime": {
+          "type": "FloatProperty",
+          "value": 3
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Do we have a spline?"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopMovement_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_FocusOnTarget_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_EnemyAttackChoice_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "RangedAttack"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTS_FindTarget_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_FindTarget",
+        "name": "BTS_FindTarget_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_FindTarget",
+        "name": "Default__BTS_FindTarget_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bShowPropertyDetails": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mFinalGoalBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "mHasPathBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "HasPath"
+            }
+          }
+        },
+        "mNeedFullPath": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mTargetLocationBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_FindNextSplinePoint_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FindNextSplinePoint",
+        "name": "BTT_FindNextSplinePoint_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FindNextSplinePoint",
+        "name": "Default__BTT_FindNextSplinePoint_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSucess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "SplineIndexKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SplineIndex"
+            }
+          }
+        },
+        "SplineKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_MoveWithinAttackRange_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_MoveWithinAttackRange",
+        "name": "BTT_MoveWithinAttackRange_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_MoveWithinAttackRange",
+        "name": "Default__BTT_MoveWithinAttackRange_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bShowPropertyDetails": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mAttackClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Attack_Spitter",
+              "name": "Attack_Spitter_C"
+            }
+          }
+        },
+        "mTargetBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "Spline is Is Set"
+        },
+        "IntValue": {
+          "type": "IntProperty",
+          "value": -1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_AssignSplineKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_AssignSplineKey",
+        "name": "BTT_AssignSplineKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_AssignSplineKey",
+        "name": "Default__BTT_AssignSplineKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "SplineKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 900
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "LastKnownTargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    },
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Root"
+        },
+        "Services": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_IsEnemyInRange_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_FindTarget_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_DistanceBetweenKeys_C"
+              }
+            }
+          ]
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "StartAttacking"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "Spline is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_RunEQSQuery",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RunEQSQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RunEQSQuery"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "EQSQueryBlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {}
+        },
+        "EQSRequest": {
+          "type": "EQSParametrizedQueryExecutionRequest",
+          "value": {
+            "QueryTemplate": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/AI/EQS/EQS_CloseToTarget",
+                  "name": "EQS_CloseToTarget"
+                }
+              }
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ClearFocus_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "TacticalRepositioning"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "HasPath"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "HasPath is Is Set"
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Has Target"
+        },
+        "NotifyObserver": {
+          "type": "ByteProperty",
+          "value": "EBTBlackboardRestart::ValueChange"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "FinalGoal is Is Not Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_FindNextSplinePoint_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "LastKnownTargetLocation"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "LastKnownTargetLocation is Is Set"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 900
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetVectorKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetVectorKey",
+        "name": "BTT_SetVectorKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetVectorKey",
+        "name": "Default__BTT_SetVectorKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mVectorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "LastKnownTargetLocation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_StopMovement_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "BTT_StopMovement_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "Default__BTT_StopMovement_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ClearFocus_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_Wait"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_AssignSplineKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "BackupIdle"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTTask_RotateToFaceBBEntry",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RotateToFaceBBEntry"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RotateToFaceBBEntry"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_MoveWithinAttackRange_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopPanic_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_EnemyAttackChoice_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_EnemyAttackChoice",
+        "name": "BTT_EnemyAttackChoice_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_EnemyAttackChoice",
+        "name": "Default__BTT_EnemyAttackChoice_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "NeedsMoving"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mAttack2WaitAmount": {
+          "type": "IntProperty",
+          "value": 4
+        },
+        "mAttackClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Attack_Spitter",
+              "name": "Attack_Spitter_C"
+            }
+          }
+        },
+        "mAttackClass2": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Attack_BigSpitter",
+              "name": "Attack_BigSpitter_C"
+            }
+          }
+        },
+        "mChanceToDoFirstAttack": {
+          "type": "FloatProperty",
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "name": "BTT_FocusOnTarget_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FocusOnTarget",
+        "name": "BTT_FocusOnTarget_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FocusOnTarget",
+        "name": "Default__BTT_FocusOnTarget_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "FinalGoalBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ClearFocus_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "FinalGoal is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_ClearFocus_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "BTT_ClearFocus_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "Default__BTT_ClearFocus_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 3000
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetDistance"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "TargetDistance Is Less Than 1000.000000"
+        },
+        "FloatValue": {
+          "type": "FloatProperty",
+          "value": 1000
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 2
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_ClearFocus_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "BTT_ClearFocus_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "Default__BTT_ClearFocus_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_EnemyAttack_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_EnemyAttack",
+        "name": "BTT_EnemyAttack_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_EnemyAttack",
+        "name": "Default__BTT_EnemyAttack_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mAttackClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Attack_MeleeSpitter",
+              "name": "Attack_MeleeSpitter_C"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 1500
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "InRangeOfTarget"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "InRangeOfTarget is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_ClearFocus_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "BTT_ClearFocus_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "Default__BTT_ClearFocus_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_ClearFocus_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "BTT_ClearFocus_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "Default__BTT_ClearFocus_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_FocusOnTarget_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FocusOnTarget",
+        "name": "BTT_FocusOnTarget_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FocusOnTarget",
+        "name": "Default__BTT_FocusOnTarget_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "FinalGoalBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BT_Spitter",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BehaviorTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BehaviorTree"
+      },
+      "outer": null,
+      "properties": {
+        "BlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/BB_Spitter",
+              "name": "BB_Spitter"
+            }
+          }
+        },
+        "RootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "InRangeOfTarget"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "InRangeOfTarget is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTS_IsEnemyInRange_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_IsEnemyInRange",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_IsEnemyInRange",
+        "name": "Default__BTS_IsEnemyInRange_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bShowPropertyDetails": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mAttackClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Attack_Spitter",
+              "name": "Attack_Spitter_C"
+            }
+          }
+        },
+        "mEnemyBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "mIsInRangeBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "InRangeOfTarget"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find Random Location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 900
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "FinalGoal is Is Not Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::Self"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 350
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 2000
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 900
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ClearFocus_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetVectorKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_StopPanic_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "BTT_StopPanic_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "Default__BTT_StopPanic_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "DidPanicBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "AttackPatternIndex"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_FocusOnTarget_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_EnemyAttack_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ClearFocus_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "MeleeAttack"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RotateToFaceBBEntry"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RunEQSQuery"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "DoPanic is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTS_DistanceBetweenKeys_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_DistanceBetweenKeys",
+        "name": "BTS_DistanceBetweenKeys_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_DistanceBetweenKeys",
+        "name": "Default__BTS_DistanceBetweenKeys_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        },
+        "mBBKeyA": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "mBBKeyB": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "FinalGoal"
+            }
+          }
+        },
+        "mDistanceBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetDistance"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_ClearFocus_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "BTT_ClearFocus_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "Default__BTT_ClearFocus_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_Spitter"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_Spitter"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

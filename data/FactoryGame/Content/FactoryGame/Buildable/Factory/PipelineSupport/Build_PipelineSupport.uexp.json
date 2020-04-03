@@ -1,0 +1,951 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/PipelineSupport/Build_PipelineSupport.uasset",
+  "guid": {
+    "a": 818214381,
+    "b": 1096548142,
+    "c": 1318012040,
+    "d": 3742377141
+  },
+  "exports": [
+    {
+      "name": "Box_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BoxComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {
+        "AreaClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/NavigationSystem",
+              "name": "NavArea_Obstacle"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockOnlyBuildGun"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Box",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "RootComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildablePipelineSupport",
+        "name": "RootComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "BoxComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Box_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Box"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "RootComponent"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 839545095,
+            "b": 1092775015,
+            "c": 1266926994,
+            "d": 3971966321
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "PipelineSupport_static_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        },
+        "ComponentTags": {
+          "type": "ArrayProperty",
+          "value": [
+            "PoleHeight"
+          ]
+        },
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": -100
+          }
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Factory/PipelineSupport/Mesh/PipelineSupport_static",
+              "name": "PipelineSupport_static"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Build_PipelineSupport_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGBuildablePipelineSupport"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Build_PipelineSupport"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SupportMeshCompProxyHolder",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGColoredInstanceMeshProxy"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildablePipelineSupport",
+        "name": "SupportMeshCompProxyHolder"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_PipelineSupport_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PipelineSupportSnap_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGPipeConnectionComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGPipeConnectionComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          }
+        },
+        "mPipeConnectionType": {
+          "type": "EPipeConnectionType",
+          "value": "EPipeConnectionType::PCT_SNAP_ONLY"
+        }
+      }
+    },
+    {
+      "name": "PlayConstructSound",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PipelineSupportSnap",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PipelineSupport_static",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGPipeConnectionComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PipelineSupportSnap_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "PipelineSupportSnap"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1590406978,
+            "b": 1100739414,
+            "c": 2252571794,
+            "d": 3812530861
+          }
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "StaticMeshComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PipelineSupport_static_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "PipelineSupport_static"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "RootComponent"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3284826561,
+            "b": 1199259085,
+            "c": 3741232308,
+            "d": 3591959527
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Default__Build_PipelineSupport_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGBuildablePipelineSupport"
+      },
+      "outer": null,
+      "properties": {
+        "NetUpdateFrequency": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "PrimaryActorTick": {
+          "type": "ActorTickFunction",
+          "value": {
+            "bAllowTickOnDedicatedServer": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "816B212E4976D2B0F380BBA9241B76AA",
+            "source_string": "Can be used as a connection for pipelines. The height of the support can be adjusted.\r\nUseful to route pipelines in a more controlled manner and over long distances."
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "D05C9AC34F610E44976D04B0BF41A463",
+            "source_string": "Pipeline Support"
+          }
+        },
+        "mFactoryTickFunction": {
+          "type": "FactoryTickFunction",
+          "value": {
+            "bAllowTickOnDedicatedServer": {
+              "type": "BoolProperty",
+              "value": false
+            },
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "mHologramClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGPipelineSupportHologram"
+            }
+          }
+        },
+        "mSupportComponentDefaultMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SupportMeshCompProxyHolder"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_Build_PipelineSupport",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UserConstructionScript",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "UserConstructionScript"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2440110888,
+            "b": 1253252959,
+            "c": 1068251814,
+            "d": 3498618052
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_PipelineSupport_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

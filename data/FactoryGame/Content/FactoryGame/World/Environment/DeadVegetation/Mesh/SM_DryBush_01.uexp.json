@@ -1,0 +1,378 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/DeadVegetation/Mesh/SM_DryBush_01.uasset",
+  "guid": {
+    "a": 222855320,
+    "b": 1211955847,
+    "c": 3849977779,
+    "d": 2670832112
+  },
+  "exports": [
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphereElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphereElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 14.954681,
+                        "y": 32.534637,
+                        "z": 38.234512
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 72.996185
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "FGFoliageResourceUserData",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGFoliageResourceUserData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGFoliageResourceUserData"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "mFoliageIdentifiers": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Chainsawable"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_VehicleDestroyable"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Pickupable"
+              }
+            }
+          ]
+        },
+        "mPickupEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/PickupTree",
+              "name": "PickupTree"
+            }
+          }
+        },
+        "mPickupEvent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Audio/FoliagePickup/Play_ResourcePickup_Crackly",
+              "name": "Play_ResourcePickup_Crackly"
+            }
+          }
+        },
+        "mPickupItems": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Wood",
+                          "name": "Desc_Wood_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 2
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 1
+                }
+              }
+            }
+          ]
+        },
+        "mVehicleDestroyedEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/PickupTree",
+              "name": "PickupTree"
+            }
+          }
+        },
+        "mVehicleDestroyedEvent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Audio/FoliagePickup/Play_ResourcePickup_Crackly",
+              "name": "Play_ResourcePickup_Crackly"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SM_DryBush_01",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AssetUserData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FGFoliageResourceUserData"
+              }
+            }
+          ]
+        },
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 185.611,
+                "y": 192.69235,
+                "z": 120.61286
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 14.954681,
+                "y": 32.534637,
+                "z": 71.0503
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 212.71744
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 485.39575
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "lambert4"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/World/Environment/DeadVegetation/Material/MI_DryBush_01",
+                      "name": "MI_DryBush_01"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "lambert4"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

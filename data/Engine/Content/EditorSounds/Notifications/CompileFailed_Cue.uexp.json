@@ -1,0 +1,86 @@
+{
+  "file_name": "Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset",
+  "guid": {
+    "a": 3651375980,
+    "b": 1338131851,
+    "c": 2389246637,
+    "d": 3279687968
+  },
+  "exports": [
+    {
+      "name": "CompileFailed_Cue",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundCue"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundCue"
+      },
+      "outer": null,
+      "properties": {
+        "ConcurrencyOverrides": {
+          "type": "SoundConcurrencySettings",
+          "value": {
+            "ResolutionRule": {
+              "type": "ByteProperty",
+              "value": "EMaxConcurrentResolutionRule::PreventNew"
+            }
+          }
+        },
+        "Duration": {
+          "type": "FloatProperty",
+          "value": 0.46620834
+        },
+        "FirstNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SoundNodeWavePlayer"
+            }
+          }
+        },
+        "MaxDistance": {
+          "type": "FloatProperty",
+          "value": 2097152
+        },
+        "VolumeMultiplier": {
+          "type": "FloatProperty",
+          "value": 0.4
+        },
+        "bOverrideConcurrency": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SoundNodeWavePlayer",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundNodeWavePlayer"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundNodeWavePlayer"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CompileFailed_Cue"
+      },
+      "properties": {
+        "SoundWaveAssetPtr": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Engine/EditorSounds/Notifications/CompileFailed.CompileFailed",
+            "sub_path": ""
+          }
+        }
+      }
+    }
+  ]
+}

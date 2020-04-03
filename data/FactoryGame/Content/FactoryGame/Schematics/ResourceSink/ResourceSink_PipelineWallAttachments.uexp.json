@@ -1,0 +1,182 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/ResourceSink/ResourceSink_PipelineWallAttachments.uasset",
+  "guid": {
+    "a": 2151197565,
+    "b": 1078091627,
+    "c": 2099650708,
+    "d": 4000516707
+  },
+  "exports": [
+    {
+      "name": "ResourceSink_PipelineWallAttachments_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__ResourceSink_PipelineWallAttachments_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ResourceSink_PipelineWallAttachments_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 3
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/ResourceSinkCoupon/Desc_ResourceSinkCoupon",
+                      "name": "Desc_ResourceSinkCoupon_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "87558F2749F4209B27757289D3E8FC33",
+            "source_string": "Pipeline Wall Attachments"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/ResourceSinkShopCategories/SC_RSS_Attachments",
+              "name": "SC_RSS_Attachments_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/PipelineSupportWallHole/UI/PipeSupportWallHole",
+                  "name": "PipeSupportWallHole"
+                }
+              }
+            }
+          }
+        },
+        "mSubCategories": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Schematics/ResourceSinkShopCategories/SC_RSS_Walls",
+                "name": "SC_RSS_Walls_C"
+              }
+            }
+          ]
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_ResourceSink"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__ResourceSink_PipelineWallAttachments_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_PipeSupportWall",
+                "name": "Recipe_PipeSupportWall_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_PipeSupportWallHole",
+                "name": "Recipe_PipeSupportWallHole_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

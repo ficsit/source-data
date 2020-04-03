@@ -1,0 +1,214 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Tutorial/Schematic_Tutorial4.uasset",
+  "guid": {
+    "a": 2900048656,
+    "b": 1097835438,
+    "c": 1248702124,
+    "d": 149950607
+  },
+  "exports": [
+    {
+      "name": "Schematic_Tutorial4_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Schematic_Tutorial4_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Schematic_Tutorial4_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 75
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronRod/Desc_IronRod",
+                      "name": "Desc_IronRod_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Cable/Desc_Cable",
+                      "name": "Desc_Cable_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 20
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Cement/Desc_Cement",
+                      "name": "Desc_Cement_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDependsOnSchematic": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/Tutorial/Schematic_Tutorial3",
+              "name": "Schematic_Tutorial3_C"
+            }
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "F49F639743292DAB07C13F9B38B023B7",
+            "source_string": "Hub Upgrade 5"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Logistics",
+              "name": "SC_Logistics_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/TradingPost/UI/SchematicIcons/SchematicIcon_Hub",
+                  "name": "SchematicIcon_Hub"
+                }
+              }
+            }
+          }
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_Tutorial"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_Tutorial4_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_MinerMk1",
+                "name": "Recipe_MinerMk1_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_StorageContainerMk1",
+                "name": "Recipe_StorageContainerMk1_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5489 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/BT_SpaceGiraffe.uasset",
+  "guid": {
+    "a": 265069432,
+    "b": 1283903493,
+    "c": 3633148859,
+    "d": 342686024
+  },
+  "exports": [
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "DoPanic is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::Both"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 10000
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_AssignSplineKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopMovement_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "ReadyToWalk is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::Self"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopPanic_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Move to panic location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DistanceToTarget"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "DistanceToTarget Is Less Than 2000.000000"
+        },
+        "FloatValue": {
+          "type": "FloatProperty",
+          "value": 2000
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 2
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 3000
+        }
+      }
+    },
+    {
+      "name": "BT_SpaceGiraffe",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BehaviorTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BehaviorTree"
+      },
+      "outer": null,
+      "properties": {
+        "BlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/BB_SpaceGiraffe",
+              "name": "BB_SpaceGiraffe"
+            }
+          }
+        },
+        "RootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_Wait"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_Wait"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopRotation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Init panic"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find new location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_UseDebugLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/BTT_UseDebugLocation",
+        "name": "BTT_UseDebugLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/BTT_UseDebugLocation",
+        "name": "Default__BTT_UseDebugLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mRotationBBkey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DebugRotation"
+            }
+          }
+        },
+        "mTargetLocation": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Panic"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoDebugRotation"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "DoDebugRotation is Is Set"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_StopMovement_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "BTT_StopMovement_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "Default__BTT_StopMovement_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RunEQSQuery"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find new position"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WasStuck"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "WasStuck is Is Set"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mValue": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mValue": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTTask_RunEQSQuery",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RunEQSQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RunEQSQuery"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "EQSQueryBlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {}
+        },
+        "EQSRequest": {
+          "type": "EQSParametrizedQueryExecutionRequest",
+          "value": {
+            "EQSQueryBlackboardKey": {
+              "type": "BlackboardKeySelector",
+              "value": {
+                "SelectedKeyName": {
+                  "type": "NameProperty",
+                  "value": "TargetLocation"
+                }
+              }
+            },
+            "QueryConfig": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.ConeDegrees"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 360
+                    }
+                  }
+                },
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.Range"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 8000
+                    }
+                  }
+                },
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Trace.ContextHeightOffset"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 1200
+                    }
+                  }
+                }
+              ]
+            },
+            "QueryTemplate": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/EQS_LocationInAngle",
+                  "name": "EQS_LocationInAngle"
+                }
+              }
+            },
+            "RunMode": {
+              "type": "ByteProperty",
+              "value": "EEnvQueryRunMode::RandomBest5Pct"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RotateToTarget_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Rotate And finish"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_StopPanic_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "BTT_StopPanic_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "Default__BTT_StopPanic_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "DidPanicBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_RunEQSQuery",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RunEQSQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RunEQSQuery"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "EQSQueryBlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {}
+        },
+        "EQSRequest": {
+          "type": "EQSParametrizedQueryExecutionRequest",
+          "value": {
+            "EQSQueryBlackboardKey": {
+              "type": "BlackboardKeySelector",
+              "value": {
+                "SelectedKeyName": {
+                  "type": "NameProperty",
+                  "value": "TargetLocation"
+                }
+              }
+            },
+            "QueryConfig": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.ConeDegrees"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 240
+                    }
+                  }
+                },
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.Range"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 8000
+                    }
+                  }
+                },
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Trace.ContextHeightOffset"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 1200
+                    }
+                  }
+                }
+              ]
+            },
+            "QueryTemplate": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/EQS_LocationInAngle",
+                  "name": "EQS_LocationInAngle"
+                }
+              }
+            },
+            "RunMode": {
+              "type": "ByteProperty",
+              "value": "EEnvQueryRunMode::RandomBest5Pct"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Services": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_DistanceBetweenKeys_C"
+              }
+            }
+          ]
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RunEQSQuery"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "ReadyToWalk is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RotateToTarget_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/BTT_RotateToTarget",
+        "name": "BTT_RotateToTarget_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/BTT_RotateToTarget",
+        "name": "Default__BTT_RotateToTarget_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mTargetLocationBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WasStuck"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mValue": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 2000
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_RunEQSQuery",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RunEQSQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RunEQSQuery"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "EQSQueryBlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {}
+        },
+        "EQSRequest": {
+          "type": "EQSParametrizedQueryExecutionRequest",
+          "value": {
+            "QueryConfig": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.ConeDegrees"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 90
+                    }
+                  }
+                },
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.Range"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 6000
+                    }
+                  }
+                }
+              ]
+            },
+            "QueryTemplate": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/AI/EQ_StraightForwardLocation",
+                  "name": "EQ_StraightForwardLocation"
+                }
+              }
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find Position In Cone"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ClearFocus_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopMovement_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "IdleWalk"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "ReadyToWalk is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTS_DistanceBetweenKeys_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_DistanceBetweenKeys",
+        "name": "BTS_DistanceBetweenKeys_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Service/BTS_DistanceBetweenKeys",
+        "name": "Default__BTS_DistanceBetweenKeys_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBBKeyA": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "mBBKeyB": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "mDistanceBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DistanceToTarget"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WasStuck"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_StopPanic_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "BTT_StopPanic_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "Default__BTT_StopPanic_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "DidPanicBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_Wait",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_Wait"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_Wait"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "RandomDeviation": {
+          "type": "FloatProperty",
+          "value": 3
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "WaitTime": {
+          "type": "FloatProperty",
+          "value": 15
+        }
+      }
+    },
+    {
+      "name": "BTT_ClearFocus_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "BTT_ClearFocus_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_ClearFocus",
+        "name": "Default__BTT_ClearFocus_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find backup position"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 250
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_Wait",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_Wait"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_Wait"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "WaitTime": {
+          "type": "FloatProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopPanic_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Move to panic location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoDebugRotation"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "DoDebugRotation is Is Set"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "Spline is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_FindNextSplinePoint_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FindNextSplinePoint",
+        "name": "BTT_FindNextSplinePoint_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_FindNextSplinePoint",
+        "name": "Default__BTT_FindNextSplinePoint_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ForceSucess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "SplineIndexKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SplineIndex"
+            }
+          }
+        },
+        "SplineKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 3000
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "Spline is Is Set"
+        },
+        "IntValue": {
+          "type": "IntProperty",
+          "value": -1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_AssignSplineKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_AssignSplineKey",
+        "name": "BTT_AssignSplineKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_AssignSplineKey",
+        "name": "Default__BTT_AssignSplineKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "SplineKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "Spline"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mValue": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_StopRotation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/BTT_StopRotation",
+        "name": "BTT_StopRotation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/BTT_StopRotation",
+        "name": "Default__BTT_StopRotation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "choose random location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WasStuck"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "WasStuck is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_FindNextSplinePoint_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 2000
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_StopMovement_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "BTT_StopMovement_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "Default__BTT_StopMovement_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    },
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "RealRoot"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_UseDebugLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RunEQSQuery"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SpaceGiraffe"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SpaceGiraffe"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "ReadyToWalk"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

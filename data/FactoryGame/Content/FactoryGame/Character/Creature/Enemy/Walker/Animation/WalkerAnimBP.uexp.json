@@ -1,0 +1,708 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Walker/Animation/WalkerAnimBP.uasset",
+  "guid": {
+    "a": 2914170307,
+    "b": 1121724403,
+    "c": 2460387753,
+    "d": 2903857306
+  },
+  "exports": [
+    {
+      "name": "WalkerAnimBP_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "AnimBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/Engine",
+        "name": "AnimInstance"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__AnimBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "BakedStateMachines": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BakedAnimationStateMachine",
+              "value": {
+                "InitialState": {
+                  "type": "IntProperty",
+                  "value": 0
+                },
+                "MachineName": {
+                  "type": "NameProperty",
+                  "value": "New State Machine"
+                },
+                "States": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "BakedAnimationState",
+                      "value": {
+                        "EndNotify": {
+                          "type": "IntProperty",
+                          "value": -1
+                        },
+                        "EntryRuleNodeIndex": {
+                          "type": "IntProperty",
+                          "value": -1
+                        },
+                        "FullyBlendedNotify": {
+                          "type": "IntProperty",
+                          "value": -1
+                        },
+                        "PlayerNodeIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            3
+                          ]
+                        },
+                        "StartNotify": {
+                          "type": "IntProperty",
+                          "value": -1
+                        },
+                        "StateName": {
+                          "type": "NameProperty",
+                          "value": "IdleRunState"
+                        },
+                        "StateRootNodeIndex": {
+                          "type": "IntProperty",
+                          "value": 2
+                        },
+                        "Transitions": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        },
+                        "bAlwaysResetOnEntry": {
+                          "type": "BoolProperty",
+                          "value": false
+                        },
+                        "bIsAConduit": {
+                          "type": "BoolProperty",
+                          "value": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                "Transitions": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "EvaluateGraphExposedInputs": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ExposedValueHandler",
+              "value": {
+                "BoundFunction": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "CopyRecords": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ExposedValueCopyRecord",
+                      "value": {
+                        "CachedSourceProperty": {
+                          "type": "ObjectProperty",
+                          "value": {
+                            "type": "reference",
+                            "value": {
+                              "package": "{{THIS PACKAGE}}",
+                              "name": "Speed"
+                            }
+                          }
+                        },
+                        "CachedSourceStructSubProperty": {
+                          "type": "ObjectProperty",
+                          "value": {
+                            "type": "reference",
+                            "value": null
+                          }
+                        },
+                        "DestArrayIndex": {
+                          "type": "IntProperty",
+                          "value": 0
+                        },
+                        "DestProperty": {
+                          "type": "ObjectProperty",
+                          "value": {
+                            "type": "reference",
+                            "value": {
+                              "package": "AnimNode_BlendSpacePlayer",
+                              "name": "X"
+                            }
+                          }
+                        },
+                        "PostCopyOperation": {
+                          "type": "EPostCopyOperation",
+                          "value": "EPostCopyOperation::None"
+                        },
+                        "Size": {
+                          "type": "IntProperty",
+                          "value": 4
+                        },
+                        "SourceArrayIndex": {
+                          "type": "IntProperty",
+                          "value": 0
+                        },
+                        "SourcePropertyName": {
+                          "type": "NameProperty",
+                          "value": "Speed"
+                        },
+                        "SourceSubPropertyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bInstanceIsTarget": {
+                          "type": "BoolProperty",
+                          "value": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ValueHandlerNodeProperty": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "AnimGraphNode_BlendSpacePlayer_266D62DD44B286D763DAC0AB630AFA52"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "TargetSkeleton": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/Mesh/Walker_Skeleton",
+              "name": "Walker_Skeleton"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_WalkerAnimBP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_WalkerAnimBP",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DeltaTimeX",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BlueprintUpdateAnimation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetMovementComponent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_WalkerAnimBP"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AnimGraphNode_BlendSpacePlayer_266D62DD44B286D763DAC0AB630AFA52",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AnimGraphNode_Slot_D6056173467CA8DC949D4A93EC2478CB",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AnimGraphNode_StateResult_09A15877440B0B2E2AF6CEA42A36DBD0",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_WalkerAnimBP"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_VSize_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_WalkerAnimBP"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_TryGetPawnOwner_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_WalkerAnimBP"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AnimGraphNode_StateMachine_614EE10F49641CF197A0C8ACB4D6DC17",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__WalkerAnimBP_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__AnimInstance"
+      },
+      "outer": null,
+      "properties": {
+        "AnimGraphNode_BlendSpacePlayer_266D62DD44B286D763DAC0AB630AFA52": {
+          "type": "AnimNode_BlendSpacePlayer",
+          "value": {
+            "BlendSpace": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/Animation/Walker_IdleRun",
+                  "name": "Walker_IdleRun"
+                }
+              }
+            },
+            "BlendWeight": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "GroupIndex": {
+              "type": "IntProperty",
+              "value": -1
+            },
+            "GroupRole": {
+              "type": "ByteProperty",
+              "value": "EAnimGroupRole::CanBeLeader"
+            },
+            "InternalTimeAccumulator": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "PlayRate": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "PreviousBlendSpace": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "StartPosition": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "X": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Y": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Z": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "bIgnoreForRelevancyTest": {
+              "type": "BoolProperty",
+              "value": false
+            },
+            "bLoop": {
+              "type": "BoolProperty",
+              "value": true
+            },
+            "bResetPlayTimeWhenBlendSpaceChanges": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "AnimGraphNode_Root_413503994630E97C073489B1FEC9066B": {
+          "type": "AnimNode_Root",
+          "value": {
+            "Result": {
+              "type": "PoseLink",
+              "value": {
+                "LinkID": {
+                  "type": "IntProperty",
+                  "value": 4
+                }
+              }
+            }
+          }
+        },
+        "AnimGraphNode_Slot_D6056173467CA8DC949D4A93EC2478CB": {
+          "type": "AnimNode_Slot",
+          "value": {
+            "SlotName": {
+              "type": "NameProperty",
+              "value": "DefaultSlot"
+            },
+            "Source": {
+              "type": "PoseLink",
+              "value": {
+                "LinkID": {
+                  "type": "IntProperty",
+                  "value": 3
+                }
+              }
+            },
+            "bAlwaysUpdateSourcePose": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "AnimGraphNode_StateMachine_614EE10F49641CF197A0C8ACB4D6DC17": {
+          "type": "AnimNode_StateMachine",
+          "value": {
+            "MaxTransitionsPerFrame": {
+              "type": "IntProperty",
+              "value": 3
+            },
+            "StateMachineIndexInClass": {
+              "type": "IntProperty",
+              "value": 0
+            },
+            "bReinitializeOnBecomingRelevant": {
+              "type": "BoolProperty",
+              "value": true
+            },
+            "bSkipFirstUpdateTransition": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "AnimGraphNode_StateResult_09A15877440B0B2E2AF6CEA42A36DBD0": {
+          "type": "AnimNode_StateResult",
+          "value": {
+            "Result": {
+              "type": "PoseLink",
+              "value": {
+                "LinkID": {
+                  "type": "IntProperty",
+                  "value": 1
+                }
+              }
+            }
+          }
+        },
+        "Animattack": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/Animation/Attack",
+              "name": "Attack"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "AnimGraphNode_Root_413503994630E97C073489B1FEC9066B",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlueprintUpdateAnimation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "AnimInstance",
+        "name": "BlueprintUpdateAnimation"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Attacking",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_DeltaTimeX",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_WalkerAnimBP"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Speed",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Animattack",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WalkerAnimBP_C"
+      },
+      "properties": {}
+    }
+  ]
+}

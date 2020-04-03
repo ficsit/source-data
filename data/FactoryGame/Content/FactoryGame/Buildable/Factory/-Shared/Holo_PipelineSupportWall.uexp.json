@@ -1,0 +1,230 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/-Shared/Holo_PipelineSupportWall.uasset",
+  "guid": {
+    "a": 3770591375,
+    "b": 1244398231,
+    "c": 2722066847,
+    "d": 112554112
+  },
+  "exports": [
+    {
+      "name": "LoopSound",
+      "class": {
+        "package": "/Script/AkAudio",
+        "name": "AkComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGWallAttachmentHologram",
+        "name": "LoopSound"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Holo_PipelineSupportWall_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "RootComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGWallAttachmentHologram",
+        "name": "RootComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Holo_PipelineSupportWall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Holo_PipelineSupportWall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1024385132,
+            "b": 1083081577,
+            "c": 3401751471,
+            "d": 2462528798
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Holo_PipelineSupportWall_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Holo_PipelineSupportWall_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGWallAttachmentHologram"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Holo_PipelineSupportWall_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Holo_PipelineSupportWall_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGWallAttachmentHologram"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "mIsRotationAllowed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mLoopSound": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "LoopSound"
+            }
+          }
+        },
+        "mRotationStep": {
+          "type": "IntProperty",
+          "value": 45
+        },
+        "mSnapOffset": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0,
+            "y": 75
+          }
+        }
+      }
+    }
+  ]
+}

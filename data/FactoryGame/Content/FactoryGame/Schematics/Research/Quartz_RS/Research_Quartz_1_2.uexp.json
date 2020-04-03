@@ -1,0 +1,163 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Research/Quartz_RS/Research_Quartz_1_2.uasset",
+  "guid": {
+    "a": 2271021063,
+    "b": 1264881003,
+    "c": 2097634186,
+    "d": 1704982822
+  },
+  "exports": [
+    {
+      "name": "Research_Quartz_1_2_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Research_Quartz_1_2_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Research_Quartz_1_2_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 20
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/RawResources/RawQuartz/Desc_RawQuartz",
+                      "name": "Desc_RawQuartz_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "139B10B24D2E153B2BD4E4BFA4471FA4",
+            "source_string": "Silica"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Organisation",
+              "name": "SC_Organisation_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Resource/Parts/Silica/UI/Silica",
+                  "name": "Silica"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 3
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 3
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_MAM"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Research_Quartz_1_2_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Constructor/Recipe_Silica",
+                "name": "Recipe_Silica_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

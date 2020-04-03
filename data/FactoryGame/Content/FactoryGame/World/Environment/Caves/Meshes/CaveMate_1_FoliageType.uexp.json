@@ -1,0 +1,191 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Caves/Meshes/CaveMate_1_FoliageType.uasset",
+  "guid": {
+    "a": 166888151,
+    "b": 1124566313,
+    "c": 809516678,
+    "d": 1627351997
+  },
+  "exports": [
+    {
+      "name": "CaveMate_1_FoliageType",
+      "class": {
+        "package": "/Script/Foliage",
+        "name": "FoliageType_InstancedStaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Foliage",
+        "name": "Default__FoliageType_InstancedStaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AlignToNormal": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::QueryAndPhysics"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Destructible"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "HologramClearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_Destructible"
+            }
+          }
+        },
+        "ChangeCount": {
+          "type": "IntProperty",
+          "value": 33
+        },
+        "CullDistance": {
+          "type": "Int32Interval",
+          "value": {
+            "Max": {
+              "type": "IntProperty",
+              "value": 10000
+            }
+          }
+        },
+        "Density": {
+          "type": "FloatProperty",
+          "value": 2
+        },
+        "LowBoundOriginRadius": {
+          "type": "Vector",
+          "value": {
+            "x": 1.1895084,
+            "y": 0.6218815,
+            "z": 59.970913
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Caves/Meshes/CaveMate",
+              "name": "CaveMate"
+            }
+          }
+        },
+        "MeshBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 43.59957,
+                "y": 41.177513,
+                "z": 72.74305
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 1.1895103,
+                "y": 0.6218796,
+                "z": 72.40371
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 86.136505
+            }
+          }
+        },
+        "Radius": {
+          "type": "FloatProperty",
+          "value": 500
+        },
+        "ScaleCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        },
+        "ScaleX": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 15
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": 6
+            }
+          }
+        },
+        "UpdateGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3036174300,
+            "b": 1296346415,
+            "c": 2843378306,
+            "d": 717956653
+          }
+        },
+        "ZOffset": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": -20
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": -50
+            }
+          }
+        }
+      }
+    }
+  ]
+}

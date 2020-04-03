@@ -1,0 +1,402 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Stinger/SmallStinger/Char_Stinger_Child.uasset",
+  "guid": {
+    "a": 1477905291,
+    "b": 1147188534,
+    "c": 2263304611,
+    "d": 732789826
+  },
+  "exports": [
+    {
+      "name": "Default__Char_Stinger_Child_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Stinger_Child_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/Char_Stinger",
+        "name": "Default__Char_Stinger_C"
+      },
+      "outer": null,
+      "properties": {
+        "AIControllerClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/SmallStinger/Controller_StingerChild",
+              "name": "Controller_StingerChild_C"
+            }
+          }
+        },
+        "CapsuleComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "CharacterMovement": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharMoveComp"
+            }
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharacterMesh0"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "mEyeLocationComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EyeLocationComponent"
+            }
+          }
+        },
+        "mHealthComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HealthComponent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "HealthComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGHealthComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Stinger_C",
+        "name": "HealthComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Stinger_Child_C"
+      },
+      "properties": {
+        "mCurrentHealth": {
+          "type": "FloatProperty",
+          "value": 10
+        },
+        "mMaxHealth": {
+          "type": "FloatProperty",
+          "value": 10
+        },
+        "mOnAdjustDamage": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "object": 2,
+              "name": "AdjustDamage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Stinger_Child_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2776795057,
+            "b": 1089348453,
+            "c": 1699030196,
+            "d": 1268470138
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Stinger_Child_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Char_Stinger_Child_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/Char_Stinger",
+        "name": "Char_Stinger_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CharMoveComp",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CharacterMovementComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Stinger_C",
+        "name": "CharMoveComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Stinger_Child_C"
+      },
+      "properties": {
+        "MaxWalkSpeed": {
+          "type": "FloatProperty",
+          "value": 1200
+        }
+      }
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Stinger_Child_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EyeLocationComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Stinger_C",
+        "name": "EyeLocationComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Stinger_Child_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CharacterMesh0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Stinger_C",
+        "name": "CharacterMesh0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Stinger_Child_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -30,
+            "y": 0.0000016391277,
+            "z": -52
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 0.4,
+            "y": 0.4,
+            "z": 0.4
+          }
+        }
+      }
+    },
+    {
+      "name": "CollisionCylinder",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CapsuleComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Stinger_C",
+        "name": "CollisionCylinder"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Stinger_Child_C"
+      },
+      "properties": {
+        "CapsuleHalfHeight": {
+          "type": "FloatProperty",
+          "value": 60
+        },
+        "CapsuleRadius": {
+          "type": "FloatProperty",
+          "value": 40
+        }
+      }
+    }
+  ]
+}

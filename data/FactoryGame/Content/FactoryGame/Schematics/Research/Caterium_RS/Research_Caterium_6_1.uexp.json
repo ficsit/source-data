@@ -1,0 +1,201 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Research/Caterium_RS/Research_Caterium_6_1.uasset",
+  "guid": {
+    "a": 1797057341,
+    "b": 1146235029,
+    "c": 238929793,
+    "d": 1975570841
+  },
+  "exports": [
+    {
+      "name": "Research_Caterium_6_1_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Research_Caterium_6_1_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Research_Caterium_6_1_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/CircuitBoardHighSpeed/Desc_CircuitBoardHighSpeed",
+                      "name": "Desc_CircuitBoardHighSpeed_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/HighSpeedConnector/Desc_HighSpeedConnector",
+                      "name": "Desc_HighSpeedConnector_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Computer/Desc_Computer",
+                      "name": "Desc_Computer_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "721DDBED47C08592C393DD8A923A7EC6",
+            "source_string": "Super Computer"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Production",
+              "name": "SC_Production_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Resource/Parts/ComputerSuper/UI/SuperComputer",
+                  "name": "SuperComputer"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 3
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 3
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_MAM"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Research_Caterium_6_1_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Manufacturer/Recipe_ComputerSuper",
+                "name": "Recipe_ComputerSuper_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/BP_CreatureSpawner.uasset",
+  "guid": {
+    "a": 2362625348,
+    "b": 1116407018,
+    "c": 3612221099,
+    "d": 1455131890
+  },
+  "exports": [
+    {
+      "name": "Default__BP_CreatureSpawner_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_CreatureSpawner_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGCreatureSpawner"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCapsule"
+            }
+          }
+        },
+        "mCapsuleComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCapsule"
+            }
+          }
+        },
+        "mDebugComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        },
+        "mEditorSprite": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "CollisionCapsule",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CapsuleComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGCreatureSpawner",
+        "name": "CollisionCapsule"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_CreatureSpawner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_CreatureSpawner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3458104553,
+            "b": 1297394722,
+            "c": 2269210758,
+            "d": 638950348
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_CreatureSpawner_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_CalculateSpawningLocations_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallCalculateSpawnLocations",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_CreatureSpawner_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGCreatureSpawner"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

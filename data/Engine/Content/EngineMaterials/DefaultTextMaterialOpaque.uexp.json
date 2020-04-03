@@ -1,0 +1,122 @@
+{
+  "file_name": "Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset",
+  "guid": {
+    "a": 4211569375,
+    "b": 1206489026,
+    "c": 1328610719,
+    "d": 3599804277
+  },
+  "exports": [
+    {
+      "name": "DefaultTextMaterialOpaque",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Masked"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionFontSampleParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2896099369,
+            "b": 1080516448,
+            "c": 3429732508,
+            "d": 1190558360
+          }
+        },
+        "TwoSided": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionFontSampleParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionFontSampleParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionFontSampleParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "DefaultTextMaterialOpaque"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3869366966,
+            "b": 1169859572,
+            "c": 1896647332,
+            "d": 314113384
+          }
+        },
+        "Font": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/EngineFonts/RobotoDistanceField",
+              "name": "RobotoDistanceField"
+            }
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultTextMaterialOpaque"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Font"
+        }
+      }
+    }
+  ]
+}

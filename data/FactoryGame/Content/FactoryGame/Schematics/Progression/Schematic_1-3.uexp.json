@@ -1,0 +1,280 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Progression/Schematic_1-3.uasset",
+  "guid": {
+    "a": 1560830545,
+    "b": 1244926108,
+    "c": 733483948,
+    "d": 3247826368
+  },
+  "exports": [
+    {
+      "name": "Schematic_1-3_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Schematic_1-3_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Schematic_1-3_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 300
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Wire/Desc_Wire",
+                      "name": "Desc_Wire_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 300
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronScrew/Desc_IronScrew",
+                      "name": "Desc_IronScrew_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 100
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronPlate/Desc_IronPlate",
+                      "name": "Desc_IronPlate_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "8A751B37489BD234862214A142E00F4B",
+            "source_string": "Field Research"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Logistics",
+              "name": "SC_Logistics_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/TradingPost/UI/SchematicIcons/SchematicIcon_Equipment",
+                  "name": "SchematicIcon_Equipment"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 180
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_Milestone"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockInventorySlot_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockArmEquipmentSlot_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockArmEquipmentSlot_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockArmEquipmentSlot",
+        "name": "BP_UnlockArmEquipmentSlot_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockArmEquipmentSlot",
+        "name": "Default__BP_UnlockArmEquipmentSlot_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_1-3_C"
+      },
+      "properties": {
+        "mNumArmEquipmentSlotsToUnlock": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockInventorySlot_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockInventorySlot",
+        "name": "BP_UnlockInventorySlot_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockInventorySlot",
+        "name": "Default__BP_UnlockInventorySlot_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_1-3_C"
+      },
+      "properties": {
+        "mNumInventorySlotsToUnlock": {
+          "type": "IntProperty",
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_1-3_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_Mam",
+                "name": "Recipe_Mam_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Equipment/Recipe_ObjectScanner",
+                "name": "Recipe_ObjectScanner_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Equipment/Recipe_Beacon",
+                "name": "Recipe_Beacon_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_StoragePlayer",
+                "name": "Recipe_StoragePlayer_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

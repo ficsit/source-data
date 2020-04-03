@@ -1,0 +1,121 @@
+{
+  "file_name": "Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset",
+  "guid": {
+    "a": 2393677299,
+    "b": 1114529971,
+    "c": 515039147,
+    "d": 1286400757
+  },
+  "exports": [
+    {
+      "name": "DebugMeshMaterial",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionVectorParameter0"
+              }
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3698466309,
+            "b": 1085784084,
+            "c": 171411600,
+            "d": 2629483056
+          }
+        },
+        "TwoSided": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionVectorParameter0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionVectorParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionVectorParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "DebugMeshMaterial"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3511581058,
+            "b": 1128472459,
+            "c": 2399769510,
+            "d": 3610644881
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DebugMeshMaterial"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Color"
+        }
+      }
+    }
+  ]
+}

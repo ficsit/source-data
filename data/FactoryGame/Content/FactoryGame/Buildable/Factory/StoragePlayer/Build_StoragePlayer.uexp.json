@@ -1,0 +1,735 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/StoragePlayer/Build_StoragePlayer.uasset",
+  "guid": {
+    "a": 2881634691,
+    "b": 1329477281,
+    "c": 3393039273,
+    "d": 2916492545
+  },
+  "exports": [
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_StoragePlayer_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Clearance_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BoxComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_StoragePlayer_C"
+      },
+      "properties": {
+        "AreaClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/NavigationSystem",
+              "name": "NavArea_Obstacle"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Clearance"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Clearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "HologramClearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 3718.0642
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_GameTraceChannel4"
+            }
+          }
+        },
+        "BoxExtent": {
+          "type": "Vector",
+          "value": {
+            "x": 50,
+            "y": 100,
+            "z": 50
+          }
+        },
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -50,
+            "y": 0,
+            "z": 50
+          }
+        }
+      }
+    },
+    {
+      "name": "FGColoredInstanceMeshProxy_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGColoredInstanceMeshProxy"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGColoredInstanceMeshProxy"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_StoragePlayer_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        },
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -49.999996,
+            "y": 0.000017881393,
+            "z": 0
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 89.999985,
+            "roll": 0
+          }
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Factory/StoragePlayer/Mesh/StoragePlayer_static",
+              "name": "StoragePlayer_static"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGColoredInstanceMeshProxy"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FGColoredInstanceMeshProxy_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "FGColoredInstanceMeshProxy"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "RootComponent"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2817373963,
+            "b": 1105662807,
+            "c": 397792688,
+            "d": 3092194632
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Build_StoragePlayer_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGBuildableStorage"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "RootComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableStorage",
+        "name": "RootComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_StoragePlayer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3219973661,
+            "b": 1100513497,
+            "c": 2387713438,
+            "d": 2711043523
+          }
+        }
+      }
+    },
+    {
+      "name": "FGColoredInstanceMeshProxy",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Clearance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_StoragePlayer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_StoragePlayer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "BoxComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Clearance_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Clearance"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "RootComponent"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 42411444,
+            "b": 1308228119,
+            "c": 3778330797,
+            "d": 1413639793
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Default__Build_StoragePlayer_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_StoragePlayer_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGBuildableStorage"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "mDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "6C1366724035B33444EC718D6582159B",
+            "source_string": "Contains 25 slots for storing large amounts of items."
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "50521D7049521D27A006208327292C7E",
+            "source_string": "Personal Storage Box"
+          }
+        },
+        "mInteractWidgetClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/-Shared/Widgets/Widget_Storage",
+              "name": "Widget_Storage_C"
+            }
+          }
+        },
+        "mInventorySizeX": {
+          "type": "IntProperty",
+          "value": 5
+        },
+        "mInventorySizeY": {
+          "type": "IntProperty",
+          "value": 5
+        },
+        "mIsUseable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "InventoryPotentialHandler",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGReplicationDetailInventoryComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableStorage",
+        "name": "InventoryPotentialHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_StoragePlayer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReplicationDetailInventoryComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGReplicationDetailInventoryComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableStorage",
+        "name": "ReplicationDetailInventoryComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_StoragePlayer_C"
+      },
+      "properties": {}
+    }
+  ]
+}

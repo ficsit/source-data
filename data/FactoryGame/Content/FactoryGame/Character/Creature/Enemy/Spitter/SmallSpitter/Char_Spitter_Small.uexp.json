@@ -1,0 +1,881 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Spitter/SmallSpitter/Char_Spitter_Small.uasset",
+  "guid": {
+    "a": 2103074439,
+    "b": 1205358565,
+    "c": 1686276742,
+    "d": 1410170504
+  },
+  "exports": [
+    {
+      "name": "CallFunc_GetAnimInstance_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetCurrentAggroTarget_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CharMoveComp",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CharacterMovementComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Spitter_C",
+        "name": "CharMoveComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Spitter_Small_C"
+      },
+      "properties": {
+        "Mass": {
+          "type": "FloatProperty",
+          "value": 150
+        }
+      }
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "properties": {
+        "Records": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/Engine",
+                      "name": "CapsuleComponent"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 1205570003,
+                        "b": 1142584341,
+                        "c": 1318375317,
+                        "d": 2284974411
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Char_Spitter",
+                          "name": "Char_Spitter_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "Capsule"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "Capsule_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "EyeLocationComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Spitter_C",
+        "name": "EyeLocationComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Spitter_Small_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CharacterMesh0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Spitter_C",
+        "name": "CharacterMesh0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Spitter_Small_C"
+      },
+      "properties": {
+        "AnimClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/SmallSpitter/Anim_SmallSpitter",
+              "name": "Anim_SmallSpitter_C"
+            }
+          }
+        },
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "OverrideMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Material/Spitter_Master_Inst2",
+                "name": "Spitter_Master_Inst2"
+              }
+            }
+          ]
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": -65
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        }
+      }
+    },
+    {
+      "name": "Capsule_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CapsuleComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Char_Spitter_C",
+        "name": "Capsule_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::NoCollision"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "NoCollision"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CollisionCylinder",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CapsuleComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Spitter_C",
+        "name": "CollisionCylinder"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Spitter_Small_C"
+      },
+      "properties": {
+        "CapsuleHalfHeight": {
+          "type": "FloatProperty",
+          "value": 70
+        }
+      }
+    },
+    {
+      "name": "HealthComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGHealthComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__Char_Spitter_C",
+        "name": "HealthComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_Spitter_Small_C"
+      },
+      "properties": {
+        "mCurrentHealth": {
+          "type": "FloatProperty",
+          "value": 40
+        },
+        "mMaxHealth": {
+          "type": "FloatProperty",
+          "value": 40
+        },
+        "mOnAdjustDamage": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "object": 3,
+              "name": "AdjustDamage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3377480613,
+            "b": 1102779300,
+            "c": 1798048136,
+            "d": 4185088362
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetMesh3P_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_Char_Spitter_Small",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OnCurrentAggroTargetReplicated",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Char_Spitter_C",
+        "name": "OnCurrentAggroTargetReplicated"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsAnim_Small_Spitter",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_Spitter_Small"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Char_Spitter_Small_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Char_Spitter",
+        "name": "Char_Spitter_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Char_Spitter_Small"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Char_Spitter_Small_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_Spitter_Small_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Char_Spitter",
+        "name": "Default__Char_Spitter_C"
+      },
+      "outer": null,
+      "properties": {
+        "CapsuleComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "CharacterMovement": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharMoveComp"
+            }
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharacterMesh0"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mActualAIControllerClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/SmallSpitter/Controller_SpitterSmall",
+              "name": "Controller_SpitterSmall_C"
+            }
+          }
+        },
+        "mEyeLocationComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EyeLocationComponent"
+            }
+          }
+        },
+        "mHealthComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HealthComponent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    }
+  ]
+}

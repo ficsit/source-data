@@ -1,0 +1,408 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Crab/BabyCrab/Controller_BabyCrab.uasset",
+  "guid": {
+    "a": 3323976621,
+    "b": 1084401060,
+    "c": 1248279483,
+    "d": 313888271
+  },
+  "exports": [
+    {
+      "name": "PathFollowingComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PathFollowingComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PathFollowingComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 4259990668,
+            "b": 1171882006,
+            "c": 4152333442,
+            "d": 3247665113
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_BabyCrab_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PerceptionComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIPerceptionComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PerceptionComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_BabyCrab_C"
+      },
+      "properties": {
+        "OnTargetPerceptionUpdated": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "SensesConfig": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Sight"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "PerceptionComponent",
+        "name": "AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "LoseSightRadius": {
+          "type": "FloatProperty",
+          "value": 3500
+        },
+        "SightRadius": {
+          "type": "FloatProperty",
+          "value": 3000
+        }
+      }
+    },
+    {
+      "name": "ActionsComp",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PawnActionsComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "ActionsComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "TransformComponent0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "TransformComponent0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Controller_BabyCrab_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "BP_EnemyController_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Controller_BabyCrab_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_BabyCrab_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "Default__BP_EnemyController_C"
+      },
+      "outer": null,
+      "properties": {
+        "ActionsComp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ActionsComp"
+            }
+          }
+        },
+        "PathFollowingComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PathFollowingComponent"
+            }
+          }
+        },
+        "PerceptionComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PerceptionComponent"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "TransformComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "mAggroDistanceCurve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Hog/Curve_DistanceAggroHog",
+              "name": "Curve_DistanceAggroHog"
+            }
+          }
+        },
+        "mBehaviorTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Crab/BabyCrab/BT_BabyCrab",
+              "name": "BT_BabyCrab"
+            }
+          }
+        },
+        "mDefaultIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mGainAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.2
+        },
+        "mIgnoredAggroTargetClasses": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Train/Wagon/BP_FreightWagon.BP_FreightWagon_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Train/Locomotive/BP_Locomotive.BP_Locomotive_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Train/Locomotive/BP_Locomotive.BP_Locomotive_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/-Shared/PassengerSeat/BP_PassengerSeat.BP_PassengerSeat_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGFreightWagon",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGLocomotive",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGPassengerSeat",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGRailroadVehicle",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Tractor/BP_Tractor.BP_Tractor_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Truck/BP_Truck.BP_Truck_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_Explorer.BP_Explorer_C",
+              "sub_path": ""
+            }
+          ]
+        },
+        "mLoseAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mStaticIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "mTargetSwitchFactor": {
+          "type": "FloatProperty",
+          "value": 1.1
+        },
+        "mTimeToLoseAllAggro": {
+          "type": "FloatProperty",
+          "value": 6
+        },
+        "mUpdateAggroInterval": {
+          "type": "FloatProperty",
+          "value": 0.5
+        }
+      }
+    }
+  ]
+}

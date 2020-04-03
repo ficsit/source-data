@@ -1,0 +1,253 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Tutorial/Schematic_Tutorial1_5.uasset",
+  "guid": {
+    "a": 2665565100,
+    "b": 1125429711,
+    "c": 71710372,
+    "d": 3972407686
+  },
+  "exports": [
+    {
+      "name": "Schematic_Tutorial1_5_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Schematic_Tutorial1_5_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Schematic_Tutorial1_5_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 20
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronRod/Desc_IronRod",
+                      "name": "Desc_IronRod_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 10
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/IronPlate/Desc_IronPlate",
+                      "name": "Desc_IronPlate_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDependsOnSchematic": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/Tutorial/Schematic_Tutorial1",
+              "name": "Schematic_Tutorial1_C"
+            }
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "6AA038FC4FB4466883988BAE8ECC6390",
+            "source_string": "Hub Upgrade 2"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Logistics",
+              "name": "SC_Logistics_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/TradingPost/UI/SchematicIcons/SchematicIcon_Hub",
+                  "name": "SchematicIcon_Hub"
+                }
+              }
+            }
+          }
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_Tutorial"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockRecipe_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockScannableResource_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockRecipe_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "BP_UnlockRecipe_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockRecipe",
+        "name": "Default__BP_UnlockRecipe_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_Tutorial1_5_C"
+      },
+      "properties": {
+        "mRecipes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_SmelterBasicMk1",
+                "name": "Recipe_SmelterBasicMk1_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Buildings/Recipe_PowerLine",
+                "name": "Recipe_PowerLine_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Smelter/Recipe_IngotCopper",
+                "name": "Recipe_IngotCopper_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Constructor/Recipe_Wire",
+                "name": "Recipe_Wire_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Recipes/Constructor/Recipe_Cable",
+                "name": "Recipe_Cable_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockScannableResource_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockScannableResource",
+        "name": "BP_UnlockScannableResource_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockScannableResource",
+        "name": "Default__BP_UnlockScannableResource_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Schematic_Tutorial1_5_C"
+      },
+      "properties": {
+        "mResourcesToAddToScanner": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Resource/RawResources/OreCopper/Desc_OreCopper",
+                "name": "Desc_OreCopper_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

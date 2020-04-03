@@ -1,0 +1,420 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Wildlife/SpaceRabbit/AI/BTD_TooCloseToActor.uasset",
+  "guid": {
+    "a": 2299120102,
+    "b": 1102660346,
+    "c": 2990737047,
+    "d": 2740192144
+  },
+  "exports": [
+    {
+      "name": "CallFunc_GetBlackboardValueAsObject_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__BTD_TooCloseToActor_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTD_TooCloseToActor_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_BlueprintBase"
+      },
+      "outer": null,
+      "properties": {
+        "bIsObservingBB": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mDistance": {
+          "type": "FloatProperty",
+          "value": -1
+        },
+        "mDistanceMultiplier": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "mMinDistanceBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "AllowedTypes": {
+              "type": "ArrayProperty",
+              "value": []
+            },
+            "SelectedKeyID": {
+              "type": "ByteProperty",
+              "value": 255
+            },
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "None"
+            },
+            "SelectedKeyType": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "bNoneIsAllowedValue": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "mOtherActorBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "AllowedTypes": {
+              "type": "ArrayProperty",
+              "value": []
+            },
+            "SelectedKeyID": {
+              "type": "ByteProperty",
+              "value": 255
+            },
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "None"
+            },
+            "SelectedKeyType": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "bNoneIsAllowedValue": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_SelectFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ControlledPawn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mOtherActorBBKey",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PerformConditionCheckAI_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetDistanceTo_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mMinDistanceBBKey",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTD_TooCloseToActor_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OwnerController",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PerformConditionCheckAI",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BTDecorator_BlueprintBase",
+        "name": "PerformConditionCheckAI"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mDistanceMultiplier",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTD_TooCloseToActor_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetBlackboardValueAsFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BTD_TooCloseToActor_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_BlueprintBase"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "mDistance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTD_TooCloseToActor_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerformConditionCheckAI"
+      },
+      "properties": {}
+    }
+  ]
+}

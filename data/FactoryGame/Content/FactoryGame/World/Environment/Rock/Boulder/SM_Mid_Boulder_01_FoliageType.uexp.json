@@ -1,0 +1,154 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Rock/Boulder/SM_Mid_Boulder_01_FoliageType.uasset",
+  "guid": {
+    "a": 2128385203,
+    "b": 1249958164,
+    "c": 1851955125,
+    "d": 1522911313
+  },
+  "exports": [
+    {
+      "name": "SM_Mid_Boulder_01_FoliageType",
+      "class": {
+        "package": "/Script/Foliage",
+        "name": "FoliageType_InstancedStaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Foliage",
+        "name": "Default__FoliageType_InstancedStaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::QueryAndPhysics"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "ChangeCount": {
+          "type": "IntProperty",
+          "value": 20
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Rock/Boulder/Mesh/SM_Mid_Boulder_01",
+              "name": "SM_Mid_Boulder_01"
+            }
+          }
+        },
+        "ScaleCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        },
+        "ScaleX": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 1.7
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": 0.3
+            }
+          }
+        },
+        "UpdateGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 7646608,
+            "b": 1137483916,
+            "c": 708056248,
+            "d": 1270049113
+          }
+        },
+        "ZOffset": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 0.9
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": -12
+            }
+          }
+        },
+        "bCastDynamicShadow": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bCastStaticShadow": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    }
+  ]
+}

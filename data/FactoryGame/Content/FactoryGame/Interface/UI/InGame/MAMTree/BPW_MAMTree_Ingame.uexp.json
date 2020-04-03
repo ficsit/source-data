@@ -1,0 +1,1004 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/MAMTree/BPW_MAMTree_Ingame.uasset",
+  "guid": {
+    "a": 456168529,
+    "b": 1086078214,
+    "c": 3201744045,
+    "d": 2573839699
+  },
+  "exports": [
+    {
+      "name": "mRoads",
+      "class": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/Widget_MAMTree_Road",
+        "name": "Widget_MAMTree_Road_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/Widget_MAMTree_Road",
+        "name": "Default__Widget_MAMTree_Road_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "mDefaultTint": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.041667,
+            "g": 0.041667,
+            "b": 0.041667,
+            "a": 1
+          }
+        },
+        "mHighlightTint": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.184475,
+            "g": 0.184475,
+            "b": 0.187821,
+            "a": 1
+          }
+        },
+        "mThickness": {
+          "type": "FloatProperty",
+          "value": 10
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mGridCanvas"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mNodeCanvas"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PreConstruct"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRoads"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mRoads"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BPW_MAMTree_Ingame_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/Widget_MAMTree_Grid",
+        "name": "Widget_MAMTree_Grid_C"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/BPW_MAMTree_Ingame.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BPW_MAMTree_Ingame"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Default__BPW_MAMTree_Ingame_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/Widget_MAMTree_Grid",
+        "name": "Default__Widget_MAMTree_Grid_C"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "mGridCanvas",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mNodeCanvas",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_BPW_MAMTree_Ingame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mNodeCanvas",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mGridCanvas"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "PreConstruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "PreConstruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mNodeCanvas"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mGridCanvas",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mMAMState",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BPW_MAMTree_Ingame_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mGridCanvas": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mGridCanvas"
+            }
+          }
+        },
+        "mNodeCanvas": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mNodeCanvas"
+            }
+          }
+        },
+        "mRoads": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRoads"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mNodeCanvas",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRoads"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "mRoads",
+      "class": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/Widget_MAMTree_Road",
+        "name": "Widget_MAMTree_Road_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/MAMTree/Widget_MAMTree_Road",
+        "name": "Default__Widget_MAMTree_Road_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mDefaultTint": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.041667,
+            "g": 0.041667,
+            "b": 0.041667,
+            "a": 1
+          }
+        },
+        "mHighlightTint": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.184475,
+            "g": 0.184475,
+            "b": 0.187821,
+            "a": 1
+          }
+        },
+        "mThickness": {
+          "type": "FloatProperty",
+          "value": 10
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_MAMTree_Ingame"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mGridCanvas",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mRoads",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_MAMTree_Ingame_C"
+      },
+      "properties": {}
+    }
+  ]
+}

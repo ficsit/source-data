@@ -1,0 +1,163 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Research/Caterium_RS/Research_Caterium_0.uasset",
+  "guid": {
+    "a": 2917277114,
+    "b": 1145711912,
+    "c": 3656061578,
+    "d": 3577760226
+  },
+  "exports": [
+    {
+      "name": "Default__Research_Caterium_0_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Research_Caterium_0_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 10
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/RawResources/OreGold/Desc_OreGold",
+                      "name": "Desc_OreGold_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "A1A408D14592484327D4F988DF730BF5",
+            "source_string": "Caterium"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Organisation",
+              "name": "SC_Organisation_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Resource/RawResources/Nodes/UI/CateriumOre",
+                  "name": "CateriumOre"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 3
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 3
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_MAM"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockScannableResource_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockScannableResource_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockScannableResource",
+        "name": "BP_UnlockScannableResource_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockScannableResource",
+        "name": "Default__BP_UnlockScannableResource_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Research_Caterium_0_C"
+      },
+      "properties": {
+        "mResourcesToAddToScanner": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Resource/RawResources/OreGold/Desc_OreGold",
+                "name": "Desc_OreGold_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Research_Caterium_0_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    }
+  ]
+}

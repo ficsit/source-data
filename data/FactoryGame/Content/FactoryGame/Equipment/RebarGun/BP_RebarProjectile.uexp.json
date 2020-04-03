@@ -1,0 +1,1563 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/RebarGun/BP_RebarProjectile.uasset",
+  "guid": {
+    "a": 3929003130,
+    "b": 1114931962,
+    "c": 2238854040,
+    "d": 525501494
+  },
+  "exports": [
+    {
+      "name": "CallFunc_GetOwner_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGCharacter_Player",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Hit",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__BP_RebarProjectile_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGProjectile"
+      },
+      "outer": null,
+      "properties": {
+        "InitialLifeSpan": {
+          "type": "FloatProperty",
+          "value": 5
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SphereComp"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bReplicateMovement": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bReplicates": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mCollisionComp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SphereComp"
+            }
+          }
+        },
+        "mGravityDelay": {
+          "type": "FloatProperty",
+          "value": 0.1
+        },
+        "mGravityScale": {
+          "type": "FloatProperty",
+          "value": 0.5
+        },
+        "mProjectileData": {
+          "type": "ProjectileData",
+          "value": {
+            "DamageType": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Equipment/RebarGun/DamageType_RebarGunProjectile",
+                  "name": "DamageType_RebarGunProjectile_C"
+                }
+              }
+            }
+          }
+        },
+        "mProjectileMovement": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ProjectileComp"
+            }
+          }
+        },
+        "mTargetRelativeTranslation": {
+          "type": "Vector",
+          "value": {
+            "x": -25,
+            "y": 0,
+            "z": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "Sparks_01",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_X",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveBeginPlay",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveBeginPlay"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_Player",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_HitNormal",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_RebarProjectile_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGProjectile"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BP_RebarProjectile"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Other",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitNormal",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Shot Player"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_Y",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mGravityScale",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2449174359,
+            "b": 1095838059,
+            "c": 70124701,
+            "d": 1771962636
+          }
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "ParticleSystemComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Sparks_01_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Sparks_01"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "SphereComp"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3249258557,
+            "b": 1236070273,
+            "c": 450025375,
+            "d": 3104788713
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_bSelfMoved",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_Z",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveTick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveTick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_MyComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveTick"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ProjectileComp",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ProjectileMovementComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGProjectile",
+        "name": "ProjectileComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_RebarProjectile_C"
+      },
+      "properties": {
+        "InitialSpeed": {
+          "type": "FloatProperty",
+          "value": 5000
+        },
+        "MaxSpeed": {
+          "type": "FloatProperty",
+          "value": 5000
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CallFunc_K2_SetRelativeLocation_SweepHitResult1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Shot Player",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Rebar",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Rebar_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::NoCollision"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "NoCollision"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        },
+        "OverrideMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -9.999998,
+            "y": 0.000038146973,
+            "z": 0
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": -90.00021,
+            "roll": 0
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 2,
+            "y": 2,
+            "z": 2
+          }
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/RebarGun/Mesh/Rebar_static_01",
+              "name": "Rebar_static_01"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_Hit",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_BP_RebarProjectile",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Player",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mGravityDelay",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OtherComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_HitLocation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_HitNormal",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTargetRelativeTranslation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveHit",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveHit"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_Other",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "NormalImpulse",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MyComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "StaticMeshComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Rebar_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Rebar"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "SphereComp"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2820376420,
+            "b": 1273295554,
+            "c": 3459958935,
+            "d": 3556322012
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Sparks_01_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleSystemComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleSystemComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {
+        "CustomTimeDilation": {
+          "type": "FloatProperty",
+          "value": 0.5
+        },
+        "PrimaryComponentTick": {
+          "type": "ActorComponentTickFunction",
+          "value": {
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 360,
+            "roll": 360
+          }
+        },
+        "Template": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/RebarGun/Particle/RebarProjectileSparks_01",
+              "name": "RebarProjectileSparks_01"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_NormalImpulse",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "bSelfMoved",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PlayAttachEffect",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGProjectile",
+        "name": "PlayAttachEffect"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_RebarProjectile_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_OtherComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwner_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SphereComp",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SphereComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGProjectile",
+        "name": "SphereComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_RebarProjectile_C"
+      },
+      "properties": {
+        "SphereRadius": {
+          "type": "FloatProperty",
+          "value": 8
+        }
+      }
+    },
+    {
+      "name": "CallFunc_VInterpTo_Constant_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitNormal",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_RebarProjectile"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitLocation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    }
+  ]
+}

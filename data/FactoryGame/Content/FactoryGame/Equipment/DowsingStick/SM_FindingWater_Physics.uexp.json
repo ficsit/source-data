@@ -1,0 +1,838 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/DowsingStick/SM_FindingWater_Physics.uasset",
+  "guid": {
+    "a": 1625082996,
+    "b": 1180625560,
+    "c": 3092364203,
+    "d": 3632522349
+  },
+  "exports": [
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "stick_03"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "stick_02"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "UserConstraint"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 19.123493,
+                "y": 0,
+                "z": 0
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "AngularDrive": {
+                  "type": "AngularDriveConstraint",
+                  "value": {
+                    "AngularDriveMode": {
+                      "type": "ByteProperty",
+                      "value": "EAngularDriveMode::TwistAndSwing"
+                    },
+                    "SlerpDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 50000
+                        }
+                      }
+                    },
+                    "SwingDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 50000
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "TwistDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 50000
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 20
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                }
+              }
+            },
+            "SecAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 1,
+                "z": 2.220446e-16
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "stick_01"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "Root"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "UserConstraint"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 17.177896,
+                "y": 0,
+                "z": 0
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "AngularDrive": {
+                  "type": "AngularDriveConstraint",
+                  "value": {
+                    "AngularDriveMode": {
+                      "type": "ByteProperty",
+                      "value": "EAngularDriveMode::TwistAndSwing"
+                    },
+                    "SlerpDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 500000
+                        }
+                      }
+                    },
+                    "SwingDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 500000
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "TwistDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 500000
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 20
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                }
+              }
+            },
+            "SecAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 1,
+                "z": 2.220446e-16
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 8.29183,
+                        "y": -0.00000480935,
+                        "z": 0.0016594082
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 11.147861
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 2.6810403
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 90,
+                        "roll": -89.94967
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "stick_01"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 100
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 7.06598,
+                        "y": 0.00001377194,
+                        "z": 0.00032797316
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 9.048524
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 1.6386719
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": -90,
+                        "yaw": -0.009903774,
+                        "roll": 0.00992305
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "stick_02"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 100
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.6130886,
+                        "y": 0.00001760479,
+                        "z": -0.000030469615
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 4.3288846
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 0.5
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": -90,
+                        "yaw": -0.00032784906,
+                        "roll": 0.000356916
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "stick_03"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 100
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 15
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 15
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "Root"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        }
+      }
+    },
+    {
+      "name": "SM_FindingWater_Physics",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsAsset"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsAsset"
+      },
+      "outer": null,
+      "properties": {
+        "BoundsBodies": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "ConstraintSetup": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            }
+          ]
+        },
+        "SkeletalBodySetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            }
+          ]
+        },
+        "ThumbnailInfo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SM_FindingWater_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "stick_02"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "stick_01"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "UserConstraint"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 16.079248,
+                "y": 0,
+                "z": 0
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "AngularDrive": {
+                  "type": "AngularDriveConstraint",
+                  "value": {
+                    "AngularDriveMode": {
+                      "type": "ByteProperty",
+                      "value": "EAngularDriveMode::TwistAndSwing"
+                    },
+                    "SlerpDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 50000
+                        }
+                      }
+                    },
+                    "SwingDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 50000
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "TwistDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 50000
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 20
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                }
+              }
+            },
+            "SecAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 1,
+                "z": 2.220446e-16
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

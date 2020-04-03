@@ -1,0 +1,1317 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/Machinegun/Equip_Machinegun.uasset",
+  "guid": {
+    "a": 1681653831,
+    "b": 1338976400,
+    "c": 2496715702,
+    "d": 3555188858
+  },
+  "exports": [
+    {
+      "name": "CallFunc_GetAnimInstance_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_SpawnEmitterAtLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SkeletalMeshComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Machinegun_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Machinegun"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2351770106,
+            "b": 1300496655,
+            "c": 886175892,
+            "d": 929562460
+          }
+        }
+      }
+    },
+    {
+      "name": "mAmmo_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 2.607322
+            }
+          }
+        },
+        "DrawSize": {
+          "type": "IntPoint",
+          "value": {
+            "x": 100,
+            "y": 100
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 7.958872,
+            "y": 9.765741,
+            "z": 9.947201
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 30.000082,
+            "yaw": -90.00021,
+            "roll": 0.000015773658
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 0.025,
+            "y": 0.024999848,
+            "z": 0.025000002
+          }
+        },
+        "WidgetClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/Machinegun/Widget_Machinegun",
+              "name": "Widget_Machinegun_C"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Equip_Machinegun_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGWeaponInstantFire"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mAmmunitionClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Resource/Parts/CartridgeStandard/Desc_CartridgeStandard",
+              "name": "Desc_CartridgeStandard_C"
+            }
+          }
+        },
+        "mArmAnimation": {
+          "type": "EArmEquipment",
+          "value": "EArmEquipment::AE_Rifle"
+        },
+        "mAttachSocket": {
+          "type": "NameProperty",
+          "value": "hand_rSocket"
+        },
+        "mAttachmentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/Machinegun/Attach_Machinegun",
+              "name": "Attach_Machinegun_C"
+            }
+          }
+        },
+        "mDamageTypeClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/Machinegun/DamageType_Machinegun",
+              "name": "DamageType_Machinegun_C"
+            }
+          }
+        },
+        "mFireRate": {
+          "type": "FloatProperty",
+          "value": 0.1
+        },
+        "mInstantHitDamage": {
+          "type": "FloatProperty",
+          "value": 4
+        },
+        "mMagSize": {
+          "type": "IntProperty",
+          "value": 100
+        },
+        "mReloadTime": {
+          "type": "FloatProperty",
+          "value": 2
+        },
+        "mWeaponTraceLength": {
+          "type": "FloatProperty",
+          "value": 8500
+        }
+      }
+    },
+    {
+      "name": "WasEquipped",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGEquipment",
+        "name": "WasEquipped"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "showHUD",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SwitchHUD"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveTick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveTick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveTick"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_SpawnEmitterAttached_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Montage_IsPlaying_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WasUnEquipped",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGEquipment",
+        "name": "WasUnEquipped"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SwitchHUD",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Montage_Play_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetMesh1P_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Equip_Machinegun_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGWeaponInstantFire"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Equip_Machinegun"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Fire",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mAmmo",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "StaticMeshComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Machinegun_hands_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Machinegun_hands"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3142542491,
+            "b": 1103332446,
+            "c": 1315073935,
+            "d": 1044080962
+          }
+        }
+      }
+    },
+    {
+      "name": "Machinegun_hands_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": -8.744923,
+            "z": 0.9755678
+          }
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/Machinegun/Mesh/Machinegun_hands",
+              "name": "Machinegun_hands"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Montage_IsPlaying_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsLocalInstigator_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PlayReloadEffects",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGWeapon",
+        "name": "PlayReloadEffects"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetInstigatorCharacter_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsWidget_Machinegun",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Machinegun_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalMeshComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 0
+            }
+          }
+        },
+        "ClothingSimulationFactory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/ClothingSystemRuntime",
+              "name": "ClothingSimulationFactoryNv"
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -0.0000038146973,
+            "y": -8.744923,
+            "z": 1.1552038
+          }
+        },
+        "SkeletalMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Equipment/Machinegun/Mesh/Machinegun_skl",
+              "name": "Machinegun_skl"
+            }
+          }
+        },
+        "mFOV": {
+          "type": "FloatProperty",
+          "value": 90
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_Equip_Machinegun",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Machinegun_hands",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Fire__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PlayFireEffect",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGWeapon",
+        "name": "PlayFireEffect"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Montage_Play_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mLockAngle",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetAnimInstance_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Machinegun",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 4150798927,
+            "b": 1323039718,
+            "c": 1667475333,
+            "d": 3120804267
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetMesh1P_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_showHUD",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveBeginPlay",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveBeginPlay"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetInstigatorCharacter_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetUserWidgetObject_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Equip_Machinegun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/UMG",
+              "name": "WidgetComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mAmmo_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "mAmmo"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3812782299,
+            "b": 1299684291,
+            "c": 694709693,
+            "d": 2415551995
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_IsLocalInstigator_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Equip_Machinegun"
+      },
+      "properties": {}
+    }
+  ]
+}

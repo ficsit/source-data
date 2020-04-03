@@ -1,0 +1,81 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Walker/BB_Walker.uasset",
+  "guid": {
+    "a": 430265906,
+    "b": 1246250867,
+    "c": 374965407,
+    "d": 1742285624
+  },
+  "exports": [
+    {
+      "name": "BB_Walker",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardData"
+      },
+      "outer": null,
+      "properties": {
+        "Keys": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "TargetDistance"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Float"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/BB_EnemyBlackboard",
+              "name": "BB_EnemyBlackboard"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BlackboardKeyType_Float",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Float"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Float"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_Walker"
+      },
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+{
+  "file_name": "Engine/Plugins/Compositing/Composure/Content/Materials/ChromaKeying/M_SinglePassDespill.uasset",
+  "guid": {
+    "a": 2371814897,
+    "b": 1132408052,
+    "c": 1011688118,
+    "d": 2200781936
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionVectorParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionVectorParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionVectorParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0,
+            "g": 1,
+            "b": 0,
+            "a": 0
+          }
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 108172943,
+            "b": 1195782751,
+            "c": 4142588294,
+            "d": 3451120192
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "KeyColor"
+        }
+      }
+    },
+    {
+      "name": "M_SinglePassDespill",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendableOutputAlpha": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "BlendablePriority": {
+          "type": "IntProperty",
+          "value": 99
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionVectorParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_PostProcess"
+        },
+        "MaterialFunctionInfos": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/Compositing/PreMult",
+                      "name": "PreMult"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2776795640,
+                    "b": 1259563098,
+                    "c": 2043389580,
+                    "d": 1130006995
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/Compositing/UnpreMult",
+                      "name": "UnpreMult"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 737950445,
+                    "b": 1236531762,
+                    "c": 2049819821,
+                    "d": 3510151395
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/SmoothStep",
+                      "name": "SmoothStep"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2870111550,
+                    "b": 1188092151,
+                    "c": 2725360316,
+                    "d": 2076783322
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/Compositing/RGBtoHSV",
+                      "name": "RGBtoHSV"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 1974525686,
+                    "b": 1252035365,
+                    "c": 1864627125,
+                    "d": 3130808921
+                  }
+                }
+              }
+            },
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Composure/Materials/Compositing/RGBtoHSV",
+                      "name": "RGBtoHSV"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 1974525686,
+                    "b": 1252035365,
+                    "c": 1864627125,
+                    "d": 3130808921
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 1627157614,
+            "b": 1284092737,
+            "c": 1951658685,
+            "d": 92012036
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3459137982,
+            "b": 1243269380,
+            "c": 958467732,
+            "d": 1959589640
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "DeSpillAmount"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3329812386,
+            "b": 1217936383,
+            "c": 3621172386,
+            "d": 1232687767
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "PrevKeyerResult"
+        },
+        "SamplerType": {
+          "type": "ByteProperty",
+          "value": "SAMPLERTYPE_LinearColor"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture",
+              "name": "Black_1x1_EXR_Texture"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1184152431,
+            "b": 1151403779,
+            "c": 2441745552,
+            "d": 918127690
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "LinearColorPlate"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/Compositing/PreMult",
+              "name": "PreMult"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.2
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3797077717,
+            "b": 1132447542,
+            "c": 3012778159,
+            "d": 1433150297
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "HueRange"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/SmoothStep",
+              "name": "SmoothStep"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/Compositing/RGBtoHSV",
+              "name": "RGBtoHSV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/Compositing/RGBtoHSV",
+              "name": "RGBtoHSV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_SinglePassDespill"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_SinglePassDespill"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Composure/Materials/Compositing/UnpreMult",
+              "name": "UnpreMult"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/-Shared/Material/Glass.uasset",
+  "guid": {
+    "a": 3486521958,
+    "b": 1152825118,
+    "c": 2497806501,
+    "d": 1735729547
+  },
+  "exports": [
+    {
+      "name": "Glass",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            }
+          ]
+        },
+        "MaterialFunctionInfos": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/-Shared/Material/MaterialFunction/GlassMaster",
+                      "name": "GlassMaster"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 3264686457,
+                    "b": 1235437691,
+                    "c": 807739297,
+                    "d": 1293092225
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Metallic": {
+          "type": "ScalarMaterialInput",
+          "value": null
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 1896898915,
+            "b": 1185549781,
+            "c": 2053994633,
+            "d": 2846605982
+          }
+        },
+        "TranslucencyLightingMode": {
+          "type": "ByteProperty",
+          "value": "TLM_Surface"
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithInstancedStaticMeshes": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithSkeletalMesh": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Glass"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Glass"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/-Shared/Material/MaterialFunction/GlassMaster",
+              "name": "GlassMaster"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

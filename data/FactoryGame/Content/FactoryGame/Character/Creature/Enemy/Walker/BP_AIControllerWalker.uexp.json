@@ -1,0 +1,372 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Walker/BP_AIControllerWalker.uasset",
+  "guid": {
+    "a": 3088367376,
+    "b": 1339786755,
+    "c": 3061569453,
+    "d": 1753598968
+  },
+  "exports": [
+    {
+      "name": "Default__BP_AIControllerWalker_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AIControllerWalker_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "Default__BP_EnemyController_C"
+      },
+      "outer": null,
+      "properties": {
+        "ActionsComp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ActionsComp"
+            }
+          }
+        },
+        "PathFollowingComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PathFollowingComponent"
+            }
+          }
+        },
+        "PerceptionComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PerceptionComponent"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "TransformComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "mAggroDistanceCurve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/DistanceAggroCurveWalker",
+              "name": "DistanceAggroCurveWalker"
+            }
+          }
+        },
+        "mBlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/BB_Walker",
+              "name": "BB_Walker"
+            }
+          }
+        },
+        "mDefaultIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "mGainAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.65
+        },
+        "mLoseAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "name": "PerceptionComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIPerceptionComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PerceptionComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_AIControllerWalker_C"
+      },
+      "properties": {
+        "OnTargetPerceptionUpdated": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "SensesConfig": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Sight"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Hearing"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Hearing",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Hearing"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AISenseConfig_Hearing"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "HearingRange": {
+          "type": "FloatProperty",
+          "value": 7500
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "PerceptionComponent",
+        "name": "AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "LoseSightRadius": {
+          "type": "FloatProperty",
+          "value": 15000
+        },
+        "SightRadius": {
+          "type": "FloatProperty",
+          "value": 14500
+        }
+      }
+    },
+    {
+      "name": "ActionsComp",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PawnActionsComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "ActionsComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_AIControllerWalker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AIControllerWalker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 4259990668,
+            "b": 1171882006,
+            "c": 4152333442,
+            "d": 3247665113
+          }
+        }
+      }
+    },
+    {
+      "name": "BP_AIControllerWalker_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "BP_EnemyController_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "TransformComponent0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "TransformComponent0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_AIControllerWalker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AIControllerWalker_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PathFollowingComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PathFollowingComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PathFollowingComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_AIControllerWalker_C"
+      },
+      "properties": {}
+    }
+  ]
+}

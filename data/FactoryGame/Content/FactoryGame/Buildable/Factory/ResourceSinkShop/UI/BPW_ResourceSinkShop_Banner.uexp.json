@@ -1,0 +1,5623 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/ResourceSinkShop/UI/BPW_ResourceSinkShop_Banner.uasset",
+  "guid": {
+    "a": 2241570429,
+    "b": 1288312836,
+    "c": 1813696432,
+    "d": 1213512037
+  },
+  "exports": [
+    {
+      "name": "BPW_ResourceSinkShop_Banner_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "Animations": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SpawnAnim_INST"
+              }
+            }
+          ]
+        },
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Buildable/Factory/ResourceSinkShop/UI/BPW_ResourceSinkShop_Banner.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BPW_ResourceSinkShop_Banner"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextOffsetter"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mBannerStruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerImageObject",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerImageAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageObject"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageAnimator"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextObject"
+            }
+          }
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 10
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 135
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 20
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 10
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SpawnAnim",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PreConstruct"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CanvasPanel",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "MovieSceneFloatSection",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 49
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 50
+              }
+            }
+          }
+        },
+        "FloatCurve": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 1,
+                "value": 30001
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 2554563716,
+            "b": 1188740937,
+            "c": 1345827512,
+            "d": 1524550537
+          }
+        }
+      }
+    },
+    {
+      "name": "MovieSceneFloatTrack",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SpawnAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "RenderOpacity"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "RenderOpacity"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneFloatSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 4221922414,
+            "b": 1144746610,
+            "c": 2995953297,
+            "d": 4219301756
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerImageAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageObject"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageAnimator"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mBannerTextOffsetter",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mBannerImageOffsetter",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextBackground"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerTextObject",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 35
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "SemiBold"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "FC533D274C2A704F0C9B7C89C5812EAA",
+            "source_string": "EQUIPMENT"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_BPW_ResourceSinkShop_Banner",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Construct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Construct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextOffsetter"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageOffsetter"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "UpdateBannerData",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerTextBackground",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "TintColor": {
+              "type": "SlateColor",
+              "value": {
+                "SpecifiedColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0.132868,
+                    "g": 0.132868,
+                    "b": 0.135633,
+                    "a": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CanvasPanel",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CanvasPanel"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 115
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MovieSceneFloatSection",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 53
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 54
+              }
+            }
+          }
+        },
+        "FloatCurve": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 6000
+              },
+              "upper_bound": {
+                "bound_type": 1,
+                "value": 30001
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1174235897,
+            "b": 1145336518,
+            "c": 760541612,
+            "d": 2157550972
+          }
+        }
+      }
+    },
+    {
+      "name": "MovieSceneMarginTrack",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "MovieSceneMarginTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__MovieSceneMarginTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SpawnAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "Offsets"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "LayoutData.Offsets"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneMarginSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1085340493,
+            "b": 1266640736,
+            "c": 2791114639,
+            "d": 1950721463
+          }
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpawnAnim",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieScene"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieScene",
+        "name": "Default__MovieScene"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "DisplayRate": {
+          "type": "FrameRate",
+          "value": {
+            "Numerator": {
+              "type": "IntProperty",
+              "value": 20
+            }
+          }
+        },
+        "ObjectBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "CanvasPanelSlot_0"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 941425964,
+                    "b": 1162691964,
+                    "c": 3131761556,
+                    "d": 570225179
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieSceneMarginTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "mBannerImageAnimator"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2420620796,
+                    "b": 1115193413,
+                    "c": 1465983403,
+                    "d": 3204491972
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieSceneFloatTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "mBannerTextAnimator"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 646835981,
+                    "b": 1091647451,
+                    "c": 4281872518,
+                    "d": 3269991037
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieSceneFloatTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "CanvasPanelSlot_0"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 1176651659,
+                    "b": 1124891164,
+                    "c": 67003044,
+                    "d": 1516117861
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieSceneMarginTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "mBannerTextObject"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2734230926,
+                    "b": 1086584952,
+                    "c": 3551777420,
+                    "d": 3421771566
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieSceneFloatTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "PlaybackRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 0,
+                "value": 30002
+              }
+            }
+          }
+        },
+        "Possessables": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 941425964,
+                    "b": 1162691964,
+                    "c": 3131761556,
+                    "d": 570225179
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "CanvasPanelSlot_0"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2420620796,
+                    "b": 1115193413,
+                    "c": 1465983403,
+                    "d": 3204491972
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "CanvasPanelSlot"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2420620796,
+                    "b": 1115193413,
+                    "c": 1465983403,
+                    "d": 3204491972
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "mBannerImageAnimator"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "Overlay"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 646835981,
+                    "b": 1091647451,
+                    "c": 4281872518,
+                    "d": 3269991037
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "mBannerTextAnimator"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "Overlay"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 1176651659,
+                    "b": 1124891164,
+                    "c": 67003044,
+                    "d": 1516117861
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "CanvasPanelSlot_0"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 646835981,
+                    "b": 1091647451,
+                    "c": 4281872518,
+                    "d": 3269991037
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "CanvasPanelSlot"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2734230926,
+                    "b": 1086584952,
+                    "c": 3551777420,
+                    "d": 3421771566
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "mBannerTextObject"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "TextBlock"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 3555023179,
+            "b": 1131267427,
+            "c": 407091626,
+            "d": 3247156962
+          }
+        }
+      }
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneMarginSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CanvasPanel"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BG"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mBannerTextObject",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Image",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 175,
+                "y": 16
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/Horizontal_Gradient",
+                  "name": "Horizontal_Gradient"
+                }
+              }
+            },
+            "TintColor": {
+              "type": "SlateColor",
+              "value": {
+                "SpecifiedColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ColorAndOpacity": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.5
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "MovieSceneFloatTrack",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SpawnAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "RenderOpacity"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "RenderOpacity"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneFloatSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 708298983,
+            "b": 1163143682,
+            "c": 42119066,
+            "d": 905135960
+          }
+        }
+      }
+    },
+    {
+      "name": "mBannerImageAnimator",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextOffsetter"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageOffsetter"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mBannerImageOffsetter",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BG",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          }
+        },
+        "RenderOpacity": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "MovieSceneMarginSection",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "MovieSceneMarginSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__MovieSceneMarginSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 55
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 56
+              }
+            }
+          }
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 1,
+                "value": 30001
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1933349123,
+            "b": 1279545240,
+            "c": 1834968960,
+            "d": 556667269
+          }
+        },
+        "TopCurve": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "mBannerImageAnimator",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextBackground"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CanvasPanel"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BG"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneMarginSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MovieSceneFloatSection",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 51
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 52
+              }
+            }
+          }
+        },
+        "FloatCurve": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 0,
+                "value": 30000
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 3570953496,
+            "b": 1306551996,
+            "c": 2266997120,
+            "d": 4050830284
+          }
+        }
+      }
+    },
+    {
+      "name": "mBannerTextAnimator",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextObject"
+            }
+          }
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 10
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 135
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 20
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 10
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PreConstruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "PreConstruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerImageObject",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 512,
+                "y": 512
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/ManufacturerMk1/UI/Manufacturer",
+                  "name": "Manufacturer"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MovieSceneMarginTrack",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "MovieSceneMarginTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__MovieSceneMarginTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SpawnAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "Offsets"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "LayoutData.Offsets"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneMarginSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1542056533,
+            "b": 1238030246,
+            "c": 2979712673,
+            "d": 1990754032
+          }
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerImageOffsetter"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageAnimator"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageOffsetter"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextOffsetter"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mBannerTextOffsetter",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Image"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerTextAnimator"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Image"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextAnimator"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "Default__BPW_ResourceSinkShop_Banner_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mBannerStruct": {
+          "type": "ResourceSinkShop_Banner_Struct",
+          "value": {
+            "ImageBrush_5_012E7B504A7AB4B9D1F758A855CF7C5F": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 230,
+                    "y": 230
+                  }
+                },
+                "ImageType": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushImageType::NoImage"
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    }
+                  }
+                },
+                "Mirroring": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushMirrorType::NoMirror"
+                },
+                "ResourceName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Factory/ManufacturerMk1/UI/Manufacturer",
+                      "name": "Manufacturer"
+                    }
+                  }
+                },
+                "Tiling": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushTileType::NoTile"
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "ColorUseRule": {
+                      "type": "ByteProperty",
+                      "value": "ESlateColorStylingMode::UseColor_Specified"
+                    },
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1
+                      }
+                    }
+                  }
+                },
+                "UVRegion": {
+                  "type": "Box2D",
+                  "value": {
+                    "is_valid": 0,
+                    "min": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "max": {
+                      "x": 0,
+                      "y": 0
+                    }
+                  }
+                },
+                "bIsDynamicallyLoaded": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            "ImageEndPosition_10_3EA4EF5B4A94A13E17A775B8C65CE230": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "TextEndPosition_12_284EB20F4CB57ECB983D038E3F457990": {
+              "type": "Vector2D",
+              "value": {
+                "x": 75,
+                "y": 0
+              }
+            },
+            "Text_7_9ECC94234929451FA80AFDAC404AD507": {
+              "type": "TextProperty",
+              "value": {
+                "flags": 0,
+                "history_type": 0,
+                "namespace": "",
+                "key": "A11E04474AA7303285CF0380884CA6A9",
+                "source_string": "Buildings"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mBannerImageOffsetter"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageAnimator"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageOffsetter"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_SlotAsCanvasSlot_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Image",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 175,
+                "y": 16
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/Horizontal_Gradient",
+                  "name": "Horizontal_Gradient"
+                }
+              }
+            },
+            "TintColor": {
+              "type": "SlateColor",
+              "value": {
+                "SpecifiedColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ColorAndOpacity": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.5
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "mBannerImageOffsetter",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CanvasPanel"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "Anchors": {
+              "type": "Anchors",
+              "value": {
+                "Maximum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                },
+                "Minimum": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 0.5,
+                    "y": 0.5
+                  }
+                }
+              }
+            },
+            "Offsets": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 115
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneMarginSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneMarginSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpawnAnim_INST",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetAnimation"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetAnimation"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {
+        "AnimationBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2420620796,
+                    "b": 1115193413,
+                    "c": 1465983403,
+                    "d": 3204491972
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "mBannerImageAnimator"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 941425964,
+                    "b": 1162691964,
+                    "c": 3131761556,
+                    "d": 570225179
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "CanvasPanelSlot"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "mBannerImageAnimator"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 646835981,
+                    "b": 1091647451,
+                    "c": 4281872518,
+                    "d": 3269991037
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "mBannerTextAnimator"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 1176651659,
+                    "b": 1124891164,
+                    "c": 67003044,
+                    "d": 1516117861
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "CanvasPanelSlot"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "mBannerTextAnimator"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2734230926,
+                    "b": 1086584952,
+                    "c": 3551777420,
+                    "d": 3421771566
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "mBannerTextObject"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        },
+        "DisplayLabel": {
+          "type": "StrProperty",
+          "value": "SpawnAnim"
+        },
+        "MovieScene": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SpawnAnim"
+            }
+          }
+        },
+        "PrecompiledEvaluationTemplate": {
+          "type": "MovieSceneEvaluationTemplate",
+          "value": {
+            "EvaluationField": {
+              "type": "MovieSceneEvaluationField",
+              "value": {
+                "Groups": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 4
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 2
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 3
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 1
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 5
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 1
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 2
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 3
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 4
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 4
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 2
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 3
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 4
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        }
+                      }
+                    }
+                  ]
+                },
+                "MetaData": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 1
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 0
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 7
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 1
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 6
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 1
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 3
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 2
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 5
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 3
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 4
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 3
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 3
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 2
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 1
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 1
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 0
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 1
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 5
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 4
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 7
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 3
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 6
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 3
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 9
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 4
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 8
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 4
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 1
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 0
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 3
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 2
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 5
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 3
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 4
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 3
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 7
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 4
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 6
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 4
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": []
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    }
+                  ]
+                },
+                "Ranges": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 2,
+                            "value": 0
+                          },
+                          "upper_bound": {
+                            "bound_type": 0,
+                            "value": 0
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 1,
+                            "value": 0
+                          },
+                          "upper_bound": {
+                            "bound_type": 0,
+                            "value": 6000
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 1,
+                            "value": 6000
+                          },
+                          "upper_bound": {
+                            "bound_type": 0,
+                            "value": 30000
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 1,
+                            "value": 30000
+                          },
+                          "upper_bound": {
+                            "bound_type": 0,
+                            "value": 30002
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 1,
+                            "value": 30002
+                          },
+                          "upper_bound": {
+                            "bound_type": 2,
+                            "value": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "SequenceSignature": {
+              "type": "Guid",
+              "value": {
+                "a": 595836634,
+                "b": 1214036799,
+                "c": 181855651,
+                "d": 3121549086
+              }
+            },
+            "TemplateLedger": {
+              "type": "MovieSceneTemplateGenerationLedger",
+              "value": {
+                "LastTrackIdentifier": {
+                  "type": "MovieSceneTrackIdentifier",
+                  "value": {
+                    "value": 4
+                  }
+                },
+                "TrackSignatureToTrackIdentifier": {
+                  "type": "MapProperty",
+                  "value": [
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 1542056533
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 1238030246
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 2979712673
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 1990754032
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "TemplateSerialNumber": {
+              "type": "MovieSceneEvaluationTemplateSerialNumber",
+              "value": {
+                "Value": {
+                  "type": "UInt32Property",
+                  "value": 1
+                }
+              }
+            },
+            "Tracks": {
+              "type": "MapProperty",
+              "value": [
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 0
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                },
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 209
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                },
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 0
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                },
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 273
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                },
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 0
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 595836634,
+            "b": 1214036799,
+            "c": 181855651,
+            "d": 3121549086
+          }
+        }
+      }
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerTextAnimator",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "mBannerTextOffsetter",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mBannerStruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SetBanner",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_TextToUpper_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerImageObject",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 512,
+                "y": 512
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/ManufacturerMk1/UI/Manufacturer",
+                  "name": "Manufacturer"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BG",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          }
+        },
+        "RenderOpacity": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PlayAnimation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mBannerTextBackground",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "TintColor": {
+              "type": "SlateColor",
+              "value": {
+                "SpecifiedColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0.132868,
+                    "g": 0.132868,
+                    "b": 0.135633,
+                    "a": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "MovieSceneMarginSection",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "MovieSceneMarginSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__MovieSceneMarginSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 57
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 58
+              }
+            }
+          }
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 1,
+                "value": 30001
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1697338943,
+            "b": 1132381712,
+            "c": 2317049768,
+            "d": 415524870
+          }
+        },
+        "TopCurve": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        }
+      }
+    },
+    {
+      "name": "mBannerTextObject",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 35
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "SemiBold"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "FC533D274C2A704F0C9B7C89C5812EAA",
+            "source_string": "EQUIPMENT"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_ResourceSinkShop_Banner"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_ResourceSinkShop_Banner_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BPW_ResourceSinkShop_Banner_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mBannerImageObject": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageObject"
+            }
+          }
+        },
+        "mBannerImageOffsetter": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerImageOffsetter"
+            }
+          }
+        },
+        "mBannerTextObject": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextObject"
+            }
+          }
+        },
+        "mBannerTextOffsetter": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mBannerTextOffsetter"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MovieSceneFloatTrack",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SpawnAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "RenderOpacity"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "RenderOpacity"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneFloatSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 3914024284,
+            "b": 1077998408,
+            "c": 3080370066,
+            "d": 3384555606
+          }
+        }
+      }
+    }
+  ]
+}

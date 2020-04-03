@@ -1,0 +1,947 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/Train/Station/Build_TrainPlatformEmpty.uasset",
+  "guid": {
+    "a": 2568802400,
+    "b": 1321481500,
+    "c": 3281013396,
+    "d": 1358411141
+  },
+  "exports": [
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "BoxComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Clearance_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Clearance"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "RootComponent"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2539584933,
+            "b": 1287789087,
+            "c": 3414520465,
+            "d": 1679117816
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "FGColoredInstanceMeshProxy",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Build_TrainPlatformEmpty_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGBuildableTrainPlatformEmpty"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Clearance_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BoxComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {
+        "AreaClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/NavigationSystem",
+              "name": "NavArea_Obstacle"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Clearance"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Clearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "HologramClearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_GameTraceChannel4"
+            }
+          }
+        },
+        "BoxExtent": {
+          "type": "Vector",
+          "value": {
+            "x": 800,
+            "y": 1500,
+            "z": 1000
+          }
+        },
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 1000
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 1,
+            "y": 0.8,
+            "z": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "FGFactoryLegs",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "RootComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableTrainPlatformEmpty",
+        "name": "RootComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_TrainPlatformEmpty_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1776043205,
+            "b": 1182996937,
+            "c": 2217800633,
+            "d": 320420658
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Build_TrainPlatformEmpty_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGBuildableTrainPlatformEmpty"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "mDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "38FD107C4A183AA47073F78064292460",
+            "source_string": "An empty train platform for when you need to create some empty space."
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "3763BE324A7CE633C1FEACA891CF080E",
+            "source_string": "Empty Platform"
+          }
+        },
+        "mHologramClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Factory/Train/Station/Holo_TrainPlatformEmpty",
+              "name": "Holo_TrainPlatformEmpty_C"
+            }
+          }
+        },
+        "mPlatformConnection0": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PlatformConnection0"
+            }
+          }
+        },
+        "mPlatformConnection1": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PlatformConnection1"
+            }
+          }
+        },
+        "mPlatformConnections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PlatformConnection0"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PlatformConnection1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "InventoryPotentialHandler",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGReplicationDetailInventoryComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableTrainPlatformEmpty",
+        "name": "InventoryPotentialHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_TrainPlatformEmpty_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PlatformConnection1",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGTrainPlatformConnection"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableTrainPlatformEmpty",
+        "name": "PlatformConnection1"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_TrainPlatformEmpty_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -800,
+            "y": 0,
+            "z": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "Clearance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGFactoryLegsComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FGFactoryLegs_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "FGFactoryLegs"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3730727419,
+            "b": 1265194804,
+            "c": 1934219671,
+            "d": 535131065
+          }
+        }
+      }
+    },
+    {
+      "name": "FGColoredInstanceMeshProxy_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGColoredInstanceMeshProxy"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGColoredInstanceMeshProxy"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        },
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Factory/Train/Station/Mesh/SM_TrainPlatformEmpty",
+              "name": "SM_TrainPlatformEmpty"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "FGFactoryLegs_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGFactoryLegsComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGFactoryLegsComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Static"
+        },
+        "mLegSocketNames": {
+          "type": "ArrayProperty",
+          "value": [
+            "foot_01",
+            "foot_02",
+            "foot_03",
+            "foot_04",
+            "foot_05",
+            "foot_06",
+            "foot_07",
+            "foot_08",
+            "foot_09",
+            "foot",
+            "foot",
+            "foot",
+            "foot",
+            "foot",
+            "foot",
+            "foot"
+          ]
+        },
+        "mMaxLegLengthOverride": {
+          "type": "FloatProperty",
+          "value": 500
+        }
+      }
+    },
+    {
+      "name": "PlatformConnection0",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGTrainPlatformConnection"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableTrainPlatformEmpty",
+        "name": "PlatformConnection0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_TrainPlatformEmpty_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 800,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 180,
+            "roll": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_TrainPlatformEmpty_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGColoredInstanceMeshProxy"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FGColoredInstanceMeshProxy_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "FGColoredInstanceMeshProxy"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "RootComponent"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3329936563,
+            "b": 1216932549,
+            "c": 1365419934,
+            "d": 4071602263
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

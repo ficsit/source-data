@@ -1,0 +1,169 @@
+{
+  "file_name": "FactoryGame/Content/Cinematics/Cutscenes/Intro_01/Cutscene_Video_Mat.uasset",
+  "guid": {
+    "a": 1226821382,
+    "b": 1323936301,
+    "c": 3739808642,
+    "d": 2254577468
+  },
+  "exports": [
+    {
+      "name": "Cutscene_Video_Mat",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 1011807542,
+            "b": 1151220903,
+            "c": 3952896421,
+            "d": 320060880
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithSkeletalMesh": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Cutscene_Video_Mat"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.8
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 393112852,
+            "b": 1219072637,
+            "c": 1338090890,
+            "d": 3028577876
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Cutscene_Video_Mat"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Emissive"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Cutscene_Video_Mat"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Cutscene_Video_Mat"
+            }
+          }
+        },
+        "SamplerType": {
+          "type": "ByteProperty",
+          "value": "SAMPLERTYPE_External"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/Cinematics/Cutscenes/Intro_01/Cutscene_Video",
+              "name": "Cutscene_Video"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

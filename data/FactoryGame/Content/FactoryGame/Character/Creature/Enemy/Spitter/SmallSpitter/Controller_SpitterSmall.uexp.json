@@ -1,0 +1,759 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Spitter/SmallSpitter/Controller_SpitterSmall.uasset",
+  "guid": {
+    "a": 3135141974,
+    "b": 1231810142,
+    "c": 1604650398,
+    "d": 1516237719
+  },
+  "exports": [
+    {
+      "name": "AISenseConfig_Hearing",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Hearing"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AISenseConfig_Hearing"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "HearingRange": {
+          "type": "FloatProperty",
+          "value": 7500
+        }
+      }
+    },
+    {
+      "name": "Stimulus",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BndEvt__PerceptionComponent_K2Node_ComponentBoundEvent_0_ActorPerceptionUpdatedDelegate__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ComponentDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ComponentDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ComponentDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "properties": {
+        "ComponentDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "PerceptionComponent"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnTargetPerceptionUpdated"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__PerceptionComponent_K2Node_ComponentBoundEvent_0_ActorPerceptionUpdatedDelegate__DelegateSignature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_Stimulus",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "TransformComponent0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "TransformComponent0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__Controller_SpitterSmall_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "Default__BP_EnemyController_C"
+      },
+      "outer": null,
+      "properties": {
+        "ActionsComp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ActionsComp"
+            }
+          }
+        },
+        "PathFollowingComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PathFollowingComponent"
+            }
+          }
+        },
+        "PerceptionComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PerceptionComponent"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "TransformComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mAggroDistanceCurve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/Curve_SpitterDistanceAggro",
+              "name": "Curve_SpitterDistanceAggro"
+            }
+          }
+        },
+        "mBehaviorTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/SmallSpitter/BT_SpitterSmall",
+              "name": "BT_SpitterSmall"
+            }
+          }
+        },
+        "mBlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Spitter/BB_Spitter",
+              "name": "BB_Spitter"
+            }
+          }
+        },
+        "mDefaultIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "mDoPanicName": {
+          "type": "NameProperty",
+          "value": "DoPanic"
+        },
+        "mGainAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.65
+        },
+        "mLoseAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_CanSeeActor_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PathFollowingComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PathFollowingComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PathFollowingComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mDoPanicName",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "NameProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__NameProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGAggro_Target_Interface",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "InterfaceProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__InterfaceProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Controller_SpitterSmall_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "BP_EnemyController_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "DynamicBindingObjects": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ComponentDelegateBinding"
+              }
+            }
+          ]
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Controller_SpitterSmall"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PerceptionComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIPerceptionComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PerceptionComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_SpitterSmall_C"
+      },
+      "properties": {
+        "OnTargetPerceptionUpdated": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "SensesConfig": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Sight"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Hearing"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "PerceptionComponent",
+        "name": "AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "LoseSightRadius": {
+          "type": "FloatProperty",
+          "value": 5000
+        },
+        "PeripheralVisionAngleDegrees": {
+          "type": "FloatProperty",
+          "value": 179
+        },
+        "SightRadius": {
+          "type": "FloatProperty",
+          "value": 4500
+        },
+        "bStartsEnabled": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Actor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_Controller_SpitterSmall",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_Actor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ActionsComp",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PawnActionsComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "ActionsComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_SpitterSmall_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_EqualEqual_NameName_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetBlackboard_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_SpitterSmall"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1476069972,
+            "b": 1162210515,
+            "c": 1038971783,
+            "d": 2349890523
+          }
+        }
+      }
+    }
+  ]
+}

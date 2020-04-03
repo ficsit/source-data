@@ -1,0 +1,730 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/StunSpear/Mesh/StunSpear_Chain_Physics.uasset",
+  "guid": {
+    "a": 439868678,
+    "b": 1277644145,
+    "c": 3311654319,
+    "d": 1174807495
+  },
+  "exports": [
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "chain_03"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "chain_02"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "chain_03"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 2.5673175,
+                "y": -4.7683716e-7,
+                "z": -4.7683716e-7
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Damping": {
+                      "type": "FloatProperty",
+                      "value": 50
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "bDisableCollision": {
+                  "type": "BoolProperty",
+                  "value": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "chain_04"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "chain_03"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "chain_04"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 2.1856172,
+                "y": -1.7763568e-15,
+                "z": 0
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Damping": {
+                      "type": "FloatProperty",
+                      "value": 50
+                    },
+                    "Swing1LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 60
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    }
+                  }
+                },
+                "bDisableCollision": {
+                  "type": "BoolProperty",
+                  "value": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.3350289,
+                        "y": 0.02085214,
+                        "z": 5.7597947
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 13.23968
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 2.1105783
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "handle"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.6205952,
+                        "y": -0.021942776,
+                        "z": -0.0015509314
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 2.5
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 1.5
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "chain_02"
+        },
+        "CollisionReponse": {
+          "type": "ByteProperty",
+          "value": "EBodyCollisionResponse::BodyCollision_Disabled"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 100
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 0.5
+            },
+            "bOverrideMass": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.3745967,
+                        "y": -0.00007616803,
+                        "z": -3.9086103e-8
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 1.75
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 1.25
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "chain_03"
+        },
+        "CollisionReponse": {
+          "type": "ByteProperty",
+          "value": "EBodyCollisionResponse::BodyCollision_Disabled"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 30
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 0.4
+            },
+            "bOverrideMass": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphereElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphereElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.7879629,
+                        "y": 0.0000028889572,
+                        "z": 0.0000036905856
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 1.75
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "chain_04"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 20
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 0.3
+            },
+            "bOverrideMass": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "StunSpear_Chain_Physics",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsAsset"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsAsset"
+      },
+      "outer": null,
+      "properties": {
+        "BoundsBodies": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "ConstraintSetup": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            }
+          ]
+        },
+        "SkeletalBodySetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            }
+          ]
+        },
+        "ThumbnailInfo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "StunSpear_Chain_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "chain_02"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "handle"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "chain_02"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 2.547192,
+                "y": -4.9698367,
+                "z": 13.557024
+              }
+            },
+            "PriAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 1.7881393e-7,
+                "y": 0,
+                "z": -0.9999998
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Damping": {
+                      "type": "FloatProperty",
+                      "value": 50
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 90
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 5
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    }
+                  }
+                },
+                "bDisableCollision": {
+                  "type": "BoolProperty",
+                  "value": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

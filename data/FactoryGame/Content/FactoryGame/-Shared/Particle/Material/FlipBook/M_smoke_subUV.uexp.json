@@ -1,0 +1,207 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/-Shared/Particle/Material/FlipBook/M_smoke_subUV.uasset",
+  "guid": {
+    "a": 4153102980,
+    "b": 1138790631,
+    "c": 3968609186,
+    "d": 2936976691
+  },
+  "exports": [
+    {
+      "name": "M_smoke_subUV",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionParticleSubUV"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2087546376,
+            "b": 1265724712,
+            "c": 2760776381,
+            "d": 887464753
+          }
+        },
+        "TranslucentShadowDensityScale": {
+          "type": "FloatProperty",
+          "value": 3
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithParticleSprites": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionParticleSubUV",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionParticleSubUV"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionParticleSubUV"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_smoke_subUV"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_smoke_subUV"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/-Shared/Particle/Texture/Flipbook/T_Smoke_SubUV",
+              "name": "T_Smoke_SubUV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_smoke_subUV"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 29
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_smoke_subUV"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/-Shared/Particle/Texture/T_Smoke_Tiled_D",
+              "name": "T_Smoke_Tiled_D"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

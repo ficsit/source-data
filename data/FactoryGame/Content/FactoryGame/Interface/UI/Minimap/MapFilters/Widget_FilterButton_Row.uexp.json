@@ -1,0 +1,3190 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/Minimap/MapFilters/Widget_FilterButton_Row.uasset",
+  "guid": {
+    "a": 1628721952,
+    "b": 1086074814,
+    "c": 3136428450,
+    "d": 2569340288
+  },
+  "exports": [
+    {
+      "name": "HorizontalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "HorizontalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mOptionSizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Right"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Left": {
+              "type": "FloatProperty",
+              "value": 8
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 8
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ButtonSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ButtonSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ButtonSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mFilterRowButton"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 0
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterRowButton"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "CanvasPanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CanvasPanel"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mLightContainer"
+            }
+          }
+        },
+        "LayoutData": {
+          "type": "AnchorData",
+          "value": {
+            "Alignment": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        },
+        "bAutoSize": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mFilterText",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFilterOptionSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "NamedSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__NamedSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mOptionSizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "MinDesiredWidth": {
+          "type": "FloatProperty",
+          "value": 120
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_MinDesiredWidth": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "HeightOverride": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "MinDesiredHeight": {
+          "type": "FloatProperty",
+          "value": 40
+        },
+        "MinDesiredWidth": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 180
+        },
+        "bOverride_MinDesiredHeight": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_MinDesiredWidth": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "OnUnhovered__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mIsSelected",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OnClicked__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "mLightContainer",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "RenderOpacity": {
+          "type": "FloatProperty",
+          "value": 0.15
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Collapsed"
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mShine",
+      "class": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/-Shared/Widget_ButtonSpotLight",
+        "name": "Widget_ButtonSpotLight_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/-Shared/Widget_ButtonSpotLight",
+        "name": "Default__Widget_ButtonSpotLight_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "NamedSlotBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "NamedSlotBinding",
+              "value": {
+                "Content": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "HorizontalBox"
+                    }
+                  }
+                },
+                "Name": {
+                  "type": "NameProperty",
+                  "value": "mShineSlot"
+                }
+              }
+            }
+          ]
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mShineSize": {
+          "type": "FloatProperty",
+          "value": 400
+        }
+      }
+    },
+    {
+      "name": "IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PreConstruct"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "mOptionSizeBox",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Construct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Construct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HorizontalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "HorizontalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "HorizontalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "HorizontalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "HorizontalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterName"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Left"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Left": {
+              "type": "FloatProperty",
+              "value": 8
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "NewVar",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFilterName",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 12
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Regular"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "B9D08D884C60262ABC0E9FA9DC067F75",
+            "source_string": "Name Goes Here"
+          }
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::HitTestInvisible"
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mFilterName",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 12
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Regular"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "B9D08D884C60262ABC0E9FA9DC067F75",
+            "source_string": "Name Goes Here"
+          }
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::HitTestInvisible"
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mFilterOptionWidth",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Title",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mShine"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Widget_FilterButton_Row_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mFilterName": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterName"
+            }
+          }
+        },
+        "mFilterOptionSlot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterOptionSlot"
+            }
+          }
+        },
+        "mFilterRowButton": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterRowButton"
+            }
+          }
+        },
+        "mOptionSizeBox": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mOptionSizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterRowButton"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_FilterButton_Row"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFilterOptionSlot",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "mOptionSizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "MinDesiredWidth": {
+          "type": "FloatProperty",
+          "value": 120
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_MinDesiredWidth": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "OnPressed",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mShineSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "NamedSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__NamedSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PanelSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mOptionSizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterOptionSlot"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mOptionSizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mLightContainer"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Image"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mLightContainer"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mFilterName",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "HeightOverride": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "MinDesiredHeight": {
+          "type": "FloatProperty",
+          "value": 40
+        },
+        "MinDesiredWidth": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 180
+        },
+        "bOverride_MinDesiredHeight": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_MinDesiredWidth": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ComponentDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ComponentDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ComponentDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {
+        "ComponentDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "mFilterRowButton"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnUnhovered"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature"
+                }
+              }
+            },
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "mFilterRowButton"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnHovered"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature"
+                }
+              }
+            },
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "mFilterRowButton"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnPressed"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature"
+                }
+              }
+            },
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "mFilterRowButton"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnClicked"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OnHovered",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CanvasPanel"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "OnHovered__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OnUnhovered",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFilterRowButton",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mOptionSizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterOptionSlot"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mOptionSizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mShine"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Image",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Buildable/Factory/TradingPost/UI/HubPayoffWindow/Gradient_SmallCircle",
+                  "name": "Gradient_SmallCircle"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "OnClicked",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SetTitle",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HorizontalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "HorizontalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mOptionSizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Right"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Left": {
+              "type": "FloatProperty",
+              "value": 8
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 8
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "mFilterOptionSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "NamedSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__NamedSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mShineSlot"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterRowButton"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Widget_FilterButton_Row_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "DynamicBindingObjects": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ComponentDelegateBinding"
+              }
+            }
+          ]
+        },
+        "NamedSlots": {
+          "type": "ArrayProperty",
+          "value": [
+            "mFilterOptionSlot"
+          ]
+        },
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/Minimap/MapFilters/Widget_FilterButton_Row.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Widget_FilterButton_Row"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mFilterRowButton",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Button"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Button"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ButtonSlot"
+              }
+            }
+          ]
+        },
+        "WidgetStyle": {
+          "type": "ButtonStyle",
+          "value": {
+            "Hovered": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.132868,
+                        "g": 0.132868,
+                        "b": 0.135633,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Normal": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.132868,
+                        "g": 0.132868,
+                        "b": 0.135633,
+                        "a": 0
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "NormalPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            },
+            "Pressed": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 0
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "PressedPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CanvasPanel",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "CanvasPanel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__CanvasPanel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Clipping": {
+          "type": "EWidgetClipping",
+          "value": "EWidgetClipping::ClipToBounds"
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "CanvasPanelSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "mShine",
+      "class": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/-Shared/Widget_ButtonSpotLight",
+        "name": "Widget_ButtonSpotLight_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/-Shared/Widget_ButtonSpotLight",
+        "name": "Default__Widget_ButtonSpotLight_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "NamedSlotBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "NamedSlotBinding",
+              "value": {
+                "Content": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "HorizontalBox"
+                    }
+                  }
+                },
+                "Name": {
+                  "type": "NameProperty",
+                  "value": "mShineSlot"
+                }
+              }
+            }
+          ]
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mLightContainer": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mLightContainer"
+            }
+          }
+        },
+        "mShineSize": {
+          "type": "FloatProperty",
+          "value": 400
+        },
+        "mShineSlot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mShineSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mFilterRowButton",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Button"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Button"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ButtonSlot"
+              }
+            }
+          ]
+        },
+        "WidgetStyle": {
+          "type": "ButtonStyle",
+          "value": {
+            "Hovered": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.132868,
+                        "g": 0.132868,
+                        "b": 0.135633,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Normal": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.132868,
+                        "g": 0.132868,
+                        "b": 0.135633,
+                        "a": 0
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "NormalPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            },
+            "Pressed": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Image"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 0
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "PressedPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ButtonSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ButtonSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ButtonSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mFilterRowButton"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 0
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterRowButton"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HorizontalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "HorizontalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "HorizontalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "HorizontalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "HorizontalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFilterName"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Left"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Left": {
+              "type": "FloatProperty",
+              "value": 8
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "PanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "PanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__PanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mShineSlot"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mShineSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Widget_FilterButton_Row_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "NewVar": {
+          "type": "TimerHandle",
+          "value": {
+            "Handle": {
+              "type": "UInt64Property",
+              "value": 0
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mFilterOptionWidth": {
+          "type": "FloatProperty",
+          "value": 120
+        },
+        "mFilterText": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "33F4C47A4511F6D2E8BB7995BAF75218",
+            "source_string": "ohfailafwiszfihzwfizsf"
+          }
+        }
+      }
+    },
+    {
+      "name": "OnPressed__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BndEvt__mFilterRowButton_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mShine"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_Widget_FilterButton_Row",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PreConstruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "PreConstruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_FilterButton_Row_C"
+      },
+      "properties": {}
+    }
+  ]
+}

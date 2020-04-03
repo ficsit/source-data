@@ -1,0 +1,3565 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BT_NonFlyingBird.uasset",
+  "guid": {
+    "a": 3086282255,
+    "b": 1299408270,
+    "c": 3459156658,
+    "d": 1484873237
+  },
+  "exports": [
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WantToFly"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "WantToFly is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Services": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_TickStuff_C"
+              }
+            }
+          ]
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Panic"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "HasFoliageNearby"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "HasFoliageNearby is Is Not Set"
+        },
+        "OperationType": {
+          "type": "ByteProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_JumpAway_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_JumpAway",
+        "name": "BTT_JumpAway_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_JumpAway",
+        "name": "Default__BTT_JumpAway_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 55
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTTask_Wait",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_Wait"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_Wait"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "WaitTime": {
+          "type": "FloatProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find backup position"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_StopPanic_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "BTT_StopPanic_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "Default__BTT_StopPanic_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "DidPanicBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SelfActor"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "SelfActor is Is Set"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WantToFly"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetLuring_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "HasFoliageNearby"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mValue": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_StopPanic_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "BTT_StopPanic_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopPanic",
+        "name": "Default__BTT_StopPanic_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "DidPanicBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BT_NonFlyingBird",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BehaviorTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BehaviorTree"
+      },
+      "outer": null,
+      "properties": {
+        "BlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BB_NonFlyingBird",
+              "name": "BB_NonFlyingBird"
+            }
+          }
+        },
+        "RootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "RealRoot"
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopMovement_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_JumpAway_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopPanic_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_FindFoliageLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_FindFoliageLocation",
+        "name": "BTT_FindFoliageLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_FindFoliageLocation",
+        "name": "Default__BTT_FindFoliageLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mTargetLocationBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "mWasUncoveredBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WasUncovered"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SplineIndex"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 3000
+        }
+      }
+    },
+    {
+      "name": "BTT_RandomLocation_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "BTT_RandomLocation_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_RandomLocation",
+        "name": "Default__BTT_RandomLocation_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "CenterActorKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "SplineIndex"
+            }
+          }
+        },
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "MoveToKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mRadius": {
+          "type": "FloatProperty",
+          "value": 3000
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 55
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "AcceptableRadius": {
+          "type": "FloatProperty",
+          "value": 20
+        },
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopPanic_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Move to panic location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "Services": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_CheckForFoliage_C"
+              }
+            }
+          ]
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_RunEQSQuery",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RunEQSQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RunEQSQuery"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "EQSQueryBlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {}
+        },
+        "EQSRequest": {
+          "type": "EQSParametrizedQueryExecutionRequest",
+          "value": {
+            "EQSQueryBlackboardKey": {
+              "type": "BlackboardKeySelector",
+              "value": {
+                "SelectedKeyName": {
+                  "type": "NameProperty",
+                  "value": "SelfActor"
+                }
+              }
+            },
+            "QueryConfig": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "PathingGrid.GridSize"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 2000
+                    }
+                  }
+                }
+              ]
+            },
+            "QueryTemplate": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceRabbit/AI/EQ_FindLocationFurthestAway",
+                  "name": "EQ_FindLocationFurthestAway"
+                }
+              }
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_RunEQSQuery",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_RunEQSQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_RunEQSQuery"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "EQSQueryBlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {}
+        },
+        "EQSRequest": {
+          "type": "EQSParametrizedQueryExecutionRequest",
+          "value": {
+            "EQSQueryBlackboardKey": {
+              "type": "BlackboardKeySelector",
+              "value": {
+                "SelectedKeyName": {
+                  "type": "NameProperty",
+                  "value": "SelfActor"
+                }
+              }
+            },
+            "QueryConfig": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.ConeDegrees"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 180
+                    }
+                  }
+                },
+                {
+                  "type": "AIDynamicParam",
+                  "value": {
+                    "BBKey": {
+                      "type": "BlackboardKeySelector",
+                      "value": {
+                        "SelectedKeyName": {
+                          "type": "NameProperty",
+                          "value": "None"
+                        },
+                        "bNoneIsAllowedValue": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "ParamName": {
+                      "type": "NameProperty",
+                      "value": "Cone.Range"
+                    },
+                    "ParamType": {
+                      "type": "EAIParamType",
+                      "value": "EAIParamType::Float"
+                    },
+                    "Value": {
+                      "type": "FloatProperty",
+                      "value": 3000
+                    }
+                  }
+                }
+              ]
+            },
+            "QueryTemplate": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/Wildlife/SpaceGiraffe/AI/EQS_LocationInAngle",
+                  "name": "EQS_LocationInAngle"
+                }
+              }
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_Wait"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find new location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetSpeed_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "BTT_SetSpeed_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetSpeed",
+        "name": "Default__BTT_SetSpeed_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ForceSuccess": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "Speed": {
+          "type": "FloatProperty",
+          "value": 400
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_MoveTo",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_MoveTo"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_MoveTo"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetLocation"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "bReachTestIncludesGoalRadius": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bStopOnOverlapNeedsUpdate": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_FindFoliageLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetSpeed_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_MoveTo"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetLuring_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "HideInGrass"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_RandomLocation_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "choose random location"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetLuring_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_SetLuring",
+        "name": "BTT_SetLuring_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_SetLuring",
+        "name": "Default__BTT_SetLuring_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "IsLuring": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mIsLuringBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsLuring"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetLuring_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_SetLuring",
+        "name": "BTT_SetLuring_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_SetLuring",
+        "name": "Default__BTT_SetLuring_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mIsLuringBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsLuring"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetLuring_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_SetLuring",
+        "name": "BTT_SetLuring_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTT_SetLuring",
+        "name": "Default__BTT_SetLuring_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mIsLuringBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsLuring"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_StopMovement_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "BTT_StopMovement_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_StopMovement",
+        "name": "Default__BTT_StopMovement_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetLuring_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsLuring"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "IsLuring is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RunEQSQuery"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find Position In Cone"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "DoPanic"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "DoPanic is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTS_CheckForFoliage_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTS_CheckForFoliage",
+        "name": "BTS_CheckForFoliage_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTS_CheckForFoliage",
+        "name": "Default__BTS_CheckForFoliage_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Interval": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "RandomDeviation": {
+          "type": "FloatProperty",
+          "value": 0.5
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mHasFoliageNearbyBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "HasFoliageNearby"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTS_TickStuff_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTS_TickStuff",
+        "name": "BTS_TickStuff_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Wildlife/NonFlyingBird/AI/BTS_TickStuff",
+        "name": "Default__BTS_TickStuff_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Interval": {
+          "type": "FloatProperty",
+          "value": 2
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "RandomDeviation": {
+          "type": "FloatProperty",
+          "value": 0.5
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "mWantToFlyBBkey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WantToFly"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_Wait",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_Wait"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_Wait"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "RandomDeviation": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        },
+        "WaitTime": {
+          "type": "FloatProperty",
+          "value": 2
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_RunEQSQuery"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "Find new position"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_NonFlyingBird"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_Wait"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_NonFlyingBird"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

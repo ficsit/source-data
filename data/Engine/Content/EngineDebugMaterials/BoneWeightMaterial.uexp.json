@@ -1,0 +1,130 @@
+{
+  "file_name": "Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset",
+  "guid": {
+    "a": 985166747,
+    "b": 1310579090,
+    "c": 1603497407,
+    "d": 2394197673
+  },
+  "exports": [
+    {
+      "name": "BoneWeightMaterial",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3491483547,
+            "b": 1097660138,
+            "c": 2895255464,
+            "d": 1720821615
+          }
+        },
+        "bUsedWithMorphTargets": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithSkeletalMesh": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithStaticLighting": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BoneWeightMaterial"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 22
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BoneWeightMaterial"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/EngineDebugMaterials/HeatmapGradient",
+              "name": "HeatmapGradient"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

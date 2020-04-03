@@ -1,0 +1,589 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/AI/Service/BTS_IsEnemyInRange.uasset",
+  "guid": {
+    "a": 2136142928,
+    "b": 1226928884,
+    "c": 1922295225,
+    "d": 698787085
+  },
+  "exports": [
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetBlackboardValueAsObject_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ControlledPawn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveActivationAI"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BTS_IsEnemyInRange_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/AIModule",
+        "name": "BTService_BlueprintBase"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OwnerController",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OwnerActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__BTS_IsEnemyInRange_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTService_BlueprintBase"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mEnemyBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "AllowedTypes": {
+              "type": "ArrayProperty",
+              "value": []
+            },
+            "SelectedKeyID": {
+              "type": "ByteProperty",
+              "value": 255
+            },
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "None"
+            },
+            "SelectedKeyType": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "bNoneIsAllowedValue": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "mIsInRangeBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "AllowedTypes": {
+              "type": "ArrayProperty",
+              "value": []
+            },
+            "SelectedKeyID": {
+              "type": "ByteProperty",
+              "value": 255
+            },
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "None"
+            },
+            "SelectedKeyType": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "bNoneIsAllowedValue": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mEnemyBBKey",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetAttackActivationDistance_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mIsInRangeBBKey",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveActivationAI",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BTService_BlueprintBase",
+        "name": "ReceiveActivationAI"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGEnemy_Controller1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_OwnerActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_OwnerController",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsWithinRange_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveTick"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mAIController",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_BTS_IsEnemyInRange",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_ControlledPawn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetPawn_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGEnemy_Controller",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mAttackClass",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ClassProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ClassProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveTick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BTService_BlueprintBase",
+        "name": "ReceiveTick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BTS_IsEnemyInRange_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGAggro_Target_Interface",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "InterfaceProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__InterfaceProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BTS_IsEnemyInRange"
+      },
+      "properties": {}
+    }
+  ]
+}

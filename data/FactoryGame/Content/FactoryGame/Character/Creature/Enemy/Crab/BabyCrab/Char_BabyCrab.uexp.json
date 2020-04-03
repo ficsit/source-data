@@ -1,0 +1,6154 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Crab/BabyCrab/Char_BabyCrab.uasset",
+  "guid": {
+    "a": 3310118944,
+    "b": 1112034813,
+    "c": 390701189,
+    "d": 1403555999
+  },
+  "exports": [
+    {
+      "name": "CollisionCylinder",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CapsuleComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "CollisionCylinder"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_BabyCrab_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Custom"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "HologramClearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 135.63582
+            },
+            "bNotifyRigidBodyCollision": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "CapsuleHalfHeight": {
+          "type": "FloatProperty",
+          "value": 50
+        },
+        "CapsuleRadius": {
+          "type": "FloatProperty",
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Temp_float_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 586032893,
+            "b": 1288597164,
+            "c": 1242719674,
+            "d": 1577926379
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Multiply_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitLocation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_OtherActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select14_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveBeginPlay",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveBeginPlay"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CharacterMesh0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "CharacterMesh0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_BabyCrab_C"
+      },
+      "properties": {
+        "AnimationMode": {
+          "type": "ByteProperty",
+          "value": "EAnimationMode::AnimationSingleNode"
+        },
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Custom"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 121.31323
+            }
+          }
+        },
+        "CachedMaxDrawDistance": {
+          "type": "FloatProperty",
+          "value": 15000
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "SkeletalMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Hog/Mesh/Hog",
+              "name": "Hog"
+            }
+          }
+        },
+        "bHiddenInGame": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bVisible": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetVelocity_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue9",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mRotationRate",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_VSize_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_MyComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable9",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OcerlapAttack_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SphereComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SphereComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {
+        "AreaClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/NavigationSystem",
+              "name": "NavArea_Obstacle"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::QueryAndPhysics"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Custom"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_Pawn"
+            }
+          }
+        },
+        "CanCharacterStepUpOn": {
+          "type": "ByteProperty",
+          "value": "ECB_No"
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 24.462166,
+            "y": 0.00001020641,
+            "z": -17.181713
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 0.000023905657,
+            "roll": 0
+          }
+        },
+        "SphereRadius": {
+          "type": "FloatProperty",
+          "value": 47.08401
+        }
+      }
+    },
+    {
+      "name": "CallFunc_BooleanOR_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EndPlayReason",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveEndPlay"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue6",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTargetDistance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetSpawner_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "ParticleSystemComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BabyProjectile_02_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "BabyProjectile_02"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "CharacterMesh0"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2275927869,
+            "b": 1165318839,
+            "c": 2590441355,
+            "d": 3850120385
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable8",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HealthComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGHealthComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "HealthComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_BabyCrab_C"
+      },
+      "properties": {
+        "mCurrentHealth": {
+          "type": "FloatProperty",
+          "value": 6
+        },
+        "mMaxHealth": {
+          "type": "FloatProperty",
+          "value": 6
+        },
+        "mOnAdjustDamage": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "object": 3,
+              "name": "AdjustDamage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "DamageType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Got Damaged"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select7_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_VSize_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select4_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetController_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Rotation Curve",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select3_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mReEvalTimer",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetCurrentAggroTarget_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFGHud_AsFGHUD1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Hit",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select12_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetGameUI_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTargetMoveDir",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFGHud_AsFGHUD",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SphereComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HitBox_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "HitBox"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "CollisionCylinder"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3706135606,
+            "b": 1134409305,
+            "c": 3157965718,
+            "d": 3178512132
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Divide_VectorFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_float_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Char_BabyCrab_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGEnemy"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "DynamicBindingObjects": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ComponentDelegateBinding"
+              }
+            }
+          ]
+        },
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Char_BabyCrab"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Temp_bool_Variable3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_OtherComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetActorLocation_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetCurrentAggroTarget_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetActorLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Normal_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEventAtLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Cross_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue7",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue10",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_int_Variable3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetMesh3P_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MyComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable7",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_int_Variable2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SphereComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OcerlapAttack_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "OcerlapAttack"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1101516179,
+            "b": 1092040340,
+            "c": 671698863,
+            "d": 994830832
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_OverlappedComponent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSubtitleTimer",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsAliveAndWell_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSubtitlesVisible",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeLiteralText_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mRotationScale",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_FloatFloat_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetController_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlappedComponent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mCanAttack",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue11",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_Damage",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select5_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "KillOrphanCrabs",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_FloatFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetPlayerPawn_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_OtherComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EyeLocationComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "EyeLocationComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_BabyCrab_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue8",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_int_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DamageCauser",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Got Damaged"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OcerlapAttack",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select9_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitBox_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SphereComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SphereComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {
+        "AreaClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/NavigationSystem",
+              "name": "NavArea_Obstacle"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Custom"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_Pawn"
+            }
+          }
+        },
+        "CanCharacterStepUpOn": {
+          "type": "ByteProperty",
+          "value": "ECB_No"
+        },
+        "SphereRadius": {
+          "type": "FloatProperty",
+          "value": 68.20952
+        }
+      }
+    },
+    {
+      "name": "CallFunc_MakeVector_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ComponentDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ComponentDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ComponentDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {
+        "ComponentDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "OcerlapAttack"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnComponentBeginOverlap"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetPlayerController_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_Other",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OtherComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ResetMovement",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsAliveAndWell_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsAliveAndWell_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_struct_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_SetActorRotation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveTick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveTick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DamagedActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Normal_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "bFromSweep",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_FClamp_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_SpawnEmitterAtLocation_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_SetTimerDelegate_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select1_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetActorRotation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTargetOffsetTargetPos",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Damage",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Got Damaged"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_DamageCauser",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetPhysicsLinearVelocity_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetComponentLocation_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Dot_VectorVector_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select2_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_VectorVector_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue9",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InstigatedBy",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Got Damaged"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetComponentLocation_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_Char_BabyCrab",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_SweepResult",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CharMoveComp",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CharacterMovementComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "CharMoveComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Char_BabyCrab_C"
+      },
+      "properties": {
+        "BrakingDecelerationFlying": {
+          "type": "FloatProperty",
+          "value": 8000
+        },
+        "BrakingFriction": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "DefaultLandMovementMode": {
+          "type": "ByteProperty",
+          "value": "MOVE_Flying"
+        },
+        "MaxAcceleration": {
+          "type": "FloatProperty",
+          "value": 8000
+        },
+        "MaxFlySpeed": {
+          "type": "FloatProperty",
+          "value": 1000
+        },
+        "MaxStepHeight": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "MaxWalkSpeed": {
+          "type": "FloatProperty",
+          "value": 400
+        },
+        "NavAgentProps": {
+          "type": "NavAgentProperties",
+          "value": {
+            "AgentHeight": {
+              "type": "FloatProperty",
+              "value": 192
+            },
+            "AgentRadius": {
+              "type": "FloatProperty",
+              "value": 42
+            },
+            "AgentStepHeight": {
+              "type": "FloatProperty",
+              "value": 100
+            },
+            "NavWalkingSearchHeightScale": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "bCanFly": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "NavMeshProjectionInterval": {
+          "type": "FloatProperty",
+          "value": 0.3
+        },
+        "WalkableFloorZ": {
+          "type": "FloatProperty",
+          "value": 0.71000004
+        },
+        "bProjectNavMeshWalking": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUseAccelerationForPaths": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetCurrentAggroTarget_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGCharacter_Player1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeVector_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveHit",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveHit"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable6",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ChargingMovement",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select11_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue9",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_HitLocation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "NormalImpulse",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue6",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue12",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue6",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_ApplyDamage_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_NegateVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_NormalImpulse",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanOR_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_bFromSweep",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_FMin_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_FindLookAtRotation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_Hit",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveDied",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGCharacterBase",
+        "name": "ReceiveDied"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OtherActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable10",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mCanMove",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveEndPlay",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "ReceiveEndPlay"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeVector_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__Char_BabyCrab_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGEnemy"
+      },
+      "outer": null,
+      "properties": {
+        "AIControllerClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        },
+        "AutoPossessAI": {
+          "type": "EAutoPossessAI",
+          "value": "EAutoPossessAI::PlacedInWorldOrSpawned"
+        },
+        "CapsuleComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "CharacterMovement": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharMoveComp"
+            }
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharacterMesh0"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "Rotation Curve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Hog/Curve_DistanceAggroHog",
+              "name": "Curve_DistanceAggroHog"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mActualAIControllerClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Crab/BabyCrab/Controller_BabyCrab",
+              "name": "Controller_BabyCrab_C"
+            }
+          }
+        },
+        "mApplyDamageMomentum": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mCanMove": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mDeathSound": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/CrabHatcher/Audio/Play_E_Hatchery_Baby_Suicide",
+              "name": "Play_E_Hatchery_Baby_Suicide"
+            }
+          }
+        },
+        "mEyeLocationComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EyeLocationComponent"
+            }
+          }
+        },
+        "mFallDamageDamageType": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/DamageType_FallDamage",
+              "name": "DamageType_FallDamage_C"
+            }
+          }
+        },
+        "mFeetNames": {
+          "type": "ArrayProperty",
+          "value": [
+            "vfxfootsocket_front_l",
+            "vfxfootsocket_front_r",
+            "vfxfootsocket_back_l",
+            "vfxfootsocket_back_r"
+          ]
+        },
+        "mFootstepAudioEvents": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/_Shared/Audio/Play_E_Hog_Footstep_Switch",
+                "name": "Play_E_Hog_Footstep_Switch"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/_Shared/Audio/Play_E_Hog_Footstep_Switch",
+                "name": "Play_E_Hog_Footstep_Switch"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/_Shared/Audio/Play_E_Hog_Footstep_Switch",
+                "name": "Play_E_Hog_Footstep_Switch"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/_Shared/Audio/Play_E_Hog_Footstep_Switch",
+                "name": "Play_E_Hog_Footstep_Switch"
+              }
+            }
+          ]
+        },
+        "mFootstepEffect": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType_Default"
+                }
+              }
+            },
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType1"
+                }
+              }
+            },
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType2"
+                }
+              }
+            },
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType3"
+                }
+              }
+            },
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType4"
+                }
+              }
+            },
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType5"
+                }
+              }
+            },
+            {
+              "type": "FootstepEffectSurface",
+              "value": {
+                "Effect": {
+                  "type": "FootstepEffect",
+                  "value": {
+                    "GroundDecals": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "Particle": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    }
+                  }
+                },
+                "Surface": {
+                  "type": "ByteProperty",
+                  "value": "SurfaceType6"
+                }
+              }
+            }
+          ]
+        },
+        "mHealthComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HealthComponent"
+            }
+          }
+        },
+        "mRandomUp": {
+          "type": "FloatProperty",
+          "value": 50
+        },
+        "mRotationScale": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "mSubtitleDistance": {
+          "type": "FloatProperty",
+          "value": 3000
+        },
+        "mSubtitleTimer": {
+          "type": "TimerHandle",
+          "value": {
+            "Handle": {
+              "type": "UInt64Property",
+              "value": 0
+            }
+          }
+        },
+        "mTakeDamageSound": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/CrabHatcher/Audio/Play_E_Hatchery_Baby_Suicide",
+              "name": "Play_E_Hatchery_Baby_Suicide"
+            }
+          }
+        },
+        "mTargetMoveDir": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "mTargetOffsetTargetPos": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue6",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetWorldDeltaSeconds_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_struct_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetGameUI_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetActorForwardVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue6",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select10_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetActorLocation_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_HasAuthority_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_bSelfMoved",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetController_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_DamageType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CallFunc_FClamp_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetDistanceTo_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_int_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OtherBodyIndex",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SweepResult",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select6_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitNormal",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HitBox",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSubtitleDistance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue8",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetController_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BabyProjectile_02_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleSystemComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleSystemComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {
+        "PrimaryComponentTick": {
+          "type": "ActorComponentTickFunction",
+          "value": {
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 89.999985,
+            "roll": 0
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 2,
+            "y": 2,
+            "z": 2
+          }
+        },
+        "Template": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Crab/Particle/BabyProjectile_02",
+              "name": "BabyProjectile_02"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Dot_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Event Check Subtitle Distance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetMesh3P_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_InstigatedBy",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeVector_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue5",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetComponentLocation_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_SpawnEmitterAtLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_HitNormal",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_ApplyDamage_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue4",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RInterpTo_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_EndPlayReason",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OtherComp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue8",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue7",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select13_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mRandomUp",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BabyProjectile_02",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Other",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Normal_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Dot_VectorVector_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomFloatInRange_ReturnValue13",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Divide_VectorFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Got Damaged",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_RandomIntegerInRange_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_DamagedActor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select8_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Less_FloatFloat_ReturnValue7",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetPlayerController_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetComponentLocation_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorFloat_ReturnValue10",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGCharacter_Player",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    },
+    {
+      "name": "bSelfMoved",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ReceiveHit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mStrategyType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Char_BabyCrab_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Conv_RotatorToVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Char_BabyCrab"
+      },
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Rock/Rubble/SM_RockPile_03_FoliageType.uasset",
+  "guid": {
+    "a": 1190753152,
+    "b": 1252502350,
+    "c": 2006625463,
+    "d": 2283087901
+  },
+  "exports": [
+    {
+      "name": "SM_RockPile_03_FoliageType",
+      "class": {
+        "package": "/Script/Foliage",
+        "name": "FoliageType_InstancedStaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Foliage",
+        "name": "Default__FoliageType_InstancedStaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AlignToNormal": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::QueryAndPhysics"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "ChangeCount": {
+          "type": "IntProperty",
+          "value": 19
+        },
+        "CullDistance": {
+          "type": "Int32Interval",
+          "value": {
+            "Max": {
+              "type": "IntProperty",
+              "value": 65000
+            }
+          }
+        },
+        "Density": {
+          "type": "FloatProperty",
+          "value": 10
+        },
+        "LowBoundOriginRadius": {
+          "type": "Vector",
+          "value": {
+            "x": -15.692215,
+            "y": -3.4003582,
+            "z": 200.2277
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Rock/Rubble/Mesh/SM_RockPile_03",
+              "name": "SM_RockPile_03"
+            }
+          }
+        },
+        "MeshBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 219.99634,
+                "y": 132.04419,
+                "z": 95.24603
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": -2.025772,
+                "y": 17.233292,
+                "z": -10.43177
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 228.8595
+            }
+          }
+        },
+        "RandomPitchAngle": {
+          "type": "FloatProperty",
+          "value": 20
+        },
+        "ScaleCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        },
+        "ScaleX": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 1.4
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": 0.8
+            }
+          }
+        },
+        "UpdateGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1568976023,
+            "b": 1164729799,
+            "c": 647144383,
+            "d": 3327360769
+          }
+        },
+        "ZOffset": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": -10
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": -100
+            }
+          }
+        },
+        "bCastDynamicShadow": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bCastStaticShadow": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    }
+  ]
+}

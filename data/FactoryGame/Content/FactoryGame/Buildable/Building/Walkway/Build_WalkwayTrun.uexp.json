@@ -1,0 +1,270 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Building/Walkway/Build_WalkwayTrun.uasset",
+  "guid": {
+    "a": 2892188719,
+    "b": 1123044598,
+    "c": 1759704723,
+    "d": 66574916
+  },
+  "exports": [
+    {
+      "name": "RootComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableWalkway",
+        "name": "RootComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_WalkwayTrun_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3277147445,
+            "b": 1253423476,
+            "c": 1704077243,
+            "d": 1681990517
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_WalkwayTrun_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Build_WalkwayTrun_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGBuildableWalkway"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Build_WalkwayTrun_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_WalkwayTrun_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGBuildableWalkway"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "mDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "0B14350F4BE32A97254329860AB27783",
+            "source_string": "Snaps to foundations and other walkways.\r\nSpecifically made for humans to walk on."
+          }
+        },
+        "mDisableSnapOn": {
+          "type": "FoundationSideSelectionFlags",
+          "value": {
+            "Front": {
+              "type": "BoolProperty",
+              "value": true
+            },
+            "Left": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "D000C4DE41EF4F7706BCE6BCCF9253F8",
+            "source_string": "Walkway Turn"
+          }
+        },
+        "mMeshComponentProxy": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BuildingMeshProxy"
+            }
+          }
+        },
+        "mSize": {
+          "type": "FloatProperty",
+          "value": 400
+        }
+      }
+    },
+    {
+      "name": "BuildingMeshProxy",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGColoredInstanceMeshProxy"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGBuildableWalkway",
+        "name": "BuildingMeshProxy"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Build_WalkwayTrun_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -200,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Building/Walkway/Mesh/Walkway_Turn",
+              "name": "Walkway_Turn"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Build_WalkwayTrun_C"
+      },
+      "properties": {}
+    }
+  ]
+}

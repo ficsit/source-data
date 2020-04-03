@@ -1,0 +1,156 @@
+{
+  "file_name": "Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset",
+  "guid": {
+    "a": 2612066330,
+    "b": 1241863464,
+    "c": 652246946,
+    "d": 817523688
+  },
+  "exports": [
+    {
+      "name": "DefaultSpriteMaterial",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Masked"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionSpriteTextureSampler"
+              }
+            }
+          ]
+        },
+        "LightmassSettings": {
+          "type": "LightmassMaterialInterfaceSettings",
+          "value": {
+            "bCastShadowAsMasked": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3904252053,
+            "b": 1123344047,
+            "c": 2049234108,
+            "d": 2478997990
+          }
+        },
+        "TwoSided": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionSpriteTextureSampler",
+      "class": {
+        "package": "/Script/Paper2D",
+        "name": "MaterialExpressionSpriteTextureSampler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Paper2D",
+        "name": "Default__MaterialExpressionSpriteTextureSampler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "DefaultSpriteMaterial"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 31
+          }
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3355777658,
+            "b": 1329446973,
+            "c": 2516084882,
+            "d": 4205354336
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSpriteMaterial"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Paper2D/PlaceholderTextures/DummySpriteTexture",
+              "name": "DummySpriteTexture"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

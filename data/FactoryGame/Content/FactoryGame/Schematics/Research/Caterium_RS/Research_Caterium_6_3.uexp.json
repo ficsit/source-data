@@ -1,0 +1,174 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Research/Caterium_RS/Research_Caterium_6_3.uasset",
+  "guid": {
+    "a": 2461401396,
+    "b": 1144171473,
+    "c": 3462994623,
+    "d": 3198862608
+  },
+  "exports": [
+    {
+      "name": "Research_Caterium_6_3_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__Research_Caterium_6_3_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Research_Caterium_6_3_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/HighSpeedConnector/Desc_HighSpeedConnector",
+                      "name": "Desc_HighSpeedConnector_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 50
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Motor/Desc_Motor",
+                      "name": "Desc_Motor_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "EB49ABFE4C7C17AA6BA31DB8CE1B2986",
+            "source_string": "Inflated Pocket Dimension"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Production",
+              "name": "SC_Production_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/ThumbsUp",
+                  "name": "ThumbsUp"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 3
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 180
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_MAM"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockInventorySlot_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockInventorySlot_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockInventorySlot",
+        "name": "BP_UnlockInventorySlot_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockInventorySlot",
+        "name": "Default__BP_UnlockInventorySlot_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Research_Caterium_6_3_C"
+      },
+      "properties": {
+        "mNumInventorySlotsToUnlock": {
+          "type": "IntProperty",
+          "value": 5
+        }
+      }
+    }
+  ]
+}

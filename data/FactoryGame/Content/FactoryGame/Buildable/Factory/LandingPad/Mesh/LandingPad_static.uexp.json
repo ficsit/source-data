@@ -1,0 +1,566 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/LandingPad/Mesh/LandingPad_static.uasset",
+  "guid": {
+    "a": 2070920509,
+    "b": 1158002729,
+    "c": 2690256292,
+    "d": 3623517653
+  },
+  "exports": [
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 411.57593,
+                        "y": 482.47375,
+                        "z": 200.35922
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": -50.0001,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 178.2177
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 133.78824
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 608.1493
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.7530212,
+                        "y": 10.545372,
+                        "z": -26.688568
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 948.9708
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 948.29297
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 133.78822
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "LandingPad_static",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 474.4854,
+                "y": 540.64105,
+                "z": 304.07465
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 3.756073,
+                "y": 69.91171,
+                "z": 200.35898
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 710.9677
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 2257.3123
+        },
+        "Sockets": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "StaticMeshSocket"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "StaticMeshSocket"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "StaticMeshSocket"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "StaticMeshSocket"
+              }
+            }
+          ]
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "Paint"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Factory/LandingPad/Material/MI_LadingPad",
+                      "name": "MI_LadingPad"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "GeneralDetails:Paint"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "Decal_Normal"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/-Shared/Material/Decal_Normal",
+                      "name": "Decal_Normal"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "GeneralDetails:Decals"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "DecalColor_Masked"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/-Shared/Material/DecalColor_Masked",
+                      "name": "DecalColor_Masked"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "blinn1"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "StaticMeshSocket",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshSocket"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshSocket"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "LandingPad_static"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -371.9954,
+            "y": 376.30106,
+            "z": -0.000030517578
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 43.27471,
+            "roll": 0
+          }
+        },
+        "SocketName": {
+          "type": "NameProperty",
+          "value": "foot_01"
+        }
+      }
+    },
+    {
+      "name": "StaticMeshSocket",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshSocket"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshSocket"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "LandingPad_static"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 380.00262,
+            "y": 376.30106,
+            "z": -0.00016021729
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 43.27471,
+            "roll": 0
+          }
+        },
+        "SocketName": {
+          "type": "NameProperty",
+          "value": "foot_02"
+        }
+      }
+    },
+    {
+      "name": "StaticMeshSocket",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshSocket"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshSocket"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "LandingPad_static"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 375.0154,
+            "y": -376.30106,
+            "z": -0.00016021729
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 43.27471,
+            "roll": 0
+          }
+        },
+        "SocketName": {
+          "type": "NameProperty",
+          "value": "foot_03"
+        }
+      }
+    },
+    {
+      "name": "StaticMeshSocket",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshSocket"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMeshSocket"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "LandingPad_static"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -375.0154,
+            "y": -376.30106,
+            "z": -0.00016021729
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 43.27471,
+            "roll": 0
+          }
+        },
+        "SocketName": {
+          "type": "NameProperty",
+          "value": "foot_04"
+        }
+      }
+    }
+  ]
+}

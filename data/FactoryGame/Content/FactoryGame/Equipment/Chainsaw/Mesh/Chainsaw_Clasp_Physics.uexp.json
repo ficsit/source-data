@@ -1,0 +1,316 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/Chainsaw/Mesh/Chainsaw_Clasp_Physics.uasset",
+  "guid": {
+    "a": 1855531121,
+    "b": 1333962495,
+    "c": 2730132924,
+    "d": 1268151816
+  },
+  "exports": [
+    {
+      "name": "Chainsaw_Clasp_Physics",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsAsset"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsAsset"
+      },
+      "outer": null,
+      "properties": {
+        "BoundsBodies": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            1
+          ]
+        },
+        "ConstraintSetup": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            }
+          ]
+        },
+        "SkeletalBodySetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Chainsaw_Clasp_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "Connector"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "RightHandle"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "Connector"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 8.753528,
+                "y": 10.292247,
+                "z": -16.520168
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    }
+                  }
+                }
+              }
+            },
+            "SecAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 0.9848077,
+                "z": 0.17364816
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Chainsaw_Clasp_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.04224336,
+                        "y": 0.113698006,
+                        "z": -3.3635445
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 89.91505,
+                        "roll": -88.11178
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 1.6478795
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 8.612659
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 13.241089
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "Connector"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 0.2
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Chainsaw_Clasp_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.7725158,
+                        "y": 0.6917912,
+                        "z": -14.070873
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 30.445982
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 16.804531
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 2.1397142
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "RightHandle"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Walker/BP_Walker.uasset",
+  "guid": {
+    "a": 3905092780,
+    "b": 1082306586,
+    "c": 1335291056,
+    "d": 1431391300
+  },
+  "exports": [
+    {
+      "name": "CharMoveComp",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CharacterMovementComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "CharMoveComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Walker_C"
+      },
+      "properties": {
+        "MaxWalkSpeed": {
+          "type": "FloatProperty",
+          "value": 350
+        },
+        "RotationRate": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": 240,
+            "roll": 0
+          }
+        },
+        "WalkableFloorAngle": {
+          "type": "FloatProperty",
+          "value": 25
+        },
+        "WalkableFloorZ": {
+          "type": "FloatProperty",
+          "value": 0.90630776
+        },
+        "bRequestedMoveUseAcceleration": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "HealthComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGHealthComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "HealthComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Walker_C"
+      },
+      "properties": {
+        "mCurrentHealth": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "mMaxHealth": {
+          "type": "FloatProperty",
+          "value": 100
+        },
+        "mOnAdjustDamage": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "object": 3,
+              "name": "AdjustDamage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_amount",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Walker"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EyeLocationComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "EyeLocationComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Walker_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CharacterMesh0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "CharacterMesh0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Walker_C"
+      },
+      "properties": {
+        "AnimClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/Animation/WalkerAnimBP",
+              "name": "WalkerAnimBP_C"
+            }
+          }
+        },
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 121.31323
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": -105
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          }
+        },
+        "SkeletalMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/Mesh/Walker",
+              "name": "Walker"
+            }
+          }
+        },
+        "VisibilityBasedAnimTickOption": {
+          "type": "EVisibilityBasedAnimTickOption",
+          "value": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered"
+        }
+      }
+    },
+    {
+      "name": "mDebug",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_itemDescriptor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ClassProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ClassProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Walker"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_BP_Walker",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_Walker_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGEnemy"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BP_Walker"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CollisionCylinder",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CapsuleComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGEnemy",
+        "name": "CollisionCylinder"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Walker_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 135.63582
+            },
+            "bNotifyRigidBodyCollision": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "CapsuleHalfHeight": {
+          "type": "FloatProperty",
+          "value": 105
+        },
+        "CapsuleRadius": {
+          "type": "FloatProperty",
+          "value": 100
+        }
+      }
+    },
+    {
+      "name": "itemDescriptor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ClassProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ClassProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PlayConsumeItemEffect"
+      },
+      "properties": {}
+    },
+    {
+      "name": "amount",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PlayConsumeItemEffect"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 194898141,
+            "b": 1086156990,
+            "c": 360875139,
+            "d": 1802223103
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__BP_Walker_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGEnemy"
+      },
+      "outer": null,
+      "properties": {
+        "AIControllerClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/BP_AIControllerWalker",
+              "name": "BP_AIControllerWalker_C"
+            }
+          }
+        },
+        "AutoPossessAI": {
+          "type": "EAutoPossessAI",
+          "value": "EAutoPossessAI::PlacedInWorldOrSpawned"
+        },
+        "CapsuleComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "CharacterMovement": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharMoveComp"
+            }
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CharacterMesh0"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "CollisionCylinder"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mActualAIControllerClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Walker/BP_AIControllerWalker",
+              "name": "BP_AIControllerWalker_C"
+            }
+          }
+        },
+        "mEyeLocationComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EyeLocationComponent"
+            }
+          }
+        },
+        "mFallDamageDamageType": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/DamageType_FallDamage",
+              "name": "DamageType_FallDamage_C"
+            }
+          }
+        },
+        "mHealthComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HealthComponent"
+            }
+          }
+        },
+        "mRotationSpeedMultiplier": {
+          "type": "FloatProperty",
+          "value": 0.5
+        },
+        "mWeakspotBoneNames": {
+          "type": "ArrayProperty",
+          "value": [
+            "Head_Top"
+          ]
+        }
+      }
+    },
+    {
+      "name": "mStuckInMovement",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PlayConsumeItemEffect",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGCreature",
+        "name": "PlayConsumeItemEffect"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Walker_C"
+      },
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Plant/CircleFlower/Mesh/CircleFlower_01_FoliageType.uasset",
+  "guid": {
+    "a": 3539350828,
+    "b": 1134023651,
+    "c": 4182759557,
+    "d": 1609700766
+  },
+  "exports": [
+    {
+      "name": "CircleFlower_01_FoliageType",
+      "class": {
+        "package": "/Script/Foliage",
+        "name": "FoliageType_InstancedStaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Foliage",
+        "name": "Default__FoliageType_InstancedStaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AlignToNormal": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::QueryOnly"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "InteractableFoliageNoCollision"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Resource"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Ignore"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldDynamic"
+            }
+          }
+        },
+        "CastShadow": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "ChangeCount": {
+          "type": "IntProperty",
+          "value": 24
+        },
+        "CullDistance": {
+          "type": "Int32Interval",
+          "value": {
+            "Max": {
+              "type": "IntProperty",
+              "value": 5000
+            },
+            "Min": {
+              "type": "IntProperty",
+              "value": 1500
+            }
+          }
+        },
+        "Density": {
+          "type": "FloatProperty",
+          "value": 20
+        },
+        "GroundSlopeAngle": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 65
+            }
+          }
+        },
+        "LowBoundOriginRadius": {
+          "type": "Vector",
+          "value": {
+            "x": 0.38184485,
+            "y": 0.046393037,
+            "z": 1.8411102
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Plant/CircleFlower/Mesh/CircleFlower_01",
+              "name": "CircleFlower_01"
+            }
+          }
+        },
+        "MeshBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 64.76387,
+                "y": 65.811966,
+                "z": 64.73793
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 0.62241364,
+                "y": -0.033813477,
+                "z": 63.81429
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 91.034325
+            }
+          }
+        },
+        "Radius": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "ScaleCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        },
+        "ScaleX": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 1.2
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": 0.4
+            }
+          }
+        },
+        "UpdateGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2737825065,
+            "b": 1077336099,
+            "c": 340060554,
+            "d": 1895048566
+          }
+        }
+      }
+    }
+  ]
+}

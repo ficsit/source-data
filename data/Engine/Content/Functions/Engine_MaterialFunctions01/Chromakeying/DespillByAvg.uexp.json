@@ -1,0 +1,154 @@
+{
+  "file_name": "Engine/Content/Functions/Engine_MaterialFunctions01/Chromakeying/DespillByAvg.uasset",
+  "guid": {
+    "a": 3874662518,
+    "b": 1195756066,
+    "c": 1285918651,
+    "d": 1212037079
+  },
+  "exports": [
+    {
+      "name": "DespillByAvg",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialFunction"
+      },
+      "outer": null,
+      "properties": {
+        "Description": {
+          "type": "StrProperty",
+          "value": "Despill using average color of input"
+        },
+        "FunctionExpressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 998752192,
+            "b": 1221435337,
+            "c": 351410062,
+            "d": 4057996190
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Function": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DespillByAvg"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/SplitComponents",
+              "name": "SplitComponents"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Function": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DespillByAvg"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+              "name": "MakeFloat3"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "file_name": "Engine/Content/BasicShapes/BasicShapeMaterial.uasset",
+  "guid": {
+    "a": 4252818364,
+    "b": 1227825888,
+    "c": 1039425420,
+    "d": 658577918
+  },
+  "exports": [
+    {
+      "name": "BasicShapeMaterial",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionVectorParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 284708698,
+            "b": 1243452357,
+            "c": 379595168,
+            "d": 2073949392
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithInstancedStaticMeshes": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithStaticLighting": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BasicShapeMaterial"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 0.6407
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 2789821411,
+            "b": 1288465159,
+            "c": 3589522357,
+            "d": 2995383077
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BasicShapeMaterial"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Roughness"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionVectorParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionVectorParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionVectorParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BasicShapeMaterial"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 4185293034,
+            "b": 1290395469,
+            "c": 4101727420,
+            "d": 823786028
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BasicShapeMaterial"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Color"
+        }
+      }
+    }
+  ]
+}

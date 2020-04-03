@@ -1,0 +1,902 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/Widget_NetworkErrorPopup.uasset",
+  "guid": {
+    "a": 637589529,
+    "b": 1319828804,
+    "c": 213363604,
+    "d": 2284154745
+  },
+  "exports": [
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Widget_NetworkErrorPopup_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mContent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mContent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mContent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Widget_NetworkErrorPopup_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "LatestMessage": {
+          "type": "FGGameNetworkErrorMsg",
+          "value": {
+            "errorMsg": {
+              "type": "StrProperty",
+              "value": "No errors"
+            },
+            "errorType": {
+              "type": "ByteProperty",
+              "value": "ENetworkFailure::ENetworkFailure_MAX"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_Widget_NetworkErrorPopup",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Construct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Construct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CreatePopup",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_NewParam",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Conv_StringToText_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "NewParam",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mOnNetworkErrorRecieved_Event",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FGGameNetworkErrorMsg",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetLatestNetworkError_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FGGameInstance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwningPlayer_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mContent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Widget_NetworkErrorPopup_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/Widget_NetworkErrorPopup.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mContent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_NotEqual_StrStr_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_errorType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OnPopupClosed",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mHasPopupOpen",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mContent",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mContent",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGGame_Instance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_errorMsg",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StrProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StrProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CheckErrors",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_SwitchEnum_CmpSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PopLatestNetworkError_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "errorMsg",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StrProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StrProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mOnNetworkErrorRecieved_Event"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_MakeStruct_FGGameNetworkErrorMsg",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "LatestMessage",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_NetworkErrorPopup_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetLatestNetworkError_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetGameInstance_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_NotEqual_ByteByte_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_MakeStruct_FGGameNetworkErrorMsg",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetLatestNetworkError_msg1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "errorType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CreatePopup"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetLatestNetworkError_msg",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_NetworkErrorPopup"
+      },
+      "properties": {}
+    }
+  ]
+}

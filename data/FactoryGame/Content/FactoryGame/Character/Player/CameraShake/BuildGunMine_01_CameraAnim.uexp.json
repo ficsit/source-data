@@ -1,0 +1,4053 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Player/CameraShake/BuildGunMine_01_CameraAnim.uasset",
+  "guid": {
+    "a": 2556940252,
+    "b": 1103455649,
+    "c": 942068106,
+    "d": 1366847147
+  },
+  "exports": [
+    {
+      "name": "BuildGunMine_01_CameraAnim",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CameraAnim"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__CameraAnim"
+      },
+      "outer": null,
+      "properties": {
+        "AnimLength": {
+          "type": "FloatProperty",
+          "value": 1.4666667
+        },
+        "BoundingBox": {
+          "type": "Box",
+          "value": {
+            "min": {
+              "x": -1.1934625,
+              "y": -2.3918948e-16,
+              "z": -2.6510326e-16
+            },
+            "max": {
+              "x": 0.85909003,
+              "y": 1.7088505e-16,
+              "z": 2.1596976e-16
+            },
+            "is_valid": 1
+          }
+        },
+        "CameraInterpGroup": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InterpGroupCamera"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "InterpGroupCamera",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InterpGroupCamera"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InterpGroupCamera"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BuildGunMine_01_CameraAnim"
+      },
+      "properties": {
+        "GroupName": {
+          "type": "NameProperty",
+          "value": "FPS_Fwd"
+        },
+        "InterpTracks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "InterpTrackMove"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "InterpTrackMove",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InterpTrackMove"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InterpTrackMove"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "InterpGroupCamera"
+      },
+      "properties": {
+        "EulerTrack": {
+          "type": "InterpCurveVector",
+          "value": {
+            "Points": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": -3.5083546e-15,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.26824948,
+                        "y": -0.16490933,
+                        "z": 0.000051471914
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.033333335
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.26824948,
+                        "y": -0.16490933,
+                        "z": 0.000051471914
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.002243042,
+                        "y": -0.005493164,
+                        "z": 2.1504897e-7
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -10.478666,
+                        "y": 0.082397446,
+                        "z": -0.0000032257326
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.06666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -10.478666,
+                        "y": 0.082397446,
+                        "z": -0.0000032257326
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.0178833,
+                        "y": -0.010993957,
+                        "z": 0.0000034314612
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -6.0327263,
+                        "y": 8.7864275,
+                        "z": -0.06326036
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.10000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -6.0327263,
+                        "y": 8.7864275,
+                        "z": -0.06326036
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.7008209,
+                        "y": -3.5080922e-15,
+                        "z": 7.059621e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 9.304724,
+                        "y": 3.4527936,
+                        "z": -0.004851495
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.13333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 9.304724,
+                        "y": 3.4527936,
+                        "z": -0.004851495
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.42006508,
+                        "y": 0.5747679,
+                        "z": -0.0042139264
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 6.1380105,
+                        "y": -10.355182,
+                        "z": 0.06353761
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.16666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 6.1380105,
+                        "y": -10.355182,
+                        "z": 0.06353761
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.08050602,
+                        "y": 0.23018624,
+                        "z": -0.0003234329
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.2075901,
+                        "y": -4.2605166,
+                        "z": 0.0048514926
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.20000002
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.2075901,
+                        "y": -4.2605166,
+                        "z": 0.0048514926
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.01086428,
+                        "y": -0.1155777,
+                        "z": 0.000021915534
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.16296421,
+                        "y": 1.8626405,
+                        "z": -0.00032873303
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.23333335
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.16296421,
+                        "y": 1.8626405,
+                        "z": -0.00032873303
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": -0.053848267,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0.7838059,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.26666668
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0.7838059,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0.008598328,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.015563968,
+                        "y": -0.4714966,
+                        "z": -0.0000062028953
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.3
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.015563968,
+                        "y": -0.4714966,
+                        "z": -0.0000062028953
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": -0.0015945435,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.03089906,
+                        "y": -0.6313706,
+                        "z": -0.000023559387
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.33333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.03089906,
+                        "y": -0.6313706,
+                        "z": -0.000023559387
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.0010375978,
+                        "y": -0.022834778,
+                        "z": -4.1352632e-7
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.01556396,
+                        "y": -0.44792157,
+                        "z": 0.0000062028926
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.36666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.01556396,
+                        "y": -0.44792157,
+                        "z": 0.0000062028926
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.0020599372,
+                        "y": -0.043685913,
+                        "z": -0.0000015706257
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.749006,
+                        "y": 0.07853611,
+                        "z": 0.0058743255
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.40000004
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.749006,
+                        "y": 0.07853611,
+                        "z": 0.0058743255
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": -0.052696228,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -4.9124036,
+                        "y": 7.3051157,
+                        "z": -0.037236877
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.43333337
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -4.9124036,
+                        "y": 7.3051157,
+                        "z": -0.037236877
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.5812074,
+                        "y": -0.03845017,
+                        "z": 0.00039005122
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 7.6352696,
+                        "y": 3.377236,
+                        "z": -0.009379229
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.4666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 7.6352696,
+                        "y": 3.377236,
+                        "z": -0.009379229
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.32749355,
+                        "y": 0.43431145,
+                        "z": -0.0024824583
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.1509132,
+                        "y": -7.5147705,
+                        "z": 0.038123
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.5
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.1509132,
+                        "y": -7.5147705,
+                        "z": 0.038123
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.07218971,
+                        "y": 0.18669876,
+                        "z": -0.00023523049
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.5332996,
+                        "y": -3.746218,
+                        "z": 0.004133184
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.53333336
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.5332996,
+                        "y": -3.746218,
+                        "z": 0.004133184
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.050766025,
+                        "y": -0.06667325,
+                        "z": 0.00005907479
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.4096989,
+                        "y": 0.31413996,
+                        "z": -0.00060533977
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.5666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.4096989,
+                        "y": 0.31413996,
+                        "z": -0.00060533977
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.036636375,
+                        "y": -0.0630493,
+                        "z": 0.00004031532
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.58959997,
+                        "y": 0.5350111,
+                        "z": -0.000623872
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.6
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.58959997,
+                        "y": 0.5350111,
+                        "z": -0.000623872
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.023452766,
+                        "y": -0.045730587,
+                        "z": 0.000018718809
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.2560887,
+                        "y": 0.37593913,
+                        "z": -0.0009677096
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.6333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.2560887,
+                        "y": 0.37593913,
+                        "z": -0.0009677096
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.0026702883,
+                        "y": -0.027381897,
+                        "z": -0.0000012761421
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 8.417383,
+                        "y": -1.6264503,
+                        "z": -0.0200287
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.6666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 8.417383,
+                        "y": -1.6264503,
+                        "z": -0.0200287
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.12695314,
+                        "y": -0.02066798,
+                        "z": -0.000045795154
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 11.348644,
+                        "y": -4.6961756,
+                        "z": -0.07651678
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.70000005
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 11.348644,
+                        "y": -4.6961756,
+                        "z": -0.07651678
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.5638291,
+                        "y": -0.13581191,
+                        "z": -0.0013365226
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -19.590298,
+                        "y": -4.0121193,
+                        "z": 0.098412186
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.73333335
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -19.590298,
+                        "y": -4.0121193,
+                        "z": 0.098412186
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.88352937,
+                        "y": -0.3337463,
+                        "z": -0.005146913
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -48.574364,
+                        "y": 17.692566,
+                        "z": -0.44446063
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.7666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -48.574364,
+                        "y": 17.692566,
+                        "z": -0.44446063
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.7421906,
+                        "y": -0.4032865,
+                        "z": 0.005224289
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -4.254533,
+                        "y": 11.86391,
+                        "z": -0.18247971
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.8000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -4.254533,
+                        "y": 11.86391,
+                        "z": -0.18247971
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.3547642,
+                        "y": 0.84575903,
+                        "z": -0.03477765
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 40.155224,
+                        "y": -13.919697,
+                        "z": 0.5147281
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.8333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 40.155224,
+                        "y": -13.919697,
+                        "z": 0.5147281
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.0258261,
+                        "y": 0.3876408,
+                        "z": -0.006941026
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 18.496067,
+                        "y": -6.590631,
+                        "z": 0.10130844
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.86666673
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 18.496067,
+                        "y": -6.590631,
+                        "z": 0.10130844
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.3222507,
+                        "y": -0.08222068,
+                        "z": -0.00046244144
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -5.58312,
+                        "y": 1.4973254,
+                        "z": 0.006706422
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.90000004
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -5.58312,
+                        "y": 1.4973254,
+                        "z": 0.006706422
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.20724496,
+                        "y": -0.051734585,
+                        "z": -0.00018713031
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -5.977023,
+                        "y": 1.6059399,
+                        "z": 0.00003710455
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.9333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -5.977023,
+                        "y": 1.6059399,
+                        "z": 0.00003710455
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.04995728,
+                        "y": 0.017601006,
+                        "z": -0.000015346655
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.663973,
+                        "y": 0.262068,
+                        "z": -0.0012470655
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.9666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.663973,
+                        "y": 0.262068,
+                        "z": -0.0012470655
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.19122323,
+                        "y": 0.05532806,
+                        "z": -0.00018465667
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.4973451,
+                        "y": -0.85292274,
+                        "z": 0.0028065422
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.4973451,
+                        "y": -0.85292274,
+                        "z": 0.0028065422
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.1608887,
+                        "y": 0.03507219,
+                        "z": -0.00009848428
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.3121629,
+                        "y": -0.8697481,
+                        "z": 0.0015177164
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.0333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.3121629,
+                        "y": -0.8697481,
+                        "z": 0.0015177164
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.09140015,
+                        "y": -0.0015335063,
+                        "z": 0.0000024463027
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.4078393,
+                        "y": -0.28381357,
+                        "z": -0.0004068415
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.0666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.4078393,
+                        "y": -0.28381357,
+                        "z": -0.0004068415
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.006744385,
+                        "y": -0.022911072,
+                        "z": 0.000002696902
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.7843614,
+                        "y": 0.18299118,
+                        "z": -0.0003551333
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.1
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.7843614,
+                        "y": 0.18299118,
+                        "z": -0.0003551333
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.06912232,
+                        "y": -0.020454392,
+                        "z": -0.000024676436
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.56922853,
+                        "y": 0.30807447,
+                        "z": 0.0003724987
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.1333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.56922853,
+                        "y": 0.30807447,
+                        "z": 0.0003724987
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.112213135,
+                        "y": -0.010711649,
+                        "z": -0.00002097867
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.6262213,
+                        "y": 0.24581896,
+                        "z": 0.00041939467
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.1666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.6262213,
+                        "y": 0.24581896,
+                        "z": 0.00041939467
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.10707092,
+                        "y": 0.000083923194,
+                        "z": 1.5683084e-7
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.2057507,
+                        "y": 0.09075173,
+                        "z": 0.000040504856
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.2
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.2057507,
+                        "y": 0.09075173,
+                        "z": 0.000040504856
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.07046509,
+                        "y": 0.0056762653,
+                        "z": 0.0000069809457
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.0569755,
+                        "y": 0.00045782616,
+                        "z": -0.0001047141
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.2333333
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.0569755,
+                        "y": 0.00045782616,
+                        "z": -0.0001047141
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.026687622,
+                        "y": 0.0061340327,
+                        "z": 0.0000028571521
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.5049129,
+                        "y": -0.025176974,
+                        "z": -0.000050991308
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.2666668
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.5049129,
+                        "y": -0.025176974,
+                        "z": -0.000050991308
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0.005706787,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.13389601,
+                        "y": -0.049095202,
+                        "z": -0.0000056875565
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.3000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.13389601,
+                        "y": -0.049095202,
+                        "z": -0.0000056875565
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.0069732666,
+                        "y": 0.0044555664,
+                        "z": -5.422712e-7
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.00823974,
+                        "y": -0.056076005,
+                        "z": 0.000006721676
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.3333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.00823974,
+                        "y": -0.056076005,
+                        "z": 0.000006721676
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.008926392,
+                        "y": 0.0024337769,
+                        "z": -3.7917007e-7
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.067062326,
+                        "y": -0.0361633,
+                        "z": 0.0000056608483
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.3666668
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.067062326,
+                        "y": -0.0361633,
+                        "z": 0.0000056608483
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.007522583,
+                        "y": 0.0007171631,
+                        "z": -9.415909e-8
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.09201059,
+                        "y": -0.011787426,
+                        "z": 0.0000014373489
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.4000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.09201059,
+                        "y": -0.011787426,
+                        "z": 0.0000014373489
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.0044555664,
+                        "y": 0.000022888184,
+                        "z": -1.7798767e-9
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.06683356,
+                        "y": -0.00034332307,
+                        "z": 2.6698283e-8
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.4333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.06683356,
+                        "y": -0.00034332307,
+                        "z": 2.6698283e-8
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.0013885498,
+                        "y": -0.00006866455,
+                        "z": 1.6640763e-9
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.4666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": -3.5083546e-15,
+                        "z": 7.016709e-15
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "LookupTrack": {
+          "type": "InterpLookupTrack",
+          "value": {
+            "Points": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.033333335
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.06666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.10000001
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.13333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.16666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.20000002
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.23333335
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.26666668
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.3
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.33333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.36666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.40000004
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.43333337
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.4666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.5
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.53333336
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.5666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.6
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.6333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.6666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.70000005
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.73333335
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.7666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.8000001
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.8333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.86666673
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.90000004
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.9333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 0.9666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.0333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.0666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.1
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.1333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.1666667
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.2
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.2333333
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.2666668
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.3000001
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.3333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.3666668
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.4000001
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.4333334
+                    }
+                  }
+                },
+                {
+                  "type": "InterpLookupPoint",
+                  "value": {
+                    "GroupName": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Time": {
+                      "type": "FloatProperty",
+                      "value": 1.4666667
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "PosTrack": {
+          "type": "InterpCurveVector",
+          "value": {
+            "Points": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0,
+                        "y": -0,
+                        "z": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.22765723,
+                        "y": 7.321885e-17,
+                        "z": 5.8869366e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.033333335
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.22765723,
+                        "y": 7.321885e-17,
+                        "z": 5.8869366e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.007588572,
+                        "y": 2.4406696e-18,
+                        "z": 1.754329e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -4.230585,
+                        "y": -1.3626529e-15,
+                        "z": -6.1451166e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.06666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -4.230585,
+                        "y": -1.3626529e-15,
+                        "z": -6.1451166e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.015177149,
+                        "y": 4.881257e-18,
+                        "z": 3.9246246e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.6888275,
+                        "y": -2.7952547e-15,
+                        "z": -1.7422866e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.10000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.6888275,
+                        "y": -2.7952547e-15,
+                        "z": -1.7422866e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.27445045,
+                        "y": -8.8402877e-17,
+                        "z": -3.9213126e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.1540334,
+                        "y": 3.731325e-16,
+                        "z": -3.2222923e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.13333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.1540334,
+                        "y": 3.731325e-16,
+                        "z": -3.2222923e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.56407803,
+                        "y": -1.8146907e-16,
+                        "z": -1.1222783e-16
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 11.021111,
+                        "y": 3.5453754e-15,
+                        "z": 2.2568911e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.16666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 11.021111,
+                        "y": 3.5453754e-15,
+                        "z": 2.2568911e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.19751488,
+                        "y": -6.3527385e-17,
+                        "z": -4.136132e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.5656886,
+                        "y": 1.4684639e-15,
+                        "z": 9.763497e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.20000002
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.5656886,
+                        "y": 1.4684639e-15,
+                        "z": 9.763497e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.17066285,
+                        "y": 5.488933e-17,
+                        "z": 3.823162e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.8575134,
+                        "y": -9.190459e-16,
+                        "z": -6.3954826e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.23333335
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.8575134,
+                        "y": -9.190459e-16,
+                        "z": -6.3954826e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.10686443,
+                        "y": 3.437022e-17,
+                        "z": 2.372867e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.1437325,
+                        "y": -1.0111015e-15,
+                        "z": -6.9804885e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.26666668
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.1437325,
+                        "y": -1.0111015e-15,
+                        "z": -6.9804885e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.019838024,
+                        "y": -6.380395e-18,
+                        "z": -4.404926e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.22814536,
+                        "y": -7.337716e-17,
+                        "z": -5.1138923e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.3
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.22814536,
+                        "y": -7.337716e-17,
+                        "z": -5.1138923e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.10271772,
+                        "y": -3.3036538e-17,
+                        "z": -2.2807916e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.8953483,
+                        "y": 9.31215e-16,
+                        "z": 6.419355e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.33333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.8953483,
+                        "y": 9.31215e-16,
+                        "z": 6.419355e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.035047714,
+                        "y": -1.1272205e-17,
+                        "z": -7.814188e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.4055567,
+                        "y": 7.736861e-16,
+                        "z": 5.3462136e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.36666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 2.4055567,
+                        "y": 7.736861e-16,
+                        "z": 5.3462136e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.09030549,
+                        "y": 2.904446e-17,
+                        "z": 1.9987782e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.7020433,
+                        "y": -1.1920388e-15,
+                        "z": -5.507747e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.40000004
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.7020433,
+                        "y": -1.1920388e-15,
+                        "z": -5.507747e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.1253228,
+                        "y": 4.0306887e-17,
+                        "z": 2.7827252e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.523765,
+                        "y": -2.741887e-15,
+                        "z": -1.7403584e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.43333337
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.523765,
+                        "y": -2.741887e-15,
+                        "z": -1.7403584e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.15649748,
+                        "y": -5.042482e-17,
+                        "z": -1.6730548e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.0312147,
+                        "y": 3.3301376e-16,
+                        "z": -7.738345e-18
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.4666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.0312147,
+                        "y": 3.3301376e-16,
+                        "z": -7.738345e-18
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.44292814,
+                        "y": -1.4248557e-16,
+                        "z": -8.819664e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 10.70796,
+                        "y": 3.4443676e-15,
+                        "z": 2.2489544e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.5
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 10.70796,
+                        "y": 3.4443676e-15,
+                        "z": 2.2489544e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.087749876,
+                        "y": -2.8223922e-17,
+                        "z": -1.7246438e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.5250196,
+                        "y": 1.455373e-15,
+                        "z": 9.882273e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.53333336
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.5250196,
+                        "y": 1.455373e-15,
+                        "z": 9.882273e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.27093586,
+                        "y": 8.7138925e-17,
+                        "z": 6.173365e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.6624115,
+                        "y": -8.5628864e-16,
+                        "z": -6.038745e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.5666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.6624115,
+                        "y": -8.5628864e-16,
+                        "z": -6.038745e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.21391834,
+                        "y": 6.8801025e-17,
+                        "z": 4.8635434e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.6243155,
+                        "y": -1.1656634e-15,
+                        "z": -8.2304243e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.6
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.6243155,
+                        "y": -1.1656634e-15,
+                        "z": -8.2304243e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.093441784,
+                        "y": 3.005302e-17,
+                        "z": 2.1475347e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.7024965,
+                        "y": -8.692523e-16,
+                        "z": -6.700195e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.6333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -2.7024965,
+                        "y": -8.692523e-16,
+                        "z": -6.700195e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.027702682,
+                        "y": -8.9098635e-18,
+                        "z": -6.2340583e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 6.1717153,
+                        "y": 1.9836849e-15,
+                        "z": 1.1094384e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.6666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 6.1717153,
+                        "y": 1.9836849e-15,
+                        "z": 1.1094384e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.08672464,
+                        "y": -2.789713e-17,
+                        "z": -2.3192619e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 14.187221,
+                        "y": 4.5598558e-15,
+                        "z": 2.7983745e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.70000005
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 14.187221,
+                        "y": 4.5598558e-15,
+                        "z": 2.7983745e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.38374496,
+                        "y": 1.2333578e-16,
+                        "z": 6.7728496e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.1878805,
+                        "y": -2.6343684e-15,
+                        "z": -1.2107381e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.73333335
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -8.1878805,
+                        "y": -2.6343684e-15,
+                        "z": -1.2107381e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.85909003,
+                        "y": 2.7609322e-16,
+                        "z": 1.6336567e-16
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -30.788261,
+                        "y": -9.921587e-15,
+                        "z": -5.3308527e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.7666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -30.788261,
+                        "y": -9.921587e-15,
+                        "z": -5.3308527e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.16211374,
+                        "y": -5.228878e-17,
+                        "z": -1.2987375e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.5078208,
+                        "y": -1.1302364e-15,
+                        "z": -6.470067e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.8000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.5078208,
+                        "y": -1.1302364e-15,
+                        "z": -6.470067e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -1.1934625,
+                        "y": -3.8534647e-16,
+                        "z": -1.9202478e-16
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 24.058842,
+                        "y": 7.759987e-15,
+                        "z": 4.0976206e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.8333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 24.058842,
+                        "y": 7.759987e-15,
+                        "z": 4.0976206e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.3959685,
+                        "y": -1.2763787e-16,
+                        "z": -5.6121154e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 7.1736264,
+                        "y": 2.3113104e-15,
+                        "z": 1.0194668e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.86666673
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 7.1736264,
+                        "y": 2.3113104e-15,
+                        "z": 1.0194668e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.41046023,
+                        "y": 1.3198598e-16,
+                        "z": 8.11499e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -9.947859,
+                        "y": -3.199064e-15,
+                        "z": -2.0357755e-15
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.90000004
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -9.947859,
+                        "y": -3.199064e-15,
+                        "z": -2.0357755e-15
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.08227325,
+                        "y": 2.6449477e-17,
+                        "z": 1.1843286e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.8275778,
+                        "y": -1.2310171e-15,
+                        "z": -6.6459063e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.9333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -3.8275778,
+                        "y": -1.2310171e-15,
+                        "z": -6.6459063e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.2527303,
+                        "y": -8.128494e-17,
+                        "z": -5.456846e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.6140757,
+                        "y": 1.1622805e-15,
+                        "z": 8.5407486e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.9666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.6140757,
+                        "y": 1.1622805e-15,
+                        "z": 8.5407486e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.1728986,
+                        "y": -5.561833e-17,
+                        "z": -3.2462756e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.6882997,
+                        "y": 1.1863622e-15,
+                        "z": 7.72548e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 3.6882997,
+                        "y": 1.1863622e-15,
+                        "z": 7.72548e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.011792161,
+                        "y": -3.799652e-18,
+                        "z": 2.3698104e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.0915648,
+                        "y": 3.511789e-16,
+                        "z": 1.7068636e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.0333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1.0915648,
+                        "y": 3.511789e-16,
+                        "z": 1.7068636e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.07298825,
+                        "y": 2.347255e-17,
+                        "z": 1.9040488e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.4882309,
+                        "y": -1.5701251e-16,
+                        "z": -1.830646e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.0666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.4882309,
+                        "y": -1.5701251e-16,
+                        "z": -1.830646e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.060978886,
+                        "y": 1.9612294e-17,
+                        "z": 1.37489114e-17
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.66182625,
+                        "y": -2.1291048e-16,
+                        "z": -2.022711e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.1
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.66182625,
+                        "y": -2.1291048e-16,
+                        "z": -2.022711e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.040439554,
+                        "y": 1.3005059e-17,
+                        "z": 6.8361936e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.67081296,
+                        "y": -2.1577705e-16,
+                        "z": -1.665978e-16
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.1333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.67081296,
+                        "y": -2.1577705e-16,
+                        "z": -1.665978e-16
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.016857099,
+                        "y": 5.41825e-18,
+                        "z": 2.6416054e-19
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.515191,
+                        "y": -1.6566715e-16,
+                        "z": -9.498492e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.1666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.515191,
+                        "y": -1.6566715e-16,
+                        "z": -9.498492e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.00428135,
+                        "y": -1.3800891e-18,
+                        "z": -4.270336e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.27197772,
+                        "y": -8.7431065e-17,
+                        "z": -2.3005168e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.2
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.27197772,
+                        "y": -8.7431065e-17,
+                        "z": -2.3005168e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.017488938,
+                        "y": -5.6262153e-18,
+                        "z": -6.0681614e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.08410777,
+                        "y": -2.7030965e-17,
+                        "z": 1.4096852e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.2333333
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.08410777,
+                        "y": -2.7030965e-17,
+                        "z": 1.4096852e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.022413181,
+                        "y": -7.208821e-18,
+                        "z": -5.8040124e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.026557842,
+                        "y": 8.544338e-18,
+                        "z": 2.154755e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.2666668
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.026557842,
+                        "y": 8.544338e-18,
+                        "z": 2.154755e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.023096127,
+                        "y": -7.428281e-18,
+                        "z": -5.1283705e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.10407713,
+                        "y": 3.347344e-17,
+                        "z": 2.7258562e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.3000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.10407713,
+                        "y": 3.347344e-17,
+                        "z": 2.7258562e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.020642657,
+                        "y": -6.639198e-18,
+                        "z": -4.367508e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.14844982,
+                        "y": 4.7745077e-17,
+                        "z": 3.3221784e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.3333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.14844982,
+                        "y": 4.7745077e-17,
+                        "z": 3.3221784e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.016157659,
+                        "y": -5.196721e-18,
+                        "z": -3.3111347e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.15967599,
+                        "y": 5.1355955e-17,
+                        "z": 3.3380794e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.3666668
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.15967599,
+                        "y": 5.1355955e-17,
+                        "z": 3.3380794e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.010745994,
+                        "y": -3.4561903e-18,
+                        "z": -2.1527204e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.13775565,
+                        "y": 4.4305812e-17,
+                        "z": 2.77356e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.4000001
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.13775565,
+                        "y": 4.4305812e-17,
+                        "z": 2.77356e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.005512584,
+                        "y": -1.7729876e-18,
+                        "z": -1.0857465e-18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.08268884,
+                        "y": 2.659484e-17,
+                        "z": 1.6286213e-17
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.4333334
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.08268884,
+                        "y": 2.659484e-17,
+                        "z": 1.6286213e-17
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.0015622928,
+                        "y": -5.024722e-19,
+                        "z": -3.0368212e-19
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1.4666667
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_CurveAuto"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0,
+                        "y": -0,
+                        "z": 0
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

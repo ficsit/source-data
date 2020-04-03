@@ -1,0 +1,121 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Decals/Material/Decal_Smudge.uasset",
+  "guid": {
+    "a": 2472939497,
+    "b": 1311110805,
+    "c": 1874722710,
+    "d": 1609365394
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Decal_Smudge"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Decal_Smudge"
+            }
+          }
+        },
+        "SamplerType": {
+          "type": "ByteProperty",
+          "value": "SAMPLERTYPE_Masks"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Decals/Texture/DecalMasks",
+              "name": "DecalMasks"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Decal_Smudge",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "DecalBlendMode": {
+          "type": "ByteProperty",
+          "value": "DBM_Stain"
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_DeferredDecal"
+        },
+        "Normal": {
+          "type": "VectorMaterialInput",
+          "value": null
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2175818526,
+            "b": 1214419378,
+            "c": 3254261389,
+            "d": 3574028618
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

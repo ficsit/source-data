@@ -1,0 +1,195 @@
+{
+  "file_name": "Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset",
+  "guid": {
+    "a": 4288259525,
+    "b": 1080694134,
+    "c": 3636851111,
+    "d": 3896732385
+  },
+  "exports": [
+    {
+      "name": "PreviewShadowIndicatorMaterial",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionFeatureLevelSwitch"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_LightFunction"
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 1052379122,
+            "b": 1302204323,
+            "c": 254916018,
+            "d": 1149705673
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionFeatureLevelSwitch",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionFeatureLevelSwitch"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionFeatureLevelSwitch"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PreviewShadowIndicatorMaterial"
+      },
+      "properties": {
+        "Default": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 1,
+            "mask_r": 1,
+            "mask_g": 1,
+            "mask_b": 1,
+            "mask_a": 0,
+            "output_index": 29
+          }
+        },
+        "Inputs": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 1,
+            "mask_r": 1,
+            "mask_g": 1,
+            "mask_b": 1,
+            "mask_a": 0,
+            "output_index": 32
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PreviewShadowIndicatorMaterial"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PreviewShadowIndicatorMaterial"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 28
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PreviewShadowIndicatorMaterial"
+            }
+          }
+        },
+        "SamplerType": {
+          "type": "ByteProperty",
+          "value": "SAMPLERTYPE_Grayscale"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/EditorMaterials/PreviewShadowIndicator",
+              "name": "PreviewShadowIndicator"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

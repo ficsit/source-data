@@ -1,0 +1,181 @@
+{
+  "file_name": "Engine/Plugins/Compositing/Composure/Content/Materials/ReplaceTonemapper/ComposureReplaceTonemapperByTexture.uasset",
+  "guid": {
+    "a": 1428435559,
+    "b": 1144436852,
+    "c": 3956939437,
+    "d": 3170030507
+  },
+  "exports": [
+    {
+      "name": "ComposureReplaceTonemapperByTexture",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendableLocation": {
+          "type": "ByteProperty",
+          "value": "BL_ReplacingTonemapper"
+        },
+        "BlendableOutputAlpha": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureObjectParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_PostProcess"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2905115870,
+            "b": 1106677282,
+            "c": 116141992,
+            "d": 1509128003
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureObjectParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureObjectParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ComposureReplaceTonemapperByTexture"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3225131354,
+            "b": 1257224731,
+            "c": 1101677746,
+            "d": 1662059987
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ComposureReplaceTonemapperByTexture"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Input"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ComposureReplaceTonemapperByTexture"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 28
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ComposureReplaceTonemapperByTexture"
+            }
+          }
+        },
+        "TextureObject": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 29
+          }
+        }
+      }
+    }
+  ]
+}

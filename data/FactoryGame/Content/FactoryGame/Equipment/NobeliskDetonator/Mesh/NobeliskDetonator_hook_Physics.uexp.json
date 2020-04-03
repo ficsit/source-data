@@ -1,0 +1,324 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/NobeliskDetonator/Mesh/NobeliskDetonator_hook_Physics.uasset",
+  "guid": {
+    "a": 847764975,
+    "b": 1107939915,
+    "c": 1483327667,
+    "d": 2048437261
+  },
+  "exports": [
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "NobeliskDetonator_hook_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.1766197e-16,
+                        "y": 0,
+                        "z": -1.8809824
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 2.8423285
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 0.5
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 4.2401686
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "Hook"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 7
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    },
+    {
+      "name": "NobeliskDetonator_hook_Physics",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsAsset"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsAsset"
+      },
+      "outer": null,
+      "properties": {
+        "BoundsBodies": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            1
+          ]
+        },
+        "ConstraintSetup": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            }
+          ]
+        },
+        "SkeletalBodySetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            }
+          ]
+        },
+        "ThumbnailInfo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "NobeliskDetonator_hook_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "Hook"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "Body"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "Hook"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": 4.7683716e-7,
+                "y": 6.171505,
+                "z": 7.1965456
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    },
+                    "Swing2LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Locked"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 90
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "NobeliskDetonator_hook_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "SphylElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KSphylElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0.0000019002122,
+                        "y": -0.047164448,
+                        "z": 1.4236882
+                      }
+                    },
+                    "Length": {
+                      "type": "FloatProperty",
+                      "value": 11.361115
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "Radius": {
+                      "type": "FloatProperty",
+                      "value": 5.859893
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "Body"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        }
+      }
+    }
+  ]
+}

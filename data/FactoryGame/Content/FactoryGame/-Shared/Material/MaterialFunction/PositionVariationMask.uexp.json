@@ -1,0 +1,195 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/-Shared/Material/MaterialFunction/PositionVariationMask.uasset",
+  "guid": {
+    "a": 1653612660,
+    "b": 1227129085,
+    "c": 4008012678,
+    "d": 3120885406
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 20
+          }
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3374540127,
+            "b": 1215381659,
+            "c": 949717148,
+            "d": 3829113473
+          }
+        },
+        "Function": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PositionVariationMask"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "PositionNoise"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/-Shared/Texture/Noise/NoiseCloud",
+              "name": "NoiseCloud"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PositionVariationMask",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialFunction"
+      },
+      "outer": null,
+      "properties": {
+        "Description": {
+          "type": "StrProperty",
+          "value": "Depends on Object Position to create some variation to ex the albedo texture depending on where the object is located within the level"
+        },
+        "FunctionExpressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 1282259570,
+            "b": 1107916320,
+            "c": 3679344004,
+            "d": 3519379973
+          }
+        },
+        "bExposeToLibrary": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "DefaultValue": {
+          "type": "FloatProperty",
+          "value": 10000
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3773115796,
+            "b": 1114415771,
+            "c": 2729216394,
+            "d": 1127989917
+          }
+        },
+        "Function": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PositionVariationMask"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "PositionVariationScale"
+        }
+      }
+    }
+  ]
+}

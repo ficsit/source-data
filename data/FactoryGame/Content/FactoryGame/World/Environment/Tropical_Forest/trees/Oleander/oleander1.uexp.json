@@ -1,0 +1,745 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Tropical_Forest/trees/Oleander/oleander1.uasset",
+  "guid": {
+    "a": 2232652986,
+    "b": 1312370893,
+    "c": 3593398944,
+    "d": 3862226705
+  },
+  "exports": [
+    {
+      "name": "FGFoliageResourceUserData",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGFoliageResourceUserData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGFoliageResourceUserData"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "mFoliageIdentifiers": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Pickupable"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_Chainsawable"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_VehicleDestroyable"
+              }
+            }
+          ]
+        },
+        "mPickupEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/PickupOleander_01",
+              "name": "PickupOleander_01"
+            }
+          }
+        },
+        "mPickupEvent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Audio/Play_W_Pickup_Consumable_Foliage_Leaf",
+              "name": "Play_W_Pickup_Consumable_Foliage_Leaf"
+            }
+          }
+        },
+        "mPickupItems": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Leaves",
+                          "name": "Desc_Leaves_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 7
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 4
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 1
+                }
+              }
+            },
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Wood",
+                          "name": "Desc_Wood_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 1
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 0.5
+                }
+              }
+            },
+            {
+              "type": "ItemDropWithChance",
+              "value": {
+                "Drop": {
+                  "type": "ItemDrop",
+                  "value": {
+                    "ItemClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_FlowerPetals",
+                          "name": "Desc_FlowerPetals_C"
+                        }
+                      }
+                    },
+                    "NumItems": {
+                      "type": "Int32Interval",
+                      "value": {
+                        "Max": {
+                          "type": "IntProperty",
+                          "value": 1
+                        },
+                        "Min": {
+                          "type": "IntProperty",
+                          "value": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "DropChance": {
+                  "type": "FloatProperty",
+                  "value": 0.25
+                }
+              }
+            }
+          ]
+        },
+        "mVehicleDestroyedEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/PickupOleander_01",
+              "name": "PickupOleander_01"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "oleander1",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AssetUserData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FGFoliageResourceUserData"
+              }
+            }
+          ]
+        },
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 118.18822,
+                "y": 146.56088,
+                "z": 124.03601
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": -16.841202,
+                "y": -7.3271484,
+                "z": 100.13019
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 183.41133
+            }
+          }
+        },
+        "LightMapCoordinateIndex": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 64
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 814.48865
+        },
+        "ShadowLODBias": {
+          "type": "ByteProperty",
+          "value": 4
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "OleanderLeaf_Inst"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/World/Environment/Tropical_Forest/trees/Oleander/Materials/OleanderLeaf_Inst",
+                      "name": "OleanderLeaf_Inst"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "OleanderLeaf_Inst"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "ConvexElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -135.12943,
+                          "y": -153.98804,
+                          "z": -24.005825
+                        },
+                        "max": {
+                          "x": 101.44702,
+                          "y": 139.33374,
+                          "z": 224.2662
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 101.44702,
+                            "y": 92.80296,
+                            "z": 49.572025
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 101.44702,
+                            "y": -112.947,
+                            "z": 49.572033
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 101.44702,
+                            "y": -130.55302,
+                            "z": 67.17806
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 101.44702,
+                            "y": -130.55302,
+                            "z": 185.19695
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 101.44702,
+                            "y": -107.94696,
+                            "z": 207.80301
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 101.44702,
+                            "y": 92.80296,
+                            "z": 207.803
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -135.12943,
+                            "y": -97.74559,
+                            "z": 61.504456
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -135.12943,
+                            "y": 64.37056,
+                            "z": 61.504456
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -135.12943,
+                            "y": 64.370544,
+                            "z": 182.99557
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -135.12943,
+                            "y": -97.74556,
+                            "z": 182.99556
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -60.16623,
+                            "y": 139.33374,
+                            "z": 78.95874
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 54.916245,
+                            "y": 139.33374,
+                            "z": 78.95874
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 54.916245,
+                            "y": 139.33374,
+                            "z": 181.41624
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -60.16626,
+                            "y": 139.33374,
+                            "z": 181.41624
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 78.012,
+                            "y": -153.98804,
+                            "z": 90.613075
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -78.88698,
+                            "y": -153.98804,
+                            "z": 90.613045
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -78.88695,
+                            "y": -153.98804,
+                            "z": 161.7619
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 78.01201,
+                            "y": -153.98804,
+                            "z": 161.76193
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -93.858795,
+                            "y": 96.48378,
+                            "z": 224.2662
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 84.983826,
+                            "y": 96.483795,
+                            "z": 224.2662
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 84.983826,
+                            "y": -91.48376,
+                            "z": 224.2662
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -93.858795,
+                            "y": -91.48371,
+                            "z": 224.2662
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -49.61915,
+                            "y": -39.369186,
+                            "z": -24.005825
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 27.869171,
+                            "y": -39.369175,
+                            "z": -24.005825
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 27.869171,
+                            "y": 36.36917,
+                            "z": -24.005825
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -49.619156,
+                            "y": 36.369175,
+                            "z": -24.005825
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 91.37501,
+                            "y": 102.87498,
+                            "z": 217.87502
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -98.4375,
+                            "y": 101.0625,
+                            "z": 219.6875
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -121.56253,
+                            "y": -111.312485,
+                            "z": 47.937553
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -106.374985,
+                            "y": 93.125015,
+                            "z": 32.750015
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 92.87499,
+                            "y": 101.374985,
+                            "z": 40.999992
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -117.625,
+                            "y": -115.25,
+                            "z": 200.5
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

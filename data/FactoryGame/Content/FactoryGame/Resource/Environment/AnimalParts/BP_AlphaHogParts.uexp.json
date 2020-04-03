@@ -1,0 +1,319 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Resource/Environment/AnimalParts/BP_AlphaHogParts.uasset",
+  "guid": {
+    "a": 3286826003,
+    "b": 1184576019,
+    "c": 1157637009,
+    "d": 2124071709
+  },
+  "exports": [
+    {
+      "name": "Default__BP_AlphaHogParts_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AlphaHogParts_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Resource/BP_Pickup",
+        "name": "Default__BP_Pickup_C"
+      },
+      "outer": null,
+      "properties": {
+        "PrimaryActorTick": {
+          "type": "ActorTickFunction",
+          "value": {
+            "bStartWithTickEnabled": {
+              "type": "BoolProperty",
+              "value": false
+            }
+          }
+        },
+        "RemoteRole": {
+          "type": "ByteProperty",
+          "value": "ROLE_SimulatedProxy"
+        },
+        "mPickupItems": {
+          "type": "InventoryStack",
+          "value": {
+            "Item": {
+              "type": "InventoryItem",
+              "value": {}
+            },
+            "NumItems": {
+              "type": "IntProperty",
+              "value": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AlphaHogParts_C"
+      },
+      "properties": {
+        "Records": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/Engine",
+                      "name": "StaticMeshComponent"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 2233120671,
+                        "b": 1161681953,
+                        "c": 3447089586,
+                        "d": 1798550143
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Resource/BP_Pickup",
+                          "name": "BP_Pickup_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "StaticMesh"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "StaticMesh_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AlphaHogParts_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 680746570,
+            "b": 1149320972,
+            "c": 834597295,
+            "d": 419748581
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AlphaHogParts_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "StaticMesh_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "BP_Pickup_C",
+        "name": "StaticMesh_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_AlphaHogParts_C"
+      },
+      "properties": {
+        "OverrideMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Resource/Environment/AnimalParts/Materials/AnimalParts_Inst",
+                "name": "AnimalParts_Inst"
+              }
+            }
+          ]
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Resource/Environment/AnimalParts/Mesh/HogPart_static",
+              "name": "HogPart_static"
+            }
+          }
+        },
+        "bAllowCullDistanceVolume": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "BP_AlphaHogParts_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Resource/BP_Pickup",
+        "name": "BP_Pickup_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

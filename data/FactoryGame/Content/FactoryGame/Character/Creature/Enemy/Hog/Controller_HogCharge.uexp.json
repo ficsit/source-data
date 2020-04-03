@@ -1,0 +1,903 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Hog/Controller_HogCharge.uasset",
+  "guid": {
+    "a": 860655512,
+    "b": 1291128694,
+    "c": 2644865936,
+    "d": 2483617746
+  },
+  "exports": [
+    {
+      "name": "mHearNoiseKeyName",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "NameProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__NameProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PerceptionComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIPerceptionComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PerceptionComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_HogCharge_C"
+      },
+      "properties": {
+        "OnTargetPerceptionUpdated": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "SensesConfig": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Sight"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Hearing"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_Controller_HogCharge",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Stimulus",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "StartPanic",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGCreatureController",
+        "name": "StartPanic"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__Controller_HogCharge_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "Default__BP_EnemyController_C"
+      },
+      "outer": null,
+      "properties": {
+        "ActionsComp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ActionsComp"
+            }
+          }
+        },
+        "PathFollowingComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PathFollowingComponent"
+            }
+          }
+        },
+        "PerceptionComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PerceptionComponent"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "TransformComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mAggroDistanceCurve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Hog/Curve_DistanceAggroHog",
+              "name": "Curve_DistanceAggroHog"
+            }
+          }
+        },
+        "mBehaviorTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Hog/AI/BT_Hog",
+              "name": "BT_Hog"
+            }
+          }
+        },
+        "mBlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Hog/AI/BB_Hog",
+              "name": "BB_Hog"
+            }
+          }
+        },
+        "mDefaultIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "mDoPanicName": {
+          "type": "NameProperty",
+          "value": "DoPanic"
+        },
+        "mFinalGoalKeyName": {
+          "type": "NameProperty",
+          "value": "FinalGoal"
+        },
+        "mGainAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.8
+        },
+        "mHearNoiseKeyName": {
+          "type": "NameProperty",
+          "value": "DidHearNoise"
+        },
+        "mIgnoredAggroTargetClasses": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Train/Wagon/BP_FreightWagon.BP_FreightWagon_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Train/Locomotive/BP_Locomotive.BP_Locomotive_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Train/Locomotive/BP_Locomotive.BP_Locomotive_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/-Shared/PassengerSeat/BP_PassengerSeat.BP_PassengerSeat_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGFreightWagon",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGLocomotive",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGPassengerSeat",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Script/FactoryGame.FGRailroadVehicle",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Tractor/BP_Tractor.BP_Tractor_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Truck/BP_Truck.BP_Truck_C",
+              "sub_path": ""
+            },
+            {
+              "asset_path_name": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_Explorer.BP_Explorer_C",
+              "sub_path": ""
+            }
+          ]
+        },
+        "mLoseAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.69
+        },
+        "mNoiseLocationKeyName": {
+          "type": "NameProperty",
+          "value": "NoiseLocation"
+        },
+        "mStaticIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "mTargetSwitchFactor": {
+          "type": "FloatProperty",
+          "value": 1.1
+        },
+        "mTimeToLoseAllAggro": {
+          "type": "FloatProperty",
+          "value": 6
+        }
+      }
+    },
+    {
+      "name": "CallFunc_EqualEqual_NameName_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Actor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mDoPanicName",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "NameProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__NameProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mNoiseLocationKeyName",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "NameProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__NameProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ActionsComp",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PawnActionsComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "ActionsComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Controller_HogCharge_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "BP_EnemyController_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "DynamicBindingObjects": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ComponentDelegateBinding"
+              }
+            }
+          ]
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Controller_HogCharge"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "PerceptionComponent",
+        "name": "AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_Actor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BndEvt__PerceptionComponent_K2Node_ComponentBoundEvent_2_ActorPerceptionUpdatedDelegate__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AISenseConfig_Hearing",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Hearing"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AISenseConfig_Hearing"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "HearingRange": {
+          "type": "FloatProperty",
+          "value": 5000
+        }
+      }
+    },
+    {
+      "name": "K2Node_ComponentBoundEvent_Stimulus",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PathFollowingComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PathFollowingComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PathFollowingComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetBlackboard_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "TransformComponent0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "TransformComponent0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "LoseSightRadius": {
+          "type": "FloatProperty",
+          "value": 5000
+        },
+        "PeripheralVisionAngleDegrees": {
+          "type": "FloatProperty",
+          "value": 179
+        },
+        "SightRadius": {
+          "type": "FloatProperty",
+          "value": 4500
+        },
+        "bStartsEnabled": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ComponentDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ComponentDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ComponentDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {
+        "ComponentDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "PerceptionComponent"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnTargetPerceptionUpdated"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__PerceptionComponent_K2Node_ComponentBoundEvent_2_ActorPerceptionUpdatedDelegate__DelegateSignature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "mFinalGoalKeyName",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "NameProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__NameProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetBlackboard_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mIsChargingAtEnemy",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_HogCharge_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGAggro_Target_Interface",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "InterfaceProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__InterfaceProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Controller_HogCharge"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 4259990668,
+            "b": 1171882006,
+            "c": 4152333442,
+            "d": 3247665113
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Vehicle/Golfcart/Mesh/SK_Golfcart_01_Physics.uasset",
+  "guid": {
+    "a": 1534025667,
+    "b": 1083646723,
+    "c": 1656381352,
+    "d": 3115937470
+  },
+  "exports": [
+    {
+      "name": "SK_Golfcart_01_Physics",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsAsset"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsAsset"
+      },
+      "outer": null,
+      "properties": {
+        "BoundsBodies": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            1
+          ]
+        },
+        "ConstraintSetup": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PhysicsConstraintTemplate"
+              }
+            }
+          ]
+        },
+        "SkeletalBodySetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SkeletalBodySetup"
+              }
+            }
+          ]
+        },
+        "ThumbnailInfo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "name": "PhysicsConstraintTemplate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PhysicsConstraintTemplate"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PhysicsConstraintTemplate"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SK_Golfcart_01_Physics"
+      },
+      "properties": {
+        "DefaultInstance": {
+          "type": "ConstraintInstance",
+          "value": {
+            "ConstraintBone1": {
+              "type": "NameProperty",
+              "value": "window_r"
+            },
+            "ConstraintBone2": {
+              "type": "NameProperty",
+              "value": "root"
+            },
+            "JointName": {
+              "type": "NameProperty",
+              "value": "window_r"
+            },
+            "Pos2": {
+              "type": "Vector",
+              "value": {
+                "x": -1.0796975e-14,
+                "y": 25.229,
+                "z": 86.32887
+              }
+            },
+            "PriAxis1": {
+              "type": "Vector",
+              "value": {
+                "x": 1,
+                "y": 7.7486044e-7,
+                "z": -1.1920982e-7
+              }
+            },
+            "PriAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": -0.000002861023,
+                "y": 0.98480755,
+                "z": -0.17364982
+              }
+            },
+            "ProfileInstance": {
+              "type": "ConstraintProfileProperties",
+              "value": {
+                "AngularDrive": {
+                  "type": "AngularDriveConstraint",
+                  "value": {
+                    "AngularDriveMode": {
+                      "type": "ByteProperty",
+                      "value": "EAngularDriveMode::TwistAndSwing"
+                    },
+                    "SlerpDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 200
+                        }
+                      }
+                    },
+                    "SwingDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 200
+                        },
+                        "bEnablePositionDrive": {
+                          "type": "BoolProperty",
+                          "value": true
+                        }
+                      }
+                    },
+                    "TwistDrive": {
+                      "type": "ConstraintDrive",
+                      "value": {
+                        "Stiffness": {
+                          "type": "FloatProperty",
+                          "value": 200
+                        }
+                      }
+                    }
+                  }
+                },
+                "ConeLimit": {
+                  "type": "ConeConstraint",
+                  "value": {
+                    "Swing1LimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Swing1Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    },
+                    "Swing2Motion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                },
+                "TwistLimit": {
+                  "type": "TwistConstraint",
+                  "value": {
+                    "TwistLimitDegrees": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "TwistMotion": {
+                      "type": "ByteProperty",
+                      "value": "ACM_Limited"
+                    }
+                  }
+                }
+              }
+            },
+            "SecAxis1": {
+              "type": "Vector",
+              "value": {
+                "x": -7.7486055e-7,
+                "y": 1,
+                "z": -0.0000013113024
+              }
+            },
+            "SecAxis2": {
+              "type": "Vector",
+              "value": {
+                "x": -1.0000001,
+                "y": -0.000002861023,
+                "z": 3.7252903e-8
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SK_Golfcart_01_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 4.14032,
+                        "y": 0.000030517578,
+                        "z": 35.66013
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 108.78246
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 55.872406
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 17.840446
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": -0.000091552734,
+                        "y": 0.00030517578,
+                        "z": 88.559555
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 100.10835
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 49.40248
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 86.99995
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "root"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 15
+            },
+            "bOverrideMass": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SkeletalBodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalBodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalBodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SK_Golfcart_01_Physics"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "BoxElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KBoxElem",
+                  "value": {
+                    "Center": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 25.463526,
+                        "y": -0.00024977507,
+                        "z": -0.0000034828263
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Rotation": {
+                      "type": "Rotator",
+                      "value": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                      }
+                    },
+                    "X": {
+                      "type": "FloatProperty",
+                      "value": 39.376244
+                    },
+                    "Y": {
+                      "type": "FloatProperty",
+                      "value": 88.724
+                    },
+                    "Z": {
+                      "type": "FloatProperty",
+                      "value": 0.9534512
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "BoneName": {
+          "type": "NameProperty",
+          "value": "window_r"
+        },
+        "CollisionReponse": {
+          "type": "ByteProperty",
+          "value": "EBodyCollisionResponse::BodyCollision_Disabled"
+        },
+        "CollisionTraceFlag": {
+          "type": "ByteProperty",
+          "value": "CTF_UseSimpleAsComplex"
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "AngularDamping": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "MassInKgOverride": {
+              "type": "FloatProperty",
+              "value": 0.1
+            },
+            "bOverrideMass": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "PhysicsType": {
+          "type": "ByteProperty",
+          "value": "PhysType_Simulated"
+        }
+      }
+    }
+  ]
+}

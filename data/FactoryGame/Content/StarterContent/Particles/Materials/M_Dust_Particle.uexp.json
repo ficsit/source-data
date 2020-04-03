@@ -1,0 +1,125 @@
+{
+  "file_name": "FactoryGame/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset",
+  "guid": {
+    "a": 568807486,
+    "b": 1198547253,
+    "c": 2527780745,
+    "d": 989470662
+  },
+  "exports": [
+    {
+      "name": "M_Dust_Particle",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionParticleSubUV"
+              }
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3288448761,
+            "b": 1074719542,
+            "c": 3381809833,
+            "d": 2003723899
+          }
+        },
+        "bEnableSeparateTranslucency": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bFullyRough": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithMeshParticles": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithParticleSprites": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionParticleSubUV",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionParticleSubUV"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionParticleSubUV"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_Dust_Particle"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_Dust_Particle"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/StarterContent/Textures/T_Dust_Particle_D",
+              "name": "T_Dust_Particle_D"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

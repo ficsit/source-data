@@ -1,0 +1,4831 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/Codex/Widget_CodexButton.uasset",
+  "guid": {
+    "a": 2844737616,
+    "b": 1258256122,
+    "c": 270511527,
+    "d": 1927151508
+  },
+  "exports": [
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Widget_ImageTabButton",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/-Shared/Widgets/Widget_ImageTabButton",
+        "name": "Widget_ImageTabButton_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/-Shared/Widgets/Widget_ImageTabButton",
+        "name": "Default__Widget_ImageTabButton_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Visible"
+        },
+        "mButtonText": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 2,
+            "history_type": 0,
+            "namespace": "",
+            "key": "ABEC4DB649F4C029B97CA9AFDD46C231",
+            "source_string": "0"
+          }
+        }
+      }
+    },
+    {
+      "name": "mType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mIcon"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetFactoryGameDarkGray_Text",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextHoverColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "Default__Widget_CodexButton_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGButtonWidget"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bIsFocusable": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mText": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "A71FF4D44AC33FDC2A3FF2919308B01D",
+            "source_string": "Enter Text Here"
+          }
+        }
+      }
+    },
+    {
+      "name": "ButtonSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ButtonSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ButtonSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mButton"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 0
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonText"
+            }
+          }
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Left": {
+              "type": "FloatProperty",
+              "value": 5
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 5
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 4
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "OnClicked",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTextBlock",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.095307,
+                "g": 0.095307,
+                "b": 0.095307,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 12
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Medium"
+            }
+          }
+        },
+        "Justification": {
+          "type": "ByteProperty",
+          "value": "ETextJustify::Center"
+        },
+        "ShadowOffset": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0.3,
+            "y": 0.3
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 2,
+            "history_type": 0,
+            "namespace": "",
+            "key": "92BA115B4AC3DDC8742D37BF30E21825",
+            "source_string": "This is a Giraffe"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mText",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Clicked",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFactoryGameWhite_TextWhite",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextHoverColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Construct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Construct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Widget_ImageTabButton"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "BG",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 26,
+                "y": 26
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/Circle_Background",
+                  "name": "Circle_Background"
+                }
+              }
+            },
+            "TintColor": {
+              "type": "SlateColor",
+              "value": {
+                "SpecifiedColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0.783538,
+                    "g": 0.291771,
+                    "b": 0.059511,
+                    "a": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "HorizontalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "HorizontalBoxSlot"
+              }
+            }
+          ]
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Hidden"
+        }
+      }
+    },
+    {
+      "name": "VerticalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CallFunc_LessEqual_IntInt_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mButton",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Button"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Button"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "BackgroundColor": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0
+          }
+        },
+        "RenderTransformPivot": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ButtonSlot"
+              }
+            }
+          ]
+        },
+        "WidgetStyle": {
+          "type": "ButtonStyle",
+          "value": {
+            "Disabled": {
+              "type": "SlateBrush",
+              "value": {
+                "DrawAs": {
+                  "type": "ByteProperty",
+                  "value": "ESlateBrushDrawType::Box"
+                },
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 32,
+                    "y": 32
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/Rectangle_Background_Square",
+                      "name": "Rectangle_Background_Square"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.165885,
+                        "g": 0.175,
+                        "b": 0.169399,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Hovered": {
+              "type": "SlateBrush",
+              "value": {
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/Rectangle_Background_Square",
+                      "name": "Rectangle_Background_Square"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.095307,
+                        "g": 0.095307,
+                        "b": 0.095307,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Normal": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 8,
+                    "y": 8
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/0_White",
+                      "name": "0_White"
+                    }
+                  }
+                }
+              }
+            },
+            "NormalPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            },
+            "Pressed": {
+              "type": "SlateBrush",
+              "value": {
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.49
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/Rectangle_Background_Square",
+                      "name": "Rectangle_Background_Square"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.095307,
+                        "g": 0.095307,
+                        "b": 0.095307,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "PressedPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetParent_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFactoryGameWhite_GraphicsWhite",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextHoverColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mMessageNotification",
+      "class": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/Codex/Widget_Codex_MessageNotification",
+        "name": "Widget_Codex_MessageNotification_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/Codex/Widget_Codex_MessageNotification",
+        "name": "Default__Widget_Codex_MessageNotification_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Clipping": {
+          "type": "EWidgetClipping",
+          "value": "EWidgetClipping::ClipToBoundsWithoutIntersecting"
+        },
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Translation": {
+              "type": "Vector2D",
+              "value": {
+                "x": 5,
+                "y": -4
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Visible"
+        }
+      }
+    },
+    {
+      "name": "mButton",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwningPlayerPawn_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_byte_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetMessageNotificationVisibility"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFactoryGameDarkGray_Graphics",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextHoverColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "buttonPressed",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CreateDelegate_OutputDelegate",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "DelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__DelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HorizontalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "HorizontalBoxSlot"
+              }
+            }
+          ]
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Hidden"
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetChildrenCount_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsWidget_Codex_Button",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "OnReleased__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTextField"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 2
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 2
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 2
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 2
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "K2Node_MakeStruct_SlateBrush",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mButton",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Button"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Button"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "BackgroundColor": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.021
+          }
+        },
+        "RenderTransformPivot": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ButtonSlot"
+              }
+            }
+          ]
+        },
+        "WidgetStyle": {
+          "type": "ButtonStyle",
+          "value": {
+            "Disabled": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 171,
+                    "y": 49
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.64448,
+                        "g": 0.597202,
+                        "b": 0.552012,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Hovered": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 16,
+                    "y": 16
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/RectangleBackground_Rounded",
+                      "name": "RectangleBackground_Rounded"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.095307,
+                        "g": 0.095307,
+                        "b": 0.095307,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Normal": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 16,
+                    "y": 16
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/RectangleBackground_Rounded",
+                      "name": "RectangleBackground_Rounded"
+                    }
+                  }
+                }
+              }
+            },
+            "NormalPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            },
+            "Pressed": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 16,
+                    "y": 16
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/RectangleBackground_Rounded",
+                      "name": "RectangleBackground_Rounded"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.603828,
+                        "g": 0.597202,
+                        "b": 0.597202,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "PressedPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BG"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "HorizontalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "HorizontalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTextBlock"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "mButtonBackground",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "DrawAs": {
+              "type": "ByteProperty",
+              "value": "ESlateBrushDrawType::Box"
+            },
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 16,
+                "y": 16
+              }
+            },
+            "Margin": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0.49
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0.49
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0.49
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0.49
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetChildIndex_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "HeightOverride": {
+          "type": "FloatProperty",
+          "value": 90
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 150
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "Widget_CodexButton_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGButtonWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "Bindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "DelegateRuntimeBinding",
+              "value": {
+                "FunctionName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "Kind": {
+                  "type": "EBindingKind",
+                  "value": "EBindingKind::Property"
+                },
+                "ObjectName": {
+                  "type": "StrProperty",
+                  "value": "mTextBlock"
+                },
+                "PropertyName": {
+                  "type": "NameProperty",
+                  "value": "Text"
+                },
+                "SourcePath": {
+                  "type": "DynamicPropertyPath",
+                  "value": {
+                    "CachedFunction": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    },
+                    "Segments": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "PropertyPathSegment",
+                          "value": {
+                            "ArrayIndex": {
+                              "type": "IntProperty",
+                              "value": -1
+                            },
+                            "Name": {
+                              "type": "NameProperty",
+                              "value": "mText"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "DelegateRuntimeBinding",
+              "value": {
+                "FunctionName": {
+                  "type": "NameProperty",
+                  "value": "Get_mMessageNotification_Visibility"
+                },
+                "Kind": {
+                  "type": "EBindingKind",
+                  "value": "EBindingKind::Function"
+                },
+                "ObjectName": {
+                  "type": "StrProperty",
+                  "value": "mMessageNotification"
+                },
+                "PropertyName": {
+                  "type": "NameProperty",
+                  "value": "Visibility"
+                },
+                "SourcePath": {
+                  "type": "DynamicPropertyPath",
+                  "value": {
+                    "CachedFunction": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    },
+                    "Segments": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "PropertyPathSegment",
+                          "value": {
+                            "ArrayIndex": {
+                              "type": "IntProperty",
+                              "value": -1
+                            },
+                            "Name": {
+                              "type": "NameProperty",
+                              "value": "GetMessageNotificationVisibility"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "DelegateRuntimeBinding",
+              "value": {
+                "FunctionName": {
+                  "type": "NameProperty",
+                  "value": "Get_mTextBlock_ColorAndOpacity"
+                },
+                "Kind": {
+                  "type": "EBindingKind",
+                  "value": "EBindingKind::Function"
+                },
+                "ObjectName": {
+                  "type": "StrProperty",
+                  "value": "mTextBlock"
+                },
+                "PropertyName": {
+                  "type": "NameProperty",
+                  "value": "ColorAndOpacity"
+                },
+                "SourcePath": {
+                  "type": "DynamicPropertyPath",
+                  "value": {
+                    "CachedFunction": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    },
+                    "Segments": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "PropertyPathSegment",
+                          "value": {
+                            "ArrayIndex": {
+                              "type": "IntProperty",
+                              "value": -1
+                            },
+                            "Name": {
+                              "type": "NameProperty",
+                              "value": "GetTextHoverColor"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "DynamicBindingObjects": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ComponentDelegateBinding"
+              }
+            }
+          ]
+        },
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/Codex/Widget_CodexButton.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Widget_CodexButton"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bClassRequiresNativeTick": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BndEvt__Button_26_K2Node_ComponentBoundEvent_100_OnButtonClickedEvent__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButtonBackground"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ImageTabButton"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ButtonSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ButtonSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ButtonSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mButton"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 0
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mMessageNotification",
+      "class": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/Codex/Widget_Codex_MessageNotification",
+        "name": "Widget_Codex_MessageNotification_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/Codex/Widget_Codex_MessageNotification",
+        "name": "Default__Widget_Codex_MessageNotification_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Clipping": {
+          "type": "EWidgetClipping",
+          "value": "EWidgetClipping::ClipToBoundsWithoutIntersecting"
+        },
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Translation": {
+              "type": "Vector2D",
+              "value": {
+                "x": 5,
+                "y": -4
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Visible"
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mTextField": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTextField"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_Widget_CodexButton",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsHovered_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextHoverColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ComponentDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ComponentDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ComponentDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {
+        "ComponentDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "mButton"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnHovered"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__mButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature"
+                }
+              }
+            },
+            {
+              "type": "BlueprintComponentDelegateBinding",
+              "value": {
+                "ComponentPropertyName": {
+                  "type": "NameProperty",
+                  "value": "mButton"
+                },
+                "DelegatePropertyName": {
+                  "type": "NameProperty",
+                  "value": "OnClicked"
+                },
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "BndEvt__Button_26_K2Node_ComponentBoundEvent_100_OnButtonClickedEvent__DelegateSignature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OnPressed",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetChildAt_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "Widget_ImageTabButton",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/-Shared/Widgets/Widget_ImageTabButton",
+        "name": "Widget_ImageTabButton_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/-Shared/Widgets/Widget_ImageTabButton",
+        "name": "Default__Widget_ImageTabButton_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ButtonText": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonText"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Visible"
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mButton": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "mButtonBackground": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButtonBackground"
+            }
+          }
+        },
+        "mButtonText": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 2,
+            "history_type": 0,
+            "namespace": "",
+            "key": "ABEC4DB649F4C029B97CA9AFDD46C231",
+            "source_string": "0"
+          }
+        },
+        "mIcon": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mIcon"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwningPlayerPawn_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetParent_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTextBlock",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.095307,
+                "g": 0.095307,
+                "b": 0.095307,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 12
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Medium"
+            }
+          }
+        },
+        "Justification": {
+          "type": "ByteProperty",
+          "value": "ETextJustify::Center"
+        },
+        "ShadowOffset": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0.3,
+            "y": 0.3
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 2,
+            "history_type": 0,
+            "namespace": "",
+            "key": "92BA115B4AC3DDC8742D37BF30E21825",
+            "source_string": "This is a Giraffe"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mButton",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Button"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Button"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "BackgroundColor": {
+          "type": "LinearColor",
+          "value": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.021
+          }
+        },
+        "RenderTransformPivot": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ButtonSlot"
+              }
+            }
+          ]
+        },
+        "WidgetStyle": {
+          "type": "ButtonStyle",
+          "value": {
+            "Disabled": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 171,
+                    "y": 49
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.64448,
+                        "g": 0.597202,
+                        "b": 0.552012,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Hovered": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 16,
+                    "y": 16
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/RectangleBackground_Rounded",
+                      "name": "RectangleBackground_Rounded"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.095307,
+                        "g": 0.095307,
+                        "b": 0.095307,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Normal": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 16,
+                    "y": 16
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/RectangleBackground_Rounded",
+                      "name": "RectangleBackground_Rounded"
+                    }
+                  }
+                }
+              }
+            },
+            "NormalPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            },
+            "Pressed": {
+              "type": "SlateBrush",
+              "value": {
+                "ImageSize": {
+                  "type": "Vector2D",
+                  "value": {
+                    "x": 16,
+                    "y": 16
+                  }
+                },
+                "Margin": {
+                  "type": "Margin",
+                  "value": {
+                    "Bottom": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Left": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Right": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    },
+                    "Top": {
+                      "type": "FloatProperty",
+                      "value": 0.38
+                    }
+                  }
+                },
+                "ResourceObject": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/WindowWidget/RectangleBackground_Rounded",
+                      "name": "RectangleBackground_Rounded"
+                    }
+                  }
+                },
+                "TintColor": {
+                  "type": "SlateColor",
+                  "value": {
+                    "SpecifiedColor": {
+                      "type": "LinearColor",
+                      "value": {
+                        "r": 0.603828,
+                        "g": 0.597202,
+                        "b": 0.597202,
+                        "a": 1
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "PressedPadding": {
+              "type": "Margin",
+              "value": {
+                "Bottom": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Left": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Right": {
+                  "type": "FloatProperty",
+                  "value": 0
+                },
+                "Top": {
+                  "type": "FloatProperty",
+                  "value": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Visible"
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GetTextHoverColor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_IntInt_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ButtonTexture",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Widget_ImageTabButton",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mMessageNotification"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OnClicked__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "BndEvt__mButton_K2Node_ComponentBoundEvent_4_OnButtonHoverEvent__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mMessageNotification",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "Destruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Destruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTextBlock",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mMessageNotification"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Right"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 5
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 5
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "Temp_bool_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetMessageNotificationVisibility"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        },
+        "Visibility": {
+          "type": "ESlateVisibility",
+          "value": "ESlateVisibility::Visible"
+        }
+      }
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Widget_CodexButton_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "Widget_ImageTabButton": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Widget_ImageTabButton"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mButton": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "mMessageNotification": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mMessageNotification"
+            }
+          }
+        },
+        "mTextBlock": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTextBlock"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "K2Node_Select_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetMessageNotificationVisibility"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mMessageNotification"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Right"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OnPressed__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Temp_int_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OnReleased",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "HeightOverride": {
+          "type": "FloatProperty",
+          "value": 50
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 50
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "K2Node_SwitchEnum_CmpSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mIcon",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetParent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Widget_ImageTabButton"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "ButtonText",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AutoWrapText": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 10
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Default"
+            }
+          }
+        },
+        "Justification": {
+          "type": "ByteProperty",
+          "value": "ETextJustify::Center"
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.7
+        },
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Translation": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": -3
+              }
+            }
+          }
+        },
+        "ShadowOffset": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0.3,
+            "y": 0.3
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "CFBB23E14407E66F002060AE57720EDA",
+            "source_string": "Button Name"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_TextIsEmpty_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetMessageNotificationVisibility"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTextField",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.838799,
+                "g": 0.871367,
+                "b": 0.887923,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 10
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Medium"
+            }
+          }
+        },
+        "Justification": {
+          "type": "ByteProperty",
+          "value": "ETextJustify::Center"
+        },
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Translation": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": -1
+              }
+            }
+          }
+        },
+        "ShadowOffset": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 2,
+            "history_type": 0,
+            "namespace": "",
+            "key": "FF827FB64877660CFEA6FAAE5FA2A7F7",
+            "source_string": "###"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GetMessageNotificationVisibility",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_CodexButton_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_byte_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetMessageNotificationVisibility"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HorizontalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "HorizontalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__HorizontalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "HorizontalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTextBlock"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HorizontalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_CodexButton"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ButtonSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ButtonSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ButtonSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mButton"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Padding": {
+          "type": "Margin",
+          "value": {
+            "Bottom": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Left": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Right": {
+              "type": "FloatProperty",
+              "value": 0
+            },
+            "Top": {
+              "type": "FloatProperty",
+              "value": 0
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mButton"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    }
+  ]
+}

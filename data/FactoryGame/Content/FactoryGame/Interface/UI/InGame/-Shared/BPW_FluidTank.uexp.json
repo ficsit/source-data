@@ -1,0 +1,1668 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/-Shared/BPW_FluidTank.uasset",
+  "guid": {
+    "a": 2027902058,
+    "b": 1183999912,
+    "c": 2216287879,
+    "d": 1922953254
+  },
+  "exports": [
+    {
+      "name": "PreConstruct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "PreConstruct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SetFluidFilledOffset",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFluidFilled"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mTank"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRetainBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTank"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Ease_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFluidFilled",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 32,
+                "y": 74
+              }
+            }
+          }
+        },
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Scale": {
+              "type": "Vector2D",
+              "value": {
+                "x": 1,
+                "y": 0.535
+              }
+            }
+          }
+        },
+        "RenderTransformPivot": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mDome",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 348,
+                "y": 348
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/FluidModule/TXUI_FluidModule_Dome",
+                  "name": "TXUI_FluidModule_Dome"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "mRetainBox",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetEffectMaterial_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Translation": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 4
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTank"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mFluidFilledOffset",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SetAliasingDensity",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFluidFilled"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "mRetainBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "RetainerBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__RetainerBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "EffectMaterial": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Interface/UI/Material/MM_UI_WaterBar",
+              "name": "MM_UI_WaterBar"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PanelSlot"
+              }
+            }
+          ]
+        },
+        "TextureParameter": {
+          "type": "NameProperty",
+          "value": "Content"
+        }
+      }
+    },
+    {
+      "name": "mAliasingDensity",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mDome",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 348,
+                "y": 348
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/FluidModule/TXUI_FluidModule_Dome",
+                  "name": "TXUI_FluidModule_Dome"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Greater_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mCurrentValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_MakeVector2D_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetFluidFilledOffset"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UpdateTankValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetEffectMaterial_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTank",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mTank"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRetainBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTank"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mTank"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mDome"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTank"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BPW_FluidTank_C"
+      },
+      "outer": null,
+      "properties": {
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mFluidFilled": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mFluidFilled"
+            }
+          }
+        },
+        "mRetainBox": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRetainBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetEffectMaterial_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetTint"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BPW_FluidTank_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/-Shared/BPW_FluidTank.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BPW_FluidTank"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "EffectMaterial",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "PanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__PanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRetainBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PanelSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "PanelSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__PanelSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mRetainBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__BPW_FluidTank_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mAliasingDensity": {
+          "type": "FloatProperty",
+          "value": 50
+        },
+        "mFluidFilledOffset": {
+          "type": "FloatProperty",
+          "value": 0.535
+        },
+        "mTint": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.105882,
+            "g": 0.380392,
+            "b": 0.556863,
+            "a": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "mFluidFilled",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PreConstruct"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SetTint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Value",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetAliasingDensity"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Translation": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0,
+                "y": 4
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PanelSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Temp_bool_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "mTank"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mDome"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTank"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "Tint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Ease_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateTankValue"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mRetainBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "RetainerBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__RetainerBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "EffectMaterial": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Interface/UI/Material/MM_UI_WaterBar",
+              "name": "MM_UI_WaterBar"
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "PanelSlot"
+              }
+            }
+          ]
+        },
+        "TextureParameter": {
+          "type": "NameProperty",
+          "value": "Content"
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mTank"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFluidFilledOffset",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFluidFilled",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 32,
+                "y": 74
+              }
+            }
+          }
+        },
+        "RenderTransform": {
+          "type": "WidgetTransform",
+          "value": {
+            "Scale": {
+              "type": "Vector2D",
+              "value": {
+                "x": 1,
+                "y": 0.535
+              }
+            }
+          }
+        },
+        "RenderTransformPivot": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetEffectMaterial_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetAliasingDensity"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mTank",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_BPW_FluidTank",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPW_FluidTank_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_IsDesignTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BPW_FluidTank"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Value",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    }
+  ]
+}

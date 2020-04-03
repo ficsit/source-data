@@ -1,0 +1,1587 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Caves/Meshes/CaveMate_1.uasset",
+  "guid": {
+    "a": 2427325790,
+    "b": 1253305386,
+    "c": 2921478032,
+    "d": 2737583323
+  },
+  "exports": [
+    {
+      "name": "FGFoliageResourceUserData",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGFoliageResourceUserData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGFoliageResourceUserData"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "mExplosionDestroyedEffect": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/Particle/DestructibleRock_Small_01",
+              "name": "DestructibleRock_Small_01"
+            }
+          }
+        },
+        "mFXPriority": {
+          "type": "IntProperty",
+          "value": 4
+        },
+        "mFoliageIdentifiers": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Script/FactoryGame",
+                "name": "FGFoliageIdentifier_ExplosiveDestroyable"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "NavCollision",
+      "class": {
+        "package": "/Script/NavigationSystem",
+        "name": "NavCollision"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/NavigationSystem",
+        "name": "Default__NavCollision"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CaveMate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "StaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__StaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "AssetUserData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FGFoliageResourceUserData"
+              }
+            }
+          ]
+        },
+        "ExtendedBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 44.07337,
+                "y": 40.705162,
+                "z": 72.08177
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 0.7039604,
+                "y": 1.0942345,
+                "z": 71.57919
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 85.79861
+            }
+          }
+        },
+        "LightMapResolution": {
+          "type": "IntProperty",
+          "value": 32
+        },
+        "LightmapUVDensity": {
+          "type": "FloatProperty",
+          "value": 303.37097
+        },
+        "StaticMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "StaticMaterial",
+              "value": {
+                "ImportedMaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "MI_CProp_DBrown01"
+                },
+                "MaterialInterface": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/World/Environment/Caves/Materials/MI_CProp_DBrown01",
+                      "name": "MI_CProp_DBrown01"
+                    }
+                  }
+                },
+                "MaterialSlotName": {
+                  "type": "NameProperty",
+                  "value": "MI_CProp_DBrown01"
+                },
+                "UVChannelData": {
+                  "type": "MeshUVChannelInfo",
+                  "value": {
+                    "LocalUVDensities": {
+                      "type": "FloatProperty",
+                      "value": 1025.8422
+                    },
+                    "bInitialized": {
+                      "type": "BoolProperty",
+                      "value": true
+                    },
+                    "bOverrideDensities": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BodySetup",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BodySetup"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BodySetup"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AggGeom": {
+          "type": "KAggregateGeom",
+          "value": {
+            "ConvexElems": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": 31.55759,
+                          "y": -33.831486,
+                          "z": -0.54309845
+                        },
+                        "max": {
+                          "x": 45.003853,
+                          "y": 28.519695,
+                          "z": 23.093298
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.55759,
+                            "y": -33.831486,
+                            "z": 1.9024448
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.964336,
+                            "y": -10.999088,
+                            "z": 23.093298
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.55759,
+                            "y": -10.999088,
+                            "z": 23.093298
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.964336,
+                            "y": 28.519695,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 45.003853,
+                            "y": -8.154957,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 40.11239,
+                            "y": 12.217815,
+                            "z": 8.83187
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.55759,
+                            "y": 15.476971,
+                            "z": 16.16156
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.964336,
+                            "y": -28.527729,
+                            "z": 15.347149
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": 10.771832,
+                          "y": -22.420813,
+                          "z": 39.801792
+                        },
+                        "max": {
+                          "x": 24.220366,
+                          "y": 22.813522,
+                          "z": 96.84958
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 23.811565,
+                            "y": 6.1036386,
+                            "z": 62.620907
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.771832,
+                            "y": -22.420813,
+                            "z": 39.807377
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.771832,
+                            "y": 22.813522,
+                            "z": 39.807377
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.771832,
+                            "y": 7.325214,
+                            "z": 96.84958
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 23.40444,
+                            "y": -18.75158,
+                            "z": 39.801792
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 24.220366,
+                            "y": 14.253482,
+                            "z": 49.178516
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 17.292536,
+                            "y": 19.955667,
+                            "z": 74.84024
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 11.180633,
+                            "y": -0.8201219,
+                            "z": 94.81116
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -22.642593,
+                          "y": 6.9209213,
+                          "z": 39.80179
+                        },
+                        "max": {
+                          "x": 10.771832,
+                          "y": 23.221006,
+                          "z": 124.97432
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -18.56799,
+                            "y": 13.036176,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.771832,
+                            "y": 7.736847,
+                            "z": 98.07027
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.363032,
+                            "y": 7.3297215,
+                            "z": 99.29584
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -5.9387302,
+                            "y": 13.0345,
+                            "z": 100.11288
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.771832,
+                            "y": 23.221006,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -22.642593,
+                            "y": 6.9209213,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -2.6783779,
+                            "y": 6.9209213,
+                            "z": 124.97432
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 9.139981,
+                            "y": 22.40508,
+                            "z": 74.04255
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -40.574448,
+                          "y": -39.53151,
+                          "z": -0.54309845
+                        },
+                        "max": {
+                          "x": -2.26894,
+                          "y": -11.8300495,
+                          "z": 39.801785
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -32.42297,
+                            "y": -26.901405,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -2.26894,
+                            "y": -20.386814,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -2.26894,
+                            "y": -20.794147,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -2.26894,
+                            "y": -39.53151,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -40.574448,
+                            "y": -11.8300495,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -24.27528,
+                            "y": -27.308739,
+                            "z": 24.313078
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -19.792156,
+                            "y": -11.8300495,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -13.679495,
+                            "y": -32.60408,
+                            "z": 23.09278
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -2.2668648,
+                          "y": -39.535984,
+                          "z": -0.54309845
+                        },
+                        "max": {
+                          "x": 31.554283,
+                          "y": -11.830847,
+                          "z": 39.801785
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 26.254004,
+                            "y": -37.089165,
+                            "z": 4.756709
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.554283,
+                            "y": -15.090442,
+                            "z": 24.313078
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.554283,
+                            "y": -17.53443,
+                            "z": 24.313078
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -2.2668648,
+                            "y": -20.38622,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -2.2668648,
+                            "y": -39.535984,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 21.774754,
+                            "y": -34.642345,
+                            "z": 22.682064
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.147078,
+                            "y": -11.830847,
+                            "z": 22.682064
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 22.996368,
+                            "y": -19.978416,
+                            "z": 39.801785
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": 0.17815971,
+                          "y": -11.825184,
+                          "z": -0.54309845
+                        },
+                        "max": {
+                          "x": 31.55556,
+                          "y": 41.96524,
+                          "z": 39.801785
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.55556,
+                            "y": -0.4099884,
+                            "z": 22.275297
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 5.0678253,
+                            "y": 24.442284,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 4.2539043,
+                            "y": 24.442284,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0.17815971,
+                            "y": 41.96524,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 29.107655,
+                            "y": 32.998413,
+                            "z": 0.68509865
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 31.147064,
+                            "y": -11.825184,
+                            "z": 22.682064
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 23.812565,
+                            "y": 8.556837,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 25.03191,
+                            "y": -11.825184,
+                            "z": 39.801785
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -22.644276,
+                          "y": -19.975668,
+                          "z": 39.80179
+                        },
+                        "max": {
+                          "x": -8.791518,
+                          "y": 6.9209213,
+                          "z": 119.67539
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -8.791518,
+                            "y": -0.8221159,
+                            "z": 119.67539
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -9.60526,
+                            "y": -19.975668,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -8.791518,
+                            "y": -19.975668,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -22.644276,
+                            "y": 6.9209213,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -21.420471,
+                            "y": -10.192218,
+                            "z": 40.218285
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -8.791518,
+                            "y": 6.9209213,
+                            "z": 108.26488
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -19.384521,
+                            "y": 5.6966743,
+                            "z": 80.54801
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -14.495689,
+                            "y": -8.562521,
+                            "z": 91.14124
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -8.789326,
+                          "y": -22.420813,
+                          "z": 39.80179
+                        },
+                        "max": {
+                          "x": 10.7718315,
+                          "y": 6.9209213,
+                          "z": 144.92697
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -0.23036158,
+                            "y": 1.2111168,
+                            "z": 144.92697
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 7.1031575,
+                            "y": -22.420813,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.7718315,
+                            "y": -22.420813,
+                            "z": 39.80179
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 10.7718315,
+                            "y": 6.9209213,
+                            "z": 96.03178
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -8.789326,
+                            "y": -19.158066,
+                            "z": 40.215015
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -8.789326,
+                            "y": 6.9209213,
+                            "z": 109.079445
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 3.8423264,
+                            "y": -8.967731,
+                            "z": 132.30286
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -8.789326,
+                            "y": -8.970603,
+                            "z": 109.88524
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -40.57341,
+                          "y": -11.822713,
+                          "z": -0.54309845
+                        },
+                        "max": {
+                          "x": -17.349802,
+                          "y": 13.438834,
+                          "z": 39.801785
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -37.72178,
+                            "y": -8.561164,
+                            "z": 12.907829
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -17.349802,
+                            "y": 13.438834,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -17.349802,
+                            "y": 13.030831,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -36.49753,
+                            "y": 13.438834,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -19.387741,
+                            "y": -11.822713,
+                            "z": 38.984303
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -29.166883,
+                            "y": 3.6591337,
+                            "z": 34.091263
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -40.57341,
+                            "y": -11.822713,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -35.275757,
+                            "y": 13.438834,
+                            "z": 10.056517
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "type": "KConvexElem",
+                  "value": {
+                    "ElemBox": {
+                      "type": "Box",
+                      "value": {
+                        "min": {
+                          "x": -36.09172,
+                          "y": 13.441307,
+                          "z": -0.54309845
+                        },
+                        "max": {
+                          "x": 0.17620468,
+                          "y": 41.96799,
+                          "z": 39.801785
+                        },
+                        "is_valid": 1
+                      }
+                    },
+                    "Name": {
+                      "type": "NameProperty",
+                      "value": "None"
+                    },
+                    "RestOffset": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "Transform": {
+                      "type": "Transform",
+                      "value": {
+                        "Rotation": {
+                          "type": "Quat",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "w": 1
+                          }
+                        },
+                        "Scale3D": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                          }
+                        },
+                        "Translation": {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          }
+                        }
+                      }
+                    },
+                    "VertexData": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -32.42536,
+                            "y": 23.630606,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0.17620468,
+                            "y": 23.633398,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -0.64055824,
+                            "y": 23.633398,
+                            "z": 39.801785
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": 0.17620468,
+                            "y": 41.96799,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -21.422651,
+                            "y": 38.296047,
+                            "z": 0.27438354
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -36.09172,
+                            "y": 13.441307,
+                            "z": -0.54309845
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -25.495579,
+                            "y": 13.851783,
+                            "z": 32.460247
+                          }
+                        },
+                        {
+                          "type": "Vector",
+                          "value": {
+                            "x": -21.829218,
+                            "y": 26.076706,
+                            "z": 25.944092
+                          }
+                        }
+                      ]
+                    },
+                    "bContributeToMass": {
+                      "type": "BoolProperty",
+                      "value": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "DefaultInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "BlockAll"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_WorldStatic"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

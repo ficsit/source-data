@@ -1,0 +1,195 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/DeadVegetation/SM_FallenTrunk_01_FoliageType.uasset",
+  "guid": {
+    "a": 4033922380,
+    "b": 1089106682,
+    "c": 3806520984,
+    "d": 366221683
+  },
+  "exports": [
+    {
+      "name": "SM_FallenTrunk_01_FoliageType",
+      "class": {
+        "package": "/Script/Foliage",
+        "name": "FoliageType_InstancedStaticMesh"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Foliage",
+        "name": "Default__FoliageType_InstancedStaticMesh"
+      },
+      "outer": null,
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionEnabled": {
+              "type": "ByteProperty",
+              "value": "ECollisionEnabled::QueryAndPhysics"
+            },
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "Destructible"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "HologramClearance"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ObjectType": {
+              "type": "ByteProperty",
+              "value": "ECC_Destructible"
+            }
+          }
+        },
+        "ChangeCount": {
+          "type": "IntProperty",
+          "value": 43
+        },
+        "CullDistance": {
+          "type": "Int32Interval",
+          "value": {
+            "Max": {
+              "type": "IntProperty",
+              "value": 8500
+            }
+          }
+        },
+        "Density": {
+          "type": "FloatProperty",
+          "value": 10
+        },
+        "LowBoundOriginRadius": {
+          "type": "Vector",
+          "value": {
+            "x": 48.3636,
+            "y": 461.34497,
+            "z": 217.71463
+          }
+        },
+        "Mesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/World/Environment/DeadVegetation/Mesh/SM_FallenTrunk_01",
+              "name": "SM_FallenTrunk_01"
+            }
+          }
+        },
+        "MeshBounds": {
+          "type": "BoxSphereBounds",
+          "value": {
+            "BoxExtent": {
+              "type": "Vector",
+              "value": {
+                "x": 197.05234,
+                "y": 529.62555,
+                "z": 279.77368
+              }
+            },
+            "Origin": {
+              "type": "Vector",
+              "value": {
+                "x": 50.443665,
+                "y": 127.78845,
+                "z": -5.2494507
+              }
+            },
+            "SphereRadius": {
+              "type": "FloatProperty",
+              "value": 595.0698
+            }
+          }
+        },
+        "Radius": {
+          "type": "FloatProperty",
+          "value": 462
+        },
+        "RandomPitchAngle": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "ScaleCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        },
+        "ScaleX": {
+          "type": "FloatInterval",
+          "value": {
+            "Max": {
+              "type": "FloatProperty",
+              "value": 2
+            },
+            "Min": {
+              "type": "FloatProperty",
+              "value": 0.7
+            }
+          }
+        },
+        "UpdateGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3072657779,
+            "b": 1104199122,
+            "c": 321055414,
+            "d": 3298259659
+          }
+        },
+        "ZOffset": {
+          "type": "FloatInterval",
+          "value": {
+            "Min": {
+              "type": "FloatProperty",
+              "value": -100
+            }
+          }
+        },
+        "bCastDynamicShadow": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bCastStaticShadow": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    }
+  ]
+}

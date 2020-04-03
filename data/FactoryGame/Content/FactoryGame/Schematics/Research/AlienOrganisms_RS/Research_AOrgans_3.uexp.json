@@ -1,0 +1,174 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Research/AlienOrganisms_RS/Research_AOrgans_3.uasset",
+  "guid": {
+    "a": 4119932679,
+    "b": 1277424248,
+    "c": 485939076,
+    "d": 21265483
+  },
+  "exports": [
+    {
+      "name": "Default__Research_AOrgans_3_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Research_AOrgans_3_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGSchematic"
+      },
+      "outer": null,
+      "properties": {
+        "mCost": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 5
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/AnimalParts/Desc_SpitterParts",
+                      "name": "Desc_SpitterParts_C"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ItemAmount",
+              "value": {
+                "Amount": {
+                  "type": "IntProperty",
+                  "value": 2000
+                },
+                "ItemClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Resource/Parts/Wire/Desc_Wire",
+                      "name": "Desc_Wire_C"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "3D3DF28F472D18F0EEF8A08D87DF051F",
+            "source_string": "Inflated Pocket Dimension"
+          }
+        },
+        "mSchematicCategory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Schematics/SchematicCategories/SC_Organisation",
+              "name": "SC_Organisation_C"
+            }
+          }
+        },
+        "mSchematicIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 64,
+                "y": 64
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/Shared/ThumbsUp",
+                  "name": "ThumbsUp"
+                }
+              }
+            }
+          }
+        },
+        "mTechTier": {
+          "type": "IntProperty",
+          "value": 3
+        },
+        "mTimeToComplete": {
+          "type": "FloatProperty",
+          "value": 300
+        },
+        "mType": {
+          "type": "ESchematicType",
+          "value": "ESchematicType::EST_MAM"
+        },
+        "mUnlocks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_UnlockInventorySlot_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_UnlockInventorySlot_C",
+      "class": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockInventorySlot",
+        "name": "BP_UnlockInventorySlot_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Unlocks/BP_UnlockInventorySlot",
+        "name": "Default__BP_UnlockInventorySlot_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Research_AOrgans_3_C"
+      },
+      "properties": {
+        "mNumInventorySlotsToUnlock": {
+          "type": "IntProperty",
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "Research_AOrgans_3_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGSchematic"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    }
+  ]
+}

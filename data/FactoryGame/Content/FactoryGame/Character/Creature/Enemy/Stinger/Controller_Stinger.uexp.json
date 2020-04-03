@@ -1,0 +1,408 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/Stinger/Controller_Stinger.uasset",
+  "guid": {
+    "a": 495453654,
+    "b": 1113264028,
+    "c": 3949170094,
+    "d": 3082512155
+  },
+  "exports": [
+    {
+      "name": "PerceptionComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIPerceptionComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PerceptionComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_Stinger_C"
+      },
+      "properties": {
+        "OnTargetPerceptionUpdated": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "SensesConfig": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Sight"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "AISenseConfig_Hearing"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Hearing",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Hearing"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AISenseConfig_Hearing"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "HearingRange": {
+          "type": "FloatProperty",
+          "value": 10000
+        }
+      }
+    },
+    {
+      "name": "ActionsComp",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PawnActionsComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "ActionsComp"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_Stinger_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_Stinger_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 746942146,
+            "b": 1241062084,
+            "c": 4184021941,
+            "d": 164788448
+          }
+        }
+      }
+    },
+    {
+      "name": "Controller_Stinger_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "BP_EnemyController_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Controller_Stinger_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_Stinger_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/Enemy/BP_EnemyController",
+        "name": "Default__BP_EnemyController_C"
+      },
+      "outer": null,
+      "properties": {
+        "ActionsComp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ActionsComp"
+            }
+          }
+        },
+        "PathFollowingComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PathFollowingComponent"
+            }
+          }
+        },
+        "PerceptionComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PerceptionComponent"
+            }
+          }
+        },
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "TransformComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TransformComponent0"
+            }
+          }
+        },
+        "mAggroDistanceCurve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/AI/StingerDistanceAggro",
+              "name": "StingerDistanceAggro"
+            }
+          }
+        },
+        "mAttackPattern": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/Attack_StingerSwipe",
+                "name": "Attack_StingerSwipe_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/Attack_StingerSwipe",
+                "name": "Attack_StingerSwipe_C"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/Attack_StingerJump",
+                "name": "Attack_StingerJump_C"
+              }
+            }
+          ]
+        },
+        "mBehaviorTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/AI/BT_Stinger",
+              "name": "BT_Stinger"
+            }
+          }
+        },
+        "mBlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/Enemy/Stinger/AI/BB_Stinger",
+              "name": "BB_Stinger"
+            }
+          }
+        },
+        "mDefaultIgnoreCooldown": {
+          "type": "FloatProperty",
+          "value": 0.1
+        },
+        "mGainAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.2
+        },
+        "mLoseAggroThreshold": {
+          "type": "FloatProperty",
+          "value": 0.15
+        }
+      }
+    },
+    {
+      "name": "TransformComponent0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "TransformComponent0"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_Stinger_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Controller_Stinger_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "AISenseConfig_Sight",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AISenseConfig_Sight"
+      },
+      "super": null,
+      "template": {
+        "package": "PerceptionComponent",
+        "name": "AISenseConfig_Sight"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "PerceptionComponent"
+      },
+      "properties": {
+        "LoseSightRadius": {
+          "type": "FloatProperty",
+          "value": 10500
+        },
+        "SightRadius": {
+          "type": "FloatProperty",
+          "value": 9000
+        }
+      }
+    },
+    {
+      "name": "PathFollowingComponent",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "PathFollowingComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_EnemyController_C",
+        "name": "PathFollowingComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Controller_Stinger_C"
+      },
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/BP_InteractablesMarker.uasset",
+  "guid": {
+    "a": 414303388,
+    "b": 1093458834,
+    "c": 3530006928,
+    "d": 2231083220
+  },
+  "exports": [
+    {
+      "name": "SplineMesh",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SplineMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGInteractableMarker",
+        "name": "SplineMesh"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_InteractablesMarker_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "Mobility": {
+          "type": "ByteProperty",
+          "value": "EComponentMobility::Movable"
+        },
+        "OverrideMaterials": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Interface/UI/Material/MarkerLine",
+                "name": "MarkerLine"
+              }
+            }
+          ]
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 1,
+            "y": 0.05,
+            "z": 1
+          }
+        },
+        "SplineParams": {
+          "type": "SplineMeshParams",
+          "value": {
+            "EndPos": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 100
+              }
+            }
+          }
+        },
+        "StaticMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/BasicShapes/Plane",
+              "name": "Plane"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Icon",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGInteractableMarker",
+        "name": "Icon"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_InteractablesMarker_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "DrawSize": {
+          "type": "IntPoint",
+          "value": {
+            "x": 64,
+            "y": 64
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 100
+          }
+        },
+        "Space": {
+          "type": "EWidgetSpace",
+          "value": "EWidgetSpace::Screen"
+        },
+        "WidgetClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Interface/UI/InGame/Widget_WorldInteractable",
+              "name": "Widget_WorldInteractable_C"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BP_InteractablesMarker_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGInteractableMarker"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__BP_InteractablesMarker_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_InteractablesMarker_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGInteractableMarker"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "RootComponent"
+            }
+          }
+        },
+        "bCanBeDamaged": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mDesiredScreenRadius": {
+          "type": "FloatProperty",
+          "value": 0.08
+        },
+        "mIconWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Icon"
+            }
+          }
+        },
+        "mSplineMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SplineMesh"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_InteractablesMarker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "RootComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__FGInteractableMarker",
+        "name": "RootComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_InteractablesMarker_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 226446976,
+            "b": 1118362342,
+            "c": 2776512940,
+            "d": 67879318
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_InteractablesMarker_C"
+      },
+      "properties": {
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

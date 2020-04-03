@@ -1,0 +1,4169 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Vehicle/Explorer/BP_Explorer.uasset",
+  "guid": {
+    "a": 782102301,
+    "b": 1175959832,
+    "c": 4230582697,
+    "d": 2353828001
+  },
+  "exports": [
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetIsSignificant_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FoliageBox",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle4W_C",
+        "name": "FoliageBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Explorer_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VehicleMesh"
+            }
+          }
+        },
+        "BoxExtent": {
+          "type": "Vector",
+          "value": {
+            "x": 370,
+            "y": 250,
+            "z": 180
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 40,
+            "y": 0,
+            "z": 130
+          }
+        }
+      }
+    },
+    {
+      "name": "InputActionDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InputActionDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InputActionDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "InputActionDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintInputActionDelegateBinding",
+              "value": {
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "InpActEvt_Flashlight_K2Node_InputActionEvent"
+                },
+                "InputActionName": {
+                  "type": "NameProperty",
+                  "value": "Flashlight"
+                },
+                "InputKeyEvent": {
+                  "type": "ByteProperty",
+                  "value": "IE_Pressed"
+                },
+                "bConsumeInput": {
+                  "type": "BoolProperty",
+                  "value": true
+                },
+                "bExecuteWhenPaused": {
+                  "type": "BoolProperty",
+                  "value": false
+                },
+                "bOverrideParentBinding": {
+                  "type": "BoolProperty",
+                  "value": true
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "PostProcess_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "PostProcessComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__PostProcessComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "BlendWeight": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 24090.559,
+            "y": 0.019175578,
+            "z": -8516.411
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 17.999939,
+            "yaw": 0.00005868671,
+            "roll": -0.0000072153885
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 20.233816,
+            "y": 51.55656,
+            "z": 19.184654
+          }
+        },
+        "Settings": {
+          "type": "PostProcessSettings",
+          "value": {
+            "WeightedBlendables": {
+              "type": "WeightedBlendables",
+              "value": {
+                "Array": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "WeightedBlendable",
+                      "value": {
+                        "Object": {
+                          "type": "ObjectProperty",
+                          "value": {
+                            "type": "reference",
+                            "value": {
+                              "package": "/Game/FactoryGame/PostProcess/Materials/Scanpulse_Inst",
+                              "name": "Scanpulse_Inst"
+                            }
+                          }
+                        },
+                        "Weight": {
+                          "type": "FloatProperty",
+                          "value": 1
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "bUnbound": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "PostProcessComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "PostProcess_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "PostProcess"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 284190419,
+            "b": 1235395787,
+            "c": 535625914,
+            "d": 3606751195
+          }
+        }
+      }
+    },
+    {
+      "name": "DriftForceLocation_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BillboardComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "DriftForceLocation_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -180,
+            "y": 0,
+            "z": 60
+          }
+        }
+      }
+    },
+    {
+      "name": "ShouldAutoregisterAsTargetable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGAggroTargetInterface",
+        "name": "ShouldAutoregisterAsTargetable"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Montage_Play_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSuspensionTickDefault",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "Records": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/FactoryGame",
+                      "name": "FGVehicleCollisionBoxComponent"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 16400959,
+                        "b": 1202549751,
+                        "c": 111069859,
+                        "d": 527834740
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle",
+                          "name": "BP_WheeledVehicle_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "VehicleCollisionBox"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "VehicleCollisionBox_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/FactoryGame",
+                      "name": "FGWheeledVehicleMovementComponent4W"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 3406714574,
+                        "b": 1311978201,
+                        "c": 482303122,
+                        "d": 640016813
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle4W",
+                          "name": "BP_WheeledVehicle4W_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "FGWheeledVehicleMovementComponent4W"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "FGWheeledVehicleMovementComponent4W_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/Engine",
+                      "name": "BoxComponent"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 4040846704,
+                        "b": 1226340406,
+                        "c": 1779090870,
+                        "d": 3262488876
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle",
+                          "name": "BP_WheeledVehicle_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "Box"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "Box_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/Engine",
+                      "name": "BillboardComponent"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 1559418949,
+                        "b": 1184029689,
+                        "c": 2865257884,
+                        "d": 514614485
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle",
+                          "name": "BP_WheeledVehicle_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "DriftForceLocation"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "DriftForceLocation_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SkeletalMeshComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Workbench_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Workbench"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "VehicleMesh"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 4080898648,
+            "b": 1171172039,
+            "c": 463049365,
+            "d": 2413496787
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "K2Node_InputActionEvent_Key",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSuspensionLoadTimer",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/-Shared/WorkBench/BP_WorkBenchComponent",
+              "name": "BP_WorkBenchComponent_C"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BP_WorkBenchComponent_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "BP_WorkBenchComponent"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "VehicleMesh"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 2325558581,
+            "b": 1250899976,
+            "c": 3922600,
+            "d": 1262619029
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BP_WorkBenchComponent_GEN_VARIABLE",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/-Shared/WorkBench/BP_WorkBenchComponent",
+        "name": "BP_WorkBenchComponent_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/-Shared/WorkBench/BP_WorkBenchComponent",
+        "name": "Default__BP_WorkBenchComponent_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FlashlightOn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Server_SetFlashlightOn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BooleanAND_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Box_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "Box_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "BoxExtent": {
+          "type": "Vector",
+          "value": {
+            "x": 73.46164,
+            "y": 105.90291,
+            "z": 80.96033
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -294.31912,
+            "y": 0,
+            "z": 182.98987
+          }
+        },
+        "RelativeScale3D": {
+          "type": "Vector",
+          "value": {
+            "x": 0.77448565,
+            "y": 1.0290158,
+            "z": 1.203789
+          }
+        }
+      }
+    },
+    {
+      "name": "Temp_byte_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateOutline"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PostAkEvent_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpotLight",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AttachToName": {
+          "type": "NameProperty",
+          "value": "lamparm_03"
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SpotLightComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SpotLight_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "SpotLight"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "VehicleMesh"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 680062143,
+            "b": 1209285362,
+            "c": 2311512976,
+            "d": 174908316
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "CameraComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Camera_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "Camera"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 1585437940,
+            "b": 1145894005,
+            "c": 3261289654,
+            "d": 505851192
+          }
+        }
+      }
+    },
+    {
+      "name": "GetActorRepresentationTexture",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "GetActorRepresentationTexture"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateOutline"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetLargestTireLoadValue_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SpringArmComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SpringArm_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "SpringArm"
+        },
+        "ParentComponentOrVariableName": {
+          "type": "NameProperty",
+          "value": "VehicleMesh"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3403107365,
+            "b": 1111719189,
+            "c": 3171348363,
+            "d": 2450083463
+          }
+        },
+        "bIsParentComponentNative": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "AxisValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Key",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpotLight_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SpotLightComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SpotLightComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "AttenuationRadius": {
+          "type": "FloatProperty",
+          "value": 8000
+        },
+        "CastShadows": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "Intensity": {
+          "type": "FloatProperty",
+          "value": 900000
+        },
+        "LightGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3790821829,
+            "b": 1307494106,
+            "c": 3447235461,
+            "d": 1453421274
+          }
+        },
+        "MaxDistanceFadeRange": {
+          "type": "FloatProperty",
+          "value": 9000
+        },
+        "MaxDrawDistance": {
+          "type": "FloatProperty",
+          "value": 12000
+        },
+        "OuterConeAngle": {
+          "type": "FloatProperty",
+          "value": 35
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 87.89159,
+            "y": 0.000030517578,
+            "z": 237.41959
+          }
+        },
+        "bVisible": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_BP_Explorer",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_HasAuthority_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Camera_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "CameraComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__CameraComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 2.6546037,
+            "y": 0.00014303865,
+            "z": -150.34077
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 2.0002482,
+            "yaw": 0.00017353625,
+            "roll": -0.00025419536
+          }
+        }
+      }
+    },
+    {
+      "name": "Temp_byte_Variable1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateOutline"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Montage_Play_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "throttleval",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Multicast_CloseTrunk",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "Multicast_CloseTrunk"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_WorkBenchComponent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetAnimInstance_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Workbench_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SkeletalMeshComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "AnimClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/VehicleWorkbench/Anim_VehicleWorkbench",
+              "name": "Anim_VehicleWorkbench_C"
+            }
+          }
+        },
+        "ClothingSimulationFactory": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/ClothingSystemRuntime",
+              "name": "ClothingSimulationFactoryNv"
+            }
+          }
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": -230,
+            "y": 0,
+            "z": 160
+          }
+        },
+        "SkeletalMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/VehicleWorkbench/Mesh/VehicleWorkbench_skl",
+              "name": "VehicleWorkbench_skl"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "LostSignificance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGSignificanceInterface",
+        "name": "LostSignificance"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "forController",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "GetActorRepresentationText",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "GetActorRepresentationText"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VehicleMesh",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle4W_C",
+        "name": "VehicleMesh"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Explorer_C"
+      },
+      "properties": {
+        "AnimClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_ExplorerAnim",
+              "name": "BP_ExplorerAnim_C"
+            }
+          }
+        },
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "COMNudge": {
+              "type": "Vector",
+              "value": {
+                "x": 100,
+                "y": 0,
+                "z": -40
+              }
+            }
+          }
+        },
+        "SkeletalMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/Mesh/Explorer_skl",
+              "name": "Explorer_skl"
+            }
+          }
+        },
+        "bAllowCullDistanceVolume": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bShouldUpdatePhysicsVolume": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_K2_GetActorLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetAttackLocation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__BP_Explorer_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle4W",
+        "name": "Default__BP_WheeledVehicle4W_C"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VehicleMesh"
+            }
+          }
+        },
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "mAddedAirControlAngularVelocityStrengthPitch": {
+          "type": "FloatProperty",
+          "value": 150
+        },
+        "mAddedAirControlAngularVelocityStrengthYaw": {
+          "type": "FloatProperty",
+          "value": 150
+        },
+        "mAddedAngularVelocityInputSmoothingSpeed": {
+          "type": "FloatProperty",
+          "value": 0.1
+        },
+        "mAddedGroundAngularVelocityStrengthPitch": {
+          "type": "FloatProperty",
+          "value": 80
+        },
+        "mAddedGroundAngularVelocityStrengthYaw": {
+          "type": "FloatProperty",
+          "value": 240
+        },
+        "mDecalLifespan": {
+          "type": "FloatProperty",
+          "value": 5
+        },
+        "mDecalSize": {
+          "type": "Vector",
+          "value": {
+            "x": 10,
+            "y": 65,
+            "z": 70
+          }
+        },
+        "mDefaultTireTrackDecal": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        },
+        "mDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "B0A8D2CF478859AC825F36A95CE71B48",
+            "source_string": "Fuel: Any fuel type\r\n\r\n25 slot inventory. Has a built in craft bench.\r\nFast and nimble exploration vehicle. Tuned for really rough terrain and can climb almost vertical surfaces."
+          }
+        },
+        "mDisabledByWaterLocations": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "Vector",
+              "value": {
+                "x": -20,
+                "y": 0,
+                "z": 210
+              }
+            }
+          ]
+        },
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "AD64301C48A0793A86E248A63A36452D",
+            "source_string": "Explorer"
+          }
+        },
+        "mDistBetweenDecals": {
+          "type": "FloatProperty",
+          "value": 15
+        },
+        "mDriftForceBones": {
+          "type": "ArrayProperty",
+          "value": [
+            "drift_force_r",
+            "drift_force_l",
+            "root"
+          ]
+        },
+        "mDriftForwardForceStrengthCurve": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/ExplorerDriftForwardForceCurve",
+              "name": "ExplorerDriftForwardForceCurve"
+            }
+          }
+        },
+        "mDriftingLateralForce": {
+          "type": "FloatProperty",
+          "value": 5202000
+        },
+        "mDriftingUpwardForce": {
+          "type": "FloatProperty",
+          "value": 1002000
+        },
+        "mDriverExitOffset": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 350,
+            "z": 0
+          }
+        },
+        "mDriverSeatAnimation": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Player/Animation/ThirdPerson/ExplorerDriving_01",
+              "name": "ExplorerDriving_01"
+            }
+          }
+        },
+        "mDriverSeatSocket": {
+          "type": "NameProperty",
+          "value": "driverSocket"
+        },
+        "mEngineLoadRTPCName": {
+          "type": "NameProperty",
+          "value": "RTPC_Explorer_RPM"
+        },
+        "mEngineLoopStart": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/Audio/Play_Vehicle_Explorer",
+              "name": "Play_Vehicle_Explorer"
+            }
+          }
+        },
+        "mEngineLoopStop": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/Audio/Stop_Vehicle_Explorer",
+              "name": "Stop_Vehicle_Explorer"
+            }
+          }
+        },
+        "mEngineRevDown": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Audio/Play_Vehicle_EventFiller",
+              "name": "Play_Vehicle_EventFiller"
+            }
+          }
+        },
+        "mEngineRevUp": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Audio/Play_Vehicle_EventFiller",
+              "name": "Play_Vehicle_EventFiller"
+            }
+          }
+        },
+        "mExhaustLoopStart": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Audio/Play_Vehicle_EventFiller",
+              "name": "Play_Vehicle_EventFiller"
+            }
+          }
+        },
+        "mExhaustLoopStop": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Audio/Play_Vehicle_EventFiller",
+              "name": "Play_Vehicle_EventFiller"
+            }
+          }
+        },
+        "mFoliageCollideBox": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FoliageBox"
+            }
+          }
+        },
+        "mFoliageDestroyRadius": {
+          "type": "FloatProperty",
+          "value": 3750
+        },
+        "mFuelConsumption": {
+          "type": "FloatProperty",
+          "value": 90
+        },
+        "mHasAssistedVelocities": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mHasRollStabilisation": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mHealthComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HealthComponent"
+            }
+          }
+        },
+        "mHologramClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGVehicleHologram"
+            }
+          }
+        },
+        "mHonkSound": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Audio/Play_Vehicle_Honks_Explorer",
+              "name": "Play_Vehicle_Honks_Explorer"
+            }
+          }
+        },
+        "mInventorySize": {
+          "type": "IntProperty",
+          "value": 24
+        },
+        "mIsDriverVisible": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mMapText": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "0A2D77E44C08C8F95F95BB979CE9FB6B",
+            "source_string": "Explorer"
+          }
+        },
+        "mMaxAssistedAcceleration": {
+          "type": "FloatProperty",
+          "value": 5000000
+        },
+        "mMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VehicleMesh"
+            }
+          }
+        },
+        "mNaturalAirAngularVelocityStrengthPitch": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mNaturalAirAngularVelocityStrengthYaw": {
+          "type": "FloatProperty",
+          "value": 30
+        },
+        "mNaturalAngularVelocityStrengthPitch": {
+          "type": "FloatProperty",
+          "value": 50
+        },
+        "mNaturalAngularVelocityStrengthYaw": {
+          "type": "FloatProperty",
+          "value": 85
+        },
+        "mReverseAddedAngularVelocityYawMultiplier": {
+          "type": "FloatProperty",
+          "value": 2
+        },
+        "mRollStabilisationStrength": {
+          "type": "FloatProperty",
+          "value": 5
+        },
+        "mSimulationMovementComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimulationComponent"
+            }
+          }
+        },
+        "mSubmergedBouyantForce": {
+          "type": "FloatProperty",
+          "value": 1000000
+        },
+        "mSuspensionLoadTimerDefault": {
+          "type": "FloatProperty",
+          "value": 0.2
+        },
+        "mSuspensionTick": {
+          "type": "FloatProperty",
+          "value": 0.1
+        },
+        "mTireLoopStart": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/Audio/Play_Vehicle_GroundEffect",
+              "name": "Play_Vehicle_GroundEffect"
+            }
+          }
+        },
+        "mTireLoopStop": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/Audio/Stop_Vehicle_GroundEffect",
+              "name": "Stop_Vehicle_GroundEffect"
+            }
+          }
+        },
+        "mTireTrackDecals": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Cement",
+                      "name": "PhysMat_Cement"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Coral",
+                      "name": "PhysMat_Coral"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Decal",
+                      "name": "Tiretrack_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Grass",
+                      "name": "PhysMat_Grass"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Decal",
+                      "name": "Tiretrack_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Grass_High",
+                      "name": "PhysMat_Grass_High"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Gravel",
+                      "name": "PhysMat_Gravel"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Metal",
+                      "name": "PhysMat_Metal"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Decal",
+                      "name": "Tiretrack_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Moist",
+                      "name": "PhysMat_Moist"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Rock",
+                      "name": "PhysMat_Rock"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Rock_Gravel",
+                      "name": "PhysMat_Rock_Gravel"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Sand_Decal",
+                      "name": "Tiretrack_Sand_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Sand",
+                      "name": "PhysMat_Sand"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Metal_Decal",
+                      "name": "Tiretrack_Metal_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Sand_Cracked",
+                      "name": "PhysMat_Sand_Cracked"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Decal",
+                      "name": "Tiretrack_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Soil",
+                      "name": "PhysMat_Soil"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mVehicleAccelerationStateRTPC": {
+          "type": "NameProperty",
+          "value": "RTPC_Explorer_AccelState"
+        },
+        "mVehicleSpeedRTPC": {
+          "type": "NameProperty",
+          "value": "RTPC_Explorer_Speed"
+        }
+      }
+    },
+    {
+      "name": "GetAttackLocation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGAggroTargetInterface",
+        "name": "GetAttackLocation"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Montage_IsPlaying_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Montage_IsPlaying_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SimulationComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "FloatingPawnMovement"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle4W_C",
+        "name": "SimulationComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpringArm_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SpringArmComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SpringArmComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "CameraLagMaxDistance": {
+          "type": "FloatProperty",
+          "value": 600
+        },
+        "CameraLagSpeed": {
+          "type": "FloatProperty",
+          "value": 5
+        },
+        "CameraRotationLagSpeed": {
+          "type": "FloatProperty",
+          "value": 4
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 10.459198,
+            "y": 0.000532,
+            "z": 150
+          }
+        },
+        "RelativeRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": -5.000244,
+            "yaw": -0.000183,
+            "roll": 0.00027
+          }
+        },
+        "SocketOffset": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 450
+          }
+        },
+        "TargetArmLength": {
+          "type": "FloatProperty",
+          "value": 1100
+        },
+        "bEnableCameraLag": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bEnableCameraRotationLag": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bHiddenInGame": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bInheritPitch": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bInheritRoll": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "GetEnemyTargetDesirability",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGAggroTargetInterface",
+        "name": "GetEnemyTargetDesirability"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OnRep_mFlashlightOn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue3",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VehicleCollisionBox_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGVehicleCollisionBoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "BP_WheeledVehicle4W_C",
+        "name": "VehicleCollisionBox_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "BodyInstance": {
+          "type": "BodyInstance",
+          "value": {
+            "CollisionProfileName": {
+              "type": "NameProperty",
+              "value": "OverlapAllDynamic"
+            },
+            "CollisionResponses": {
+              "type": "CollisionResponse",
+              "value": {
+                "ResponseArray": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldStatic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WorldDynamic"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Pawn"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Visibility"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Camera"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "PhysicsBody"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Vehicle"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Destructible"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "Projectile"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "BuildGun"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "WeaponInstantHit"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ResponseChannel",
+                      "value": {
+                        "Channel": {
+                          "type": "NameProperty",
+                          "value": "VehicleWheelQuery"
+                        },
+                        "Response": {
+                          "type": "ByteProperty",
+                          "value": "ECR_Overlap"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "BoxExtent": {
+          "type": "Vector",
+          "value": {
+            "x": 325,
+            "y": 240,
+            "z": 150
+          }
+        },
+        "OnComponentBeginOverlap": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "OnComponentHit": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "RelativeLocation": {
+          "type": "Vector",
+          "value": {
+            "x": 45,
+            "y": 0,
+            "z": 135
+          }
+        }
+      }
+    },
+    {
+      "name": "Workbench",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InpActEvt_Flashlight_K2Node_InputActionEvent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mFlashlightOn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UpdateOutline",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "UpdateOutline"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "EnumProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__EnumProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateOutline"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SpringArm",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InpAxisEvt_MoveForward_K2Node_InputAxisEvent",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Not_PreBool_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSuspensionLoadTimerDefault",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Camera",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "PostProcess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Add_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetAttackLocation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_Explorer_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle4W",
+        "name": "BP_WheeledVehicle4W_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "DynamicBindingObjects": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "InputActionDelegateBinding"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "InputAxisDelegateBinding"
+              }
+            }
+          ]
+        },
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "NumReplicatedProperties": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_BP_Explorer"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Multicast_OpenTrunk",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "Multicast_OpenTrunk"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReceiveTick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "ReceiveTick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "inDeltaTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_CustomEvent_FlashlightOn",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_InputAxisEvent_AxisValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_BP_Explorer"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InputAxisDelegateBinding",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InputAxisDelegateBinding"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InputAxisDelegateBinding"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "InputAxisDelegateBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlueprintInputAxisDelegateBinding",
+              "value": {
+                "FunctionNameToBind": {
+                  "type": "NameProperty",
+                  "value": "InpAxisEvt_MoveForward_K2Node_InputAxisEvent"
+                },
+                "InputAxisName": {
+                  "type": "NameProperty",
+                  "value": "MoveForward"
+                },
+                "bConsumeInput": {
+                  "type": "BoolProperty",
+                  "value": false
+                },
+                "bExecuteWhenPaused": {
+                  "type": "BoolProperty",
+                  "value": false
+                },
+                "bOverrideParentBinding": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetEnemyTargetDesirability"
+      },
+      "properties": {}
+    },
+    {
+      "name": "GainedSignificance",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "FGSignificanceInterface",
+        "name": "GainedSignificance"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DeltaSeconds",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_HasAuthority_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "aimingAtWorkbench",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "UpdateOutline"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "HealthComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGHealthComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle4W_C",
+        "name": "HealthComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FGWheeledVehicleMovementComponent4W_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGWheeledVehicleMovementComponent4W"
+      },
+      "super": null,
+      "template": {
+        "package": "BP_WheeledVehicle4W_C",
+        "name": "FGWheeledVehicleMovementComponent4W_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "DifferentialSetup": {
+          "type": "VehicleDifferential4WData",
+          "value": {
+            "CentreBias": {
+              "type": "FloatProperty",
+              "value": 100
+            },
+            "FrontBias": {
+              "type": "FloatProperty",
+              "value": 100
+            },
+            "FrontRearSplit": {
+              "type": "FloatProperty",
+              "value": 0.25
+            }
+          }
+        },
+        "DragCoefficient": {
+          "type": "FloatProperty",
+          "value": 10
+        },
+        "EngineSetup": {
+          "type": "VehicleEngineData",
+          "value": {
+            "DampingRateFullThrottle": {
+              "type": "FloatProperty",
+              "value": 0.05
+            },
+            "DampingRateZeroThrottleClutchEngaged": {
+              "type": "FloatProperty",
+              "value": 0.5
+            },
+            "MaxRPM": {
+              "type": "FloatProperty",
+              "value": 7000
+            },
+            "TorqueCurve": {
+              "type": "RuntimeFloatCurve",
+              "value": {
+                "EditorCurveData": {
+                  "type": "RichCurve",
+                  "value": {
+                    "Keys": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "RichCurveKey",
+                          "value": {
+                            "interp_mode": 0,
+                            "tangent_mode": 0,
+                            "tangent_weight_mode": 0,
+                            "time": -43.2724,
+                            "arrive_tangent": 1114.5367,
+                            "arrive_tangent_weight": 0,
+                            "leave_tangent": 0,
+                            "leave_tangent_weight": 0
+                          }
+                        },
+                        {
+                          "type": "RichCurveKey",
+                          "value": {
+                            "interp_mode": 0,
+                            "tangent_mode": 0,
+                            "tangent_weight_mode": 0,
+                            "time": 0,
+                            "arrive_tangent": 1873.0736,
+                            "arrive_tangent_weight": 1259.7861,
+                            "leave_tangent": 0,
+                            "leave_tangent_weight": 0
+                          }
+                        },
+                        {
+                          "type": "RichCurveKey",
+                          "value": {
+                            "interp_mode": 0,
+                            "tangent_mode": 0,
+                            "tangent_weight_mode": 0,
+                            "time": 0,
+                            "arrive_tangent": 0,
+                            "arrive_tangent_weight": 4928.351,
+                            "leave_tangent": 1137.6459,
+                            "leave_tangent_weight": 0
+                          }
+                        },
+                        {
+                          "type": "RichCurveKey",
+                          "value": {
+                            "interp_mode": 0,
+                            "tangent_mode": 0,
+                            "tangent_weight_mode": 0,
+                            "time": 0,
+                            "arrive_tangent": 0,
+                            "arrive_tangent_weight": 0,
+                            "leave_tangent": 6372.5166,
+                            "leave_tangent_weight": 1018.55664
+                          }
+                        },
+                        {
+                          "type": "RichCurveKey",
+                          "value": {
+                            "interp_mode": 0,
+                            "tangent_mode": 0,
+                            "tangent_weight_mode": 0,
+                            "time": 0,
+                            "arrive_tangent": 0,
+                            "arrive_tangent_weight": 0,
+                            "leave_tangent": 0,
+                            "leave_tangent_weight": 6910.539
+                          }
+                        },
+                        {
+                          "type": "RichCurveKey",
+                          "value": {
+                            "interp_mode": 40,
+                            "tangent_mode": 116,
+                            "tangent_weight_mode": 91,
+                            "time": 9.5e-44,
+                            "arrive_tangent": 0,
+                            "arrive_tangent_weight": 0,
+                            "leave_tangent": 0,
+                            "leave_tangent_weight": 0
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Mass": {
+          "type": "FloatProperty",
+          "value": 8000
+        },
+        "SteeringCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        },
+        "SteeringInputRate": {
+          "type": "VehicleInputRate",
+          "value": {
+            "RiseRate": {
+              "type": "FloatProperty",
+              "value": 3.5
+            }
+          }
+        },
+        "TransmissionSetup": {
+          "type": "VehicleTransmissionData",
+          "value": {
+            "ClutchStrength": {
+              "type": "FloatProperty",
+              "value": 1500
+            },
+            "FinalRatio": {
+              "type": "FloatProperty",
+              "value": 7
+            },
+            "ForwardGears": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "VehicleGearData",
+                  "value": {
+                    "DownRatio": {
+                      "type": "FloatProperty",
+                      "value": 0.75
+                    },
+                    "Ratio": {
+                      "type": "FloatProperty",
+                      "value": 5
+                    },
+                    "UpRatio": {
+                      "type": "FloatProperty",
+                      "value": 0.8
+                    }
+                  }
+                },
+                {
+                  "type": "VehicleGearData",
+                  "value": {
+                    "DownRatio": {
+                      "type": "FloatProperty",
+                      "value": 0.45
+                    },
+                    "Ratio": {
+                      "type": "FloatProperty",
+                      "value": 2.5
+                    },
+                    "UpRatio": {
+                      "type": "FloatProperty",
+                      "value": 0.85
+                    }
+                  }
+                },
+                {
+                  "type": "VehicleGearData",
+                  "value": {
+                    "DownRatio": {
+                      "type": "FloatProperty",
+                      "value": 0.45
+                    },
+                    "Ratio": {
+                      "type": "FloatProperty",
+                      "value": 1.75
+                    },
+                    "UpRatio": {
+                      "type": "FloatProperty",
+                      "value": 1
+                    }
+                  }
+                }
+              ]
+            },
+            "GearAutoBoxLatency": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "GearSwitchTime": {
+              "type": "FloatProperty",
+              "value": 0.25
+            },
+            "ReverseGearRatio": {
+              "type": "FloatProperty",
+              "value": -2.10202
+            }
+          }
+        },
+        "WheelSetups": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "WheelSetup",
+              "value": {
+                "AdditionalOffset": {
+                  "type": "Vector",
+                  "value": {
+                    "x": 0,
+                    "y": -40,
+                    "z": 0
+                  }
+                },
+                "BoneName": {
+                  "type": "NameProperty",
+                  "value": "physwheel_front_l"
+                },
+                "WheelClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_FrontWheelExplorer",
+                      "name": "BP_FrontWheelExplorer_C"
+                    }
+                  }
+                },
+                "bDisableSteering": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WheelSetup",
+              "value": {
+                "AdditionalOffset": {
+                  "type": "Vector",
+                  "value": {
+                    "x": 0,
+                    "y": 40,
+                    "z": 0
+                  }
+                },
+                "BoneName": {
+                  "type": "NameProperty",
+                  "value": "physwheel_front_r"
+                },
+                "WheelClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_FrontWheelExplorer",
+                      "name": "BP_FrontWheelExplorer_C"
+                    }
+                  }
+                },
+                "bDisableSteering": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WheelSetup",
+              "value": {
+                "AdditionalOffset": {
+                  "type": "Vector",
+                  "value": {
+                    "x": 0,
+                    "y": -40,
+                    "z": 0
+                  }
+                },
+                "BoneName": {
+                  "type": "NameProperty",
+                  "value": "physwheel_back_l"
+                },
+                "WheelClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_RearWheelExplorer",
+                      "name": "BP_RearWheelExplorer_C"
+                    }
+                  }
+                },
+                "bDisableSteering": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WheelSetup",
+              "value": {
+                "AdditionalOffset": {
+                  "type": "Vector",
+                  "value": {
+                    "x": 0,
+                    "y": 40,
+                    "z": 0
+                  }
+                },
+                "BoneName": {
+                  "type": "NameProperty",
+                  "value": "physwheel_back_r"
+                },
+                "WheelClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/Explorer/BP_RearWheelExplorer",
+                      "name": "BP_RearWheelExplorer_C"
+                    }
+                  }
+                },
+                "bDisableSteering": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        },
+        "mDownShiftLatency": {
+          "type": "FloatProperty",
+          "value": 0.75
+        }
+      }
+    },
+    {
+      "name": "CheckSuspension",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "CheckSuspension"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "UnderlyingType",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ByteProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ByteProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mSuspensionTick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 52415846,
+            "b": 1143579152,
+            "c": 4082658220,
+            "d": 1234369739
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_Explorer_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

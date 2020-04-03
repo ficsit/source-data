@@ -1,0 +1,3014 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/Player/Widget_TakeDamageIndicator.uasset",
+  "guid": {
+    "a": 644052377,
+    "b": 1335725302,
+    "c": 1215518082,
+    "d": 2310960674
+  },
+  "exports": [
+    {
+      "name": "Default__Widget_TakeDamageIndicator_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mColor": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          }
+        },
+        "mDamagePosition": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "mPlayerPosition": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieScene2DTransformSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "MovieScene2DTransformSection"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MovieSceneEventTrack",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneEventTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneEventTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "FadeOutAnim"
+      },
+      "properties": {
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneEventSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1382084992,
+            "b": 1330499760,
+            "c": 3980210094,
+            "d": 2846369260
+          }
+        }
+      }
+    },
+    {
+      "name": "ScaleBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ScaleBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ScaleBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ScaleBoxSlot"
+              }
+            }
+          ]
+        },
+        "Stretch": {
+          "type": "ByteProperty",
+          "value": "EStretch::None"
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Construct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Construct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InDeltaTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Tick"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_K2_GetActorLocation_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ExecuteUbergraph_Widget_TakeDamageIndicator",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Temp_bool_Variable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Image",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mColor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mDamagePosition",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetActorForwardVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FadeOutAnim",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SetRotation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_DegAtan2_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_PlayAnimation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_TakeDamageIndicator"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetRadiationDamageAngle_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGCharacter_Player",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Tick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Tick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_X",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_Y",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FadeOutAnim",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieScene"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieScene",
+        "name": "Default__MovieScene"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "DisplayRate": {
+          "type": "FrameRate",
+          "value": {
+            "Numerator": {
+              "type": "IntProperty",
+              "value": 20
+            }
+          }
+        },
+        "MasterTracks": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneEventTrack"
+              }
+            }
+          ]
+        },
+        "ObjectBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "Overlay_0"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 4035982480,
+                    "b": 1093055158,
+                    "c": 3366557630,
+                    "d": 1122870396
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieSceneFloatTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "MovieSceneBinding",
+              "value": {
+                "BindingName": {
+                  "type": "StrProperty",
+                  "value": "Image_0"
+                },
+                "ObjectGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2554869467,
+                    "b": 1224746288,
+                    "c": 47130777,
+                    "d": 558774488
+                  }
+                },
+                "Tracks": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "MovieScene2DTransformTrack"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "PlaybackRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 0,
+                "value": 45001
+              }
+            }
+          }
+        },
+        "Possessables": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 4035982480,
+                    "b": 1093055158,
+                    "c": 3366557630,
+                    "d": 1122870396
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "Overlay_0"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "Overlay"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "MovieScenePossessable",
+              "value": {
+                "Guid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2554869467,
+                    "b": 1224746288,
+                    "c": 47130777,
+                    "d": 558774488
+                  }
+                },
+                "Name": {
+                  "type": "StrProperty",
+                  "value": "Image_0"
+                },
+                "ParentGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 0,
+                    "b": 0,
+                    "c": 0,
+                    "d": 0
+                  }
+                },
+                "PossessedObjectClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/UMG",
+                      "name": "Image"
+                    }
+                  }
+                },
+                "Tags": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 1599091067,
+            "b": 1334574429,
+            "c": 351743873,
+            "d": 1072404685
+          }
+        }
+      }
+    },
+    {
+      "name": "MovieScene2DTransformSection",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "MovieScene2DTransformSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__MovieScene2DTransformSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 36
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 37
+              }
+            }
+          }
+        },
+        "Scale": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 0,
+                "value": 45000
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 2441914437,
+            "b": 1268258133,
+            "c": 2145138844,
+            "d": 2614896462
+          }
+        }
+      }
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneEventSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ScaleBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DestroySelf",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_Z1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MovieScene2DTransformTrack",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "MovieScene2DTransformTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__MovieScene2DTransformTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "FadeOutAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "RenderTransform"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "RenderTransform"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieScene2DTransformSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 461460994,
+            "b": 1135489395,
+            "c": 2920694200,
+            "d": 2542325789
+          }
+        }
+      }
+    },
+    {
+      "name": "MovieSceneFloatTrack",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatTrack"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatTrack"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "FadeOutAnim"
+      },
+      "properties": {
+        "PropertyName": {
+          "type": "NameProperty",
+          "value": "RenderOpacity"
+        },
+        "PropertyPath": {
+          "type": "StrProperty",
+          "value": "RenderOpacity"
+        },
+        "Sections": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MovieSceneFloatSection"
+              }
+            }
+          ]
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 3228378687,
+            "b": 1196936988,
+            "c": 2458561432,
+            "d": 3139381814
+          }
+        }
+      }
+    },
+    {
+      "name": "MyGeometry",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Select_Default",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieScene2DTransformSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "MovieScene2DTransformSection"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MovieSceneEventSection",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneEventSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneEventSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 38
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 39
+              }
+            }
+          }
+        },
+        "EventData": {
+          "type": "MovieSceneEventSectionData",
+          "value": {
+            "KeyValues": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "EventPayload",
+                  "value": {
+                    "EventName": {
+                      "type": "NameProperty",
+                      "value": "DestroySelf"
+                    },
+                    "Parameters": {
+                      "type": "MovieSceneEventParameters",
+                      "value": null
+                    }
+                  }
+                }
+              ]
+            },
+            "Times": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "FrameNumber",
+                  "value": {
+                    "value": 45000
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 623218560,
+            "b": 1282829288,
+            "c": 2162486408,
+            "d": 1014203838
+          }
+        }
+      }
+    },
+    {
+      "name": "DamageCauser",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwningPlayerPawn_ReturnValue2",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwningPlayerPawn_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_IsValid_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_X1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MovieSceneFloatSection",
+      "class": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "MovieSceneFloatSection"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/MovieSceneTracks",
+        "name": "Default__MovieSceneFloatSection"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Easing": {
+          "type": "MovieSceneEasingSettings",
+          "value": {
+            "EaseIn": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 40
+              }
+            },
+            "EaseOut": {
+              "type": "InterfaceProperty",
+              "value": {
+                "interface_number": 41
+              }
+            }
+          }
+        },
+        "FloatCurve": {
+          "type": "MovieSceneFloatChannel",
+          "value": null
+        },
+        "SectionRange": {
+          "type": "MovieSceneFrameRange",
+          "value": {
+            "value": {
+              "lower_bound": {
+                "bound_type": 1,
+                "value": 0
+              },
+              "upper_bound": {
+                "bound_type": 0,
+                "value": 45000
+              }
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 3502907198,
+            "b": 1118435385,
+            "c": 2570322574,
+            "d": 4110352783
+          }
+        }
+      }
+    },
+    {
+      "name": "FadeOutAnim_INST",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetAnimation"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetAnimation"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {
+        "AnimationBindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 4035982480,
+                    "b": 1093055158,
+                    "c": 3366557630,
+                    "d": 1122870396
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "Overlay"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "WidgetAnimationBinding",
+              "value": {
+                "AnimationGuid": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 2554869467,
+                    "b": 1224746288,
+                    "c": 47130777,
+                    "d": 558774488
+                  }
+                },
+                "SlotWidgetName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "WidgetName": {
+                  "type": "NameProperty",
+                  "value": "Image"
+                },
+                "bIsRootWidget": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        },
+        "MovieScene": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FadeOutAnim"
+            }
+          }
+        },
+        "PrecompiledEvaluationTemplate": {
+          "type": "MovieSceneEvaluationTemplate",
+          "value": {
+            "EvaluationField": {
+              "type": "MovieSceneEvaluationField",
+              "value": {
+                "Groups": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 1
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 1
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 1
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 2
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 2
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 1
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationGroup",
+                      "value": {
+                        "LUTIndices": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationGroupLUTIndex",
+                              "value": {
+                                "LUTOffset": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                },
+                                "NumEvalPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 1
+                                },
+                                "NumInitPtrs": {
+                                  "type": "IntProperty",
+                                  "value": 0
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "SegmentPtrLUT": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneEvaluationFieldSegmentPtr",
+                              "value": {
+                                "SegmentID": {
+                                  "type": "MovieSceneSegmentIdentifier",
+                                  "value": {
+                                    "identifier_index": 0
+                                  }
+                                },
+                                "SequenceID": {
+                                  "type": "MovieSceneSequenceID",
+                                  "value": {
+                                    "in_value": 0
+                                  }
+                                },
+                                "TrackIdentifier": {
+                                  "type": "MovieSceneTrackIdentifier",
+                                  "value": {
+                                    "value": 0
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                "MetaData": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 1
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 0
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 1
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 0
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 5
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 1
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 4
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 1
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 3
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 2
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 2
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneEvaluationMetaData",
+                      "value": {
+                        "ActiveEntities": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 1
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 0
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "MovieSceneOrderedEvaluationKey",
+                              "value": {
+                                "EvaluationIndex": {
+                                  "type": "UInt32Property",
+                                  "value": 0
+                                },
+                                "Key": {
+                                  "type": "MovieSceneEvaluationKey",
+                                  "value": {
+                                    "sequence_id": {
+                                      "in_value": 0
+                                    },
+                                    "track_identifier": {
+                                      "value": 0
+                                    },
+                                    "section_index": 4294967295
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "ActiveSequences": {
+                          "type": "ArrayProperty",
+                          "value": [
+                            {
+                              "type": "MovieSceneSequenceID",
+                              "value": {
+                                "in_value": 0
+                              }
+                            }
+                          ]
+                        },
+                        "SubTemplateSerialNumbers": {
+                          "type": "MapProperty",
+                          "value": []
+                        }
+                      }
+                    }
+                  ]
+                },
+                "Ranges": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 2,
+                            "value": 0
+                          },
+                          "upper_bound": {
+                            "bound_type": 0,
+                            "value": 0
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 1,
+                            "value": 0
+                          },
+                          "upper_bound": {
+                            "bound_type": 0,
+                            "value": 45000
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "MovieSceneFrameRange",
+                      "value": {
+                        "value": {
+                          "lower_bound": {
+                            "bound_type": 1,
+                            "value": 45000
+                          },
+                          "upper_bound": {
+                            "bound_type": 2,
+                            "value": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "SequenceSignature": {
+              "type": "Guid",
+              "value": {
+                "a": 3465293991,
+                "b": 1118886671,
+                "c": 155602572,
+                "d": 1956767107
+              }
+            },
+            "TemplateLedger": {
+              "type": "MovieSceneTemplateGenerationLedger",
+              "value": {
+                "LastTrackIdentifier": {
+                  "type": "MovieSceneTrackIdentifier",
+                  "value": {
+                    "value": 2
+                  }
+                },
+                "TrackSignatureToTrackIdentifier": {
+                  "type": "MapProperty",
+                  "value": [
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 1382084992
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 1330499760
+                        }
+                      }
+                    },
+                    {
+                      "key": {
+                        "type": "Guid",
+                        "value": null
+                      },
+                      "value": {
+                        "type": "MovieSceneTrackIdentifier",
+                        "value": {
+                          "value": 3980210094
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "TemplateSerialNumber": {
+              "type": "MovieSceneEvaluationTemplateSerialNumber",
+              "value": {
+                "Value": {
+                  "type": "UInt32Property",
+                  "value": 1
+                }
+              }
+            },
+            "Tracks": {
+              "type": "MapProperty",
+              "value": [
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 0
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                },
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 221
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                },
+                {
+                  "key": {
+                    "type": "MovieSceneTrackIdentifier",
+                    "value": {
+                      "value": 0
+                    }
+                  },
+                  "value": {
+                    "type": "MovieSceneEvaluationTrack",
+                    "value": null
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Signature": {
+          "type": "Guid",
+          "value": {
+            "a": 3465293991,
+            "b": 1118886671,
+            "c": 155602572,
+            "d": 1956767107
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EaseInFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseInFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneFloatSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Widget_TakeDamageIndicator_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "Animations": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FadeOutAnim_INST"
+              }
+            }
+          ]
+        },
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/Player/Widget_TakeDamageIndicator.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Widget_TakeDamageIndicator"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_BreakVector_Z",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ScaleBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ScaleBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ScaleBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ScaleBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Image"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ScaleBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Subtract_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Widget_TakeDamageIndicator_C"
+      },
+      "outer": null,
+      "properties": {
+        "Image": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Image"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "EaseOutFunction",
+      "class": {
+        "package": "/Script/MovieScene",
+        "name": "MovieSceneBuiltInEasingFunction"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__MovieSceneEventSection",
+        "name": "EaseOutFunction"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetOwningPlayerPawn_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_K2_GetActorLocation_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Subtract_FloatFloat_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ScaleBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_Normal_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ScaleBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ScaleBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ScaleBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ScaleBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Image"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ScaleBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mPlayerPosition",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorVector_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Multiply_VectorVector_ReturnValue1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_InDeltaTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_TakeDamageIndicator"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_BreakVector_Y1",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Image",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 482,
+                "y": 482
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/DamageIndicator/DamageIndicator",
+                  "name": "DamageIndicator"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ScaleBoxSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ScaleBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "ScaleBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__ScaleBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ScaleBoxSlot"
+              }
+            }
+          ]
+        },
+        "Stretch": {
+          "type": "ByteProperty",
+          "value": "EStretch::None"
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_MyGeometry",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_TakeDamageIndicator"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mIsRadiation",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_TakeDamageIndicator_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_DegAtan2_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SetRotation"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Image",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 482,
+                "y": 482
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/UI/Assets/DamageIndicator/DamageIndicator",
+                  "name": "DamageIndicator"
+                }
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ScaleBoxSlot"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

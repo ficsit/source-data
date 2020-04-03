@@ -1,0 +1,221 @@
+{
+  "file_name": "FactoryGame/Content/StarterContent/Audio/Explosion_Cue.uasset",
+  "guid": {
+    "a": 1385881970,
+    "b": 1262309810,
+    "c": 434801597,
+    "d": 1354783220
+  },
+  "exports": [
+    {
+      "name": "Explosion_Cue",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundCue"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundCue"
+      },
+      "outer": null,
+      "properties": {
+        "AttenuationOverrides": {
+          "type": "SoundAttenuationSettings",
+          "value": {
+            "DistanceAlgorithm": {
+              "type": "EAttenuationDistanceModel",
+              "value": "EAttenuationDistanceModel::Logarithmic"
+            },
+            "FalloffDistance": {
+              "type": "FloatProperty",
+              "value": 1800
+            },
+            "LPFRadiusMax": {
+              "type": "FloatProperty",
+              "value": 2000
+            },
+            "LPFRadiusMin": {
+              "type": "FloatProperty",
+              "value": 1000
+            },
+            "bAttenuateWithLPF": {
+              "type": "BoolProperty",
+              "value": true
+            }
+          }
+        },
+        "Duration": {
+          "type": "FloatProperty",
+          "value": 3.2468934
+        },
+        "FirstNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SoundNodeModulator"
+            }
+          }
+        },
+        "MaxDistance": {
+          "type": "FloatProperty",
+          "value": 2097152
+        },
+        "VolumeMultiplier": {
+          "type": "FloatProperty",
+          "value": 0.9
+        },
+        "bOverrideAttenuation": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bOverrideConcurrency": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SoundNodeModulator",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundNodeModulator"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundNodeModulator"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Explosion_Cue"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SoundNodeRandom"
+              }
+            }
+          ]
+        },
+        "PitchMax": {
+          "type": "FloatProperty",
+          "value": 1.2
+        },
+        "PitchMin": {
+          "type": "FloatProperty",
+          "value": 0.8
+        },
+        "VolumeMax": {
+          "type": "FloatProperty",
+          "value": 1.1
+        },
+        "VolumeMin": {
+          "type": "FloatProperty",
+          "value": 0.9
+        }
+      }
+    },
+    {
+      "name": "SoundNodeRandom",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundNodeRandom"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundNodeRandom"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Explosion_Cue"
+      },
+      "properties": {
+        "ChildNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SoundNodeWavePlayer"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SoundNodeWavePlayer"
+              }
+            }
+          ]
+        },
+        "Weights": {
+          "type": "ArrayProperty",
+          "value": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "SoundNodeWavePlayer",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundNodeWavePlayer"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundNodeWavePlayer"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Explosion_Cue"
+      },
+      "properties": {
+        "SoundWaveAssetPtr": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/StarterContent/Audio/Explosion01.Explosion01",
+            "sub_path": ""
+          }
+        }
+      }
+    },
+    {
+      "name": "SoundNodeWavePlayer",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundNodeWavePlayer"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundNodeWavePlayer"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Explosion_Cue"
+      },
+      "properties": {
+        "SoundWaveAssetPtr": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/StarterContent/Audio/Explosion02.Explosion02",
+            "sub_path": ""
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2428 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Equipment/ObjectScanner/Widget_ObjectScannerMenuItem.uasset",
+  "guid": {
+    "a": 100568810,
+    "b": 1227157440,
+    "c": 1054624919,
+    "d": 1268242369
+  },
+  "exports": [
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonImage"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "Widget_ObjectScannerMenuItem_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/UMG",
+        "name": "UserWidget"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "Bindings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "DelegateRuntimeBinding",
+              "value": {
+                "FunctionName": {
+                  "type": "NameProperty",
+                  "value": "Get_mResourceDescriptorText_ColorAndOpacity"
+                },
+                "Kind": {
+                  "type": "EBindingKind",
+                  "value": "EBindingKind::Function"
+                },
+                "ObjectName": {
+                  "type": "StrProperty",
+                  "value": "mResourceDescriptorText"
+                },
+                "PropertyName": {
+                  "type": "NameProperty",
+                  "value": "ColorAndOpacity"
+                },
+                "SourcePath": {
+                  "type": "DynamicPropertyPath",
+                  "value": {
+                    "CachedFunction": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    },
+                    "Segments": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "PropertyPathSegment",
+                          "value": {
+                            "ArrayIndex": {
+                              "type": "IntProperty",
+                              "value": -1
+                            },
+                            "Name": {
+                              "type": "NameProperty",
+                              "value": "GetTextColor"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "DelegateRuntimeBinding",
+              "value": {
+                "FunctionName": {
+                  "type": "NameProperty",
+                  "value": "Get_ButtonImage_ColorAndOpacity"
+                },
+                "Kind": {
+                  "type": "EBindingKind",
+                  "value": "EBindingKind::Function"
+                },
+                "ObjectName": {
+                  "type": "StrProperty",
+                  "value": "ButtonImage"
+                },
+                "PropertyName": {
+                  "type": "NameProperty",
+                  "value": "ColorAndOpacity"
+                },
+                "SourcePath": {
+                  "type": "DynamicPropertyPath",
+                  "value": {
+                    "CachedFunction": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    },
+                    "Segments": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "PropertyPathSegment",
+                          "value": {
+                            "ArrayIndex": {
+                              "type": "IntProperty",
+                              "value": -1
+                            },
+                            "Name": {
+                              "type": "NameProperty",
+                              "value": "GetButtonFeedback"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "DelegateRuntimeBinding",
+              "value": {
+                "FunctionName": {
+                  "type": "NameProperty",
+                  "value": "None"
+                },
+                "Kind": {
+                  "type": "EBindingKind",
+                  "value": "EBindingKind::Property"
+                },
+                "ObjectName": {
+                  "type": "StrProperty",
+                  "value": "mResourceDescriptorText"
+                },
+                "PropertyName": {
+                  "type": "NameProperty",
+                  "value": "Text"
+                },
+                "SourcePath": {
+                  "type": "DynamicPropertyPath",
+                  "value": {
+                    "CachedFunction": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": null
+                      }
+                    },
+                    "Segments": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        {
+                          "type": "PropertyPathSegment",
+                          "value": {
+                            "ArrayIndex": {
+                              "type": "IntProperty",
+                              "value": -1
+                            },
+                            "Name": {
+                              "type": "NameProperty",
+                              "value": "mText"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Equipment/ObjectScanner/Widget_ObjectScannerMenuItem.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ResourceIconImage",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 48,
+                "y": 48
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "VerticalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mIsSelected",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 64
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ResourceIconImage",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 128
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mCirclePosition",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Default__Widget_ObjectScannerMenuItem_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__UserWidget"
+      },
+      "outer": null,
+      "properties": {
+        "bHasScriptImplementedPaint": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "mCirclePosition": {
+          "type": "Vector2D",
+          "value": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "GetButtonFeedback",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFactoryGameDarkGray_Graphics",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetButtonFeedback"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ButtonImage",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFactoryGameLightGray_Text",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetButtonFeedback"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Spacer",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Spacer"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Spacer"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Size": {
+          "type": "Vector2D",
+          "value": {
+            "x": 1,
+            "y": 12
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mResourceDescriptorText",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AutoWrapText": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.577581,
+                "g": 0.814847,
+                "b": 0.879623,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "OutlineSettings": {
+              "type": "FontOutlineSettings",
+              "value": {
+                "OutlineColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0.003677,
+                    "g": 0.005182,
+                    "b": 0.006995,
+                    "a": 1
+                  }
+                },
+                "OutlineSize": {
+                  "type": "IntProperty",
+                  "value": 1
+                },
+                "bApplyOutlineToDropShadows": {
+                  "type": "BoolProperty",
+                  "value": true
+                },
+                "bSeparateFillAlpha": {
+                  "type": "BoolProperty",
+                  "value": true
+                }
+              }
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Default"
+            }
+          }
+        },
+        "Justification": {
+          "type": "ByteProperty",
+          "value": "ETextJustify::Center"
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.6
+        },
+        "Margin": {
+          "type": "Margin",
+          "value": {
+            "Top": {
+              "type": "FloatProperty",
+              "value": 4
+            }
+          }
+        },
+        "ShadowColorAndOpacity": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.003677,
+            "g": 0.005182,
+            "b": 0.006995,
+            "a": 0.75
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "B5B451E5435E6247329777AD56EC0E58",
+            "source_string": "long text"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "OnItemSelected",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "MulticastDelegateProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__MulticastDelegateProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 64
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetFactoryGameDarkGray_Text",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetButtonFeedback"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Spacer"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Top"
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonImage"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 128
+        },
+        "bOverride_WidthOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "OnItemSelected__DelegateSignature",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GetTextColor",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mResourceDescriptorText",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetFactoryGameLightGray_Text",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Spacer"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Top"
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ResourceIconImage",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 48,
+                "y": 48
+              }
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ResourceIconImage"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "mDescription",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VerticalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mResourceDescriptorText"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mResourceDescriptorText"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetFactoryGameDarkGray_Text",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mResourceDescriptorText",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AutoWrapText": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.577581,
+                "g": 0.814847,
+                "b": 0.879623,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "OutlineSettings": {
+              "type": "FontOutlineSettings",
+              "value": {
+                "OutlineColor": {
+                  "type": "LinearColor",
+                  "value": {
+                    "r": 0.003677,
+                    "g": 0.005182,
+                    "b": 0.006995,
+                    "a": 1
+                  }
+                },
+                "OutlineSize": {
+                  "type": "IntProperty",
+                  "value": 1
+                },
+                "bApplyOutlineToDropShadows": {
+                  "type": "BoolProperty",
+                  "value": true
+                },
+                "bSeparateFillAlpha": {
+                  "type": "BoolProperty",
+                  "value": true
+                }
+              }
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Default"
+            }
+          }
+        },
+        "Justification": {
+          "type": "ByteProperty",
+          "value": "ETextJustify::Center"
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.6
+        },
+        "Margin": {
+          "type": "Margin",
+          "value": {
+            "Top": {
+              "type": "FloatProperty",
+              "value": 4
+            }
+          }
+        },
+        "ShadowColorAndOpacity": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0.003677,
+            "g": 0.005182,
+            "b": 0.006995,
+            "a": 0.75
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "B5B451E5435E6247329777AD56EC0E58",
+            "source_string": "long text"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "mText",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ButtonImage",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 128,
+                "y": 128
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Equipment/ResourceScanner/UI/ResourceScanner_ButtonNormal_WithLabel",
+                  "name": "ResourceScanner_ButtonNormal_WithLabel"
+                }
+              }
+            }
+          }
+        },
+        "ColorAndOpacity": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0,
+            "g": 0.226966,
+            "b": 0.533277,
+            "a": 1
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetFactoryGameLightGray_Graphics",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetButtonFeedback"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Spacer",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Spacer"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Spacer"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Size": {
+          "type": "Vector2D",
+          "value": {
+            "x": 1,
+            "y": 12
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "Size": {
+          "type": "SlateChildSize",
+          "value": {
+            "SizeRule": {
+              "type": "ByteProperty",
+              "value": "ESlateSizeRule::Fill"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Widget_ObjectScannerMenuItem_C"
+      },
+      "outer": null,
+      "properties": {
+        "ButtonImage": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ButtonImage"
+            }
+          }
+        },
+        "ResourceIconImage": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ResourceIconImage"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mResourceDescriptorText": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mResourceDescriptorText"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mScannedActorClass",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ClassProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ClassProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Fill"
+        }
+      }
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetFactoryGameDarkGray_Graphics",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_ObjectScannerMenuItem_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "scannedActorClass",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ClassProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ClassProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ButtonImage",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Image"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Image"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Brush": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 128,
+                "y": 128
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Equipment/ResourceScanner/UI/ResourceScanner_ButtonNormal_WithLabel",
+                  "name": "ResourceScanner_ButtonNormal_WithLabel"
+                }
+              }
+            }
+          }
+        },
+        "ColorAndOpacity": {
+          "type": "LinearColor",
+          "value": {
+            "r": 0,
+            "g": 0.226966,
+            "b": 0.533277,
+            "a": 1
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetFactoryGameLightGray_Graphics",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "GetTextColor"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ResourceIconImage"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Center"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        },
+        "VerticalAlignment": {
+          "type": "ByteProperty",
+          "value": "VAlign_Center"
+        }
+      }
+    }
+  ]
+}

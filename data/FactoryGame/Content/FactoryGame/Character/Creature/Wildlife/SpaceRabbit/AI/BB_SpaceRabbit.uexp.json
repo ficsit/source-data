@@ -1,0 +1,412 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Wildlife/SpaceRabbit/AI/BB_SpaceRabbit.uasset",
+  "guid": {
+    "a": 1779043479,
+    "b": 1222404440,
+    "c": 3454710161,
+    "d": 707429731
+  },
+  "exports": [
+    {
+      "name": "BlackboardKeyType_Bool",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Bool"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Bool"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Object",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Object"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Object"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {
+        "BaseClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "Actor"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BlackboardKeyType_Object",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Object"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Object"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Object",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Object"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Object"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BB_SpaceRabbit",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardData"
+      },
+      "outer": null,
+      "properties": {
+        "Keys": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "Threat"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Object"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "SneakLimit"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Float"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "IsInView"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Bool"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "Friend"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Object"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "IsCurious"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Bool"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "PersonalDistance"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Float"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "FetchItem"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Object"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "HasGottenBerry"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Bool"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "BerryActor"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Object"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/BB_Creature",
+              "name": "BB_Creature"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BlackboardKeyType_Bool",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Bool"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Bool"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Bool",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Bool"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Bool"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Float",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Float"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Float"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Float",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Float"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Float"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Object",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Object"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Object"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_SpaceRabbit"
+      },
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,2753 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/World/Environment/Plant/GasFlower/Particle/ReleaseSpores_01.uasset",
+  "guid": {
+    "a": 871474535,
+    "b": 1307805923,
+    "c": 1317939355,
+    "d": 1641154572
+  },
+  "exports": [
+    {
+      "name": "DistributionFloatUniform",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "DistributionFloatUniform"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__DistributionFloatUniform"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Max": {
+          "type": "FloatProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "ParticleLODLevel",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleLODLevel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleLODLevel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Level": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "Modules": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleLifetime"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleSize"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleColorOverLife"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleOrbit"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleAccelerationConstant"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleSizeMultiplyLife"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleAccelerationDrag"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleLocation"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleVelocity"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleColor"
+              }
+            }
+          ]
+        },
+        "PeakActiveParticles": {
+          "type": "IntProperty",
+          "value": 31
+        },
+        "RequiredModule": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ParticleModuleRequired"
+            }
+          }
+        },
+        "SpawnModule": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ParticleModuleSpawn"
+            }
+          }
+        },
+        "TypeDataModule": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ParticleModuleTypeDataGpu"
+            }
+          }
+        },
+        "bEnabled": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleColorOverLife",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleColorOverLife"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleColorOverLife"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "AlphaOverLife": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "TimeScale": {
+                  "type": "FloatProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    1,
+                    0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "ColorOverLife": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "MaxValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 0.935651,
+                "y": 1,
+                "z": 0
+              }
+            },
+            "MinValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 0.883579,
+                "y": 1,
+                "z": 0
+              }
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 3
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "TimeScale": {
+                  "type": "FloatProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    0.883579,
+                    1,
+                    0,
+                    0.935651,
+                    1,
+                    0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleOrbit",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleOrbit"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleOrbit"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "OffsetAmount": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "DistributionOffsetAmount"
+                }
+              }
+            }
+          }
+        },
+        "RotationAmount": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "DistributionRotationAmount"
+                }
+              }
+            }
+          }
+        },
+        "RotationRateAmount": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "DistributionRotationRateAmount"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleTypeDataGpu",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleTypeDataGpu"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleTypeDataGpu"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "EmitterInfo": {
+          "type": "GPUSpriteEmitterInfo",
+          "value": {
+            "ConstantAcceleration": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": -50
+              }
+            },
+            "DragCoefficient": {
+              "type": "FloatDistribution",
+              "value": {
+                "Table": {
+                  "type": "DistributionLookupTable",
+                  "value": {
+                    "EntryStride": {
+                      "type": "ByteProperty",
+                      "value": 2
+                    },
+                    "Op": {
+                      "type": "ByteProperty",
+                      "value": 2
+                    },
+                    "SubEntryStride": {
+                      "type": "ByteProperty",
+                      "value": 1
+                    },
+                    "Values": {
+                      "type": "ArrayProperty",
+                      "value": [
+                        0,
+                        1
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "InvMaxSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 0.2,
+                "y": 0.2
+              }
+            },
+            "InvRotationRateScale": {
+              "type": "FloatProperty",
+              "value": 0.125
+            },
+            "MaxLifetime": {
+              "type": "FloatProperty",
+              "value": 8
+            },
+            "MaxParticleCount": {
+              "type": "IntProperty",
+              "value": 31
+            },
+            "OrbitOffsetBase": {
+              "type": "Vector",
+              "value": {
+                "x": -10,
+                "y": -4.9999995,
+                "z": 4.371139e-7
+              }
+            },
+            "OrbitOffsetRange": {
+              "type": "Vector",
+              "value": {
+                "x": 20,
+                "y": 10,
+                "z": 3.1786504e-7
+              }
+            },
+            "RequiredModule": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "ParticleModuleRequired"
+                }
+              }
+            },
+            "ScreenAlignment": {
+              "type": "ByteProperty",
+              "value": "PSA_Square"
+            },
+            "SpawnModule": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "ParticleModuleSpawn"
+                }
+              }
+            },
+            "SpawnModules": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "reference",
+                  "value": {
+                    "package": "{{THIS PACKAGE}}",
+                    "name": "ParticleModuleRequired"
+                  }
+                },
+                {
+                  "type": "reference",
+                  "value": {
+                    "package": "{{THIS PACKAGE}}",
+                    "name": "ParticleModuleLifetime"
+                  }
+                },
+                {
+                  "type": "reference",
+                  "value": {
+                    "package": "{{THIS PACKAGE}}",
+                    "name": "ParticleModuleSize"
+                  }
+                },
+                {
+                  "type": "reference",
+                  "value": {
+                    "package": "{{THIS PACKAGE}}",
+                    "name": "ParticleModuleLocation"
+                  }
+                },
+                {
+                  "type": "reference",
+                  "value": {
+                    "package": "{{THIS PACKAGE}}",
+                    "name": "ParticleModuleVelocity"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "ResourceData": {
+          "type": "GPUSpriteResourceData",
+          "value": {
+            "CollisionRadiusScale": {
+              "type": "FloatProperty",
+              "value": 0.5
+            },
+            "CollisionRandomDistribution": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "ColorBias": {
+              "type": "Vector4",
+              "value": {
+                "x": 0.970992,
+                "y": 2,
+                "z": 0.354167,
+                "w": 0
+              }
+            },
+            "ColorScale": {
+              "type": "Vector4",
+              "value": {
+                "x": 0.013024986,
+                "y": 0,
+                "z": 0.020832986,
+                "w": 0.7913071
+              }
+            },
+            "ConstantAcceleration": {
+              "type": "Vector",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": -50
+              }
+            },
+            "DragCoefficientScale": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "MiscBias": {
+              "type": "Vector4",
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 0,
+                "w": 0
+              }
+            },
+            "OneMinusFriction": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "OrbitFrequencyRange": {
+              "type": "Vector",
+              "value": {
+                "x": 6.2831855,
+                "y": 6.2831855,
+                "z": -6.2831855
+              }
+            },
+            "OrbitOffsetBase": {
+              "type": "Vector",
+              "value": {
+                "x": -2.5,
+                "y": -2.5,
+                "z": -2.5
+              }
+            },
+            "OrbitOffsetRange": {
+              "type": "Vector",
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 5
+              }
+            },
+            "OrbitPhaseBase": {
+              "type": "Vector",
+              "value": {
+                "x": 1.5707964,
+                "y": 0,
+                "z": 1.5707964
+              }
+            },
+            "OrbitPhaseRange": {
+              "type": "Vector",
+              "value": {
+                "x": 6.2831855,
+                "y": 6.2831855,
+                "z": -6.2831855
+              }
+            },
+            "PerParticleVectorFieldBias": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "QuantizedColorSamples": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 255,
+                    "g": 0,
+                    "b": 254,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 237,
+                    "g": 0,
+                    "b": 238,
+                    "a": 85
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 221,
+                    "g": 0,
+                    "b": 221,
+                    "a": 171
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 203,
+                    "g": 0,
+                    "b": 204,
+                    "a": 254
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 187,
+                    "g": 0,
+                    "b": 186,
+                    "a": 244
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 170,
+                    "g": 0,
+                    "b": 170,
+                    "a": 232
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 153,
+                    "g": 0,
+                    "b": 153,
+                    "a": 219
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 136,
+                    "g": 0,
+                    "b": 135,
+                    "a": 206
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 118,
+                    "g": 0,
+                    "b": 119,
+                    "a": 193
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 101,
+                    "g": 0,
+                    "b": 101,
+                    "a": 180
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 85,
+                    "g": 0,
+                    "b": 85,
+                    "a": 167
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 67,
+                    "g": 0,
+                    "b": 68,
+                    "a": 143
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 51,
+                    "g": 0,
+                    "b": 50,
+                    "a": 107
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 33,
+                    "g": 0,
+                    "b": 33,
+                    "a": 71
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 16,
+                    "g": 0,
+                    "b": 16,
+                    "a": 35
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  }
+                }
+              ]
+            },
+            "QuantizedMiscSamples": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 255,
+                    "b": 255,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 250,
+                    "b": 250,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 242,
+                    "b": 242,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 234,
+                    "b": 234,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 226,
+                    "b": 226,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 218,
+                    "b": 218,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 210,
+                    "b": 210,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 202,
+                    "b": 202,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 194,
+                    "b": 194,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 186,
+                    "b": 186,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 178,
+                    "b": 178,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 170,
+                    "b": 170,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 161,
+                    "b": 161,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 153,
+                    "b": 153,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 145,
+                    "b": 145,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 137,
+                    "b": 137,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 129,
+                    "b": 129,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 121,
+                    "b": 121,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 113,
+                    "b": 113,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 105,
+                    "b": 105,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 97,
+                    "b": 97,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 89,
+                    "b": 89,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 80,
+                    "b": 80,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 72,
+                    "b": 72,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 64,
+                    "b": 64,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 56,
+                    "b": 56,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 48,
+                    "b": 48,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 40,
+                    "b": 40,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 32,
+                    "b": 32,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 24,
+                    "b": 24,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 16,
+                    "b": 16,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 8,
+                    "b": 8,
+                    "a": 0
+                  }
+                },
+                {
+                  "type": "Color",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  }
+                }
+              ]
+            },
+            "RotationRateScale": {
+              "type": "FloatProperty",
+              "value": 8
+            },
+            "ScreenAlignment": {
+              "type": "ByteProperty",
+              "value": "PSA_Square"
+            },
+            "SimulationAttrCurveBias": {
+              "type": "Vector4",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0,
+                "w": 1
+              }
+            },
+            "SizeBySpeed": {
+              "type": "Vector4",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1,
+                "w": 1
+              }
+            },
+            "SubImageSize": {
+              "type": "Vector4",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1,
+                "w": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DistributionVectorConstantCurve",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "DistributionVectorConstantCurve"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__DistributionVectorConstantCurve"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ConstantCurve": {
+          "type": "InterpCurveVector",
+          "value": {
+            "Points": {
+              "type": "ArrayProperty",
+              "value": [
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_Linear"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 0.5
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_Linear"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "InterpCurvePointVector",
+                  "value": {
+                    "ArriveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "InVal": {
+                      "type": "FloatProperty",
+                      "value": 1
+                    },
+                    "InterpMode": {
+                      "type": "ByteProperty",
+                      "value": "CIM_Linear"
+                    },
+                    "LeaveTangent": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    },
+                    "OutVal": {
+                      "type": "Vector",
+                      "value": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DistributionOffsetAmount",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "DistributionVectorUniform"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__DistributionVectorUniform"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Max": {
+          "type": "Vector",
+          "value": {
+            "x": 5,
+            "y": 5,
+            "z": 5
+          }
+        },
+        "Min": {
+          "type": "Vector",
+          "value": {
+            "x": -5,
+            "y": -5,
+            "z": -5
+          }
+        }
+      }
+    },
+    {
+      "name": "DistributionRotationAmount",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "DistributionVectorUniform"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__DistributionVectorUniform"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Max": {
+          "type": "Vector",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleAccelerationDrag",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleAccelerationDrag"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleAccelerationDrag"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "DragCoefficientRaw": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "DistributionFloatUniform"
+                }
+              }
+            }
+          }
+        },
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "bAlwaysInWorldSpace": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleColor",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleColor"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleColor"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "StartAlpha": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 0.8
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 0.8
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    0.8
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "StartColor": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 0.796875
+            },
+            "MaxValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 0.310404,
+                "y": 0.796875,
+                "z": 0.26582
+              }
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 0.26582
+            },
+            "MinValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 0.310404,
+                "y": 0.796875,
+                "z": 0.26582
+              }
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 3
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    0.310404,
+                    0.796875,
+                    0.26582
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "bEnabled": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleRequired",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleRequired"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleRequired"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "EmitterLoops": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "EmitterRotation": {
+          "type": "Rotator",
+          "value": {
+            "pitch": 180,
+            "yaw": 0,
+            "roll": 0
+          }
+        },
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/-Shared/Particle/Material/SparkRound",
+              "name": "SparkRound"
+            }
+          }
+        },
+        "RandomImageTime": {
+          "type": "FloatProperty",
+          "value": 1
+        },
+        "SpawnRate": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "RequiredDistributionSpawnRate"
+                }
+              }
+            }
+          }
+        },
+        "bEnabled": {
+          "type": "BoolProperty",
+          "value": false
+        },
+        "bUseLegacyEmitterTime": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleSize",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleSize"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleSize"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "StartSize": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 5
+            },
+            "MaxValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 5
+              }
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 3
+            },
+            "MinValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 3,
+                "y": 3,
+                "z": 3
+              }
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 6
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "SubEntryStride": {
+                  "type": "ByteProperty",
+                  "value": 3
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    3,
+                    3,
+                    3,
+                    5,
+                    5,
+                    5
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleSizeMultiplyLife",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleSizeMultiplyLife"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleSizeMultiplyLife"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "LifeMultiplier": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "DistributionVectorConstantCurve"
+                }
+              }
+            }
+          }
+        },
+        "bEnabled": {
+          "type": "BoolProperty",
+          "value": false
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleSpawn",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleSpawn"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleSpawn"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "BurstScale": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "Rate": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 30
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 10
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "SubEntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    10,
+                    30
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "RateScale": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 1
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleVelocity",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleVelocity"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleVelocity"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "StartVelocity": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 50
+            },
+            "MaxValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 50,
+                "y": 50,
+                "z": 50
+              }
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": -100
+            },
+            "MinValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": -50,
+                "y": -50,
+                "z": -100
+              }
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 6
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "SubEntryStride": {
+                  "type": "ByteProperty",
+                  "value": 3
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    -50,
+                    -50,
+                    -100,
+                    50,
+                    50,
+                    50
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "StartVelocityRadial": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    0
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleSpriteEmitter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleSpriteEmitter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleSpriteEmitter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "DetailModeBitmask": {
+          "type": "UInt32Property",
+          "value": 7
+        },
+        "EmitterName": {
+          "type": "NameProperty",
+          "value": "Spores"
+        },
+        "LODLevels": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleLODLevel"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleLODLevel"
+              }
+            }
+          ]
+        },
+        "bUseLegacySpawningBehavior": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "ParticleLODLevel",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleLODLevel"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleLODLevel"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Modules": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleLifetime"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleSize"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleColorOverLife"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleOrbit"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleAccelerationConstant"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleSizeMultiplyLife"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleAccelerationDrag"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleLocation"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleVelocity"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleModuleColor"
+              }
+            }
+          ]
+        },
+        "PeakActiveParticles": {
+          "type": "IntProperty",
+          "value": 31
+        },
+        "RequiredModule": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ParticleModuleRequired"
+            }
+          }
+        },
+        "SpawnModule": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ParticleModuleSpawn"
+            }
+          }
+        },
+        "TypeDataModule": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ParticleModuleTypeDataGpu"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleAccelerationConstant",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleAccelerationConstant"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleAccelerationConstant"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Acceleration": {
+          "type": "Vector",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          }
+        },
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "bAlwaysInWorldSpace": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "RequiredDistributionSpawnRate",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "DistributionFloatConstant"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__DistributionFloatConstant"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DistributionRotationRateAmount",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "DistributionVectorUniform"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__DistributionVectorUniform"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Max": {
+          "type": "Vector",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleLifetime",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleLifetime"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleLifetime"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "Lifetime": {
+          "type": "RawDistributionFloat",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 8
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": 3
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "SubEntryStride": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    3,
+                    8
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ParticleModuleLocation",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleModuleLocation"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleModuleLocation"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "LODValidity": {
+          "type": "ByteProperty",
+          "value": 3
+        },
+        "StartLocation": {
+          "type": "RawDistributionVector",
+          "value": {
+            "Distribution": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": null
+              }
+            },
+            "MaxValue": {
+              "type": "FloatProperty",
+              "value": 50
+            },
+            "MaxValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": 50,
+                "y": 50,
+                "z": 20
+              }
+            },
+            "MinValue": {
+              "type": "FloatProperty",
+              "value": -50
+            },
+            "MinValueVec": {
+              "type": "Vector",
+              "value": {
+                "x": -50,
+                "y": -50,
+                "z": -20
+              }
+            },
+            "Table": {
+              "type": "DistributionLookupTable",
+              "value": {
+                "EntryCount": {
+                  "type": "ByteProperty",
+                  "value": 1
+                },
+                "EntryStride": {
+                  "type": "ByteProperty",
+                  "value": 6
+                },
+                "Op": {
+                  "type": "ByteProperty",
+                  "value": 2
+                },
+                "SubEntryStride": {
+                  "type": "ByteProperty",
+                  "value": 3
+                },
+                "Values": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    -50,
+                    -50,
+                    -20,
+                    50,
+                    50,
+                    20
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ReleaseSpores_01",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "ParticleSystem"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__ParticleSystem"
+      },
+      "outer": null,
+      "properties": {
+        "CurveEdSetup": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        },
+        "CustomOcclusionBounds": {
+          "type": "Box",
+          "value": {
+            "min": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "max": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "is_valid": 1
+          }
+        },
+        "Emitters": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "ParticleSpriteEmitter"
+              }
+            }
+          ]
+        },
+        "FixedRelativeBoundingBox": {
+          "type": "Box",
+          "value": {
+            "min": {
+              "x": -1788.7982,
+              "y": -1868.6304,
+              "z": -3409.8735
+            },
+            "max": {
+              "x": 1910.8033,
+              "y": 1798.6995,
+              "z": 1233.7144
+            },
+            "is_valid": 1
+          }
+        },
+        "LODDistances": {
+          "type": "ArrayProperty",
+          "value": [
+            0,
+            3000
+          ]
+        },
+        "LODSettings": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ParticleSystemLOD",
+              "value": {}
+            },
+            {
+              "type": "ParticleSystemLOD",
+              "value": {}
+            }
+          ]
+        },
+        "bShouldResetPeakCounts": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUseFixedRelativeBoundingBox": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

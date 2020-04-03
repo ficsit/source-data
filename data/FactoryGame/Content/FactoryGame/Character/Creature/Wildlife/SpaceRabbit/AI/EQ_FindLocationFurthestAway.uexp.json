@@ -1,0 +1,329 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Wildlife/SpaceRabbit/AI/EQ_FindLocationFurthestAway.uasset",
+  "guid": {
+    "a": 1144887882,
+    "b": 1181956071,
+    "c": 2345515177,
+    "d": 1194944811
+  },
+  "exports": [
+    {
+      "name": "AIDataProvider_QueryParams",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIDataProvider_QueryParams"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AIDataProvider_QueryParams"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ParamName": {
+          "type": "NameProperty",
+          "value": "PathingGrid.GridSize"
+        }
+      }
+    },
+    {
+      "name": "EQ_FindLocationFurthestAway",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQuery"
+      },
+      "outer": null,
+      "properties": {
+        "Options": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryOption"
+              }
+            }
+          ]
+        },
+        "QueryName": {
+          "type": "NameProperty",
+          "value": "EQ_FindLocationFurthestAway"
+        }
+      }
+    },
+    {
+      "name": "EnvQueryGenerator_PathingGrid",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryGenerator_PathingGrid"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryGenerator_PathingGrid"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_FindLocationFurthestAway"
+      },
+      "properties": {
+        "GridSize": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DataBinding": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "AIDataProvider_QueryParams"
+                }
+              }
+            },
+            "DataField": {
+              "type": "NameProperty",
+              "value": "FloatValue"
+            },
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 5000
+            }
+          }
+        },
+        "ProjectionData": {
+          "type": "EnvTraceData",
+          "value": {
+            "SerializedChannel": {
+              "type": "ByteProperty",
+              "value": "ECC_Visibility"
+            },
+            "VersionNum": {
+              "type": "IntProperty",
+              "value": 1
+            }
+          }
+        },
+        "SpaceBetween": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 600
+            }
+          }
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "EnvQueryOption",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryOption"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryOption"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_FindLocationFurthestAway"
+      },
+      "properties": {
+        "Generator": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EnvQueryGenerator_PathingGrid"
+            }
+          }
+        },
+        "Tests": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryTest_Distance"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryTest_Dot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "EnvQueryTest_Distance",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryTest_Distance"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryTest_Distance"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_FindLocationFurthestAway"
+      },
+      "properties": {
+        "DistanceTo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/AI/Context_ClosePlayers",
+              "name": "Context_ClosePlayers_C"
+            }
+          }
+        },
+        "TestOrder": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "TestPurpose": {
+          "type": "ByteProperty",
+          "value": "EEnvTestPurpose::Score"
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "EnvQueryTest_Dot",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryTest_Dot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryTest_Dot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_FindLocationFurthestAway"
+      },
+      "properties": {
+        "FloatValueMax": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 1
+            }
+          }
+        },
+        "LineA": {
+          "type": "EnvDirection",
+          "value": {
+            "DirMode": {
+              "type": "ByteProperty",
+              "value": "EEnvDirection::TwoPoints"
+            },
+            "LineFrom": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/AI/Context_ClosePlayers",
+                  "name": "Context_ClosePlayers_C"
+                }
+              }
+            },
+            "LineTo": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Script/AIModule",
+                  "name": "EnvQueryContext_Item"
+                }
+              }
+            },
+            "Rotation": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Script/AIModule",
+                  "name": "EnvQueryContext_Item"
+                }
+              }
+            }
+          }
+        },
+        "LineB": {
+          "type": "EnvDirection",
+          "value": {
+            "LineFrom": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/AI/Context_ClosePlayers",
+                  "name": "Context_ClosePlayers_C"
+                }
+              }
+            },
+            "LineTo": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Script/AIModule",
+                  "name": "EnvQueryContext_Querier"
+                }
+              }
+            }
+          }
+        },
+        "ScoringEquation": {
+          "type": "ByteProperty",
+          "value": "EEnvTestScoreEquation::Square"
+        },
+        "TestMode": {
+          "type": "EEnvTestDot",
+          "value": "EEnvTestDot::Dot2D"
+        },
+        "TestOrder": {
+          "type": "IntProperty",
+          "value": 2
+        },
+        "TestPurpose": {
+          "type": "ByteProperty",
+          "value": "EEnvTestPurpose::Filter"
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    }
+  ]
+}

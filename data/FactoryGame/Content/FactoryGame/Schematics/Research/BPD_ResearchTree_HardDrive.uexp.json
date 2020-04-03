@@ -1,0 +1,147 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Schematics/Research/BPD_ResearchTree_HardDrive.uasset",
+  "guid": {
+    "a": 288303511,
+    "b": 1084176832,
+    "c": 1999454390,
+    "d": 2662277891
+  },
+  "exports": [
+    {
+      "name": "BPD_ResearchTree_HardDrive_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Script/FactoryGame",
+        "name": "FGResearchTree"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {}
+    },
+    {
+      "name": "Default__BPD_ResearchTree_HardDrive_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BPD_ResearchTree_HardDrive_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGResearchTree"
+      },
+      "outer": null,
+      "properties": {
+        "mDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "FC25E10849DAFA58724BF4927CD707B4",
+            "source_string": "Hard Drive"
+          }
+        },
+        "mPostUnlockDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "28FECDE046232FC174325384F21D3D8C",
+            "source_string": "These misplaced FICSIT hard-drivers hold valuable data on alternative resource production. Examination to salvage their content is highly recommended. "
+          }
+        },
+        "mPreUnlockDescription": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "31B92F394E9F3A04E6EE4C8A71F8E376",
+            "source_string": "Multiple FICSIT property shipments have been... misplaced on the planet MASSAGE-2(AB)b. Retrieval of resources and potential production data is recommended."
+          }
+        },
+        "mPreUnlockDisplayName": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 0,
+            "history_type": 0,
+            "namespace": "",
+            "key": "A8CD7C8845D0DE9E07F1B6836E9DD932",
+            "source_string": "Hard Drive"
+          }
+        },
+        "mResearchTreeIcon": {
+          "type": "SlateBrush",
+          "value": {
+            "ImageSize": {
+              "type": "Vector2D",
+              "value": {
+                "x": 256,
+                "y": 256
+              }
+            },
+            "ResourceObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Resource/Environment/CrashSites/UI/HardDrive",
+                  "name": "HardDrive"
+                }
+              }
+            }
+          }
+        },
+        "mUnlockDependencies": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BP_ItemPickedUpDependency_C"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "BP_ItemPickedUpDependency_C",
+      "class": {
+        "package": "/Game/FactoryGame/AvailabilityDependencies/BP_ItemPickedUpDependency",
+        "name": "BP_ItemPickedUpDependency_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/AvailabilityDependencies/BP_ItemPickedUpDependency",
+        "name": "Default__BP_ItemPickedUpDependency_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BPD_ResearchTree_HardDrive_C"
+      },
+      "properties": {
+        "mItems": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "/Game/FactoryGame/Resource/Environment/CrashSites/Desc_HardDrive",
+                "name": "Desc_HardDrive_C"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

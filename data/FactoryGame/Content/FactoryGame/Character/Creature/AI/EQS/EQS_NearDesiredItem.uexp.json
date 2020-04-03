@@ -1,0 +1,245 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/AI/EQS/EQS_NearDesiredItem.uasset",
+  "guid": {
+    "a": 563548509,
+    "b": 1328996330,
+    "c": 996722354,
+    "d": 371956561
+  },
+  "exports": [
+    {
+      "name": "AIDataProvider_QueryParams",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIDataProvider_QueryParams"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AIDataProvider_QueryParams"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ParamName": {
+          "type": "NameProperty",
+          "value": "ActorsOfClass.SearchRadius"
+        }
+      }
+    },
+    {
+      "name": "EQS_NearDesiredItem",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQuery"
+      },
+      "outer": null,
+      "properties": {
+        "Options": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryOption"
+              }
+            }
+          ]
+        },
+        "QueryName": {
+          "type": "NameProperty",
+          "value": "EQS_NearDesiredItem"
+        }
+      }
+    },
+    {
+      "name": "EnvQueryGenerator_ActorsOfClass",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryGenerator_ActorsOfClass"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryGenerator_ActorsOfClass"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_NearDesiredItem"
+      },
+      "properties": {
+        "GenerateOnlyActorsInRadius": {
+          "type": "AIDataProviderBoolValue",
+          "value": {
+            "DataField": {
+              "type": "NameProperty",
+              "value": "BoolValue"
+            }
+          }
+        },
+        "SearchRadius": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DataBinding": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "AIDataProvider_QueryParams"
+                }
+              }
+            },
+            "DataField": {
+              "type": "NameProperty",
+              "value": "FloatValue"
+            },
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 3000
+            }
+          }
+        },
+        "SearchedActorClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGItemPickup_Spawnable"
+            }
+          }
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "EnvQueryOption",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryOption"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryOption"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_NearDesiredItem"
+      },
+      "properties": {
+        "Generator": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EnvQueryGenerator_ActorsOfClass"
+            }
+          }
+        },
+        "Tests": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "FGEnvQueryTest_ItemDescription"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryTest_Distance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "EnvQueryTest_Distance",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryTest_Distance"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryTest_Distance"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_NearDesiredItem"
+      },
+      "properties": {
+        "ScoringEquation": {
+          "type": "ByteProperty",
+          "value": "EEnvTestScoreEquation::InverseLinear"
+        },
+        "TestOrder": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "TestPurpose": {
+          "type": "ByteProperty",
+          "value": "EEnvTestPurpose::Score"
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "FGEnvQueryTest_ItemDescription",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGEnvQueryTest_ItemDescription"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGEnvQueryTest_ItemDescription"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_NearDesiredItem"
+      },
+      "properties": {
+        "TestPurpose": {
+          "type": "ByteProperty",
+          "value": "EEnvTestPurpose::Filter"
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        },
+        "mItemDescriptorClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Resource/Environment/Berry/Desc_Berry",
+              "name": "Desc_Berry_C"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Factory/ResourceSink/Material/ResourceSink.uasset",
+  "guid": {
+    "a": 99925012,
+    "b": 1160065173,
+    "c": 2273462410,
+    "d": 1146401778
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionTextureSample",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ResourceSink"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ResourceSink"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Factory/ResourceSink/Textures/TX_ResourceSink_01_Albedo",
+              "name": "TX_ResourceSink_01_Albedo"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ResourceSink",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3829124616,
+            "b": 1151640256,
+            "c": 1889792696,
+            "d": 3723854326
+          }
+        },
+        "TextureStreamingData": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MaterialTextureInfo",
+              "value": {
+                "SamplingScale": {
+                  "type": "FloatProperty",
+                  "value": 1
+                },
+                "TextureName": {
+                  "type": "NameProperty",
+                  "value": "TX_ResourceSink_01_Albedo"
+                },
+                "UVChannelIndex": {
+                  "type": "IntProperty",
+                  "value": 0
+                }
+              }
+            }
+          ]
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

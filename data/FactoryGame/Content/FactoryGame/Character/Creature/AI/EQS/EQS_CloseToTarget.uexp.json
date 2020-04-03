@@ -1,0 +1,207 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/AI/EQS/EQS_CloseToTarget.uasset",
+  "guid": {
+    "a": 4186594086,
+    "b": 1185714460,
+    "c": 2237571460,
+    "d": 3037650116
+  },
+  "exports": [
+    {
+      "name": "EnvQueryOption",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryOption"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryOption"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_CloseToTarget"
+      },
+      "properties": {
+        "Generator": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EnvQueryGenerator_Cone"
+            }
+          }
+        },
+        "Tests": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryTest_Distance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "EnvQueryTest_Distance",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryTest_Distance"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryTest_Distance"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_CloseToTarget"
+      },
+      "properties": {
+        "DistanceTo": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/AI/Context_FinalTarget",
+              "name": "Context_FinalTarget_C"
+            }
+          }
+        },
+        "ScoringEquation": {
+          "type": "ByteProperty",
+          "value": "EEnvTestScoreEquation::InverseLinear"
+        },
+        "TestPurpose": {
+          "type": "ByteProperty",
+          "value": "EEnvTestPurpose::Score"
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "EQS_CloseToTarget",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQuery"
+      },
+      "outer": null,
+      "properties": {
+        "Options": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryOption"
+              }
+            }
+          ]
+        },
+        "QueryName": {
+          "type": "NameProperty",
+          "value": "EQS_CloseToTarget"
+        }
+      }
+    },
+    {
+      "name": "EnvQueryGenerator_Cone",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryGenerator_Cone"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryGenerator_Cone"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQS_CloseToTarget"
+      },
+      "properties": {
+        "AlignedPointsDistance": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 500
+            }
+          }
+        },
+        "AngleStep": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 20
+            }
+          }
+        },
+        "ConeDegrees": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 180
+            }
+          }
+        },
+        "ProjectionData": {
+          "type": "EnvTraceData",
+          "value": {
+            "NavigationFilter": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/AI/NavQuery_WalkingAI",
+                  "name": "NavQuery_WalkingAI_C"
+                }
+              }
+            },
+            "ProjectUp": {
+              "type": "FloatProperty",
+              "value": 30
+            },
+            "SerializedChannel": {
+              "type": "ByteProperty",
+              "value": "ECC_Visibility"
+            },
+            "VersionNum": {
+              "type": "IntProperty",
+              "value": 1
+            }
+          }
+        },
+        "Range": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 2000
+            }
+          }
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    }
+  ]
+}

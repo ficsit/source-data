@@ -1,0 +1,273 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/Material/MM_UI_SmoothRotation.uasset",
+  "guid": {
+    "a": 3939334583,
+    "b": 1209328198,
+    "c": 493435303,
+    "d": 695081424
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionMaterialFunctionCall",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionMaterialFunctionCall"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionMaterialFunctionCall"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "MM_UI_SmoothRotation"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "MM_UI_SmoothRotation"
+            }
+          }
+        },
+        "MaterialFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator",
+              "name": "CustomRotator"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionScalarParameter",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionScalarParameter"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionScalarParameter"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "MM_UI_SmoothRotation"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3655652753,
+            "b": 1273535863,
+            "c": 761671304,
+            "d": 1893797386
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "MM_UI_SmoothRotation"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Angle"
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "MM_UI_SmoothRotation"
+      },
+      "properties": {
+        "Coordinates": {
+          "type": "ExpressionInput",
+          "value": {
+            "expression": 0,
+            "expression_name": "None",
+            "mask": 0,
+            "mask_r": 0,
+            "mask_g": 0,
+            "mask_b": 0,
+            "mask_a": 0,
+            "output_index": 34
+          }
+        },
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 1474731529,
+            "b": 1118614996,
+            "c": 2362219411,
+            "d": 3565749672
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "MM_UI_SmoothRotation"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "Texture"
+        },
+        "SamplerSource": {
+          "type": "ByteProperty",
+          "value": "SSM_Clamp_WorldGroupSettings"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Interface/UI/Assets/BuildMenu/AddToDoList_Icon",
+              "name": "AddToDoList_Icon"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "MM_UI_SmoothRotation",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionMaterialFunctionCall"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionScalarParameter"
+              }
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_UI"
+        },
+        "MaterialFunctionInfos": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "MaterialFunctionInfo",
+              "value": {
+                "Function": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator",
+                      "name": "CustomRotator"
+                    }
+                  }
+                },
+                "StateId": {
+                  "type": "Guid",
+                  "value": {
+                    "a": 3849508609,
+                    "b": 1231973688,
+                    "c": 3428033981,
+                    "d": 3293622509
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 4292158116,
+            "b": 1247241270,
+            "c": 953502633,
+            "d": 2651966849
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

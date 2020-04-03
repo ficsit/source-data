@@ -1,0 +1,1451 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Interface/UI/InGame/HudBox/Widget_HUDBox_Consumable.uasset",
+  "guid": {
+    "a": 3837817799,
+    "b": 1222056579,
+    "c": 3451183548,
+    "d": 1345051555
+  },
+  "exports": [
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "WidgetArchetype"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "HeightOverride": {
+          "type": "FloatProperty",
+          "value": 42
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 42
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "WidgetTree",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetTree"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {
+        "RootWidget": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Tick",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Tick"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "mConsumableEquipment",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "K2Node_Event_MyGeometry",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mAmountObject"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Left"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mAmountObject",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_bSuccess",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "BoolProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__BoolProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "HeightOverride": {
+          "type": "FloatProperty",
+          "value": 42
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "OverlaySlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SizeBoxSlot"
+              }
+            }
+          ]
+        },
+        "WidthOverride": {
+          "type": "FloatProperty",
+          "value": 42
+        },
+        "bOverride_HeightOverride": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "mAmountObject",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.783538,
+                "g": 0.291771,
+                "b": 0.059511,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 25
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Regular"
+            }
+          }
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.79
+        },
+        "Margin": {
+          "type": "Margin",
+          "value": {
+            "Top": {
+              "type": "FloatProperty",
+              "value": -8
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "E5ED0DA04D3FD0A99856639BADFF8CB1",
+            "source_string": "62"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mAmountObject"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Left"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TextBlock"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Left"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Construct",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "UserWidget",
+        "name": "Construct"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Overlay",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "Overlay"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__Overlay"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "OverlaySlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__Widget_HUDBox_Consumable_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/HudBox/Widget_HUDBox_Equipment_Parent",
+        "name": "Default__Widget_HUDBox_Equipment_Parent_C"
+      },
+      "outer": null,
+      "properties": {
+        "UberGraphFrame": {
+          "type": "PointerToUberGraphFrame",
+          "value": null
+        },
+        "bHasScriptImplementedTick": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "TextBlock",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "ExecuteUbergraph_Widget_HUDBox_Consumable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_Event_InDeltaTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_Conv_IntToText_ReturnValue",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "TextProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__TextProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "WidgetArchetype",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Widget_HUDBox_Consumable_C"
+      },
+      "super": null,
+      "template": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__Widget_HUDBox_Consumable_C"
+      },
+      "outer": null,
+      "properties": {
+        "TextBlock": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TextBlock"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bCookedWidgetTree": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mAmountObject": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "mAmountObject"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Widget_HUDBox_Consumable_C",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "WidgetBlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Interface/UI/InGame/HudBox/Widget_HUDBox_Equipment_Parent",
+        "name": "Widget_HUDBox_Equipment_Parent_C"
+      },
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__WidgetBlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "TemplateAsset": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/Interface/UI/InGame/HudBox/Widget_HUDBox_Consumable.WidgetArchetype",
+            "sub_path": ""
+          }
+        },
+        "UberGraphFramePointerProperty": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "UberGraphFrame"
+            }
+          }
+        },
+        "UberGraphFunction": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+            }
+          }
+        },
+        "WidgetTree": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "WidgetTree"
+            }
+          }
+        },
+        "bAllowTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bValidTemplate": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "EntryPoint",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "VerticalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "VerticalBox",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBox"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBoxSlot"
+            }
+          }
+        },
+        "Slots": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "VerticalBoxSlot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "VerticalBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "VerticalBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__VerticalBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "VerticalBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "TextBlock"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Left"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "UberGraphFrame",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "K2Node_DynamicCast_AsFGConsumable_Equipment",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "CallFunc_GetConsumeable_out_numConsumeable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "IntProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__IntProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SizeBoxSlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "SizeBoxSlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__SizeBoxSlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "SizeBox"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBox"
+            }
+          }
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "mAmountObject",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 0.783538,
+                "g": 0.291771,
+                "b": 0.059511,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 25
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "Regular"
+            }
+          }
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.79
+        },
+        "Margin": {
+          "type": "Margin",
+          "value": {
+            "Top": {
+              "type": "FloatProperty",
+              "value": -8
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "E5ED0DA04D3FD0A99856639BADFF8CB1",
+            "source_string": "62"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "TextBlock",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 1,
+                "g": 0.989027,
+                "b": 0.989027,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 10
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "SemiBold"
+            }
+          }
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.79
+        },
+        "Margin": {
+          "type": "Margin",
+          "value": {
+            "Top": {
+              "type": "FloatProperty",
+              "value": -4
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "A290B86446DEA21A01D79EBF5E4F02CC",
+            "source_string": "Amount:"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "CallFunc_GetConsumeable_out_consumeable",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ClassProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ClassProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "ExecuteUbergraph_Widget_HUDBox_Consumable"
+      },
+      "properties": {}
+    },
+    {
+      "name": "MyGeometry",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "StructProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__StructProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "TextBlock",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "TextBlock"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__TextBlock"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ColorAndOpacity": {
+          "type": "SlateColor",
+          "value": {
+            "SpecifiedColor": {
+              "type": "LinearColor",
+              "value": {
+                "r": 1,
+                "g": 0.989027,
+                "b": 0.989027,
+                "a": 1
+              }
+            }
+          }
+        },
+        "Font": {
+          "type": "SlateFontInfo",
+          "value": {
+            "FontObject": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Interface/Font/DescriptionText",
+                  "name": "DescriptionText"
+                }
+              }
+            },
+            "Size": {
+              "type": "IntProperty",
+              "value": 10
+            },
+            "TypefaceFontName": {
+              "type": "NameProperty",
+              "value": "SemiBold"
+            }
+          }
+        },
+        "LineHeightPercentage": {
+          "type": "FloatProperty",
+          "value": 0.79
+        },
+        "Margin": {
+          "type": "Margin",
+          "value": {
+            "Top": {
+              "type": "FloatProperty",
+              "value": -4
+            }
+          }
+        },
+        "Slot": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VerticalBoxSlot"
+            }
+          }
+        },
+        "Text": {
+          "type": "TextProperty",
+          "value": {
+            "flags": 8,
+            "history_type": 0,
+            "namespace": "",
+            "key": "A290B86446DEA21A01D79EBF5E4F02CC",
+            "source_string": "Amount:"
+          }
+        },
+        "bIsVariable": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "InDeltaTime",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "FloatProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__FloatProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Tick"
+      },
+      "properties": {}
+    },
+    {
+      "name": "OverlaySlot",
+      "class": {
+        "package": "/Script/UMG",
+        "name": "OverlaySlot"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/UMG",
+        "name": "Default__OverlaySlot"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Overlay"
+      },
+      "properties": {
+        "Content": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SizeBox"
+            }
+          }
+        },
+        "HorizontalAlignment": {
+          "type": "ByteProperty",
+          "value": "HAlign_Fill"
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "Overlay"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

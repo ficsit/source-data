@@ -1,0 +1,130 @@
+{
+  "file_name": "Engine/Plugins/Compositing/Composure/Content/Materials/Media/M_StaticVideoPlateDebug.uasset",
+  "guid": {
+    "a": 951700043,
+    "b": 1263928859,
+    "c": 1649338017,
+    "d": 2091340867
+  },
+  "exports": [
+    {
+      "name": "M_StaticVideoPlateDebug",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendableOutputAlpha": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSampleParameter2D"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_PostProcess"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2796090980,
+            "b": 1338733909,
+            "c": 3248981641,
+            "d": 2805080636
+          }
+        },
+        "bCanMaskedBeAssumedOpaque": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSampleParameter2D"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSampleParameter2D"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_StaticVideoPlateDebug"
+      },
+      "properties": {
+        "ExpressionGUID": {
+          "type": "Guid",
+          "value": {
+            "a": 3702071059,
+            "b": 1136410793,
+            "c": 1292474513,
+            "d": 4044092856
+          }
+        },
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_StaticVideoPlateDebug"
+            }
+          }
+        },
+        "ParameterName": {
+          "type": "NameProperty",
+          "value": "VideoPlate"
+        },
+        "SamplerType": {
+          "type": "ByteProperty",
+          "value": "SAMPLERTYPE_LinearColor"
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture",
+              "name": "Black_1x1_EXR_Texture"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

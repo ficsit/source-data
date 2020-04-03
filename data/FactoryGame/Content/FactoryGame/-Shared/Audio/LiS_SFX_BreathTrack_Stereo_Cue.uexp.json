@@ -1,0 +1,90 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/-Shared/Audio/LiS_SFX_BreathTrack_Stereo_Cue.uasset",
+  "guid": {
+    "a": 251209285,
+    "b": 1280008067,
+    "c": 2098533263,
+    "d": 3398364467
+  },
+  "exports": [
+    {
+      "name": "LiS_SFX_BreathTrack_Stereo_Cue",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundCue"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundCue"
+      },
+      "outer": null,
+      "properties": {
+        "ConcurrencyOverrides": {
+          "type": "SoundConcurrencySettings",
+          "value": {
+            "ResolutionRule": {
+              "type": "ByteProperty",
+              "value": "EMaxConcurrentResolutionRule::PreventNew"
+            }
+          }
+        },
+        "Duration": {
+          "type": "FloatProperty",
+          "value": 10000
+        },
+        "FirstNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SoundNodeWavePlayer"
+            }
+          }
+        },
+        "MaxDistance": {
+          "type": "FloatProperty",
+          "value": 2097152
+        },
+        "VolumeMultiplier": {
+          "type": "FloatProperty",
+          "value": 0.4
+        },
+        "bOverrideConcurrency": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "SoundNodeWavePlayer",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SoundNodeWavePlayer"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SoundNodeWavePlayer"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "LiS_SFX_BreathTrack_Stereo_Cue"
+      },
+      "properties": {
+        "SoundWaveAssetPtr": {
+          "type": "SoftObjectProperty",
+          "value": {
+            "asset_path_name": "/Game/FactoryGame/-Shared/Audio/LiS_SFX_BreathTrack_Stereo.LiS_SFX_BreathTrack_Stereo",
+            "sub_path": ""
+          }
+        },
+        "bLooping": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,639 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle6W.uasset",
+  "guid": {
+    "a": 884237889,
+    "b": 1088137202,
+    "c": 734551191,
+    "d": 1546857504
+  },
+  "exports": [
+    {
+      "name": "UserConstructionScript",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "Function"
+      },
+      "super": {
+        "package": "Actor",
+        "name": "UserConstructionScript"
+      },
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__Function"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "DefaultSceneRoot_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SceneComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SceneComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_WheeledVehicle6W_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "FGWheeledVehicleMovementComponent6W_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGWheeledVehicleMovementComponent6W"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/FactoryGame",
+        "name": "Default__FGWheeledVehicleMovementComponent6W"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_WheeledVehicle6W_C"
+      },
+      "properties": {
+        "EngineSetup": {
+          "type": "VehicleEngineData6W",
+          "value": {
+            "TorqueCurve": {
+              "type": "RuntimeFloatCurve",
+              "value": {
+                "EditorCurveData": {
+                  "type": "RichCurve",
+                  "value": {}
+                }
+              }
+            }
+          }
+        },
+        "HighForwardSpeedSubStepCount": {
+          "type": "IntProperty",
+          "value": 3
+        },
+        "LowForwardSpeedSubStepCount": {
+          "type": "IntProperty",
+          "value": 4
+        },
+        "SteeringCurve": {
+          "type": "RuntimeFloatCurve",
+          "value": {
+            "EditorCurveData": {
+              "type": "RichCurve",
+              "value": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "SimulationComponent",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "FloatingPawnMovement"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle_C",
+        "name": "SimulationComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_WheeledVehicle6W_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "SceneComponent"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultSceneRoot_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "DefaultSceneRoot"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 3516752384,
+            "b": 1188230144,
+            "c": 3509995655,
+            "d": 2556669217
+          }
+        }
+      }
+    },
+    {
+      "name": "Default__BP_WheeledVehicle6W_C",
+      "class": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_WheeledVehicle6W_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle",
+        "name": "Default__BP_WheeledVehicle_C"
+      },
+      "outer": null,
+      "properties": {
+        "RootComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VehicleMesh"
+            }
+          }
+        },
+        "mBurnOutRTPC": {
+          "type": "NameProperty",
+          "value": "None"
+        },
+        "mDecalLifespan": {
+          "type": "FloatProperty",
+          "value": 7.5
+        },
+        "mDecalSize": {
+          "type": "Vector",
+          "value": {
+            "x": 35,
+            "y": 50,
+            "z": 3
+          }
+        },
+        "mDefaultTireTrackDecal": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Decal",
+              "name": "Tiretrack_Decal"
+            }
+          }
+        },
+        "mFoliageCollideBox": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FoliageBox"
+            }
+          }
+        },
+        "mHealthComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "HealthComponent"
+            }
+          }
+        },
+        "mMesh": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VehicleMesh"
+            }
+          }
+        },
+        "mPlayBurnOutSound": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        },
+        "mSetMaxClampRangeAirSpeed": {
+          "type": "FloatProperty",
+          "value": 0
+        },
+        "mSimulationMovementComponent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimulationComponent"
+            }
+          }
+        },
+        "mStopBurnOutSound": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": null
+          }
+        },
+        "mTireTrackDecals": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "TireTrackDecalDetails",
+              "value": {
+                "DecalMaterialOverride": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/Material/Tiretrack_Decal",
+                      "name": "Tiretrack_Decal"
+                    }
+                  }
+                },
+                "SurfacePhysicsMaterial": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Game/FactoryGame/-Shared/Material/PhysicalMaterial/PhysMat_Sand",
+                      "name": "PhysMat_Sand"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "HealthComponent",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGHealthComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle_C",
+        "name": "HealthComponent"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_WheeledVehicle6W_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "InheritableComponentHandler",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "InheritableComponentHandler"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__InheritableComponentHandler"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_WheeledVehicle6W_C"
+      },
+      "properties": {
+        "Records": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "ComponentOverrideRecord",
+              "value": {
+                "ComponentClass": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "/Script/FactoryGame",
+                      "name": "FGVehicleCollisionBoxComponent"
+                    }
+                  }
+                },
+                "ComponentKey": {
+                  "type": "ComponentKey",
+                  "value": {
+                    "AssociatedGuid": {
+                      "type": "Guid",
+                      "value": {
+                        "a": 16400959,
+                        "b": 1202549751,
+                        "c": 111069859,
+                        "d": 527834740
+                      }
+                    },
+                    "OwnerClass": {
+                      "type": "ObjectProperty",
+                      "value": {
+                        "type": "reference",
+                        "value": {
+                          "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle",
+                          "name": "BP_WheeledVehicle_C"
+                        }
+                      }
+                    },
+                    "SCSVariableName": {
+                      "type": "NameProperty",
+                      "value": "VehicleCollisionBox"
+                    }
+                  }
+                },
+                "ComponentTemplate": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "VehicleCollisionBox_GEN_VARIABLE"
+                    }
+                  }
+                },
+                "CookedComponentInstancingData": {
+                  "type": "BlueprintCookedComponentInstancingData",
+                  "value": {
+                    "ChangedPropertyList": {
+                      "type": "ArrayProperty",
+                      "value": []
+                    },
+                    "bIsValid": {
+                      "type": "BoolProperty",
+                      "value": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "VehicleMesh",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SkeletalMeshComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle_C",
+        "name": "VehicleMesh"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_WheeledVehicle6W_C"
+      },
+      "properties": {}
+    },
+    {
+      "name": "SCS_Node",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SCS_Node"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SCS_Node"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ComponentClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/FactoryGame",
+              "name": "FGWheeledVehicleMovementComponent6W"
+            }
+          }
+        },
+        "ComponentTemplate": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "FGWheeledVehicleMovementComponent6W_GEN_VARIABLE"
+            }
+          }
+        },
+        "InternalVariableName": {
+          "type": "NameProperty",
+          "value": "FGWheeledVehicleMovementComponent6W"
+        },
+        "VariableGuid": {
+          "type": "Guid",
+          "value": {
+            "a": 523739317,
+            "b": 1157084641,
+            "c": 3578898071,
+            "d": 2835918326
+          }
+        }
+      }
+    },
+    {
+      "name": "SimpleConstructionScript",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "SimpleConstructionScript"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__SimpleConstructionScript"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_WheeledVehicle6W_C"
+      },
+      "properties": {
+        "AllNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        },
+        "DefaultSceneRootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SCS_Node"
+            }
+          }
+        },
+        "RootNodes": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "SCS_Node"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "FGWheeledVehicleMovementComponent6W",
+      "class": {
+        "package": "/Script/CoreUObject",
+        "name": "ObjectProperty"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/CoreUObject",
+        "name": "Default__ObjectProperty"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BP_WheeledVehicle6W_C",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BlueprintGeneratedClass"
+      },
+      "super": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/BP_WheeledVehicle",
+        "name": "BP_WheeledVehicle_C"
+      },
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__BlueprintGeneratedClass"
+      },
+      "outer": null,
+      "properties": {
+        "InheritableComponentHandler": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "InheritableComponentHandler"
+            }
+          }
+        },
+        "SimpleConstructionScript": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "SimpleConstructionScript"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "FoliageBox",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "BoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "Default__BP_WheeledVehicle_C",
+        "name": "FoliageBox"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "Default__BP_WheeledVehicle6W_C"
+      },
+      "properties": {
+        "AttachParent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "VehicleMesh"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "VehicleCollisionBox_GEN_VARIABLE",
+      "class": {
+        "package": "/Script/FactoryGame",
+        "name": "FGVehicleCollisionBoxComponent"
+      },
+      "super": null,
+      "template": {
+        "package": "BP_WheeledVehicle_C",
+        "name": "VehicleCollisionBox_GEN_VARIABLE"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BP_WheeledVehicle6W_C"
+      },
+      "properties": {
+        "OnComponentBeginOverlap": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        },
+        "OnComponentHit": {
+          "type": "MulticastDelegateProperty",
+          "value": null
+        }
+      }
+    }
+  ]
+}

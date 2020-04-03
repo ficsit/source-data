@@ -1,0 +1,261 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/AI/EQ_Random.uasset",
+  "guid": {
+    "a": 2561172984,
+    "b": 1329306985,
+    "c": 4025237649,
+    "d": 2358438536
+  },
+  "exports": [
+    {
+      "name": "AIDataProvider_QueryParams",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIDataProvider_QueryParams"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AIDataProvider_QueryParams"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ParamName": {
+          "type": "NameProperty",
+          "value": "Cone.Range"
+        }
+      }
+    },
+    {
+      "name": "EQ_Random",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQuery"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQuery"
+      },
+      "outer": null,
+      "properties": {
+        "Options": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryOption"
+              }
+            }
+          ]
+        },
+        "QueryName": {
+          "type": "NameProperty",
+          "value": "EQ_Random"
+        }
+      }
+    },
+    {
+      "name": "EnvQueryGenerator_Cone",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryGenerator_Cone"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryGenerator_Cone"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_Random"
+      },
+      "properties": {
+        "AlignedPointsDistance": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 200
+            }
+          }
+        },
+        "AngleStep": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 25
+            }
+          }
+        },
+        "ConeDegrees": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DataBinding": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "AIDataProvider_QueryParams"
+                }
+              }
+            },
+            "DataField": {
+              "type": "NameProperty",
+              "value": "FloatValue"
+            },
+            "DefaultValue": {
+              "type": "FloatProperty",
+              "value": 250
+            }
+          }
+        },
+        "ProjectionData": {
+          "type": "EnvTraceData",
+          "value": {
+            "NavigationFilter": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "/Game/FactoryGame/Character/Creature/AI/NavQuery_WalkingAI",
+                  "name": "NavQuery_WalkingAI_C"
+                }
+              }
+            },
+            "SerializedChannel": {
+              "type": "ByteProperty",
+              "value": "ECC_Visibility"
+            },
+            "VersionNum": {
+              "type": "IntProperty",
+              "value": 1
+            }
+          }
+        },
+        "Range": {
+          "type": "AIDataProviderFloatValue",
+          "value": {
+            "DataBinding": {
+              "type": "ObjectProperty",
+              "value": {
+                "type": "reference",
+                "value": {
+                  "package": "{{THIS PACKAGE}}",
+                  "name": "AIDataProvider_QueryParams"
+                }
+              }
+            },
+            "DataField": {
+              "type": "NameProperty",
+              "value": "FloatValue"
+            }
+          }
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "EnvQueryOption",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryOption"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryOption"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_Random"
+      },
+      "properties": {
+        "Generator": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "EnvQueryGenerator_Cone"
+            }
+          }
+        },
+        "Tests": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "EnvQueryTest_Distance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "EnvQueryTest_Distance",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "EnvQueryTest_Distance"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__EnvQueryTest_Distance"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "EQ_Random"
+      },
+      "properties": {
+        "ScoringEquation": {
+          "type": "ByteProperty",
+          "value": "EEnvTestScoreEquation::Square"
+        },
+        "TestPurpose": {
+          "type": "ByteProperty",
+          "value": "EEnvTestPurpose::Score"
+        },
+        "VerNum": {
+          "type": "IntProperty",
+          "value": 1
+        }
+      }
+    },
+    {
+      "name": "AIDataProvider_QueryParams",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "AIDataProvider_QueryParams"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__AIDataProvider_QueryParams"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "{{BROKEN/MISSING EXPORT}}"
+      },
+      "properties": {
+        "ParamName": {
+          "type": "NameProperty",
+          "value": "Cone.ConeDegrees"
+        }
+      }
+    }
+  ]
+}

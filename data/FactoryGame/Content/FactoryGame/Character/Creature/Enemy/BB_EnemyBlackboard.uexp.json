@@ -1,0 +1,212 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Character/Creature/Enemy/BB_EnemyBlackboard.uasset",
+  "guid": {
+    "a": 332898046,
+    "b": 1144143556,
+    "c": 1249134007,
+    "d": 617656078
+  },
+  "exports": [
+    {
+      "name": "BB_EnemyBlackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardData"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardData"
+      },
+      "outer": null,
+      "properties": {
+        "Keys": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "InRangeOfTarget"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Bool"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "FinalGoal"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Object"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "LastKnownTargetLocation"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Vector"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            },
+            {
+              "type": "BlackboardEntry",
+              "value": {
+                "EntryName": {
+                  "type": "NameProperty",
+                  "value": "HasPath"
+                },
+                "KeyType": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BlackboardKeyType_Bool"
+                    }
+                  }
+                },
+                "bInstanceSynced": {
+                  "type": "BoolProperty",
+                  "value": false
+                }
+              }
+            }
+          ]
+        },
+        "Parent": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Character/Creature/BB_Creature",
+              "name": "BB_Creature"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BlackboardKeyType_Bool",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Bool"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Bool"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_EnemyBlackboard"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Bool",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Bool"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Bool"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_EnemyBlackboard"
+      },
+      "properties": {}
+    },
+    {
+      "name": "BlackboardKeyType_Object",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Object"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Object"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_EnemyBlackboard"
+      },
+      "properties": {
+        "BaseClass": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Script/Engine",
+              "name": "Actor"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BlackboardKeyType_Vector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BlackboardKeyType_Vector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BlackboardKeyType_Vector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BB_EnemyBlackboard"
+      },
+      "properties": {}
+    }
+  ]
+}

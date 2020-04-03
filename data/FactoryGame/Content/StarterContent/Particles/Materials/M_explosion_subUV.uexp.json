@@ -1,0 +1,121 @@
+{
+  "file_name": "FactoryGame/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset",
+  "guid": {
+    "a": 4153840895,
+    "b": 1276540531,
+    "c": 3622133632,
+    "d": 1724732164
+  },
+  "exports": [
+    {
+      "name": "M_explosion_subUV",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Additive"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionParticleSubUV"
+              }
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 2617977533,
+            "b": 1138173199,
+            "c": 2929935528,
+            "d": 2354229684
+          }
+        },
+        "bUsedWithParticleSprites": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionParticleSubUV",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionParticleSubUV"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionParticleSubUV"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "M_explosion_subUV"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "M_explosion_subUV"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/StarterContent/Textures/T_Explosion_SubUV",
+              "name": "T_Explosion_SubUV"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

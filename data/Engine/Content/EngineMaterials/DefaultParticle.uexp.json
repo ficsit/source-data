@@ -1,0 +1,121 @@
+{
+  "file_name": "Engine/Content/EngineMaterials/DefaultParticle.uasset",
+  "guid": {
+    "a": 3158034949,
+    "b": 1286688424,
+    "c": 3329055372,
+    "d": 3481645002
+  },
+  "exports": [
+    {
+      "name": "DefaultParticle",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Masked"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample0"
+              }
+            }
+          ]
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3417212142,
+            "b": 1279187231,
+            "c": 3965391031,
+            "d": 3636603045
+          }
+        },
+        "bUsedWithBeamTrails": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithNiagaraRibbons": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithNiagaraSprites": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithParticleSprites": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "MaterialExpressionTextureSample0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "DefaultParticle"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultParticle"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/EngineMaterials/OrientParticle",
+              "name": "OrientParticle"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

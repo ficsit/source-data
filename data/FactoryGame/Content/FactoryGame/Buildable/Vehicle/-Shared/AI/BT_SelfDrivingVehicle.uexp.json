@@ -1,0 +1,1228 @@
+{
+  "file_name": "FactoryGame/Content/FactoryGame/Buildable/Vehicle/-Shared/AI/BT_SelfDrivingVehicle.uasset",
+  "guid": {
+    "a": 492737557,
+    "b": 1120842363,
+    "c": 1692048552,
+    "d": 2933932782
+  },
+  "exports": [
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WantsNewTarget"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "mValue": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WantsNewTarget"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTS_IsVehicleStuck_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTS_IsVehicleStuck",
+        "name": "BTS_IsVehicleStuck_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTS_IsVehicleStuck",
+        "name": "Default__BTS_IsVehicleStuck_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "IsStuckKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsStuck"
+            }
+          }
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTDecorator_Blackboard",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTDecorator_Blackboard"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTDecorator_Blackboard"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "BlackboardKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsStuck"
+            }
+          }
+        },
+        "CachedDescription": {
+          "type": "StrProperty",
+          "value": "IsStuck is Is Set"
+        },
+        "FlowAbortMode": {
+          "type": "ByteProperty",
+          "value": "EBTFlowAbortMode::LowerPriority"
+        },
+        "NotifyObserver": {
+          "type": "ByteProperty",
+          "value": "EBTBlackboardRestart::ValueChange"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_ReverseToFreedom_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_ReverseToFreedom",
+        "name": "BTT_ReverseToFreedom_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_ReverseToFreedom",
+        "name": "Default__BTT_ReverseToFreedom_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTDecorator_Blackboard"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "Services": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "BTS_IsVehicleStuck_C"
+              }
+            }
+          ]
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_UpdateTarget_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_UpdateTarget",
+        "name": "BTT_UpdateTarget_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_UpdateTarget",
+        "name": "Default__BTT_UpdateTarget_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TargetPoint": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "TargetPoint"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        },
+        "WantsNewTargetBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "WantsNewTarget"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_Wait_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_Wait",
+        "name": "BTT_Wait_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_Wait",
+        "name": "Default__BTT_Wait_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_SetBoolKey_C",
+      "class": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "BTT_SetBoolKey_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Character/Creature/AI/Task/BTT_SetBoolKey",
+        "name": "Default__BTT_SetBoolKey_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        },
+        "mBoolBBKey": {
+          "type": "BlackboardKeySelector",
+          "value": {
+            "SelectedKeyName": {
+              "type": "NameProperty",
+              "value": "IsStuck"
+            }
+          }
+        },
+        "mSucceed": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Selector",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Selector"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Selector"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_UpdateTarget_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTTask_Wait"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_ReverseToFreedom_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Selector"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_MoveToTargetPoint_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_SetBoolKey_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTComposite_Sequence"
+                    }
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": [
+                    {
+                      "type": "reference",
+                      "value": {
+                        "package": "{{THIS PACKAGE}}",
+                        "name": "BTD_CanMove_C"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTComposite_Sequence",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTComposite_Sequence"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTComposite_Sequence"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "Children": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_StopVehicle_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            },
+            {
+              "type": "BTCompositeChild",
+              "value": {
+                "ChildComposite": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": null
+                  }
+                },
+                "ChildTask": {
+                  "type": "ObjectProperty",
+                  "value": {
+                    "type": "reference",
+                    "value": {
+                      "package": "{{THIS PACKAGE}}",
+                      "name": "BTT_Wait_C"
+                    }
+                  }
+                },
+                "DecoratorOps": {
+                  "type": "ArrayProperty",
+                  "value": []
+                },
+                "Decorators": {
+                  "type": "ArrayProperty",
+                  "value": []
+                }
+              }
+            }
+          ]
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTD_CanMove_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTD_CanMove",
+        "name": "BTD_CanMove_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTD_CanMove",
+        "name": "Default__BTD_CanMove_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        },
+        "bInverseCondition": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    },
+    {
+      "name": "BTT_MoveToTargetPoint_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_MoveToTargetPoint",
+        "name": "BTT_MoveToTargetPoint_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_MoveToTargetPoint",
+        "name": "Default__BTT_MoveToTargetPoint_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "NodeName": {
+          "type": "StrProperty",
+          "value": "MoveToTargetPoint"
+        },
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTT_StopVehicle_C",
+      "class": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_StopVehicle",
+        "name": "BTT_StopVehicle_C"
+      },
+      "super": null,
+      "template": {
+        "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BTT_StopVehicle",
+        "name": "Default__BTT_StopVehicle_C"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Sequence"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BT_SelfDrivingVehicle",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BehaviorTree"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BehaviorTree"
+      },
+      "outer": null,
+      "properties": {
+        "BlackboardAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Game/FactoryGame/Buildable/Vehicle/-Shared/AI/BB_SelfDrivingVehicle",
+              "name": "BB_SelfDrivingVehicle"
+            }
+          }
+        },
+        "RootNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "BTTask_Wait",
+      "class": {
+        "package": "/Script/AIModule",
+        "name": "BTTask_Wait"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/AIModule",
+        "name": "Default__BTTask_Wait"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "BT_SelfDrivingVehicle"
+      },
+      "properties": {
+        "ParentNode": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BTComposite_Selector"
+            }
+          }
+        },
+        "TreeAsset": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "BT_SelfDrivingVehicle"
+            }
+          }
+        },
+        "WaitTime": {
+          "type": "FloatProperty",
+          "value": 1
+        }
+      }
+    }
+  ]
+}

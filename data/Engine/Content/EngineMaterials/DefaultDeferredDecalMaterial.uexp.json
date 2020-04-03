@@ -1,0 +1,133 @@
+{
+  "file_name": "Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset",
+  "guid": {
+    "a": 3108153867,
+    "b": 1260794382,
+    "c": 2076163747,
+    "d": 139520267
+  },
+  "exports": [
+    {
+      "name": "MaterialExpressionTextureSample0",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "MaterialExpressionTextureSample"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__MaterialExpressionTextureSample"
+      },
+      "outer": {
+        "package": "{{THIS PACKAGE}}",
+        "name": "DefaultDeferredDecalMaterial"
+      },
+      "properties": {
+        "Material": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "{{THIS PACKAGE}}",
+              "name": "DefaultDeferredDecalMaterial"
+            }
+          }
+        },
+        "Texture": {
+          "type": "ObjectProperty",
+          "value": {
+            "type": "reference",
+            "value": {
+              "package": "/Engine/EngineMaterials/DefaultDiffuse",
+              "name": "DefaultDiffuse"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DefaultDeferredDecalMaterial",
+      "class": {
+        "package": "/Script/Engine",
+        "name": "Material"
+      },
+      "super": null,
+      "template": {
+        "package": "/Script/Engine",
+        "name": "Default__Material"
+      },
+      "outer": null,
+      "properties": {
+        "BlendMode": {
+          "type": "ByteProperty",
+          "value": "BLEND_Translucent"
+        },
+        "CachedQualityLevelsUsed": {
+          "type": "ArrayProperty",
+          "value": [
+            false,
+            true,
+            false
+          ]
+        },
+        "EmissiveColor": {
+          "type": "ColorMaterialInput",
+          "value": null
+        },
+        "Expressions": {
+          "type": "ArrayProperty",
+          "value": [
+            {
+              "type": "reference",
+              "value": null
+            },
+            {
+              "type": "reference",
+              "value": {
+                "package": "{{THIS PACKAGE}}",
+                "name": "MaterialExpressionTextureSample0"
+              }
+            },
+            {
+              "type": "reference",
+              "value": null
+            }
+          ]
+        },
+        "MaterialDomain": {
+          "type": "ByteProperty",
+          "value": "MD_DeferredDecal"
+        },
+        "Normal": {
+          "type": "VectorMaterialInput",
+          "value": null
+        },
+        "OpacityMaskClipValue": {
+          "type": "FloatProperty",
+          "value": 0.33
+        },
+        "ShadingModel": {
+          "type": "ByteProperty",
+          "value": "MSM_Unlit"
+        },
+        "StateId": {
+          "type": "Guid",
+          "value": {
+            "a": 3669498920,
+            "b": 1099597545,
+            "c": 2910932105,
+            "d": 199264122
+          }
+        },
+        "bUsedWithSkeletalMesh": {
+          "type": "BoolProperty",
+          "value": true
+        },
+        "bUsedWithStaticLighting": {
+          "type": "BoolProperty",
+          "value": true
+        }
+      }
+    }
+  ]
+}
