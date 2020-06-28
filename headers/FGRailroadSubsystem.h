@@ -311,6 +311,12 @@ public:
 
 private:
 	void TickTrackGraphs( float dt );
+	
+	/**
+	 * Internal helper to rebuild a graph.
+	 * Note: This function might split, remove or otherwise change the graph so it is not safe to assume anything about the graph afterwards.
+	 */
+	void RebuildTrackGraph( int32 graphID );
 
 	/** Call when updating a stations hidden power connection to update all platforms attached to that station */
 	void RefreshPlatformPowerConnectionsFromStation( class AFGBuildableRailroadStation* station, class UFGCircuitConnectionComponent* connectTo );
@@ -327,8 +333,6 @@ private:
 	/** Reconnects all vehicles in this train to the third rail. */
 	void ReconnectTrainToThirdRail( AFGTrain* train );
 
-
-
 	/** The physics is driven by the physics scene. */
 	void PreTickPhysics( FPhysScene* physScene, float dt );
 	void UpdatePhysics( FPhysScene* physScene, float dt );
@@ -340,15 +344,15 @@ private:
 
 	/** Merge two track graphs to one. */
 	void MergeTrackGraphs( int32 first, int32 second );
-
 	/** Create a new track graph. */
 	int32 CreateTrackGraph();
-
 	/** Remove track graph. */
 	void RemoveTrackGraph( int32 graphID );
 
 	/** Adds a track to a graph, performs a merge if the track is connected to another graph. */
 	void AddTrackToGraph( class AFGBuildableRailroadTrack* track, int32 graphID );
+	/** Tries to remove a track from it's current graph, if not part of a graph this does nothing. */
+	void RemoveTrackFromGraph( class AFGBuildableRailroadTrack* track );
 
 	/** Get a new UID for a track graph. */
 	int32 GenerateUniqueTrackGraphID();
@@ -392,6 +396,7 @@ private:
 	UPROPERTY( SaveGame, Replicated )
 	TArray< class AFGTrainStationIdentifier* > mTrainStationIdentifiers;
 
+	//@todoG2 does this need to be saved? HannaS 28/4 -19
 	/** All the trains in the world. */
 	UPROPERTY( SaveGame, Replicated )
 	TArray< class AFGTrain* > mTrains;

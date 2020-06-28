@@ -26,6 +26,8 @@ public:
 	 * so players searching for games can see it.
 	 */
 	void UpdateGameSession();
+	void SessionIdUpdated();
+	
 
 	//~Begin AActor interface
 	virtual void Destroyed() override;
@@ -52,7 +54,10 @@ public:
 	/**
 	 * Get session settings from the specified world
 	 */
-	static FFGOnlineSessionSettings GetSessionSettings( UWorld* forWorld, FString sessionName );
+	static FFGOnlineSessionSettings CreateSessionSettingsForPropagation( UWorld* forWorld, FString saveSessionName );
+	static void SetTemporaryCSSSessionID(FString tempID);
+	static void ClearTemporaryCSSSessionID();
+	static FString GetCSSSessionID(UWorld* forWorld, const FString &saveSessionName);
 
 	/** Set the visibility of the current session */
 	void SetSessionVisibility( ESessionVisibility visibility );
@@ -62,6 +67,9 @@ public:
 
 	/** Admin password option that's parsed from commandline */
 	static const TCHAR* AdminPasswordOption;
+
+	int32 GetNumPrivateConnections() const;
+	int32 GetNumPublicConnections() const;
 protected:
 	/** Make sure we have a tutorial intro managere */
 	UFUNCTION()
@@ -80,8 +88,6 @@ protected:
 	/** Set a random admin password */
 	void SetRandomAdminPassword();
 
-	int32 GetNumPrivateConnections() const;
-	int32 GetNumPublicConnections() const;
 
 	virtual void OnUpdateSessionComplete( FName sessionName, bool wasSuccessful );
 private:

@@ -62,13 +62,16 @@ public:
 	UFUNCTION( exec, CheatBoard, Category = "Resources", meta = ( ToolTip = "Give the number of coupons specified" ) )
 	virtual void GiveResourceSinkCoupons( int32 NumCoupons );
 
+	UFUNCTION( exec, CheatBoard, category = "Player" )
+	void DrawSphere( int32 radius );
+
 	UFUNCTION( exec, CheatBoard, Category = "Player/Camera" )
 	virtual void PlayerFly( bool flyModeEnabled );
 	UFUNCTION( exec, CheatBoard, Category = "Player/Camera" )
 	virtual bool PlayerFly_Get();
 
 	UFUNCTION( exec, CheatBoard, Category = "Player/Camera" )
-	virtual void PlayerNoClipModeOnFly( bool gohstMode );
+	virtual void PlayerNoClipModeOnFly( bool ghostMode );
 	UFUNCTION( exec, CheatBoard, Category = "Player/Camera" )
 	virtual bool PlayerNoClipModeOnFly_Get();
 
@@ -86,6 +89,9 @@ public:
 
 	UFUNCTION( exec, CheatBoard, category = "Research" )
 	virtual void GiveCheatSchematics();
+
+	UFUNCTION( exec, CheatBoard, category = "Research" )
+	virtual void GivePrototypeSchematics();
 
 	UFUNCTION( exec, CheatBoard )
 	virtual void GiveStorySchematics();
@@ -245,6 +251,9 @@ public:
 	UFUNCTION( exec, CheatBoard, category = "Log" )
 	void DumpPlayerStates();
 
+	UFUNCTION( exec, CheatBoard, category = "Log" )
+	void DumpHotbarShortcuts();
+
 	UFUNCTION( exec, CheatBoard, category = "Display" )
 	void EnableInstancingOnFactory( bool enabled );
 
@@ -309,9 +318,6 @@ public:
 	void SendInviteToFriend( FString friendName );
 
 	UFUNCTION( exec )
-	void DebugCrash();
-
-	UFUNCTION( exec )
 	void ResetHubTutorial();
 
 	UFUNCTION( exec )
@@ -370,6 +376,16 @@ public:
 
 	UFUNCTION( exec )
 	void ToggleDebuggingOnPipe();
+
+	/** Duplicate a component within a circuit so it contains multiple entries for the same component. */
+	UFUNCTION( exec )
+	void DupeComponentInCircuit( int32 target );
+	/** Duplicate a component from one circuit to another circuit so they contain the same component. */
+	UFUNCTION( exec )
+	void DupeComponentToAnotherCircuit( int32 source, int32 target );
+
+	UFUNCTION( exec )
+	void DumpConnectionString();
 
 public:
 	/** This is used to make picking the same classes in the cheat board easier */

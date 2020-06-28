@@ -9,6 +9,17 @@
 #include "FGFluidIntegrantInterface.h"
 #include "FGPipeNetwork.generated.h"
 
+// Draw text or boxes debug mode.
+enum class EDebugPipeVisualization
+{
+	DPV_None,
+	DPV_Text,
+	DPV_Pressure,
+	DPV_PressureGroup,
+	DPV_DeltaPressure,
+	DPV_Flow
+};
+
 /**
  * Contains all info needed to update a fluid box.
  */
@@ -114,7 +125,8 @@ public:
 	void OnFullRebuildCompleted();
 
 	/** Debug */
-	void DisplayDebugDetails( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent );
+	void Debug_DisplayDetails( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent );
+	void Debug_PipeVisualization( EDebugPipeVisualization mode );
 private:
 	struct FPressureGroup
 	{
@@ -122,8 +134,8 @@ private:
 		int32 Redirect = INDEX_NONE;
 
 		/** World Z values for different pressure points in meters, NOT unreal units. */
-		float HighestPumpZ = 0.f;
-		float HighestElevationZ = 0.f;
+		float HighestPumpZ = -1000000.f;
+		float HighestElevationZ = -1000000.f;
 	};
 
 	void RebuildUpdateList();
@@ -167,7 +179,6 @@ private:
 	float mFluidViscosity;		// Around 1 is good for water, higher for oils, lower for gases.
 	float mGravity;				// [m/s^2]
 	float mFluidFriction;
-	float mPuddleRequirement;	// Normalized quantity of fluid that must be present in a pipe to allow transmission ( defined in FactorySettings and assigned from viscosity )
 
 	/** All Fluid Integrant Interfaces in this network */
 	TArray< class IFGFluidIntegrantInterface* > mFluidIntegrants;

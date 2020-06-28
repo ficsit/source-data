@@ -9,6 +9,28 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FAggroTargetAddedSignature, TScriptInterface<class IFGAggroTargetInterface>, aggroTarget );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FAggroTargetRemovedSignature, TScriptInterface<class IFGAggroTargetInterface>, aggroTarget );
 
+USTRUCT()
+struct FSpawnerInfo
+{
+	GENERATED_BODY()
+
+	FSpawnerInfo() : 
+		Spawner( nullptr ),
+		WithinSpawnRange( false ),
+		DistanceSq( -1.0f )
+	{
+	}
+
+	UPROPERTY()
+	class AFGCreatureSpawner* Spawner;
+
+	UPROPERTY()
+	bool WithinSpawnRange;
+
+	UPROPERTY()
+	float DistanceSq;
+};
+
 /**
  * @todoai: Expose tick to BP here, as it might be interesting for modders to use
  */
@@ -23,6 +45,10 @@ public:
 	// BEGIN UAISystemBase interface	
 	virtual void InitializeActorsForPlay( bool bTimeGotReset ) override;
 	// END UAISystemBase interface
+
+	//Begin aactor
+	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos );
+	//End aactor
 
 	// BEGIN FTickableGameObject interface
 	virtual void Tick( float DeltaTime ) override;
@@ -41,6 +67,11 @@ public:
 	/** Check spawners proximity to players */
 	void TickSpawners( float dt );
 
+	/** Activates spawners one at a time */
+	void TickSpawnerActivationList();
+
+	/** Add a spawner to the pending activation list **/
+	void AddPendingActiveSpawner( class AFGCreatureSpawner* inSpawner );
 	/**
 	 * Addes this aggro target as a global aggro target
 	 */
@@ -72,6 +103,15 @@ public:
 	/** Is this actor pardoned from being targeted? */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|AI|Aggro" ) 
 	bool IsActorPardoned( AActor* inActor );
+
+	/** Gets the default value set in AISystem */
+	float GetDefaultActivateSpawnerDistance() { return mActivateSpawnerDistance; }
+
+	/** Find the closest player sq for a creature */
+	float FindClosestPlayerSq( class AActor* actor ) const;
+
+	/** Gets the keep alive distance */
+	float GetKeepAliveDistance() { return mKeepAliveDistanceToPlayer; }
 public:
 	/** Called whenever a aggro target is added */
 	UPROPERTY(BlueprintAssignable,Category="AI|AggroTargets")
@@ -102,8 +142,9 @@ protected:
 	UFUNCTION()
 	void PlayerDestroyed( AActor* destroyedPlayer );
 
-	/** Find the closest player sq for a creature */
-	float FindClosestPlayerSq( class AActor* actor, class AFGCharacterPlayer*& out_closestPlayer ) const;
+	void UpdatePotentialSpawners( class AFGCreatureSpawner* inSpawner, bool withinSpawnRange, float closeSqDistance );
+
+	void ManagePotentialSpawners();
 public:
 	/** distance for disabling an enemys AI  */
 	UPROPERTY(EditDefaultsOnly,Category="AI")
@@ -121,7 +162,7 @@ public:
 	UPROPERTY( EditDefaultsOnly, Category = "AI" )
 	float mMeshUpdateDistance;
 protected:
-	/** Distance for when we should activate a spawner */
+	/** Distance for when we should activate a spawner, this distance is used if the spawner does not specify a custom distance */
 	UPROPERTY( EditDefaultsOnly, Category = "AI" )
 	float mActivateSpawnerDistance;
 
@@ -130,19 +171,28 @@ protected:
 	bool mDisablePawnMovement;
 
 	/** Cached list of all aggro targets, not guaranteed to have the same order */
+	UPROPERTY( )
 	TArray< class TScriptInterface< class IFGAggroTargetInterface > > mAllAggroTargets;
 
 	/** Cached list of all enemies, used for optimizing enemies depending on distance */
+	UPROPERTY()
 	TArray< class AFGCreature* > mAllCreatures;
 
 	/** Cached list of all players, used for checking distance to all enemies */
+	UPROPERTY()
 	TArray< class AFGCharacterPlayer* > mAllPlayers;
 
 	/** Cached list of all enemy spawners. Used to spawn enemies based on distance to player */
+	UPROPERTY()
 	TArray< class AFGCreatureSpawner* > mAllCreatureSpawners;
 
 	/** Actors that have been given pardon from being targeted by enemies */
+	UPROPERTY()
 	TArray< AActor* > mPardonedActors;
+
+	/** Cached list of creature spawners that are trying to activate*/
+	UPROPERTY()
+	TArray< class AFGCreatureSpawner* > mPendingActiveSpawners;
 private:
 	/** Iterator for current index in the creatures array */
 	int32 mCreatureIterator; 
@@ -157,4 +207,23 @@ private:
 	/** How many spawners can we iterate over per tick */
 	UPROPERTY( EditDefaultsOnly, Category = "AI" )
 	int32 mMaxSpawnerIterationsPerTick; 
+
+	/** Spawners that want to spawn */
+	UPROPERTY()
+	TArray< FSpawnerInfo > mPotentialSpawnersInfo;
+
+	/** Total weight of spawners that can be active, by default one creature will add 1.0f to a spawners weight */
+	UPROPERTY( EditDefaultsOnly, Category = "AI" )
+	float mMaxSpawnWeight;
+
+	/** Minimum distance to a spawner for it to be able to spawn. */
+	UPROPERTY( EditDefaultsOnly, Category = "AI" )
+	float mMinSpawnDistance;
+
+	/** If a creature is withing this distance to an active player then it should not despawn */
+	UPROPERTY( EditDefaultsOnly, Category = "AI" )
+	float mKeepAliveDistanceToPlayer;
+
+	/** Handle to the last async trace performed */
+	FTraceHandle mLastAsyncTraceHandle;
 };

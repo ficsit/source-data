@@ -172,6 +172,30 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Descriptor|Fluid" )
 	static FLinearColor GetFluidColorLinear( TSubclassOf< UFGItemDescriptor > inClass );
 
+	/** Getters and setters for icon capture properties, for editor tools use only but not wrapped with WiTH_EDITOR since it's needed in a tool with a scene which is technically a game.
+	*	The content of the functions are instead wrapped
+	*/
+	UFUNCTION( BlueprintPure, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static FTransform GetIconCameraTransform( TSubclassOf< UFGItemDescriptor > inClass );
+	UFUNCTION( BlueprintCallable, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static void SetIconCameraTransform( TSubclassOf< UFGItemDescriptor > inClass, FTransform cameraTransform );
+	UFUNCTION( BlueprintPure, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static float GetIconFOV( TSubclassOf< UFGItemDescriptor > inClass );
+	UFUNCTION( BlueprintCallable, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static void SetIconFOV( TSubclassOf< UFGItemDescriptor > inClass, float iconFOV );
+	UFUNCTION( BlueprintPure, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static FRotator GetIconObjectOrientation( TSubclassOf< UFGItemDescriptor > inClass );
+	UFUNCTION( BlueprintCallable, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static void SetIconObjectOrientation( TSubclassOf< UFGItemDescriptor > inClass, FRotator objectOrientation );
+	UFUNCTION( BlueprintPure, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static float GetIconCameraDistance( TSubclassOf< UFGItemDescriptor > inClass );
+	UFUNCTION( BlueprintCallable, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static void SetIconCameraDistance( TSubclassOf< UFGItemDescriptor > inClass, float cameraDistance );
+	UFUNCTION( BlueprintPure, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static FRotator GetIconSkyOrientation( TSubclassOf< UFGItemDescriptor > inClass );
+	UFUNCTION( BlueprintCallable, Category = "FactoryEditor|Descriptor|Icon", meta = ( DevelopmentOnly ) )
+	static void SetIconSkyOrientation( TSubclassOf< UFGItemDescriptor > inClass, FRotator skyOrientation );
+
 #if WITH_EDITOR
 	/** Delete all icons in the game that's referenced by a FGItemDescriptor */
 	static void DeleteAllIcons();
@@ -181,6 +205,7 @@ public:
 
 	/** Calculate the bounds of this item */
 	virtual FVector GetCenterOfCollision();
+
 #endif
 
 protected:
@@ -281,11 +306,11 @@ protected:
 	FSlateBrush mInventoryIcon;
 
 	/** Small icon of the item, always in memory */
-	UPROPERTY( EditDefaultsOnly, Category="UI" )
+	UPROPERTY( EditDefaultsOnly, Category="UI", meta = ( AddAutoJSON = true ) )
 	UTexture2D* mSmallIcon;
 
 	/** Big icon of the item, SHOULD only be loaded by demand, but right now persistent in memory */
-	UPROPERTY( EditDefaultsOnly, Category = "UI", DisplayName="Big Icon" )
+	UPROPERTY( EditDefaultsOnly, Category = "UI", DisplayName="Big Icon", meta = ( AddAutoJSON = true ) )
 	UTexture2D* mPersistentBigIcon;
 
 	/** The static mesh we want for representing the resource when they are in the production line. */
@@ -329,20 +354,43 @@ protected:
 	/** The distance to the object when rendering the icon */
 	UPROPERTY( EditDefaultsOnly, Category = "Icon", meta=( ShowOnlyInnerProperties, NoAutoJSON = true) )
 	FItemView mIconView;
+
+	/** The transform used for icon capture */
+	UPROPERTY( EditDefaultsOnly, Category = "Icon - EDITOR ONLY", Meta = ( NoAutoJSON = true ) )
+	FTransform mIconCameraTransform;
+
+	/** The FOV used for icon capture */
+	UPROPERTY( EditDefaultsOnly, Category = "Icon - EDITOR ONLY", Meta = ( NoAutoJSON = true ) )
+	float mIconFOV;
+
+	/** The object orientation used for icon capture */
+	UPROPERTY( EditDefaultsOnly, Category = "Icon - EDITOR ONLY", Meta = ( NoAutoJSON = true ) )
+	FRotator mIconObjectOrientation;
+
+	/** The spring arm distance used for icon capture */
+	UPROPERTY( EditDefaultsOnly, Category = "Icon - EDITOR ONLY", Meta = ( NoAutoJSON = true ) )
+	float mIconCameraDistance;
+
+	/** The sky orientation used for icon capture */
+	UPROPERTY( EditDefaultsOnly, Category = "Icon - EDITOR ONLY", Meta = ( NoAutoJSON = true ) )
+	FRotator mIconSkyOrientation;
+
 #endif
 
 	// NOTE: Ideally we want a fluid descriptor but some fluids are already a raw resource so we cannot do multiple inheritance, so either we need refactor how descriptors work or we put them here for now.
 	/**
+	 * @todoPipes Removing this for now, it was always 1 anyway.
 	 * Density for this fluid.
 	 * Form must be liquid or gas for this to be useful.
 	 */
-	UPROPERTY( EditDefaultsOnly, Category = "Item|Fluid" )
+	UPROPERTY()
 	float mFluidDensity;
 	/**
+	 * @todoPipes Removing this for now, caused more issues than it fixed, the back flow in junctions issue.
 	 * Friction for this fluid, this is the friction inside the fluid itself.
 	 * Form must be liquid or gas for this to be useful.
 	 */
-	UPROPERTY( EditDefaultsOnly, Category = "Item|Fluid" )
+	UPROPERTY()
 	float mFluidViscosity;
 	/**
 	 * Friction for this fluid, this is the friction between the fluid and the pipe.
@@ -356,6 +404,12 @@ protected:
 	 */
 	UPROPERTY( EditDefaultsOnly, Category = "Item|Fluid" )
 	FColor mFluidColor;
+
+	/** This is just a hook for the resource sink points so we can add them to the 
+	* JSON wiki file even though they are in a separate datatable.  
+	*/
+	UPROPERTY()
+	int32 mResourceSinkPoints;
 
 private:
 	friend class FItemDescriptorDetails;

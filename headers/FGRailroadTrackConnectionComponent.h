@@ -18,9 +18,15 @@ class FACTORYGAME_API UFGRailroadTrackConnectionComponent : public UFGConnection
 public:
 	UFGRailroadTrackConnectionComponent();
 
+	virtual void GetLifetimeReplicatedProps( TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
+
 	// Begin ActorComponent interface
 	virtual void OnComponentDestroyed( bool isDestroyingHierarchy ) override;
 	// End ActorComponent interface
+
+	// Begin IFGSaveInterface
+	virtual void PostLoadGame_Implementation( int32 saveVersion, int32 gameVersion ) override;
+	// End IFGSaveInterface
 
 	/** Return the connectors world location. */
 	FORCEINLINE FVector GetConnectorLocation() const { return GetComponentTransform().GetLocation(); }
@@ -131,11 +137,20 @@ public:
 	void SetStation( class AFGBuildableRailroadStation* station ) { mStation = station; }
 	void SetSignal( class AFGBuildableRailroadSignal* signal ) { mSignal = signal; }
 	void SetTrackPosition( const FRailroadTrackPosition& position );
+
+	/**
+	 * Sort the connections in the visual order, from left to right when facing the track in the forward direction.
+	 * Note that this does not change the current switch position if the connections are reordered.
+	 */
+	void SortConnections();
 private:
 	//@todotrains Verify building switches at both sides of a connection, the weird bug some people report.
 	/** Internal helper functions to add/remove connection. */
 	void AddConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
 	void RemoveConnectionInternal( UFGRailroadTrackConnectionComponent* toComponent );
+
+	void ClampSwitchPosition();
+
 public:
 	/** Delegate to fire when changing switch on a track */
 	UPROPERTY()
@@ -145,11 +160,11 @@ private:
 	FRailroadTrackPosition mTrackPosition;
 
 	/** The components we're connected to. If >1 this is a switch. */
-	UPROPERTY( SaveGame )
+	UPROPERTY( SaveGame, Replicated )
 	TArray< UFGRailroadTrackConnectionComponent* > mConnectedComponents;
 
 	/** If this is a switch, this is the switch position. */
-	UPROPERTY( SaveGame )
+	UPROPERTY( SaveGame, Replicated )
 	int32 mSwitchPosition;
 
 	/** The switch control associated with this connection, if any. */

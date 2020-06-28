@@ -33,15 +33,7 @@ public:
 
 	/** Get the number of connections to this connection, excluding hidden. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|Connection" )
-	FORCEINLINE int32 GetNumConnections() const { 
-#if !IS_PUBLIC_BUILD
-		if( GetOwner() && GetOwner()->HasAuthority() )
-		{
-			check( mWires.Num() == mNbWiresConnected );
-		}
-#endif
-		return mNbWiresConnected;
-	}
+	int32 GetNumConnections() const;
 
 	/** Get the number of hidden connections to this connection. */
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|Connection" )
@@ -117,15 +109,12 @@ public:
 	UFUNCTION( BlueprintPure, Category = "FactoryGame|Circuits|Connection" )
 	FORCEINLINE int32 GetCircuitID() const { return mCircuitID; }
 
-	/** Tracks replication changes to mCircuitID */
-	UFUNCTION()
-	void OnRep_CircuitIDChanged();
-
-	/** Callback when connection was removed or added */
-	FConnectionChanged OnConnectionChanged;
+	/** Used by the circuits and circuit subsystem to update the circuit this is connected to. */
+	void SetCircuitID( int32 circuitID );
 
 	/** Debug */
 	void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos );
+	FString GetDebugName() const;
 
 protected:
 	/** Called when the circuit ID changes, this can happen at any time when the circuitry is changed, e.g. when circuits are split or merged. */
@@ -136,12 +125,15 @@ protected:
 	void ReceiveOnCircuitIDChanged();
 
 private:
-	/** Used by the circuit subsystem to update the circuit this is connected to. */
-	void SetCircuitID( int32 circuitID );
+	/** Tracks replication changes to mCircuitID */
+	UFUNCTION()
+	void OnRep_CircuitIDChanged();
+
+public:
+	/** Callback when connection was removed or added */
+	FConnectionChanged OnConnectionChanged;
 
 private:
-	friend class AFGCircuitSubsystem;
-
 	/** How many connections this component can have connected. */
 	UPROPERTY( EditDefaultsOnly, Category = "Connection" )
 	int32 mMaxNumConnectionLinks;
@@ -154,10 +146,9 @@ private:
 	UPROPERTY( VisibleAnywhere, SaveGame, Replicated, Category = "Connection" )
 	TArray< AFGBuildableWire* > mWires;
 
-	//@todo redundant SaveGame here as it's overwritten in PostLoad
 	/** The wired connections to this. */
-	UPROPERTY( VisibleAnywhere, SaveGame, Replicated, Category = "Connection" )
-	uint8 mNbWiresConnected = 0;
+	UPROPERTY( VisibleAnywhere, Replicated, Category = "Connection" )
+	uint8 mNumWiresConnected;
 
 	/** The non-wired (if this or the other is hidden) connections to this. */
 	UPROPERTY( VisibleAnywhere, SaveGame )
@@ -167,6 +158,6 @@ private:
 	 * The circuit this connection is connected to. INDEX_NONE if not connected.
 	 * @note - This ID may change at any time when changes occurs in the circuitry. Do not save copies of it!
 	 */
-	UPROPERTY( VisibleAnywhere, ReplicatedUsing=OnRep_CircuitIDChanged, SaveGame, Category = "Connection" )
+	UPROPERTY( VisibleAnywhere, ReplicatedUsing = OnRep_CircuitIDChanged, Category = "Connection" )
 	int32 mCircuitID;
 };

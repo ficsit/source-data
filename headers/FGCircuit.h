@@ -78,6 +78,8 @@ protected:
 	
 	/** Debug */
 	virtual void DisplayDebug( class UCanvas* canvas, const class FDebugDisplayInfo& debugDisplay, float& YL, float& YPos, float indent );
+	void Debug_LogState() const;
+
 private:
 	/** Set if we should replicate details. */
 	void SetReplicateDetails( bool replicateDetails );
@@ -102,9 +104,10 @@ protected:
 	/** If this buildable is replicating details, i.e. for the UI. */
 	uint8 mReplicateDetails : 1;
 private:
+	friend class AFGCircuitSubsystem;
+	friend class UFGCheatManager;
+
 	/** All players interacting with a building that's connected to this circuit */
 	UPROPERTY()
 	TArray< class AFGCharacterPlayer* > mInteractingPlayers;
-private:
-	friend class AFGCircuitSubsystem;
 };

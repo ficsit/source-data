@@ -39,6 +39,7 @@ public:
 	virtual void RestartPlayer( AController* newPlayer ) override;
 	virtual void PostLogin( APlayerController* newPlayer ) override;
 	virtual void Logout( AController* exiting ) override;
+	virtual bool FindInactivePlayer( APlayerController* PC ) override;
 	// End AGameModeBase interface
 
 	/** All actors initialized, notify the save system */
@@ -138,6 +139,15 @@ private:
 		TSubclassOf< class APawn > pawnClassToFit,
 		TArray< class APlayerStart* >& out_unOccupied,
 		TArray< class APlayerStart* >& out_occupied );
+
+	/** 
+	* Check if two unique net IDs are the same but on different OSS versions 
+	* Used when going from MCP -> EOS. Can also be modified to cover moves from MCP -> STEAM or EOS -> STEAM
+	* This is just a failsafe when loading a save file on a new platform. Otherwise this logic is handled by AGameMode::FindInactivePlayer
+	* Returns true for some special cases. Check implementation for more details
+	*/
+	bool CompareUniqueNetIdBetweenOSS( FUniqueNetIdRepl& newID, FUniqueNetIdRepl& savedID );
+
 protected:
 	UPROPERTY()
 	class UFGSaveSession* mSaveSession;
@@ -158,14 +168,6 @@ private:
 	UPROPERTY(SaveGame)
 	uint8 mLastAutosaveId;
 
-	/** The save session (should actually be SaveSessionId */
-	UPROPERTY(SaveGame)
-	int32 mSessionId_DEPRECATED;
-
-	/** The name of the session we are playing, migrated over to mSaveSessionName */
-	UPROPERTY( SaveGame )
-	FString mSessionIDString_DEPRECATED;
-
 	/** The name of the session we are playing */
 	UPROPERTY( SaveGame )
 	FString mSaveSessionName;
@@ -179,6 +181,10 @@ private:
 	/** Selected starting point */
 	UPROPERTY( SaveGame )
 	FName mStartingPointTagName;
+
+	/** Command line param -PossesAny will allow players using authorization to posses other players on startup regardless of if their UniqueIds match */
+	UPROPERTY()
+	bool mAllowPossessAny;
 
 	/** Overriding selected starting point when respawning. */
 	UPROPERTY()
