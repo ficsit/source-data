@@ -17,6 +17,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnRestartTimeNotification, float, 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam( FOnAutoSaveTimeNotification, float, timeLeft );
 DECLARE_DYNAMIC_MULTICAST_DELEGATE( FOnAutoSaveFinished );
 
+extern const wchar_t STARTUP_TEMP_ID_PREFIX[];
 /**
  * 
  */
@@ -192,7 +193,7 @@ public:
 	FString GetOnlineSessionName() const;
 
 	UFUNCTION(BlueprintCallable, Category = "FactoryGame|Session")
-	void SetOnlineSessionName( const FString& inName ) { mReplicatedOnlineSessionName = inName; }
+	void SetOnlineSessionName( const FString& inName );
 
 	/*
 	 * Called from buildable subsystem on load to apply saved color slot data
